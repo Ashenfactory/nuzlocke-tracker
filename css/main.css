@@ -1,0 +1,3240 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.no-js #mainContent, .js #noscript {
+    display: none;
+}
+
+.no-js #noscript {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.container {
+    margin-top: 1em;
+}
+
+.dropdown .text {
+    white-space: nowrap;
+}
+
+.pusher {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+i.pkmn:not(.icon) {
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+    line-height: 11px;
+    vertical-align: middle;
+    margin: 0em 0.5em 0em 0em;
+    text-decoration: inherit;
+    speak: none;
+    font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+i.pkmn:not(.icon):before {
+    display: inline-block;
+    content: '';
+    background: url("./../img/sprites.png") no-repeat 0 0;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    top: -13px;
+    left: -16px;
+}
+
+i.bulbasaur.pkmn:not(.icon):before {
+    background-position: -40px 0;
+}
+i.ivysaur.pkmn:not(.icon):before {
+    background-position: -80px 0;
+}
+i.venusaur-mega.pkmn:not(.icon):before {
+    background-position: -120px 0;
+}
+i.venusaur.pkmn:not(.icon):before {
+    background-position: -160px 0;
+}
+i.charmander.pkmn:not(.icon):before {
+    background-position: -200px 0;
+}
+i.charmeleon.pkmn:not(.icon):before {
+    background-position: -240px 0;
+}
+i.charizard-mega-x.pkmn:not(.icon):before {
+    background-position: -280px 0;
+}
+i.charizard-mega-y.pkmn:not(.icon):before {
+    background-position: -320px 0;
+}
+i.charizard.pkmn:not(.icon):before {
+    background-position: -360px 0;
+}
+i.squirtle.pkmn:not(.icon):before {
+    background-position: -400px 0;
+}
+i.wartortle.pkmn:not(.icon):before {
+    background-position: -440px 0;
+}
+i.blastoise-mega.pkmn:not(.icon):before {
+    background-position: -480px 0;
+}
+i.blastoise.pkmn:not(.icon):before {
+    background-position: -520px 0;
+}
+i.caterpie.pkmn:not(.icon):before {
+    background-position: -560px 0;
+}
+i.metapod.pkmn:not(.icon):before {
+    background-position: -600px 0;
+}
+i.butterfree.pkmn:not(.icon):before {
+    background-position: -640px 0;
+}
+i.weedle.pkmn:not(.icon):before {
+    background-position: -680px 0;
+}
+i.kakuna.pkmn:not(.icon):before {
+    background-position: -720px 0;
+}
+i.beedrill-mega.pkmn:not(.icon):before {
+    background-position: -760px 0;
+}
+i.beedrill.pkmn:not(.icon):before {
+    background-position: -800px 0;
+}
+i.pidgey.pkmn:not(.icon):before {
+    background-position: -840px 0;
+}
+i.pidgeotto.pkmn:not(.icon):before {
+    background-position: -880px 0;
+}
+i.pidgeot-mega.pkmn:not(.icon):before {
+    background-position: -920px 0;
+}
+i.pidgeot.pkmn:not(.icon):before {
+    background-position: -960px 0;
+}
+i.rattata-alola.pkmn:not(.icon):before {
+    background-position: -1000px 0;
+}
+i.rattata.pkmn:not(.icon):before {
+    background-position: -1040px 0;
+}
+i.raticate-alola.pkmn:not(.icon):before {
+    background-position: -1080px 0;
+}
+i.raticate.pkmn:not(.icon):before {
+    background-position: -1120px 0;
+}
+i.spearow.pkmn:not(.icon):before {
+    background-position: -1160px 0;
+}
+i.fearow.pkmn:not(.icon):before {
+    background-position: -1200px 0;
+}
+i.ekans.pkmn:not(.icon):before {
+    background-position: -1240px 0;
+}
+i.arbok.pkmn:not(.icon):before {
+    background-position: 0 -30px;
+}
+i.pikachu-cosplay-rock-star.pkmn:not(.icon):before {
+    background-position: -40px -30px;
+}
+i.pikachu-cosplay-belle.pkmn:not(.icon):before {
+    background-position: -80px -30px;
+}
+i.pikachu-cosplay-pop-star.pkmn:not(.icon):before {
+    background-position: -120px -30px;
+}
+i.pikachu-cosplay-phd.pkmn:not(.icon):before {
+    background-position: -160px -30px;
+}
+i.pikachu-cosplay-libre.pkmn:not(.icon):before {
+    background-position: -200px -30px;
+}
+i.pikachu-cosplay.pkmn:not(.icon):before {
+    background-position: -240px -30px;
+}
+i.pikachu.pkmn:not(.icon):before {
+    background-position: -280px -30px;
+}
+i.raichu-alola.pkmn:not(.icon):before {
+    background-position: -320px -30px;
+}
+i.raichu.pkmn:not(.icon):before {
+    background-position: -360px -30px;
+}
+i.sandshrew-alola.pkmn:not(.icon):before {
+    background-position: -400px -30px;
+}
+i.sandshrew.pkmn:not(.icon):before {
+    background-position: -440px -30px;
+}
+i.sandslash-alola.pkmn:not(.icon):before {
+    background-position: -480px -30px;
+}
+i.sandslash.pkmn:not(.icon):before {
+    background-position: -520px -30px;
+}
+i.nidoran-female.pkmn:not(.icon):before {
+    background-position: -560px -30px;
+}
+i.nidorina.pkmn:not(.icon):before {
+    background-position: -600px -30px;
+}
+i.nidoqueen.pkmn:not(.icon):before {
+    background-position: -640px -30px;
+}
+i.nidoran-male.pkmn:not(.icon):before {
+    background-position: -680px -30px;
+}
+i.nidorino.pkmn:not(.icon):before {
+    background-position: -720px -30px;
+}
+i.nidoking.pkmn:not(.icon):before {
+    background-position: -760px -30px;
+}
+i.clefairy.pkmn:not(.icon):before {
+    background-position: -800px -30px;
+}
+i.clefable.pkmn:not(.icon):before {
+    background-position: -840px -30px;
+}
+i.vulpix-alola.pkmn:not(.icon):before {
+    background-position: -880px -30px;
+}
+i.vulpix.pkmn:not(.icon):before {
+    background-position: -920px -30px;
+}
+i.ninetales-alola.pkmn:not(.icon):before {
+    background-position: -960px -30px;
+}
+i.ninetales.pkmn:not(.icon):before {
+    background-position: -1000px -30px;
+}
+i.jigglypuff.pkmn:not(.icon):before {
+    background-position: -1040px -30px;
+}
+i.wigglytuff.pkmn:not(.icon):before {
+    background-position: -1080px -30px;
+}
+i.zubat.pkmn:not(.icon):before {
+    background-position: -1120px -30px;
+}
+i.golbat.pkmn:not(.icon):before {
+    background-position: -1160px -30px;
+}
+i.oddish.pkmn:not(.icon):before {
+    background-position: -1200px -30px;
+}
+i.gloom.pkmn:not(.icon):before {
+    background-position: -1240px -30px;
+}
+i.vileplume.pkmn:not(.icon):before {
+    background-position: 0 -60px;
+}
+i.paras.pkmn:not(.icon):before {
+    background-position: -40px -60px;
+}
+i.parasect.pkmn:not(.icon):before {
+    background-position: -80px -60px;
+}
+i.venonat.pkmn:not(.icon):before {
+    background-position: -120px -60px;
+}
+i.venomoth.pkmn:not(.icon):before {
+    background-position: -160px -60px;
+}
+i.diglett-alola.pkmn:not(.icon):before {
+    background-position: -200px -60px;
+}
+i.diglett.pkmn:not(.icon):before {
+    background-position: -240px -60px;
+}
+i.dugtrio-alola.pkmn:not(.icon):before {
+    background-position: -280px -60px;
+}
+i.dugtrio.pkmn:not(.icon):before {
+    background-position: -320px -60px;
+}
+i.meowth-alola.pkmn:not(.icon):before {
+    background-position: -360px -60px;
+}
+i.meowth.pkmn:not(.icon):before {
+    background-position: -400px -60px;
+}
+i.persian-alola.pkmn:not(.icon):before {
+    background-position: -440px -60px;
+}
+i.persian.pkmn:not(.icon):before {
+    background-position: -480px -60px;
+}
+i.psyduck.pkmn:not(.icon):before {
+    background-position: -520px -60px;
+}
+i.golduck.pkmn:not(.icon):before {
+    background-position: -560px -60px;
+}
+i.mankey.pkmn:not(.icon):before {
+    background-position: -600px -60px;
+}
+i.primeape.pkmn:not(.icon):before {
+    background-position: -640px -60px;
+}
+i.growlithe.pkmn:not(.icon):before {
+    background-position: -680px -60px;
+}
+i.arcanine.pkmn:not(.icon):before {
+    background-position: -720px -60px;
+}
+i.poliwag.pkmn:not(.icon):before {
+    background-position: -760px -60px;
+}
+i.poliwhirl.pkmn:not(.icon):before {
+    background-position: -800px -60px;
+}
+i.poliwrath.pkmn:not(.icon):before {
+    background-position: -840px -60px;
+}
+i.abra.pkmn:not(.icon):before {
+    background-position: -880px -60px;
+}
+i.kadabra.pkmn:not(.icon):before {
+    background-position: -920px -60px;
+}
+i.alakazam-mega.pkmn:not(.icon):before {
+    background-position: -960px -60px;
+}
+i.alakazam.pkmn:not(.icon):before {
+    background-position: -1000px -60px;
+}
+i.machop.pkmn:not(.icon):before {
+    background-position: -1040px -60px;
+}
+i.machoke.pkmn:not(.icon):before {
+    background-position: -1080px -60px;
+}
+i.machamp.pkmn:not(.icon):before {
+    background-position: -1120px -60px;
+}
+i.bellsprout.pkmn:not(.icon):before {
+    background-position: -1160px -60px;
+}
+i.weepinbell.pkmn:not(.icon):before {
+    background-position: -1200px -60px;
+}
+i.victreebel.pkmn:not(.icon):before {
+    background-position: -1240px -60px;
+}
+i.tentacool.pkmn:not(.icon):before {
+    background-position: 0 -90px;
+}
+i.tentacruel.pkmn:not(.icon):before {
+    background-position: -40px -90px;
+}
+i.geodude-alola.pkmn:not(.icon):before {
+    background-position: -80px -90px;
+}
+i.geodude.pkmn:not(.icon):before {
+    background-position: -120px -90px;
+}
+i.graveler-alola.pkmn:not(.icon):before {
+    background-position: -160px -90px;
+}
+i.graveler.pkmn:not(.icon):before {
+    background-position: -200px -90px;
+}
+i.golem-alola.pkmn:not(.icon):before {
+    background-position: -240px -90px;
+}
+i.golem.pkmn:not(.icon):before {
+    background-position: -280px -90px;
+}
+i.ponyta.pkmn:not(.icon):before {
+    background-position: -320px -90px;
+}
+i.rapidash.pkmn:not(.icon):before {
+    background-position: -360px -90px;
+}
+i.slowpoke.pkmn:not(.icon):before {
+    background-position: -400px -90px;
+}
+i.slowbro-mega.pkmn:not(.icon):before {
+    background-position: -440px -90px;
+}
+i.slowbro.pkmn:not(.icon):before {
+    background-position: -480px -90px;
+}
+i.magnemite.pkmn:not(.icon):before {
+    background-position: -520px -90px;
+}
+i.magneton.pkmn:not(.icon):before {
+    background-position: -560px -90px;
+}
+i.farfetchd.pkmn:not(.icon):before {
+    background-position: -600px -90px;
+}
+i.doduo.pkmn:not(.icon):before {
+    background-position: -640px -90px;
+}
+i.dodrio.pkmn:not(.icon):before {
+    background-position: -680px -90px;
+}
+i.seel.pkmn:not(.icon):before {
+    background-position: -720px -90px;
+}
+i.dewgong.pkmn:not(.icon):before {
+    background-position: -760px -90px;
+}
+i.grimer-alola.pkmn:not(.icon):before {
+    background-position: -800px -90px;
+}
+i.grimer.pkmn:not(.icon):before {
+    background-position: -840px -90px;
+}
+i.muk-alola.pkmn:not(.icon):before {
+    background-position: -880px -90px;
+}
+i.muk.pkmn:not(.icon):before {
+    background-position: -920px -90px;
+}
+i.shellder.pkmn:not(.icon):before {
+    background-position: -960px -90px;
+}
+i.cloyster.pkmn:not(.icon):before {
+    background-position: -1000px -90px;
+}
+i.gastly.pkmn:not(.icon):before {
+    background-position: -1040px -90px;
+}
+i.haunter.pkmn:not(.icon):before {
+    background-position: -1080px -90px;
+}
+i.gengar-mega.pkmn:not(.icon):before {
+    background-position: -1120px -90px;
+}
+i.gengar.pkmn:not(.icon):before {
+    background-position: -1160px -90px;
+}
+i.onix.pkmn:not(.icon):before {
+    background-position: -1200px -90px;
+}
+i.drowzee.pkmn:not(.icon):before {
+    background-position: -1240px -90px;
+}
+i.hypno.pkmn:not(.icon):before {
+    background-position: 0 -120px;
+}
+i.krabby.pkmn:not(.icon):before {
+    background-position: -40px -120px;
+}
+i.kingler.pkmn:not(.icon):before {
+    background-position: -80px -120px;
+}
+i.voltorb.pkmn:not(.icon):before {
+    background-position: -120px -120px;
+}
+i.electrode.pkmn:not(.icon):before {
+    background-position: -160px -120px;
+}
+i.exeggcute.pkmn:not(.icon):before {
+    background-position: -200px -120px;
+}
+i.exeggutor-alola.pkmn:not(.icon):before {
+    background-position: -240px -120px;
+}
+i.exeggutor.pkmn:not(.icon):before {
+    background-position: -280px -120px;
+}
+i.cubone.pkmn:not(.icon):before {
+    background-position: -320px -120px;
+}
+i.marowak-alola.pkmn:not(.icon):before {
+    background-position: -360px -120px;
+}
+i.marowak.pkmn:not(.icon):before {
+    background-position: -400px -120px;
+}
+i.hitmonlee.pkmn:not(.icon):before {
+    background-position: -440px -120px;
+}
+i.hitmonchan.pkmn:not(.icon):before {
+    background-position: -480px -120px;
+}
+i.lickitung.pkmn:not(.icon):before {
+    background-position: -520px -120px;
+}
+i.koffing.pkmn:not(.icon):before {
+    background-position: -560px -120px;
+}
+i.weezing.pkmn:not(.icon):before {
+    background-position: -600px -120px;
+}
+i.rhyhorn.pkmn:not(.icon):before {
+    background-position: -640px -120px;
+}
+i.rhydon.pkmn:not(.icon):before {
+    background-position: -680px -120px;
+}
+i.chansey.pkmn:not(.icon):before {
+    background-position: -720px -120px;
+}
+i.tangela.pkmn:not(.icon):before {
+    background-position: -760px -120px;
+}
+i.kangaskhan-mega.pkmn:not(.icon):before {
+    background-position: -800px -120px;
+}
+i.kangaskhan.pkmn:not(.icon):before {
+    background-position: -840px -120px;
+}
+i.horsea.pkmn:not(.icon):before {
+    background-position: -880px -120px;
+}
+i.seadra.pkmn:not(.icon):before {
+    background-position: -920px -120px;
+}
+i.goldeen.pkmn:not(.icon):before {
+    background-position: -960px -120px;
+}
+i.seaking.pkmn:not(.icon):before {
+    background-position: -1000px -120px;
+}
+i.staryu.pkmn:not(.icon):before {
+    background-position: -1040px -120px;
+}
+i.starmie.pkmn:not(.icon):before {
+    background-position: -1080px -120px;
+}
+i.mr-mime.pkmn:not(.icon):before {
+    background-position: -1120px -120px;
+}
+i.scyther.pkmn:not(.icon):before {
+    background-position: -1160px -120px;
+}
+i.jynx.pkmn:not(.icon):before {
+    background-position: -1200px -120px;
+}
+i.electabuzz.pkmn:not(.icon):before {
+    background-position: -1240px -120px;
+}
+i.magmar.pkmn:not(.icon):before {
+    background-position: 0 -150px;
+}
+i.pinsir-mega.pkmn:not(.icon):before {
+    background-position: -40px -150px;
+}
+i.pinsir.pkmn:not(.icon):before {
+    background-position: -80px -150px;
+}
+i.tauros.pkmn:not(.icon):before {
+    background-position: -120px -150px;
+}
+i.magikarp.pkmn:not(.icon):before {
+    background-position: -160px -150px;
+}
+i.gyarados-mega.pkmn:not(.icon):before {
+    background-position: -200px -150px;
+}
+i.gyarados.pkmn:not(.icon):before {
+    background-position: -240px -150px;
+}
+i.lapras.pkmn:not(.icon):before {
+    background-position: -280px -150px;
+}
+i.ditto.pkmn:not(.icon):before {
+    background-position: -320px -150px;
+}
+i.eevee.pkmn:not(.icon):before {
+    background-position: -360px -150px;
+}
+i.vaporeon.pkmn:not(.icon):before {
+    background-position: -400px -150px;
+}
+i.jolteon.pkmn:not(.icon):before {
+    background-position: -440px -150px;
+}
+i.flareon.pkmn:not(.icon):before {
+    background-position: -480px -150px;
+}
+i.porygon.pkmn:not(.icon):before {
+    background-position: -520px -150px;
+}
+i.omanyte.pkmn:not(.icon):before {
+    background-position: -560px -150px;
+}
+i.omastar.pkmn:not(.icon):before {
+    background-position: -600px -150px;
+}
+i.kabuto.pkmn:not(.icon):before {
+    background-position: -640px -150px;
+}
+i.kabutops.pkmn:not(.icon):before {
+    background-position: -680px -150px;
+}
+i.aerodactyl-mega.pkmn:not(.icon):before {
+    background-position: -720px -150px;
+}
+i.aerodactyl.pkmn:not(.icon):before {
+    background-position: -760px -150px;
+}
+i.snorlax.pkmn:not(.icon):before {
+    background-position: -800px -150px;
+}
+i.articuno.pkmn:not(.icon):before {
+    background-position: -840px -150px;
+}
+i.zapdos.pkmn:not(.icon):before {
+    background-position: -880px -150px;
+}
+i.moltres.pkmn:not(.icon):before {
+    background-position: -920px -150px;
+}
+i.dratini.pkmn:not(.icon):before {
+    background-position: -960px -150px;
+}
+i.dragonair.pkmn:not(.icon):before {
+    background-position: -1000px -150px;
+}
+i.dragonite.pkmn:not(.icon):before {
+    background-position: -1040px -150px;
+}
+i.mewtwo-mega-x.pkmn:not(.icon):before {
+    background-position: -1080px -150px;
+}
+i.mewtwo-mega-y.pkmn:not(.icon):before {
+    background-position: -1120px -150px;
+}
+i.mewtwo.pkmn:not(.icon):before {
+    background-position: -1160px -150px;
+}
+i.mew.pkmn:not(.icon):before {
+    background-position: -1200px -150px;
+}
+i.chikorita.pkmn:not(.icon):before {
+    background-position: -1240px -150px;
+}
+i.bayleef.pkmn:not(.icon):before {
+    background-position: 0 -180px;
+}
+i.meganium.pkmn:not(.icon):before {
+    background-position: -40px -180px;
+}
+i.cyndaquil.pkmn:not(.icon):before {
+    background-position: -80px -180px;
+}
+i.quilava.pkmn:not(.icon):before {
+    background-position: -120px -180px;
+}
+i.typhlosion.pkmn:not(.icon):before {
+    background-position: -160px -180px;
+}
+i.totodile.pkmn:not(.icon):before {
+    background-position: -200px -180px;
+}
+i.croconaw.pkmn:not(.icon):before {
+    background-position: -240px -180px;
+}
+i.feraligatr.pkmn:not(.icon):before {
+    background-position: -280px -180px;
+}
+i.sentret.pkmn:not(.icon):before {
+    background-position: -320px -180px;
+}
+i.furret.pkmn:not(.icon):before {
+    background-position: -360px -180px;
+}
+i.hoothoot.pkmn:not(.icon):before {
+    background-position: -400px -180px;
+}
+i.noctowl.pkmn:not(.icon):before {
+    background-position: -440px -180px;
+}
+i.ledyba.pkmn:not(.icon):before {
+    background-position: -480px -180px;
+}
+i.ledian.pkmn:not(.icon):before {
+    background-position: -520px -180px;
+}
+i.spinarak.pkmn:not(.icon):before {
+    background-position: -560px -180px;
+}
+i.ariados.pkmn:not(.icon):before {
+    background-position: -600px -180px;
+}
+i.crobat.pkmn:not(.icon):before {
+    background-position: -640px -180px;
+}
+i.chinchou.pkmn:not(.icon):before {
+    background-position: -680px -180px;
+}
+i.lanturn.pkmn:not(.icon):before {
+    background-position: -720px -180px;
+}
+i.pichu-spiky-eared.pkmn:not(.icon):before {
+    background-position: -760px -180px;
+}
+i.pichu.pkmn:not(.icon):before {
+    background-position: -800px -180px;
+}
+i.cleffa.pkmn:not(.icon):before {
+    background-position: -840px -180px;
+}
+i.igglybuff.pkmn:not(.icon):before {
+    background-position: -880px -180px;
+}
+i.togepi.pkmn:not(.icon):before {
+    background-position: -920px -180px;
+}
+i.togetic.pkmn:not(.icon):before {
+    background-position: -960px -180px;
+}
+i.natu.pkmn:not(.icon):before {
+    background-position: -1000px -180px;
+}
+i.xatu.pkmn:not(.icon):before {
+    background-position: -1040px -180px;
+}
+i.mareep.pkmn:not(.icon):before {
+    background-position: -1080px -180px;
+}
+i.flaaffy.pkmn:not(.icon):before {
+    background-position: -1120px -180px;
+}
+i.ampharos-mega.pkmn:not(.icon):before {
+    background-position: -1160px -180px;
+}
+i.ampharos.pkmn:not(.icon):before {
+    background-position: -1200px -180px;
+}
+i.bellossom.pkmn:not(.icon):before {
+    background-position: -1240px -180px;
+}
+i.marill.pkmn:not(.icon):before {
+    background-position: 0 -210px;
+}
+i.azumarill.pkmn:not(.icon):before {
+    background-position: -40px -210px;
+}
+i.sudowoodo.pkmn:not(.icon):before {
+    background-position: -80px -210px;
+}
+i.politoed.pkmn:not(.icon):before {
+    background-position: -120px -210px;
+}
+i.hoppip.pkmn:not(.icon):before {
+    background-position: -160px -210px;
+}
+i.skiploom.pkmn:not(.icon):before {
+    background-position: -200px -210px;
+}
+i.jumpluff.pkmn:not(.icon):before {
+    background-position: -240px -210px;
+}
+i.aipom.pkmn:not(.icon):before {
+    background-position: -280px -210px;
+}
+i.sunkern.pkmn:not(.icon):before {
+    background-position: -320px -210px;
+}
+i.sunflora.pkmn:not(.icon):before {
+    background-position: -360px -210px;
+}
+i.yanma.pkmn:not(.icon):before {
+    background-position: -400px -210px;
+}
+i.wooper.pkmn:not(.icon):before {
+    background-position: -440px -210px;
+}
+i.quagsire.pkmn:not(.icon):before {
+    background-position: -480px -210px;
+}
+i.espeon.pkmn:not(.icon):before {
+    background-position: -520px -210px;
+}
+i.umbreon.pkmn:not(.icon):before {
+    background-position: -560px -210px;
+}
+i.murkrow.pkmn:not(.icon):before {
+    background-position: -600px -210px;
+}
+i.slowking.pkmn:not(.icon):before {
+    background-position: -640px -210px;
+}
+i.misdreavus.pkmn:not(.icon):before {
+    background-position: -680px -210px;
+}
+i.unown-b.pkmn:not(.icon):before {
+    background-position: -720px -210px;
+}
+i.unown-k.pkmn:not(.icon):before {
+    background-position: -760px -210px;
+}
+i.unown-l.pkmn:not(.icon):before {
+    background-position: -800px -210px;
+}
+i.unown-m.pkmn:not(.icon):before {
+    background-position: -840px -210px;
+}
+i.unown-n.pkmn:not(.icon):before {
+    background-position: -880px -210px;
+}
+i.unown-o.pkmn:not(.icon):before {
+    background-position: -920px -210px;
+}
+i.unown-p.pkmn:not(.icon):before {
+    background-position: -960px -210px;
+}
+i.unown-q.pkmn:not(.icon):before {
+    background-position: -1000px -210px;
+}
+i.unown-r.pkmn:not(.icon):before {
+    background-position: -1040px -210px;
+}
+i.unown-s.pkmn:not(.icon):before {
+    background-position: -1080px -210px;
+}
+i.unown-t.pkmn:not(.icon):before {
+    background-position: -1120px -210px;
+}
+i.unown-c.pkmn:not(.icon):before {
+    background-position: -1160px -210px;
+}
+i.unown-u.pkmn:not(.icon):before {
+    background-position: -1200px -210px;
+}
+i.unown-v.pkmn:not(.icon):before {
+    background-position: -1240px -210px;
+}
+i.unown-w.pkmn:not(.icon):before {
+    background-position: 0 -240px;
+}
+i.unown-x.pkmn:not(.icon):before {
+    background-position: -40px -240px;
+}
+i.unown-y.pkmn:not(.icon):before {
+    background-position: -80px -240px;
+}
+i.unown-z.pkmn:not(.icon):before {
+    background-position: -120px -240px;
+}
+i.unown-exclamation.pkmn:not(.icon):before {
+    background-position: -160px -240px;
+}
+i.unown-question.pkmn:not(.icon):before {
+    background-position: -200px -240px;
+}
+i.unown-d.pkmn:not(.icon):before {
+    background-position: -240px -240px;
+}
+i.unown-e.pkmn:not(.icon):before {
+    background-position: -280px -240px;
+}
+i.unown-f.pkmn:not(.icon):before {
+    background-position: -320px -240px;
+}
+i.unown-g.pkmn:not(.icon):before {
+    background-position: -360px -240px;
+}
+i.unown-h.pkmn:not(.icon):before {
+    background-position: -400px -240px;
+}
+i.unown-i.pkmn:not(.icon):before {
+    background-position: -440px -240px;
+}
+i.unown-j.pkmn:not(.icon):before {
+    background-position: -480px -240px;
+}
+i.unown-a.pkmn:not(.icon):before {
+    background-position: -520px -240px;
+}
+i.wobbuffet.pkmn:not(.icon):before {
+    background-position: -560px -240px;
+}
+i.girafarig.pkmn:not(.icon):before {
+    background-position: -600px -240px;
+}
+i.pineco.pkmn:not(.icon):before {
+    background-position: -640px -240px;
+}
+i.forretress.pkmn:not(.icon):before {
+    background-position: -680px -240px;
+}
+i.dunsparce.pkmn:not(.icon):before {
+    background-position: -720px -240px;
+}
+i.gligar.pkmn:not(.icon):before {
+    background-position: -760px -240px;
+}
+i.steelix-mega.pkmn:not(.icon):before {
+    background-position: -800px -240px;
+}
+i.steelix.pkmn:not(.icon):before {
+    background-position: -840px -240px;
+}
+i.snubbull.pkmn:not(.icon):before {
+    background-position: -880px -240px;
+}
+i.granbull.pkmn:not(.icon):before {
+    background-position: -920px -240px;
+}
+i.qwilfish.pkmn:not(.icon):before {
+    background-position: -960px -240px;
+}
+i.scizor-mega.pkmn:not(.icon):before {
+    background-position: -1000px -240px;
+}
+i.scizor.pkmn:not(.icon):before {
+    background-position: -1040px -240px;
+}
+i.shuckle.pkmn:not(.icon):before {
+    background-position: -1080px -240px;
+}
+i.heracross-mega.pkmn:not(.icon):before {
+    background-position: -1120px -240px;
+}
+i.heracross.pkmn:not(.icon):before {
+    background-position: -1160px -240px;
+}
+i.sneasel.pkmn:not(.icon):before {
+    background-position: -1200px -240px;
+}
+i.teddiursa.pkmn:not(.icon):before {
+    background-position: -1240px -240px;
+}
+i.ursaring.pkmn:not(.icon):before {
+    background-position: 0 -270px;
+}
+i.slugma.pkmn:not(.icon):before {
+    background-position: -40px -270px;
+}
+i.magcargo.pkmn:not(.icon):before {
+    background-position: -80px -270px;
+}
+i.swinub.pkmn:not(.icon):before {
+    background-position: -120px -270px;
+}
+i.piloswine.pkmn:not(.icon):before {
+    background-position: -160px -270px;
+}
+i.corsola.pkmn:not(.icon):before {
+    background-position: -200px -270px;
+}
+i.remoraid.pkmn:not(.icon):before {
+    background-position: -240px -270px;
+}
+i.octillery.pkmn:not(.icon):before {
+    background-position: -280px -270px;
+}
+i.delibird.pkmn:not(.icon):before {
+    background-position: -320px -270px;
+}
+i.mantine.pkmn:not(.icon):before {
+    background-position: -360px -270px;
+}
+i.skarmory.pkmn:not(.icon):before {
+    background-position: -400px -270px;
+}
+i.houndour.pkmn:not(.icon):before {
+    background-position: -440px -270px;
+}
+i.houndoom-mega.pkmn:not(.icon):before {
+    background-position: -480px -270px;
+}
+i.houndoom.pkmn:not(.icon):before {
+    background-position: -520px -270px;
+}
+i.kingdra.pkmn:not(.icon):before {
+    background-position: -560px -270px;
+}
+i.phanpy.pkmn:not(.icon):before {
+    background-position: -600px -270px;
+}
+i.donphan.pkmn:not(.icon):before {
+    background-position: -640px -270px;
+}
+i.porygon2.pkmn:not(.icon):before {
+    background-position: -680px -270px;
+}
+i.stantler.pkmn:not(.icon):before {
+    background-position: -720px -270px;
+}
+i.smeargle.pkmn:not(.icon):before {
+    background-position: -760px -270px;
+}
+i.tyrogue.pkmn:not(.icon):before {
+    background-position: -800px -270px;
+}
+i.hitmontop.pkmn:not(.icon):before {
+    background-position: -840px -270px;
+}
+i.smoochum.pkmn:not(.icon):before {
+    background-position: -880px -270px;
+}
+i.elekid.pkmn:not(.icon):before {
+    background-position: -920px -270px;
+}
+i.magby.pkmn:not(.icon):before {
+    background-position: -960px -270px;
+}
+i.miltank.pkmn:not(.icon):before {
+    background-position: -1000px -270px;
+}
+i.blissey.pkmn:not(.icon):before {
+    background-position: -1040px -270px;
+}
+i.raikou.pkmn:not(.icon):before {
+    background-position: -1080px -270px;
+}
+i.entei.pkmn:not(.icon):before {
+    background-position: -1120px -270px;
+}
+i.suicune.pkmn:not(.icon):before {
+    background-position: -1160px -270px;
+}
+i.larvitar.pkmn:not(.icon):before {
+    background-position: -1200px -270px;
+}
+i.pupitar.pkmn:not(.icon):before {
+    background-position: -1240px -270px;
+}
+i.tyranitar-mega.pkmn:not(.icon):before {
+    background-position: 0 -300px;
+}
+i.tyranitar.pkmn:not(.icon):before {
+    background-position: -40px -300px;
+}
+i.lugia.pkmn:not(.icon):before {
+    background-position: -80px -300px;
+}
+i.ho-oh.pkmn:not(.icon):before {
+    background-position: -120px -300px;
+}
+i.celebi.pkmn:not(.icon):before {
+    background-position: -160px -300px;
+}
+i.treecko.pkmn:not(.icon):before {
+    background-position: -200px -300px;
+}
+i.grovyle.pkmn:not(.icon):before {
+    background-position: -240px -300px;
+}
+i.sceptile-mega.pkmn:not(.icon):before {
+    background-position: -280px -300px;
+}
+i.sceptile.pkmn:not(.icon):before {
+    background-position: -320px -300px;
+}
+i.torchic.pkmn:not(.icon):before {
+    background-position: -360px -300px;
+}
+i.combusken.pkmn:not(.icon):before {
+    background-position: -400px -300px;
+}
+i.blaziken-mega.pkmn:not(.icon):before {
+    background-position: -440px -300px;
+}
+i.blaziken.pkmn:not(.icon):before {
+    background-position: -480px -300px;
+}
+i.mudkip.pkmn:not(.icon):before {
+    background-position: -520px -300px;
+}
+i.marshtomp.pkmn:not(.icon):before {
+    background-position: -560px -300px;
+}
+i.swampert-mega.pkmn:not(.icon):before {
+    background-position: -600px -300px;
+}
+i.swampert.pkmn:not(.icon):before {
+    background-position: -640px -300px;
+}
+i.poochyena.pkmn:not(.icon):before {
+    background-position: -680px -300px;
+}
+i.mightyena.pkmn:not(.icon):before {
+    background-position: -720px -300px;
+}
+i.zigzagoon.pkmn:not(.icon):before {
+    background-position: -760px -300px;
+}
+i.linoone.pkmn:not(.icon):before {
+    background-position: -800px -300px;
+}
+i.wurmple.pkmn:not(.icon):before {
+    background-position: -840px -300px;
+}
+i.silcoon.pkmn:not(.icon):before {
+    background-position: -880px -300px;
+}
+i.beautifly.pkmn:not(.icon):before {
+    background-position: -920px -300px;
+}
+i.cascoon.pkmn:not(.icon):before {
+    background-position: -960px -300px;
+}
+i.dustox.pkmn:not(.icon):before {
+    background-position: -1000px -300px;
+}
+i.lotad.pkmn:not(.icon):before {
+    background-position: -1040px -300px;
+}
+i.lombre.pkmn:not(.icon):before {
+    background-position: -1080px -300px;
+}
+i.ludicolo.pkmn:not(.icon):before {
+    background-position: -1120px -300px;
+}
+i.seedot.pkmn:not(.icon):before {
+    background-position: -1160px -300px;
+}
+i.nuzleaf.pkmn:not(.icon):before {
+    background-position: -1200px -300px;
+}
+i.shiftry.pkmn:not(.icon):before {
+    background-position: -1240px -300px;
+}
+i.taillow.pkmn:not(.icon):before {
+    background-position: 0 -330px;
+}
+i.swellow.pkmn:not(.icon):before {
+    background-position: -40px -330px;
+}
+i.wingull.pkmn:not(.icon):before {
+    background-position: -80px -330px;
+}
+i.pelipper.pkmn:not(.icon):before {
+    background-position: -120px -330px;
+}
+i.ralts.pkmn:not(.icon):before {
+    background-position: -160px -330px;
+}
+i.kirlia.pkmn:not(.icon):before {
+    background-position: -200px -330px;
+}
+i.gardevoir-mega.pkmn:not(.icon):before {
+    background-position: -240px -330px;
+}
+i.gardevoir.pkmn:not(.icon):before {
+    background-position: -280px -330px;
+}
+i.surskit.pkmn:not(.icon):before {
+    background-position: -320px -330px;
+}
+i.masquerain.pkmn:not(.icon):before {
+    background-position: -360px -330px;
+}
+i.shroomish.pkmn:not(.icon):before {
+    background-position: -400px -330px;
+}
+i.breloom.pkmn:not(.icon):before {
+    background-position: -440px -330px;
+}
+i.slakoth.pkmn:not(.icon):before {
+    background-position: -480px -330px;
+}
+i.vigoroth.pkmn:not(.icon):before {
+    background-position: -520px -330px;
+}
+i.slaking.pkmn:not(.icon):before {
+    background-position: -560px -330px;
+}
+i.nincada.pkmn:not(.icon):before {
+    background-position: -600px -330px;
+}
+i.ninjask.pkmn:not(.icon):before {
+    background-position: -640px -330px;
+}
+i.shedinja.pkmn:not(.icon):before {
+    background-position: -680px -330px;
+}
+i.whismur.pkmn:not(.icon):before {
+    background-position: -720px -330px;
+}
+i.loudred.pkmn:not(.icon):before {
+    background-position: -760px -330px;
+}
+i.exploud.pkmn:not(.icon):before {
+    background-position: -800px -330px;
+}
+i.makuhita.pkmn:not(.icon):before {
+    background-position: -840px -330px;
+}
+i.hariyama.pkmn:not(.icon):before {
+    background-position: -880px -330px;
+}
+i.azurill.pkmn:not(.icon):before {
+    background-position: -920px -330px;
+}
+i.nosepass.pkmn:not(.icon):before {
+    background-position: -960px -330px;
+}
+i.skitty.pkmn:not(.icon):before {
+    background-position: -1000px -330px;
+}
+i.delcatty.pkmn:not(.icon):before {
+    background-position: -1040px -330px;
+}
+i.sableye-mega.pkmn:not(.icon):before {
+    background-position: -1080px -330px;
+}
+i.sableye.pkmn:not(.icon):before {
+    background-position: -1120px -330px;
+}
+i.mawile-mega.pkmn:not(.icon):before {
+    background-position: -1160px -330px;
+}
+i.mawile.pkmn:not(.icon):before {
+    background-position: -1200px -330px;
+}
+i.aron.pkmn:not(.icon):before {
+    background-position: -1240px -330px;
+}
+i.lairon.pkmn:not(.icon):before {
+    background-position: 0 -360px;
+}
+i.aggron-mega.pkmn:not(.icon):before {
+    background-position: -40px -360px;
+}
+i.aggron.pkmn:not(.icon):before {
+    background-position: -80px -360px;
+}
+i.meditite.pkmn:not(.icon):before {
+    background-position: -120px -360px;
+}
+i.medicham-mega.pkmn:not(.icon):before {
+    background-position: -160px -360px;
+}
+i.medicham.pkmn:not(.icon):before {
+    background-position: -200px -360px;
+}
+i.electrike.pkmn:not(.icon):before {
+    background-position: -240px -360px;
+}
+i.manectric-mega.pkmn:not(.icon):before {
+    background-position: -280px -360px;
+}
+i.manectric.pkmn:not(.icon):before {
+    background-position: -320px -360px;
+}
+i.plusle.pkmn:not(.icon):before {
+    background-position: -360px -360px;
+}
+i.minun.pkmn:not(.icon):before {
+    background-position: -400px -360px;
+}
+i.volbeat.pkmn:not(.icon):before {
+    background-position: -440px -360px;
+}
+i.illumise.pkmn:not(.icon):before {
+    background-position: -480px -360px;
+}
+i.roselia.pkmn:not(.icon):before {
+    background-position: -520px -360px;
+}
+i.gulpin.pkmn:not(.icon):before {
+    background-position: -560px -360px;
+}
+i.swalot.pkmn:not(.icon):before {
+    background-position: -600px -360px;
+}
+i.carvanha.pkmn:not(.icon):before {
+    background-position: -640px -360px;
+}
+i.sharpedo-mega.pkmn:not(.icon):before {
+    background-position: -680px -360px;
+}
+i.sharpedo.pkmn:not(.icon):before {
+    background-position: -720px -360px;
+}
+i.wailmer.pkmn:not(.icon):before {
+    background-position: -760px -360px;
+}
+i.wailord.pkmn:not(.icon):before {
+    background-position: -800px -360px;
+}
+i.numel.pkmn:not(.icon):before {
+    background-position: -840px -360px;
+}
+i.camerupt-mega.pkmn:not(.icon):before {
+    background-position: -880px -360px;
+}
+i.camerupt.pkmn:not(.icon):before {
+    background-position: -920px -360px;
+}
+i.torkoal.pkmn:not(.icon):before {
+    background-position: -960px -360px;
+}
+i.spoink.pkmn:not(.icon):before {
+    background-position: -1000px -360px;
+}
+i.grumpig.pkmn:not(.icon):before {
+    background-position: -1040px -360px;
+}
+i.spinda.pkmn:not(.icon):before {
+    background-position: -1080px -360px;
+}
+i.trapinch.pkmn:not(.icon):before {
+    background-position: -1120px -360px;
+}
+i.vibrava.pkmn:not(.icon):before {
+    background-position: -1160px -360px;
+}
+i.flygon.pkmn:not(.icon):before {
+    background-position: -1200px -360px;
+}
+i.cacnea.pkmn:not(.icon):before {
+    background-position: -1240px -360px;
+}
+i.cacturne.pkmn:not(.icon):before {
+    background-position: 0 -390px;
+}
+i.swablu.pkmn:not(.icon):before {
+    background-position: -40px -390px;
+}
+i.altaria-mega.pkmn:not(.icon):before {
+    background-position: -80px -390px;
+}
+i.altaria.pkmn:not(.icon):before {
+    background-position: -120px -390px;
+}
+i.zangoose.pkmn:not(.icon):before {
+    background-position: -160px -390px;
+}
+i.seviper.pkmn:not(.icon):before {
+    background-position: -200px -390px;
+}
+i.lunatone.pkmn:not(.icon):before {
+    background-position: -240px -390px;
+}
+i.solrock.pkmn:not(.icon):before {
+    background-position: -280px -390px;
+}
+i.barboach.pkmn:not(.icon):before {
+    background-position: -320px -390px;
+}
+i.whiscash.pkmn:not(.icon):before {
+    background-position: -360px -390px;
+}
+i.corphish.pkmn:not(.icon):before {
+    background-position: -400px -390px;
+}
+i.crawdaunt.pkmn:not(.icon):before {
+    background-position: -440px -390px;
+}
+i.baltoy.pkmn:not(.icon):before {
+    background-position: -480px -390px;
+}
+i.claydol.pkmn:not(.icon):before {
+    background-position: -520px -390px;
+}
+i.lileep.pkmn:not(.icon):before {
+    background-position: -560px -390px;
+}
+i.cradily.pkmn:not(.icon):before {
+    background-position: -600px -390px;
+}
+i.anorith.pkmn:not(.icon):before {
+    background-position: -640px -390px;
+}
+i.armaldo.pkmn:not(.icon):before {
+    background-position: -680px -390px;
+}
+i.feebas.pkmn:not(.icon):before {
+    background-position: -720px -390px;
+}
+i.milotic.pkmn:not(.icon):before {
+    background-position: -760px -390px;
+}
+i.castform-sunny.pkmn:not(.icon):before {
+    background-position: -800px -390px;
+}
+i.castform-rainy.pkmn:not(.icon):before {
+    background-position: -840px -390px;
+}
+i.castform-snowy.pkmn:not(.icon):before {
+    background-position: -880px -390px;
+}
+i.castform.pkmn:not(.icon):before {
+    background-position: -920px -390px;
+}
+i.kecleon.pkmn:not(.icon):before {
+    background-position: -960px -390px;
+}
+i.shuppet.pkmn:not(.icon):before {
+    background-position: -1000px -390px;
+}
+i.banette-mega.pkmn:not(.icon):before {
+    background-position: -1040px -390px;
+}
+i.banette.pkmn:not(.icon):before {
+    background-position: -1080px -390px;
+}
+i.duskull.pkmn:not(.icon):before {
+    background-position: -1120px -390px;
+}
+i.dusclops.pkmn:not(.icon):before {
+    background-position: -1160px -390px;
+}
+i.tropius.pkmn:not(.icon):before {
+    background-position: -1200px -390px;
+}
+i.chimecho.pkmn:not(.icon):before {
+    background-position: -1240px -390px;
+}
+i.absol-mega.pkmn:not(.icon):before {
+    background-position: 0 -420px;
+}
+i.absol.pkmn:not(.icon):before {
+    background-position: -40px -420px;
+}
+i.wynaut.pkmn:not(.icon):before {
+    background-position: -80px -420px;
+}
+i.snorunt.pkmn:not(.icon):before {
+    background-position: -120px -420px;
+}
+i.glalie-mega.pkmn:not(.icon):before {
+    background-position: -160px -420px;
+}
+i.glalie.pkmn:not(.icon):before {
+    background-position: -200px -420px;
+}
+i.spheal.pkmn:not(.icon):before {
+    background-position: -240px -420px;
+}
+i.sealeo.pkmn:not(.icon):before {
+    background-position: -280px -420px;
+}
+i.walrein.pkmn:not(.icon):before {
+    background-position: -320px -420px;
+}
+i.clamperl.pkmn:not(.icon):before {
+    background-position: -360px -420px;
+}
+i.huntail.pkmn:not(.icon):before {
+    background-position: -400px -420px;
+}
+i.gorebyss.pkmn:not(.icon):before {
+    background-position: -440px -420px;
+}
+i.relicanth.pkmn:not(.icon):before {
+    background-position: -480px -420px;
+}
+i.luvdisc.pkmn:not(.icon):before {
+    background-position: -520px -420px;
+}
+i.bagon.pkmn:not(.icon):before {
+    background-position: -560px -420px;
+}
+i.shelgon.pkmn:not(.icon):before {
+    background-position: -600px -420px;
+}
+i.salamance-mega.pkmn:not(.icon):before {
+    background-position: -640px -420px;
+}
+i.salamence.pkmn:not(.icon):before {
+    background-position: -680px -420px;
+}
+i.beldum.pkmn:not(.icon):before {
+    background-position: -720px -420px;
+}
+i.metang.pkmn:not(.icon):before {
+    background-position: -760px -420px;
+}
+i.metagross-mega.pkmn:not(.icon):before {
+    background-position: -800px -420px;
+}
+i.metagross.pkmn:not(.icon):before {
+    background-position: -840px -420px;
+}
+i.regirock.pkmn:not(.icon):before {
+    background-position: -880px -420px;
+}
+i.regice.pkmn:not(.icon):before {
+    background-position: -920px -420px;
+}
+i.registeel.pkmn:not(.icon):before {
+    background-position: -960px -420px;
+}
+i.latias-mega.pkmn:not(.icon):before {
+    background-position: -1000px -420px;
+}
+i.latias.pkmn:not(.icon):before {
+    background-position: -1040px -420px;
+}
+i.latios-mega.pkmn:not(.icon):before {
+    background-position: -1080px -420px;
+}
+i.latios.pkmn:not(.icon):before {
+    background-position: -1120px -420px;
+}
+i.kyogre-primal.pkmn:not(.icon):before {
+    background-position: -1160px -420px;
+}
+i.kyogre.pkmn:not(.icon):before {
+    background-position: -1200px -420px;
+}
+i.groudon-primal.pkmn:not(.icon):before {
+    background-position: -1240px -420px;
+}
+i.groudon.pkmn:not(.icon):before {
+    background-position: 0 -450px;
+}
+i.rayquaza-mega.pkmn:not(.icon):before {
+    background-position: -40px -450px;
+}
+i.rayquaza.pkmn:not(.icon):before {
+    background-position: -80px -450px;
+}
+i.jirachi.pkmn:not(.icon):before {
+    background-position: -120px -450px;
+}
+i.deoxys-attack.pkmn:not(.icon):before {
+    background-position: -160px -450px;
+}
+i.deoxys-defense.pkmn:not(.icon):before {
+    background-position: -200px -450px;
+}
+i.deoxys-speed.pkmn:not(.icon):before {
+    background-position: -240px -450px;
+}
+i.deoxys.pkmn:not(.icon):before {
+    background-position: -280px -450px;
+}
+i.turtwig.pkmn:not(.icon):before {
+    background-position: -320px -450px;
+}
+i.grotle.pkmn:not(.icon):before {
+    background-position: -360px -450px;
+}
+i.torterra.pkmn:not(.icon):before {
+    background-position: -400px -450px;
+}
+i.chimchar.pkmn:not(.icon):before {
+    background-position: -440px -450px;
+}
+i.monferno.pkmn:not(.icon):before {
+    background-position: -480px -450px;
+}
+i.infernape.pkmn:not(.icon):before {
+    background-position: -520px -450px;
+}
+i.piplup.pkmn:not(.icon):before {
+    background-position: -560px -450px;
+}
+i.prinplup.pkmn:not(.icon):before {
+    background-position: -600px -450px;
+}
+i.empoleon.pkmn:not(.icon):before {
+    background-position: -640px -450px;
+}
+i.starly.pkmn:not(.icon):before {
+    background-position: -680px -450px;
+}
+i.staravia.pkmn:not(.icon):before {
+    background-position: -720px -450px;
+}
+i.staraptor.pkmn:not(.icon):before {
+    background-position: -760px -450px;
+}
+i.bidoof.pkmn:not(.icon):before {
+    background-position: -800px -450px;
+}
+i.bibarel.pkmn:not(.icon):before {
+    background-position: -840px -450px;
+}
+i.kricketot.pkmn:not(.icon):before {
+    background-position: -880px -450px;
+}
+i.kricketune.pkmn:not(.icon):before {
+    background-position: -920px -450px;
+}
+i.shinx.pkmn:not(.icon):before {
+    background-position: -960px -450px;
+}
+i.luxio.pkmn:not(.icon):before {
+    background-position: -1000px -450px;
+}
+i.luxray.pkmn:not(.icon):before {
+    background-position: -1040px -450px;
+}
+i.budew.pkmn:not(.icon):before {
+    background-position: -1080px -450px;
+}
+i.roserade.pkmn:not(.icon):before {
+    background-position: -1120px -450px;
+}
+i.cranidos.pkmn:not(.icon):before {
+    background-position: -1160px -450px;
+}
+i.rampardos.pkmn:not(.icon):before {
+    background-position: -1200px -450px;
+}
+i.shieldon.pkmn:not(.icon):before {
+    background-position: -1240px -450px;
+}
+i.bastiodon.pkmn:not(.icon):before {
+    background-position: 0 -480px;
+}
+i.burmy-sandy.pkmn:not(.icon):before {
+    background-position: -40px -480px;
+}
+i.burmy-trash.pkmn:not(.icon):before {
+    background-position: -80px -480px;
+}
+i.burmy-plant.pkmn:not(.icon):before {
+    background-position: -120px -480px;
+}
+i.wormadam-sandy.pkmn:not(.icon):before {
+    background-position: -160px -480px;
+}
+i.wormadam-trash.pkmn:not(.icon):before {
+    background-position: -200px -480px;
+}
+i.wormadam-plant.pkmn:not(.icon):before {
+    background-position: -240px -480px;
+}
+i.mothim.pkmn:not(.icon):before {
+    background-position: -280px -480px;
+}
+i.combee.pkmn:not(.icon):before {
+    background-position: -320px -480px;
+}
+i.vespiquen.pkmn:not(.icon):before {
+    background-position: -360px -480px;
+}
+i.pachirisu.pkmn:not(.icon):before {
+    background-position: -400px -480px;
+}
+i.buizel.pkmn:not(.icon):before {
+    background-position: -440px -480px;
+}
+i.floatzel.pkmn:not(.icon):before {
+    background-position: -480px -480px;
+}
+i.cherubi.pkmn:not(.icon):before {
+    background-position: -520px -480px;
+}
+i.cherrim-sunshine.pkmn:not(.icon):before {
+    background-position: -560px -480px;
+}
+i.cherrim.pkmn:not(.icon):before {
+    background-position: -600px -480px;
+}
+i.shellos-east.pkmn:not(.icon):before {
+    background-position: -640px -480px;
+}
+i.shellos-west.pkmn:not(.icon):before {
+    background-position: -680px -480px;
+}
+i.gastrodon-east.pkmn:not(.icon):before {
+    background-position: -720px -480px;
+}
+i.gastrodon-west.pkmn:not(.icon):before {
+    background-position: -760px -480px;
+}
+i.ambipom.pkmn:not(.icon):before {
+    background-position: -800px -480px;
+}
+i.drifloon.pkmn:not(.icon):before {
+    background-position: -840px -480px;
+}
+i.drifblim.pkmn:not(.icon):before {
+    background-position: -880px -480px;
+}
+i.buneary.pkmn:not(.icon):before {
+    background-position: -920px -480px;
+}
+i.lopunny-mega.pkmn:not(.icon):before {
+    background-position: -960px -480px;
+}
+i.lopunny.pkmn:not(.icon):before {
+    background-position: -1000px -480px;
+}
+i.mismagius.pkmn:not(.icon):before {
+    background-position: -1040px -480px;
+}
+i.honchkrow.pkmn:not(.icon):before {
+    background-position: -1080px -480px;
+}
+i.glameow.pkmn:not(.icon):before {
+    background-position: -1120px -480px;
+}
+i.purugly.pkmn:not(.icon):before {
+    background-position: -1160px -480px;
+}
+i.chingling.pkmn:not(.icon):before {
+    background-position: -1200px -480px;
+}
+i.stunky.pkmn:not(.icon):before {
+    background-position: -1240px -480px;
+}
+i.skuntank.pkmn:not(.icon):before {
+    background-position: 0 -510px;
+}
+i.bronzor.pkmn:not(.icon):before {
+    background-position: -40px -510px;
+}
+i.bronzong.pkmn:not(.icon):before {
+    background-position: -80px -510px;
+}
+i.bonsly.pkmn:not(.icon):before {
+    background-position: -120px -510px;
+}
+i.mime-jr.pkmn:not(.icon):before {
+    background-position: -160px -510px;
+}
+i.happiny.pkmn:not(.icon):before {
+    background-position: -200px -510px;
+}
+i.chatot.pkmn:not(.icon):before {
+    background-position: -240px -510px;
+}
+i.spiritomb.pkmn:not(.icon):before {
+    background-position: -280px -510px;
+}
+i.gible.pkmn:not(.icon):before {
+    background-position: -320px -510px;
+}
+i.gabite.pkmn:not(.icon):before {
+    background-position: -360px -510px;
+}
+i.garchomp-mega.pkmn:not(.icon):before {
+    background-position: -400px -510px;
+}
+i.garchomp.pkmn:not(.icon):before {
+    background-position: -440px -510px;
+}
+i.munchlax.pkmn:not(.icon):before {
+    background-position: -480px -510px;
+}
+i.riolu.pkmn:not(.icon):before {
+    background-position: -520px -510px;
+}
+i.lucario-mega.pkmn:not(.icon):before {
+    background-position: -560px -510px;
+}
+i.lucario.pkmn:not(.icon):before {
+    background-position: -600px -510px;
+}
+i.hippopotas.pkmn:not(.icon):before {
+    background-position: -640px -510px;
+}
+i.hippowdon.pkmn:not(.icon):before {
+    background-position: -680px -510px;
+}
+i.skorupi.pkmn:not(.icon):before {
+    background-position: -720px -510px;
+}
+i.drapion.pkmn:not(.icon):before {
+    background-position: -760px -510px;
+}
+i.croagunk.pkmn:not(.icon):before {
+    background-position: -800px -510px;
+}
+i.toxicroak.pkmn:not(.icon):before {
+    background-position: -840px -510px;
+}
+i.carnivine.pkmn:not(.icon):before {
+    background-position: -880px -510px;
+}
+i.finneon.pkmn:not(.icon):before {
+    background-position: -920px -510px;
+}
+i.lumineon.pkmn:not(.icon):before {
+    background-position: -960px -510px;
+}
+i.mantyke.pkmn:not(.icon):before {
+    background-position: -1000px -510px;
+}
+i.snover.pkmn:not(.icon):before {
+    background-position: -1040px -510px;
+}
+i.abomasnow-mega.pkmn:not(.icon):before {
+    background-position: -1080px -510px;
+}
+i.abomasnow.pkmn:not(.icon):before {
+    background-position: -1120px -510px;
+}
+i.weavile.pkmn:not(.icon):before {
+    background-position: -1160px -510px;
+}
+i.magnezone.pkmn:not(.icon):before {
+    background-position: -1200px -510px;
+}
+i.lickilicky.pkmn:not(.icon):before {
+    background-position: -1240px -510px;
+}
+i.rhyperior.pkmn:not(.icon):before {
+    background-position: 0 -540px;
+}
+i.tangrowth.pkmn:not(.icon):before {
+    background-position: -40px -540px;
+}
+i.electivire.pkmn:not(.icon):before {
+    background-position: -80px -540px;
+}
+i.magmortar.pkmn:not(.icon):before {
+    background-position: -120px -540px;
+}
+i.togekiss.pkmn:not(.icon):before {
+    background-position: -160px -540px;
+}
+i.yanmega.pkmn:not(.icon):before {
+    background-position: -200px -540px;
+}
+i.leafeon.pkmn:not(.icon):before {
+    background-position: -240px -540px;
+}
+i.glaceon.pkmn:not(.icon):before {
+    background-position: -280px -540px;
+}
+i.gliscor.pkmn:not(.icon):before {
+    background-position: -320px -540px;
+}
+i.mamoswine.pkmn:not(.icon):before {
+    background-position: -360px -540px;
+}
+i.porygon-z.pkmn:not(.icon):before {
+    background-position: -400px -540px;
+}
+i.gallade-mega.pkmn:not(.icon):before {
+    background-position: -440px -540px;
+}
+i.gallade.pkmn:not(.icon):before {
+    background-position: -480px -540px;
+}
+i.probopass.pkmn:not(.icon):before {
+    background-position: -520px -540px;
+}
+i.dusknoir.pkmn:not(.icon):before {
+    background-position: -560px -540px;
+}
+i.froslass.pkmn:not(.icon):before {
+    background-position: -600px -540px;
+}
+i.rotom-heat.pkmn:not(.icon):before {
+    background-position: -640px -540px;
+}
+i.rotom-wash.pkmn:not(.icon):before {
+    background-position: -680px -540px;
+}
+i.rotom-frost.pkmn:not(.icon):before {
+    background-position: -720px -540px;
+}
+i.rotom-fan.pkmn:not(.icon):before {
+    background-position: -760px -540px;
+}
+i.rotom-mow.pkmn:not(.icon):before {
+    background-position: -800px -540px;
+}
+i.rotom.pkmn:not(.icon):before {
+    background-position: -840px -540px;
+}
+i.uxie.pkmn:not(.icon):before {
+    background-position: -880px -540px;
+}
+i.mesprit.pkmn:not(.icon):before {
+    background-position: -920px -540px;
+}
+i.azelf.pkmn:not(.icon):before {
+    background-position: -960px -540px;
+}
+i.dialga.pkmn:not(.icon):before {
+    background-position: -1000px -540px;
+}
+i.palkia.pkmn:not(.icon):before {
+    background-position: -1040px -540px;
+}
+i.heatran.pkmn:not(.icon):before {
+    background-position: -1080px -540px;
+}
+i.regigigas.pkmn:not(.icon):before {
+    background-position: -1120px -540px;
+}
+i.giratina-origin.pkmn:not(.icon):before {
+    background-position: -1160px -540px;
+}
+i.giratina.pkmn:not(.icon):before {
+    background-position: -1200px -540px;
+}
+i.cresselia.pkmn:not(.icon):before {
+    background-position: -1240px -540px;
+}
+i.phione.pkmn:not(.icon):before {
+    background-position: 0 -570px;
+}
+i.manaphy.pkmn:not(.icon):before {
+    background-position: -40px -570px;
+}
+i.darkrai.pkmn:not(.icon):before {
+    background-position: -80px -570px;
+}
+i.shaymin-sky.pkmn:not(.icon):before {
+    background-position: -120px -570px;
+}
+i.shaymin.pkmn:not(.icon):before {
+    background-position: -160px -570px;
+}
+i.arceus.pkmn:not(.icon):before {
+    background-position: -200px -570px;
+}
+i.victini.pkmn:not(.icon):before {
+    background-position: -240px -570px;
+}
+i.snivy.pkmn:not(.icon):before {
+    background-position: -280px -570px;
+}
+i.servine.pkmn:not(.icon):before {
+    background-position: -320px -570px;
+}
+i.serperior.pkmn:not(.icon):before {
+    background-position: -360px -570px;
+}
+i.tepig.pkmn:not(.icon):before {
+    background-position: -400px -570px;
+}
+i.pignite.pkmn:not(.icon):before {
+    background-position: -440px -570px;
+}
+i.emboar.pkmn:not(.icon):before {
+    background-position: -480px -570px;
+}
+i.oshawott.pkmn:not(.icon):before {
+    background-position: -520px -570px;
+}
+i.dewott.pkmn:not(.icon):before {
+    background-position: -560px -570px;
+}
+i.samurott.pkmn:not(.icon):before {
+    background-position: -600px -570px;
+}
+i.patrat.pkmn:not(.icon):before {
+    background-position: -640px -570px;
+}
+i.watchog.pkmn:not(.icon):before {
+    background-position: -680px -570px;
+}
+i.lillipup.pkmn:not(.icon):before {
+    background-position: -720px -570px;
+}
+i.herdier.pkmn:not(.icon):before {
+    background-position: -760px -570px;
+}
+i.stoutland.pkmn:not(.icon):before {
+    background-position: -800px -570px;
+}
+i.purrloin.pkmn:not(.icon):before {
+    background-position: -840px -570px;
+}
+i.liepard.pkmn:not(.icon):before {
+    background-position: -880px -570px;
+}
+i.pansage.pkmn:not(.icon):before {
+    background-position: -920px -570px;
+}
+i.simisage.pkmn:not(.icon):before {
+    background-position: -960px -570px;
+}
+i.pansear.pkmn:not(.icon):before {
+    background-position: -1000px -570px;
+}
+i.simisear.pkmn:not(.icon):before {
+    background-position: -1040px -570px;
+}
+i.panpour.pkmn:not(.icon):before {
+    background-position: -1080px -570px;
+}
+i.simipour.pkmn:not(.icon):before {
+    background-position: -1120px -570px;
+}
+i.munna.pkmn:not(.icon):before {
+    background-position: -1160px -570px;
+}
+i.musharna.pkmn:not(.icon):before {
+    background-position: -1200px -570px;
+}
+i.pidove.pkmn:not(.icon):before {
+    background-position: -1240px -570px;
+}
+i.tranquill.pkmn:not(.icon):before {
+    background-position: 0 -600px;
+}
+i.unfezant-male.pkmn:not(.icon):before {
+    background-position: -40px -600px;
+}
+i.unfezant-female.pkmn:not(.icon):before {
+    background-position: -80px -600px;
+}
+i.blitzle.pkmn:not(.icon):before {
+    background-position: -120px -600px;
+}
+i.zebstrika.pkmn:not(.icon):before {
+    background-position: -160px -600px;
+}
+i.roggenrola.pkmn:not(.icon):before {
+    background-position: -200px -600px;
+}
+i.boldore.pkmn:not(.icon):before {
+    background-position: -240px -600px;
+}
+i.gigalith.pkmn:not(.icon):before {
+    background-position: -280px -600px;
+}
+i.woobat.pkmn:not(.icon):before {
+    background-position: -320px -600px;
+}
+i.swoobat.pkmn:not(.icon):before {
+    background-position: -360px -600px;
+}
+i.drilbur.pkmn:not(.icon):before {
+    background-position: -400px -600px;
+}
+i.excadrill.pkmn:not(.icon):before {
+    background-position: -440px -600px;
+}
+i.audino-mega.pkmn:not(.icon):before {
+    background-position: -480px -600px;
+}
+i.audino.pkmn:not(.icon):before {
+    background-position: -520px -600px;
+}
+i.timburr.pkmn:not(.icon):before {
+    background-position: -560px -600px;
+}
+i.gurdurr.pkmn:not(.icon):before {
+    background-position: -600px -600px;
+}
+i.conkeldurr.pkmn:not(.icon):before {
+    background-position: -640px -600px;
+}
+i.tympole.pkmn:not(.icon):before {
+    background-position: -680px -600px;
+}
+i.palpitoad.pkmn:not(.icon):before {
+    background-position: -720px -600px;
+}
+i.seismitoad.pkmn:not(.icon):before {
+    background-position: -760px -600px;
+}
+i.throh.pkmn:not(.icon):before {
+    background-position: -800px -600px;
+}
+i.sawk.pkmn:not(.icon):before {
+    background-position: -840px -600px;
+}
+i.sewaddle.pkmn:not(.icon):before {
+    background-position: -880px -600px;
+}
+i.swadloon.pkmn:not(.icon):before {
+    background-position: -920px -600px;
+}
+i.leavanny.pkmn:not(.icon):before {
+    background-position: -960px -600px;
+}
+i.venipede.pkmn:not(.icon):before {
+    background-position: -1000px -600px;
+}
+i.whirlipede.pkmn:not(.icon):before {
+    background-position: -1040px -600px;
+}
+i.scolipede.pkmn:not(.icon):before {
+    background-position: -1080px -600px;
+}
+i.cottonee.pkmn:not(.icon):before {
+    background-position: -1120px -600px;
+}
+i.whimsicott.pkmn:not(.icon):before {
+    background-position: -1160px -600px;
+}
+i.petilil.pkmn:not(.icon):before {
+    background-position: -1200px -600px;
+}
+i.lilligant.pkmn:not(.icon):before {
+    background-position: -1240px -600px;
+}
+i.basculin-blue-striped.pkmn:not(.icon):before {
+    background-position: 0 -630px;
+}
+i.basculin-red-striped.pkmn:not(.icon):before {
+    background-position: -40px -630px;
+}
+i.sandile.pkmn:not(.icon):before {
+    background-position: -80px -630px;
+}
+i.krokorok.pkmn:not(.icon):before {
+    background-position: -120px -630px;
+}
+i.krookodile.pkmn:not(.icon):before {
+    background-position: -160px -630px;
+}
+i.darumaka.pkmn:not(.icon):before {
+    background-position: -200px -630px;
+}
+i.darmanitan-zen.pkmn:not(.icon):before {
+    background-position: -240px -630px;
+}
+i.darmanitan.pkmn:not(.icon):before {
+    background-position: -280px -630px;
+}
+i.maractus.pkmn:not(.icon):before {
+    background-position: -320px -630px;
+}
+i.dwebble.pkmn:not(.icon):before {
+    background-position: -360px -630px;
+}
+i.crustle.pkmn:not(.icon):before {
+    background-position: -400px -630px;
+}
+i.scraggy.pkmn:not(.icon):before {
+    background-position: -440px -630px;
+}
+i.scrafty.pkmn:not(.icon):before {
+    background-position: -480px -630px;
+}
+i.sigilyph.pkmn:not(.icon):before {
+    background-position: -520px -630px;
+}
+i.yamask.pkmn:not(.icon):before {
+    background-position: -560px -630px;
+}
+i.cofagrigus.pkmn:not(.icon):before {
+    background-position: -600px -630px;
+}
+i.tirtouga.pkmn:not(.icon):before {
+    background-position: -640px -630px;
+}
+i.carracosta.pkmn:not(.icon):before {
+    background-position: -680px -630px;
+}
+i.archen.pkmn:not(.icon):before {
+    background-position: -720px -630px;
+}
+i.archeops.pkmn:not(.icon):before {
+    background-position: -760px -630px;
+}
+i.trubbish.pkmn:not(.icon):before {
+    background-position: -800px -630px;
+}
+i.garbodor.pkmn:not(.icon):before {
+    background-position: -840px -630px;
+}
+i.zorua.pkmn:not(.icon):before {
+    background-position: -880px -630px;
+}
+i.zoroark.pkmn:not(.icon):before {
+    background-position: -920px -630px;
+}
+i.minccino.pkmn:not(.icon):before {
+    background-position: -960px -630px;
+}
+i.cinccino.pkmn:not(.icon):before {
+    background-position: -1000px -630px;
+}
+i.gothita.pkmn:not(.icon):before {
+    background-position: -1040px -630px;
+}
+i.gothorita.pkmn:not(.icon):before {
+    background-position: -1080px -630px;
+}
+i.gothitelle.pkmn:not(.icon):before {
+    background-position: -1120px -630px;
+}
+i.solosis.pkmn:not(.icon):before {
+    background-position: -1160px -630px;
+}
+i.duosion.pkmn:not(.icon):before {
+    background-position: -1200px -630px;
+}
+i.reuniclus.pkmn:not(.icon):before {
+    background-position: -1240px -630px;
+}
+i.ducklett.pkmn:not(.icon):before {
+    background-position: 0 -660px;
+}
+i.swanna.pkmn:not(.icon):before {
+    background-position: -40px -660px;
+}
+i.vanillite.pkmn:not(.icon):before {
+    background-position: -80px -660px;
+}
+i.vanillish.pkmn:not(.icon):before {
+    background-position: -120px -660px;
+}
+i.vanilluxe.pkmn:not(.icon):before {
+    background-position: -160px -660px;
+}
+i.deerling-summer.pkmn:not(.icon):before {
+    background-position: -200px -660px;
+}
+i.deerling-autumn.pkmn:not(.icon):before {
+    background-position: -240px -660px;
+}
+i.deerling-winter.pkmn:not(.icon):before {
+    background-position: -280px -660px;
+}
+i.deerling-spring.pkmn:not(.icon):before {
+    background-position: -320px -660px;
+}
+i.sawsbuck-summer.pkmn:not(.icon):before {
+    background-position: -360px -660px;
+}
+i.sawsbuck-autumn.pkmn:not(.icon):before {
+    background-position: -400px -660px;
+}
+i.sawsbuck-winter.pkmn:not(.icon):before {
+    background-position: -440px -660px;
+}
+i.sawsbuck-spring.pkmn:not(.icon):before {
+    background-position: -480px -660px;
+}
+i.emolga.pkmn:not(.icon):before {
+    background-position: -520px -660px;
+}
+i.karrablast.pkmn:not(.icon):before {
+    background-position: -560px -660px;
+}
+i.escavalier.pkmn:not(.icon):before {
+    background-position: -600px -660px;
+}
+i.foongus.pkmn:not(.icon):before {
+    background-position: -640px -660px;
+}
+i.amoonguss.pkmn:not(.icon):before {
+    background-position: -680px -660px;
+}
+i.frillish-female.pkmn:not(.icon):before {
+    background-position: -720px -660px;
+}
+i.frillish-male.pkmn:not(.icon):before {
+    background-position: -760px -660px;
+}
+i.jellicent-female.pkmn:not(.icon):before {
+    background-position: -800px -660px;
+}
+i.jellicent-male.pkmn:not(.icon):before {
+    background-position: -840px -660px;
+}
+i.alomomola.pkmn:not(.icon):before {
+    background-position: -880px -660px;
+}
+i.joltik.pkmn:not(.icon):before {
+    background-position: -920px -660px;
+}
+i.galvantula.pkmn:not(.icon):before {
+    background-position: -960px -660px;
+}
+i.ferroseed.pkmn:not(.icon):before {
+    background-position: -1000px -660px;
+}
+i.ferrothorn.pkmn:not(.icon):before {
+    background-position: -1040px -660px;
+}
+i.klink.pkmn:not(.icon):before {
+    background-position: -1080px -660px;
+}
+i.klang.pkmn:not(.icon):before {
+    background-position: -1120px -660px;
+}
+i.klinklang.pkmn:not(.icon):before {
+    background-position: -1160px -660px;
+}
+i.tynamo.pkmn:not(.icon):before {
+    background-position: -1200px -660px;
+}
+i.eelektrik.pkmn:not(.icon):before {
+    background-position: -1240px -660px;
+}
+i.eelektross.pkmn:not(.icon):before {
+    background-position: 0 -690px;
+}
+i.elgyem.pkmn:not(.icon):before {
+    background-position: -40px -690px;
+}
+i.beheeyem.pkmn:not(.icon):before {
+    background-position: -80px -690px;
+}
+i.litwick.pkmn:not(.icon):before {
+    background-position: -120px -690px;
+}
+i.lampent.pkmn:not(.icon):before {
+    background-position: -160px -690px;
+}
+i.chandelure.pkmn:not(.icon):before {
+    background-position: -200px -690px;
+}
+i.axew.pkmn:not(.icon):before {
+    background-position: -240px -690px;
+}
+i.fraxure.pkmn:not(.icon):before {
+    background-position: -280px -690px;
+}
+i.haxorus.pkmn:not(.icon):before {
+    background-position: -320px -690px;
+}
+i.cubchoo.pkmn:not(.icon):before {
+    background-position: -360px -690px;
+}
+i.beartic.pkmn:not(.icon):before {
+    background-position: -400px -690px;
+}
+i.cryogonal.pkmn:not(.icon):before {
+    background-position: -440px -690px;
+}
+i.shelmet.pkmn:not(.icon):before {
+    background-position: -480px -690px;
+}
+i.accelgor.pkmn:not(.icon):before {
+    background-position: -520px -690px;
+}
+i.stunfisk.pkmn:not(.icon):before {
+    background-position: -560px -690px;
+}
+i.mienfoo.pkmn:not(.icon):before {
+    background-position: -600px -690px;
+}
+i.mienshao.pkmn:not(.icon):before {
+    background-position: -640px -690px;
+}
+i.druddigon.pkmn:not(.icon):before {
+    background-position: -680px -690px;
+}
+i.golett.pkmn:not(.icon):before {
+    background-position: -720px -690px;
+}
+i.golurk.pkmn:not(.icon):before {
+    background-position: -760px -690px;
+}
+i.pawniard.pkmn:not(.icon):before {
+    background-position: -800px -690px;
+}
+i.bisharp.pkmn:not(.icon):before {
+    background-position: -840px -690px;
+}
+i.bouffalant.pkmn:not(.icon):before {
+    background-position: -880px -690px;
+}
+i.rufflet.pkmn:not(.icon):before {
+    background-position: -920px -690px;
+}
+i.braviary.pkmn:not(.icon):before {
+    background-position: -960px -690px;
+}
+i.vullaby.pkmn:not(.icon):before {
+    background-position: -1000px -690px;
+}
+i.mandibuzz.pkmn:not(.icon):before {
+    background-position: -1040px -690px;
+}
+i.heatmor.pkmn:not(.icon):before {
+    background-position: -1080px -690px;
+}
+i.durant.pkmn:not(.icon):before {
+    background-position: -1120px -690px;
+}
+i.deino.pkmn:not(.icon):before {
+    background-position: -1160px -690px;
+}
+i.zweilous.pkmn:not(.icon):before {
+    background-position: -1200px -690px;
+}
+i.hydreigon.pkmn:not(.icon):before {
+    background-position: -1240px -690px;
+}
+i.larvesta.pkmn:not(.icon):before {
+    background-position: 0 -720px;
+}
+i.volcarona.pkmn:not(.icon):before {
+    background-position: -40px -720px;
+}
+i.cobalion.pkmn:not(.icon):before {
+    background-position: -80px -720px;
+}
+i.terrakion.pkmn:not(.icon):before {
+    background-position: -120px -720px;
+}
+i.virizion.pkmn:not(.icon):before {
+    background-position: -160px -720px;
+}
+i.tornadus-therian.pkmn:not(.icon):before {
+    background-position: -200px -720px;
+}
+i.tornadus.pkmn:not(.icon):before {
+    background-position: -240px -720px;
+}
+i.thundurus-therian.pkmn:not(.icon):before {
+    background-position: -280px -720px;
+}
+i.thundurus.pkmn:not(.icon):before {
+    background-position: -320px -720px;
+}
+i.reshiram.pkmn:not(.icon):before {
+    background-position: -360px -720px;
+}
+i.zekrom.pkmn:not(.icon):before {
+    background-position: -400px -720px;
+}
+i.landorus-therian.pkmn:not(.icon):before {
+    background-position: -440px -720px;
+}
+i.landorus.pkmn:not(.icon):before {
+    background-position: -480px -720px;
+}
+i.kyurem-white.pkmn:not(.icon):before {
+    background-position: -520px -720px;
+}
+i.kyurem-black.pkmn:not(.icon):before {
+    background-position: -560px -720px;
+}
+i.kyurem.pkmn:not(.icon):before {
+    background-position: -600px -720px;
+}
+i.keldeo-resolute.pkmn:not(.icon):before {
+    background-position: -640px -720px;
+}
+i.keldeo.pkmn:not(.icon):before {
+    background-position: -680px -720px;
+}
+i.meloetta-pirouette.pkmn:not(.icon):before {
+    background-position: -720px -720px;
+}
+i.meloetta.pkmn:not(.icon):before {
+    background-position: -760px -720px;
+}
+i.genesect.pkmn:not(.icon):before {
+    background-position: -960px -720px;
+}
+i.chespin.pkmn:not(.icon):before {
+    background-position: -1000px -720px;
+}
+i.quilladin.pkmn:not(.icon):before {
+    background-position: -1040px -720px;
+}
+i.chesnaught.pkmn:not(.icon):before {
+    background-position: -1080px -720px;
+}
+i.fennekin.pkmn:not(.icon):before {
+    background-position: -1120px -720px;
+}
+i.braixen.pkmn:not(.icon):before {
+    background-position: -1160px -720px;
+}
+i.delphox.pkmn:not(.icon):before {
+    background-position: -1200px -720px;
+}
+i.froakie.pkmn:not(.icon):before {
+    background-position: -1240px -720px;
+}
+i.frogadier.pkmn:not(.icon):before {
+    background-position: 0 -750px;
+}
+i.greninja-ash.pkmn:not(.icon):before {
+    background-position: -40px -750px;
+}
+i.greninja-ash-battle-bond.pkmn:not(.icon):before {
+    background-position: -80px -750px;
+}
+i.greninja.pkmn:not(.icon):before {
+    background-position: -120px -750px;
+}
+i.bunnelby.pkmn:not(.icon):before {
+    background-position: -160px -750px;
+}
+i.diggersby.pkmn:not(.icon):before {
+    background-position: -200px -750px;
+}
+i.fletchling.pkmn:not(.icon):before {
+    background-position: -240px -750px;
+}
+i.fletchinder.pkmn:not(.icon):before {
+    background-position: -280px -750px;
+}
+i.talonflame.pkmn:not(.icon):before {
+    background-position: -320px -750px;
+}
+i.scatterbug.pkmn:not(.icon):before {
+    background-position: -360px -750px;
+}
+i.spewpa.pkmn:not(.icon):before {
+    background-position: -400px -750px;
+}
+i.vivillon-polar.pkmn:not(.icon):before {
+    background-position: -440px -750px;
+}
+i.vivillon-high-plains.pkmn:not(.icon):before {
+    background-position: -480px -750px;
+}
+i.vivillon-sandstorm.pkmn:not(.icon):before {
+    background-position: -520px -750px;
+}
+i.vivillon-river.pkmn:not(.icon):before {
+    background-position: -560px -750px;
+}
+i.vivillon-monsoon.pkmn:not(.icon):before {
+    background-position: -600px -750px;
+}
+i.vivillon-savanna.pkmn:not(.icon):before {
+    background-position: -640px -750px;
+}
+i.vivillon-sun.pkmn:not(.icon):before {
+    background-position: -680px -750px;
+}
+i.vivillon-ocean.pkmn:not(.icon):before {
+    background-position: -720px -750px;
+}
+i.vivillon-jungle.pkmn:not(.icon):before {
+    background-position: -760px -750px;
+}
+i.vivillon-fancy.pkmn:not(.icon):before {
+    background-position: -800px -750px;
+}
+i.vivillon-pokeball.pkmn:not(.icon):before {
+    background-position: -840px -750px;
+}
+i.vivillon-tundra.pkmn:not(.icon):before {
+    background-position: -880px -750px;
+}
+i.vivillon-continental.pkmn:not(.icon):before {
+    background-position: -920px -750px;
+}
+i.vivillon-garden.pkmn:not(.icon):before {
+    background-position: -960px -750px;
+}
+i.vivillon-elegant.pkmn:not(.icon):before {
+    background-position: -1000px -750px;
+}
+i.vivillon-meadow.pkmn:not(.icon):before {
+    background-position: -1040px -750px;
+}
+i.vivillon-modern.pkmn:not(.icon):before {
+    background-position: -1080px -750px;
+}
+i.vivillon-marine.pkmn:not(.icon):before {
+    background-position: -1120px -750px;
+}
+i.vivillon-archiepelago.pkmn:not(.icon):before {
+    background-position: -1160px -750px;
+}
+i.vivillon-icy-snow.pkmn:not(.icon):before {
+    background-position: -1200px -750px;
+}
+i.litleo.pkmn:not(.icon):before {
+    background-position: -1240px -750px;
+}
+i.pyroar-male.pkmn:not(.icon):before {
+    background-position: 0 -780px;
+}
+i.pyroar-female.pkmn:not(.icon):before {
+    background-position: -40px -780px;
+}
+i.flabebe-yellow.pkmn:not(.icon):before {
+    background-position: -80px -780px;
+}
+i.flabebe-orange.pkmn:not(.icon):before {
+    background-position: -120px -780px;
+}
+i.flabebe-blue.pkmn:not(.icon):before {
+    background-position: -160px -780px;
+}
+i.flabebe-white.pkmn:not(.icon):before {
+    background-position: -200px -780px;
+}
+i.flabebe-red.pkmn:not(.icon):before {
+    background-position: -240px -780px;
+}
+i.floette-yellow.pkmn:not(.icon):before {
+    background-position: -280px -780px;
+}
+i.floette-orange.pkmn:not(.icon):before {
+    background-position: -320px -780px;
+}
+i.floette-blue.pkmn:not(.icon):before {
+    background-position: -360px -780px;
+}
+i.floette-white.pkmn:not(.icon):before {
+    background-position: -400px -780px;
+}
+i.floette-eternal.pkmn:not(.icon):before {
+    background-position: -440px -780px;
+}
+i.floette-red.pkmn:not(.icon):before {
+    background-position: -480px -780px;
+}
+i.florges-yellow.pkmn:not(.icon):before {
+    background-position: -520px -780px;
+}
+i.florges-orange.pkmn:not(.icon):before {
+    background-position: -560px -780px;
+}
+i.florges-blue.pkmn:not(.icon):before {
+    background-position: -600px -780px;
+}
+i.florges-white.pkmn:not(.icon):before {
+    background-position: -640px -780px;
+}
+i.florges-red.pkmn:not(.icon):before {
+    background-position: -680px -780px;
+}
+i.skiddo.pkmn:not(.icon):before {
+    background-position: -720px -780px;
+}
+i.gogoat.pkmn:not(.icon):before {
+    background-position: -760px -780px;
+}
+i.pancham.pkmn:not(.icon):before {
+    background-position: -800px -780px;
+}
+i.pangoro.pkmn:not(.icon):before {
+    background-position: -840px -780px;
+}
+i.furfrou-heart.pkmn:not(.icon):before {
+    background-position: -880px -780px;
+}
+i.furfrou-star.pkmn:not(.icon):before {
+    background-position: -920px -780px;
+}
+i.furfrou-diamond.pkmn:not(.icon):before {
+    background-position: -960px -780px;
+}
+i.furfrou-debutante.pkmn:not(.icon):before {
+    background-position: -1000px -780px;
+}
+i.furfrou-matron.pkmn:not(.icon):before {
+    background-position: -1040px -780px;
+}
+i.furfrou-dandy.pkmn:not(.icon):before {
+    background-position: -1080px -780px;
+}
+i.furfrou-la-reine.pkmn:not(.icon):before {
+    background-position: -1120px -780px;
+}
+i.furfrou-kabuki.pkmn:not(.icon):before {
+    background-position: -1160px -780px;
+}
+i.furfrou-pharaoh.pkmn:not(.icon):before {
+    background-position: -1200px -780px;
+}
+i.furfrou-natural.pkmn:not(.icon):before {
+    background-position: -1240px -780px;
+}
+i.espurr.pkmn:not(.icon):before {
+    background-position: 0 -810px;
+}
+i.meowstic-female.pkmn:not(.icon):before {
+    background-position: -40px -810px;
+}
+i.meowstic-male.pkmn:not(.icon):before {
+    background-position: -80px -810px;
+}
+i.honedge.pkmn:not(.icon):before {
+    background-position: -120px -810px;
+}
+i.doublade.pkmn:not(.icon):before {
+    background-position: -160px -810px;
+}
+i.aegislash-blade.pkmn:not(.icon):before {
+    background-position: -200px -810px;
+}
+i.aegislash-shield.pkmn:not(.icon):before {
+    background-position: -240px -810px;
+}
+i.spritzee.pkmn:not(.icon):before {
+    background-position: -280px -810px;
+}
+i.aromatisse.pkmn:not(.icon):before {
+    background-position: -320px -810px;
+}
+i.swirlix.pkmn:not(.icon):before {
+    background-position: -360px -810px;
+}
+i.slurpuff.pkmn:not(.icon):before {
+    background-position: -400px -810px;
+}
+i.inkay.pkmn:not(.icon):before {
+    background-position: -440px -810px;
+}
+i.malamar.pkmn:not(.icon):before {
+    background-position: -480px -810px;
+}
+i.binacle.pkmn:not(.icon):before {
+    background-position: -520px -810px;
+}
+i.barbaracle.pkmn:not(.icon):before {
+    background-position: -560px -810px;
+}
+i.skrelp.pkmn:not(.icon):before {
+    background-position: -600px -810px;
+}
+i.dragalge.pkmn:not(.icon):before {
+    background-position: -640px -810px;
+}
+i.clauncher.pkmn:not(.icon):before {
+    background-position: -680px -810px;
+}
+i.clawitzer.pkmn:not(.icon):before {
+    background-position: -720px -810px;
+}
+i.helioptile.pkmn:not(.icon):before {
+    background-position: -760px -810px;
+}
+i.heliolisk.pkmn:not(.icon):before {
+    background-position: -800px -810px;
+}
+i.tyrunt.pkmn:not(.icon):before {
+    background-position: -840px -810px;
+}
+i.tyrantrum.pkmn:not(.icon):before {
+    background-position: -880px -810px;
+}
+i.amaura.pkmn:not(.icon):before {
+    background-position: -920px -810px;
+}
+i.aurorus.pkmn:not(.icon):before {
+    background-position: -960px -810px;
+}
+i.sylveon.pkmn:not(.icon):before {
+    background-position: -1000px -810px;
+}
+i.hawlucha.pkmn:not(.icon):before {
+    background-position: -1040px -810px;
+}
+i.dedenne.pkmn:not(.icon):before {
+    background-position: -1080px -810px;
+}
+i.carbink.pkmn:not(.icon):before {
+    background-position: -1120px -810px;
+}
+i.goomy.pkmn:not(.icon):before {
+    background-position: -1160px -810px;
+}
+i.sliggoo.pkmn:not(.icon):before {
+    background-position: -1200px -810px;
+}
+i.goodra.pkmn:not(.icon):before {
+    background-position: -1240px -810px;
+}
+i.klefki.pkmn:not(.icon):before {
+    background-position: 0 -840px;
+}
+i.phantump.pkmn:not(.icon):before {
+    background-position: -40px -840px;
+}
+i.trevenant.pkmn:not(.icon):before {
+    background-position: -80px -840px;
+}
+i.pumpkaboo-small.pkmn:not(.icon):before {
+    background-position: -120px -840px;
+}
+i.pumpkaboo-average.pkmn:not(.icon):before {
+    background-position: -160px -840px;
+}
+i.pumpkaboo-large.pkmn:not(.icon):before {
+    background-position: -200px -840px;
+}
+i.pumpkaboo-super.pkmn:not(.icon):before {
+    background-position: -240px -840px;
+}
+i.gourgeist-small.pkmn:not(.icon):before {
+    background-position: -280px -840px;
+}
+i.gourgeist-average.pkmn:not(.icon):before {
+    background-position: -320px -840px;
+}
+i.gourgeist-large.pkmn:not(.icon):before {
+    background-position: -360px -840px;
+}
+i.gourgeist-super.pkmn:not(.icon):before {
+    background-position: -400px -840px;
+}
+i.bergmite.pkmn:not(.icon):before {
+    background-position: -440px -840px;
+}
+i.avalugg.pkmn:not(.icon):before {
+    background-position: -480px -840px;
+}
+i.noibat.pkmn:not(.icon):before {
+    background-position: -520px -840px;
+}
+i.noivern.pkmn:not(.icon):before {
+    background-position: -560px -840px;
+}
+i.xerneas-active.pkmn:not(.icon):before {
+    background-position: -600px -840px;
+}
+i.xerneas-neutral.pkmn:not(.icon):before {
+    background-position: -640px -840px;
+}
+i.yveltal.pkmn:not(.icon):before {
+    background-position: -680px -840px;
+}
+i.zygarde-10.pkmn:not(.icon):before {
+    background-position: -800px -840px;
+}
+i.zygarde-complete.pkmn:not(.icon):before {
+    background-position: -840px -840px;
+}
+i.zygarde-50.pkmn:not(.icon):before {
+    background-position: -880px -840px;
+}
+i.diancie-mega.pkmn:not(.icon):before {
+    background-position: -920px -840px;
+}
+i.diancie.pkmn:not(.icon):before {
+    background-position: -960px -840px;
+}
+i.hoopa-unbound.pkmn:not(.icon):before {
+    background-position: -1000px -840px;
+}
+i.hoopa.pkmn:not(.icon):before {
+    background-position: -1040px -840px;
+}
+i.volcanion.pkmn:not(.icon):before {
+    background-position: -1080px -840px;
+}
+i.rowlet.pkmn:not(.icon):before {
+    background-position: -1120px -840px;
+}
+i.dartrix.pkmn:not(.icon):before {
+    background-position: -1160px -840px;
+}
+i.decidueye.pkmn:not(.icon):before {
+    background-position: -1200px -840px;
+}
+i.litten.pkmn:not(.icon):before {
+    background-position: -1240px -840px;
+}
+i.torracat.pkmn:not(.icon):before {
+    background-position: 0 -870px;
+}
+i.incineroar.pkmn:not(.icon):before {
+    background-position: -40px -870px;
+}
+i.popplio.pkmn:not(.icon):before {
+    background-position: -80px -870px;
+}
+i.brionne.pkmn:not(.icon):before {
+    background-position: -120px -870px;
+}
+i.primarina.pkmn:not(.icon):before {
+    background-position: -160px -870px;
+}
+i.pikipek.pkmn:not(.icon):before {
+    background-position: -200px -870px;
+}
+i.trumbeak.pkmn:not(.icon):before {
+    background-position: -240px -870px;
+}
+i.toucannon.pkmn:not(.icon):before {
+    background-position: -280px -870px;
+}
+i.yungoos.pkmn:not(.icon):before {
+    background-position: -320px -870px;
+}
+i.gumshoos.pkmn:not(.icon):before {
+    background-position: -360px -870px;
+}
+i.grubbin.pkmn:not(.icon):before {
+    background-position: -400px -870px;
+}
+i.charjabug.pkmn:not(.icon):before {
+    background-position: -440px -870px;
+}
+i.vikavolt.pkmn:not(.icon):before {
+    background-position: -480px -870px;
+}
+i.crabrawler.pkmn:not(.icon):before {
+    background-position: -520px -870px;
+}
+i.crabominable.pkmn:not(.icon):before {
+    background-position: -560px -870px;
+}
+i.oricorio-pom-pom.pkmn:not(.icon):before {
+    background-position: -600px -870px;
+}
+i.oricorio-pau.pkmn:not(.icon):before {
+    background-position: -640px -870px;
+}
+i.oricorio-sensu.pkmn:not(.icon):before {
+    background-position: -680px -870px;
+}
+i.oricorio-baile.pkmn:not(.icon):before {
+    background-position: -720px -870px;
+}
+i.cutiefly.pkmn:not(.icon):before {
+    background-position: -760px -870px;
+}
+i.ribombee.pkmn:not(.icon):before {
+    background-position: -800px -870px;
+}
+i.rockruff.pkmn:not(.icon):before {
+    background-position: -840px -870px;
+}
+i.lycanroc-midnight.pkmn:not(.icon):before {
+    background-position: -880px -870px;
+}
+i.lycanroc-midday.pkmn:not(.icon):before {
+    background-position: -920px -870px;
+}
+i.wishiwashi-school.pkmn:not(.icon):before {
+    background-position: -960px -870px;
+}
+i.wishiwashi.pkmn:not(.icon):before {
+    background-position: -1000px -870px;
+}
+i.mareanie.pkmn:not(.icon):before {
+    background-position: -1040px -870px;
+}
+i.toxapex.pkmn:not(.icon):before {
+    background-position: -1080px -870px;
+}
+i.mudbray.pkmn:not(.icon):before {
+    background-position: -1120px -870px;
+}
+i.mudsdale.pkmn:not(.icon):before {
+    background-position: -1160px -870px;
+}
+i.dewpider.pkmn:not(.icon):before {
+    background-position: -1200px -870px;
+}
+i.araquanid.pkmn:not(.icon):before {
+    background-position: -1240px -870px;
+}
+i.fomantis.pkmn:not(.icon):before {
+    background-position: 0 -900px;
+}
+i.lurantis.pkmn:not(.icon):before {
+    background-position: -40px -900px;
+}
+i.morelull.pkmn:not(.icon):before {
+    background-position: -80px -900px;
+}
+i.shiinotic.pkmn:not(.icon):before {
+    background-position: -120px -900px;
+}
+i.salandit.pkmn:not(.icon):before {
+    background-position: -160px -900px;
+}
+i.salazzle.pkmn:not(.icon):before {
+    background-position: -200px -900px;
+}
+i.stufful.pkmn:not(.icon):before {
+    background-position: -240px -900px;
+}
+i.bewear.pkmn:not(.icon):before {
+    background-position: -280px -900px;
+}
+i.bounsweet.pkmn:not(.icon):before {
+    background-position: -320px -900px;
+}
+i.steenee.pkmn:not(.icon):before {
+    background-position: -360px -900px;
+}
+i.tsareena.pkmn:not(.icon):before {
+    background-position: -400px -900px;
+}
+i.comfey.pkmn:not(.icon):before {
+    background-position: -440px -900px;
+}
+i.oranguru.pkmn:not(.icon):before {
+    background-position: -480px -900px;
+}
+i.passimian.pkmn:not(.icon):before {
+    background-position: -520px -900px;
+}
+i.wimpod.pkmn:not(.icon):before {
+    background-position: -560px -900px;
+}
+i.golisopod.pkmn:not(.icon):before {
+    background-position: -600px -900px;
+}
+i.sandygast.pkmn:not(.icon):before {
+    background-position: -640px -900px;
+}
+i.palossand.pkmn:not(.icon):before {
+    background-position: -680px -900px;
+}
+i.pyukumuku.pkmn:not(.icon):before {
+    background-position: -720px -900px;
+}
+i.type-null.pkmn:not(.icon):before {
+    background-position: -760px -900px;
+}
+i.silvally.pkmn:not(.icon):before {
+    background-position: -800px -900px;
+}
+i.minior-green-core.pkmn:not(.icon):before {
+    background-position: -880px -900px;
+}
+i.minior-blue-core.pkmn:not(.icon):before {
+    background-position: -920px -900px;
+}
+i.minior-indigo-core.pkmn:not(.icon):before {
+    background-position: -960px -900px;
+}
+i.minior-violet-core.pkmn:not(.icon):before {
+    background-position: -1000px -900px;
+}
+i.minior-red-core.pkmn:not(.icon):before {
+    background-position: -1240px -900px;
+}
+i.minior-orange-core.pkmn:not(.icon):before {
+    background-position: 0 -930px;
+}
+i.minior-yellow-core.pkmn:not(.icon):before {
+    background-position: -40px -930px;
+}
+i.minior.pkmn:not(.icon):before {
+    background-position: -80px -930px;
+}
+i.komala.pkmn:not(.icon):before {
+    background-position: -120px -930px;
+}
+i.turtonator.pkmn:not(.icon):before {
+    background-position: -160px -930px;
+}
+i.togedemaru.pkmn:not(.icon):before {
+    background-position: -200px -930px;
+}
+i.mimikyu.pkmn:not(.icon):before {
+    background-position: -240px -930px;
+}
+i.bruxish.pkmn:not(.icon):before {
+    background-position: -280px -930px;
+}
+i.drampa.pkmn:not(.icon):before {
+    background-position: -320px -930px;
+}
+i.dhelmise.pkmn:not(.icon):before {
+    background-position: -360px -930px;
+}
+i.jangmo-o.pkmn:not(.icon):before {
+    background-position: -400px -930px;
+}
+i.hakamo-o.pkmn:not(.icon):before {
+    background-position: -440px -930px;
+}
+i.kommo-o.pkmn:not(.icon):before {
+    background-position: -480px -930px;
+}
+i.tapu-koko.pkmn:not(.icon):before {
+    background-position: -520px -930px;
+}
+i.tapu-lele.pkmn:not(.icon):before {
+    background-position: -560px -930px;
+}
+i.tapu-bulu.pkmn:not(.icon):before {
+    background-position: -600px -930px;
+}
+i.tapu-fini.pkmn:not(.icon):before {
+    background-position: -640px -930px;
+}
+i.cosmog.pkmn:not(.icon):before {
+    background-position: -680px -930px;
+}
+i.cosmoem.pkmn:not(.icon):before {
+    background-position: -720px -930px;
+}
+i.solgaleo.pkmn:not(.icon):before {
+    background-position: -760px -930px;
+}
+i.lunala.pkmn:not(.icon):before {
+    background-position: -800px -930px;
+}
+i.nihilego.pkmn:not(.icon):before {
+    background-position: -840px -930px;
+}
+i.buzzwole.pkmn:not(.icon):before {
+    background-position: -880px -930px;
+}
+i.pheromosa.pkmn:not(.icon):before {
+    background-position: -920px -930px;
+}
+i.xurkitree.pkmn:not(.icon):before {
+    background-position: -960px -930px;
+}
+i.celesteela.pkmn:not(.icon):before {
+    background-position: -1000px -930px;
+}
+i.kartana.pkmn:not(.icon):before {
+    background-position: -1040px -930px;
+}
+i.guzzlord.pkmn:not(.icon):before {
+    background-position: -1080px -930px;
+}
+i.necrozma.pkmn:not(.icon):before {
+    background-position: -1120px -930px;
+}
+i.magearna-original-color.pkmn:not(.icon):before {
+    background-position: -1160px -930px;
+}
+i.magearna.pkmn:not(.icon):before {
+    background-position: -1200px -930px;
+}
+i.marshadow.pkmn:not(.icon):before {
+    background-position: -1240px -930px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

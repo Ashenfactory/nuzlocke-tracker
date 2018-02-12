@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Nuzlocke Tracker</title>
+		<meta name="description" content="A tool for tracking Pokémon encounters and captures during Nuzloke challenges">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="apple-touch-icon" href="icon.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</head>
+	<body>
+	<div class="ui inline cookie nag">
+		<span class="title">
+			This website uses cookies to remember your Pokémon
+		</span>
+		<i class="close icon"></i>
+	</div>
+
+	<div class="pusher">
+		<div class="ui container">
+		<!--[if lte IE 9]>
+			<div class="ui error message">
+				<div class="header">You are using an outdated browser</div>
+				<p>Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+			</div>
+		<![endif]-->
+			<h1 class="ui header">Nuzlocke Tracker</h1>
+
+			<div id="errorMessage" class="ui hidden negative message">
+				<i class="close icon"></i>
+				<div id="messageHeader" class="header"></div>
+				<p id="messageContent"></p>
+			</div>
+
+			<div id="mainContent"></div>
+
+			<div id="noscript" class="ui error message">
+				<div class="header">It looks like JavaScript is disabled</div>
+				<p class="center aligned">Please consider enabeling it in order to use this website.</p>
+			</div>
+		</div>
+
+		<div class="ui inverted vertical footer segment">
+			<div class="ui center aligned container">
+				<p>Pokémon © 2002-2018 Pokémon. © 1995-2018 Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui modal mini">
+		<div class="header">Reset</div>
+		<div class="content">
+			<p>Really clear all data associated with this game?</p>
+		</div>
+		<div class="actions">
+			<div class="ui approve button">Yes</div>
+			<div class="ui cancel button">No</div>
+		</div>
+	</div>
+
+	<input class="hidden" autocomplete="off" id="fileLoader" accept="application/json" type="file">
+
+	<script type="text/template" id="main-template">
+		<div class="ui six item fluid stackable menu top attached">
+			<a title="Red, Blue and Yellow" class="item" data-tab="rby">RBY</a>
+			<a title="Gold, Silver and Crystal" class="item" data-tab="gsc">GSC</a>
+			<a title="Ruby, Sapphire and Emerald" class="item" data-tab="rse">RSE</a>
+			<a title="FireRed and LeafGreen" class="item" data-tab="frlg">FRLG</a>
+			<a title="Diamond, Pearl and Platinum" class="item" data-tab="dpp">DPP</a>
+			<a title="HeartGold and SoulSilver" class="item" data-tab="hgss">HGSS</a>
+		</div>
+		<div class="ui six item fluid stackable menu bottom attached">
+			<a title="Black and White" class="item" data-tab="bw">BW</a>
+			<a title="Black 2 and White 2" class="item" data-tab="bw2">BW2</a>
+			<a title="X and Y" class="item" data-tab="xy">XY</a>
+			<a title="Omega Ruby and Alpha Sapphire" class="item" data-tab="oras">ORAS</a>
+			<a title="Sun and Moon" class="item" data-tab="sm">SM</a>
+			<a title="Ultra Sun and Ultra Moon" class="item" data-tab="usum">USUM</a>
+		</div>
+		<% _.each(games, function(game) { %>
+		<div class="ui tab segment" data-tab="<%= game.id %>">
+			<h2 class="ui header"><%- game.title %></h2>
+			<button class="ui basic saveData button"><i class="download icon"></i>Export</button>
+			<button class="ui basic loadData button"><i class="upload icon"></i>Import</button>
+			<button class="ui basic reset button"><i class="trash outline icon"></i>Reset</button>
+			<table class="ui table sortable selectable">
+				<thead>
+					<tr>
+						<th class="center aligned">Location</th>
+						<th class="center aligned">Encounter</th>
+						<th class="center aligned">Nickname</th>
+						<th class="center aligned three wide">Status</th>
+						<th class="center aligned no-sort one wide disabled"></th>
+					</tr>
+				</thead>
+				<tbody id="<%- game.id %>-locations">
+				</tbody>
+			</table>
+		</div>
+		<% }); %>
+	</script>
+
+	<script type="text/template" id="loc-template">
+		<% _.each(game.locations, function(location, index) { %>
+			<tr>
+				<td data-sort-value="<%- index %>"><%- location %></td>
+				<td data-sort-value="<%- localStorage.getItem(game.id + index + '-encounter') %>">
+					<div data-name="<% if (localStorage.getItem(game.id + index + '-name')) { print(localStorage.getItem(game.id + index + '-name')) } %>" id="<%- game.id + index %>-encounter" class="ui fluid search selection dropdown encounter-picker">
+						<input value="<% if (localStorage.getItem(game.id + index + '-encounter')) { print(localStorage.getItem(game.id + index + '-encounter')) } %>" name="pokemon" type="hidden">
+						<i class="dropdown icon"></i>
+						<div class="default text">Encounter</div>
+						<div class="menu"></div>
+					</div>
+				</td>
+				<td data-sort-value="<%- localStorage.getItem(game.id + index + '-nickname') %>">
+					<div class="ui fluid input">
+						<input autocomplete="off" maxlength="<%- game.nameLimit %>" value="<% if (localStorage.getItem(game.id + index + '-nickname')) { print(localStorage.getItem(game.id + index + '-nickname')) } %>" id="<%- game.id + index %>-nickname" placeholder="Nickname" type="text">
+					</div>
+				</td>
+				<td data-sort-value="<%- localStorage.getItem(game.id + index + '-status') %>">
+					<div id="<%- game.id + index %>-status" class="ui fluid selection dropdown">
+						<input value="<% if (localStorage.getItem(game.id + index + '-status')) { print(localStorage.getItem(game.id + index + '-status')) } %>" name="status" type="hidden">
+						<i class="dropdown icon"></i>
+						<div class="default text">Status</div>
+						<div class="menu">
+							<div class="item" data-value="captured"><i class="checkmark icon"></i>Captured</div>
+							<div class="item" data-value="received"><i class="gift icon"></i>Received</div>
+							<div class="item" data-value="traded"><i class="exchange icon"></i>Traded</div>
+							<div class="item" data-value="missed"><i class="ban icon"></i>Missed</div>
+							<div class="item" data-value="stored"><i class="disk outline icon"></i>Stored</div>
+							<div class="item" data-value="deceased"><i class="remove icon"></i>Deceased</div>
+						</div>
+					</div>
+				</td>
+				<td><div class="ui basic singleReset fluid icon button" data-index="<%- index %>"><i class="trash outline icon"></i></div></td>
+			</tr>
+		<% }); %>
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
+	<script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+	<script src="js/main.min.js"></script>
+	</body>
+</html>
