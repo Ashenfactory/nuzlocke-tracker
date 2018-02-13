@@ -3354,6 +3354,8 @@ $('#fileLoader').on('change', function() {
 					_.each(data.locations, function(location) {
 						populateLocation(data.id, location);
 					});
+
+					$('a.item[data-tab="' + data.id + '"]').trigger('click');
 				} else {
 					$('#errorMessage').removeClass('hidden');
 					$('#messageHeader').text('Incorrect format');
