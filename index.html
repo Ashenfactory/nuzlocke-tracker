@@ -13,14 +13,15 @@
 		<link rel="stylesheet" href="css/main.min.css">
 	</head>
 	<body>
-	<div class="ui inline cookie nag">
-		<span class="title">
-			This website uses cookies to remember your Pokémon
-		</span>
-		<i class="close icon"></i>
-	</div>
 
 	<div class="pusher">
+		<div class="ui inline cookie nag">
+			<span class="title">
+				This website uses cookies to remember your Pokémon
+			</span>
+			<i class="close icon"></i>
+		</div>
+
 		<div class="ui container">
 		<!--[if lte IE 9]>
 			<div class="ui error message">
@@ -51,10 +52,21 @@
 		</div>
 	</div>
 
-	<div class="ui modal mini">
+	<div id="importModal" class="ui modal tiny">
+		<div class="header">Import</div>
+		<div class="content">
+			<p>Are you sure you want to import the selected file? Any unsaved data will be lost.</p>
+		</div>
+		<div class="actions">
+			<div class="ui approve button">Yes</div>
+			<div class="ui cancel button">No</div>
+		</div>
+	</div>
+
+	<div id="resetModal" class="ui modal tiny">
 		<div class="header">Reset</div>
 		<div class="content">
-			<p>Really clear all data associated with this game?</p>
+			<p>Really clear all data associated with this game? Any unsaved data will be lost.</p>
 		</div>
 		<div class="actions">
 			<div class="ui approve button">Yes</div>
@@ -106,7 +118,7 @@
 						<th class="center aligned">Location</th>
 						<th class="center aligned">Encounter</th>
 						<th class="center aligned">Nickname</th>
-						<th class="center aligned three wide">Status</th>
+						<th class="center aligned">Status</th>
 						<th class="center aligned no-sort one wide disabled"></th>
 					</tr>
 				</thead>
