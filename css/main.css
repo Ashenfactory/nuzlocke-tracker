@@ -107,7 +107,7 @@ textarea {
     margin-top: 1em;
 }
 
-.dropdown .text {
+.dropdown .text, .ui.selection.dropdown .menu > .item {
     white-space: nowrap;
 }
 
