@@ -3373,16 +3373,20 @@ $('#fileLoader').on('change', function() {
 function populateLocation(game, data) {
 	var id = game + data.id;
 
-	if (data.encounter !== null) {
+	if (data.encounter !== null && data.encounter !== '') {
 		$('#' + id + '-encounter').dropdown('set value', data.encounter);
-		$('#' + id + '-encounter').dropdown('set text', '<i class="' + data.encounter + ' pkmn>' + data.name);
+		$('#' + id + '-encounter').dropdown('set text', '<i class="' + data.encounter + ' pkmn"></i>' + data.name);
+		$('#' + id + '-encounter').data('name', data.name);
 		localStorage.setItem(id + '-encounter', data.encounter);
+		localStorage.setItem(id + '-name', data.name);
 	} else {
 		$('#' + id + '-encounter').dropdown('clear');
+		$('#' + id + '-encounter').removeAttr('name').removeData('name');
 		localStorage.removeItem(id + '-encounter');
+		localStorage.removeItem(id + '-name');
 	}
 
-	if (data.nickname !== null) {
+	if (data.nickname !== null && data.nickname !== '') {
 		$('#' + id + '-nickname').val(data.nickname);
 		localStorage.setItem(id + '-nickname', data.nickname);
 	} else {
@@ -3390,7 +3394,7 @@ function populateLocation(game, data) {
 		localStorage.removeItem(id + '-nickname');
 	}
 
-	if (data.status !== null) {
+	if (data.status !== null && data.status !== '') {
 		$('#' + id + '-status').dropdown('set selected', data.status);
 		localStorage.setItem(id + '-status', data.status);
 	} else {
@@ -3403,10 +3407,12 @@ function clearLocation (game, index) {
 	var encounter = game + index + '-encounter';
 	var nickname = game + index + '-nickname';
 	var status = game + index + '-status';
+	var name = game + index + '-name';
 
 	localStorage.removeItem(encounter);
 	localStorage.removeItem(nickname);
 	localStorage.removeItem(status);
+	localStorage.removeItem(name);
 
 	$('#' + encounter).dropdown('clear');
 	$('#' + nickname).val('');
@@ -3468,9 +3474,6 @@ function initTab(tab) {
 		onChange: function(value, name) {
 			localStorage.setItem($(this).prop('id'), value);
 			$(this).closest('td').data('sortValue', name);
-		},
-		'metadata': {
-			'placeholderText': 'Status'
 		}
 	});
 	$('#' + tab + '-locations .encounter-picker').dropdown({
@@ -3480,6 +3483,7 @@ function initTab(tab) {
 
 			localStorage.setItem($(this).prop('id'), value);
 			$(this).closest('td').data('sortValue', name);
+			$(this).data('name', name);
 		},
 		onShow: function() {
 			$(this).find('input.search').first().focus();
@@ -3491,9 +3495,6 @@ function initTab(tab) {
 				'success': true,
 				'results': pkmn
 			}
-		},
-		'metadata': {
-			'placeholderText': 'Encounter'
 		}
 	});
 
