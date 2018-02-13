@@ -65,28 +65,41 @@
 	<input class="hidden" autocomplete="off" id="fileLoader" accept=".json, application/json" type="file">
 
 	<script type="text/template" id="main-template">
-		<div class="ui six item fluid stackable menu top attached">
-			<a title="Red, Blue and Yellow" class="item" data-tab="rby">RBY</a>
-			<a title="Gold, Silver and Crystal" class="item" data-tab="gsc">GSC</a>
-			<a title="Ruby, Sapphire and Emerald" class="item" data-tab="rse">RSE</a>
-			<a title="FireRed and LeafGreen" class="item" data-tab="frlg">FRLG</a>
-			<a title="Diamond, Pearl and Platinum" class="item" data-tab="dpp">DPP</a>
-			<a title="HeartGold and SoulSilver" class="item" data-tab="hgss">HGSS</a>
-		</div>
-		<div class="ui six item fluid stackable menu bottom attached">
-			<a title="Black and White" class="item" data-tab="bw">BW</a>
-			<a title="Black 2 and White 2" class="item" data-tab="bw2">BW2</a>
-			<a title="X and Y" class="item" data-tab="xy">XY</a>
-			<a title="Omega Ruby and Alpha Sapphire" class="item" data-tab="oras">ORAS</a>
-			<a title="Sun and Moon" class="item" data-tab="sm">SM</a>
-			<a title="Ultra Sun and Ultra Moon" class="item" data-tab="usum">USUM</a>
+		<div class="ui stackable top attached secondary menu">
+			<div class="ui dropdown item">
+				<i class="sidebar icon"></i>
+				Games
+				<i class="dropdown icon"></i>
+				<div class="menu">
+					<a class="item" data-tab="rby">Red, Blue and Yellow</a>
+					<a class="item" data-tab="gsc">Gold, Silver and Crystal</a>
+					<a class="item" data-tab="rse">Ruby, Sapphire and Emerald</a>
+					<a class="item" data-tab="frlg">FireRed and LeafGreen</a>
+					<a class="item" data-tab="dpp">Diamond, Pearl and Platinum</a>
+					<a class="item" data-tab="hgss">HeartGold and SoulSilver</a>
+					<a class="item" data-tab="bw">Black and White</a>
+					<a class="item" data-tab="bw2">Black 2 and White 2</a>
+					<a class="item" data-tab="xy">X and Y</a>
+					<a class="item" data-tab="oras">Omega Ruby and Alpha Sapphire</a>
+					<a class="item" data-tab="sm">Sun and Moon</a>
+					<a class="item" data-tab="usum">Ultra Sun and Ultra Moon</a>
+				</div>
+			</div>
+			<div class="right menu">
+				<div class="item">
+					<button class="ui basic fluid saveData button"><i class="download icon"></i>Export</button>
+				</div>
+				<div class="item">
+					<button class="ui basic fluid loadData button"><i class="upload icon"></i>Import</button>
+				</div>
+				<div class="item">
+					<button class="ui basic fluid reset button"><i class="trash outline icon"></i>Reset</button>
+				</div>
+			</div>
 		</div>
 		<% _.each(games, function(game) { %>
-		<div class="ui tab segment" data-tab="<%= game.id %>">
+		<div class="ui bottom attached segment tab" data-tab="<%= game.id %>">
 			<h2 class="ui header"><%- game.title %></h2>
-			<button class="ui basic saveData button"><i class="download icon"></i>Export</button>
-			<button class="ui basic loadData button"><i class="upload icon"></i>Import</button>
-			<button class="ui basic reset button"><i class="trash outline icon"></i>Reset</button>
 			<table class="ui table sortable selectable">
 				<thead>
 					<tr>
