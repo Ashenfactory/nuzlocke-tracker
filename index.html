@@ -80,18 +80,9 @@
 				Games
 				<i class="dropdown icon"></i>
 				<div class="menu">
-					<a class="item" data-tab="rby">Red, Blue and Yellow</a>
-					<a class="item" data-tab="gsc">Gold, Silver and Crystal</a>
-					<a class="item" data-tab="rse">Ruby, Sapphire and Emerald</a>
-					<a class="item" data-tab="frlg">FireRed and LeafGreen</a>
-					<a class="item" data-tab="dpp">Diamond, Pearl and Platinum</a>
-					<a class="item" data-tab="hgss">HeartGold and SoulSilver</a>
-					<a class="item" data-tab="bw">Black and White</a>
-					<a class="item" data-tab="bw2">Black 2 and White 2</a>
-					<a class="item" data-tab="xy">X and Y</a>
-					<a class="item" data-tab="oras">Omega Ruby and Alpha Sapphire</a>
-					<a class="item" data-tab="sm">Sun and Moon</a>
-					<a class="item" data-tab="usum">Ultra Sun and Ultra Moon</a>
+					<% _.each(games, function(game) { %>
+					<a class="item" data-tab="<%- game.id %>"><%- game.title %></a>
+					<% }); %>
 				</div>
 			</div>
 			<div class="right menu">

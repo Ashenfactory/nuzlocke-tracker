@@ -126,6 +126,10 @@ textarea {
 }
 
 @media only screen and (max-width:767px) {
+    .ui.secondary.menu .dropdown.item {
+        border-bottom: 1px solid rgb(212, 212, 213);
+    }
+
     .ui.table:not(.unstackable) tr > th.disabled {
         display: none !important;
     }
