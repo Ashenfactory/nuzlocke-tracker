@@ -56,9 +56,7 @@
                 sortedMap = [];
 
             var unsortedValues = cells.map(function(idx, cell) {
-                if (sortBy)
-                    return (typeof sortBy === 'function') ? sortBy($(th), $(cell), self) : sortBy;
-                return ($(this).data().sortValue !== null ? $(this).data().sortValue : $(this).text());
+                return $(this).data().sortValue;
             });
             if (unsortedValues.length === 0) return;
 
@@ -130,14 +128,11 @@
         debug: $.tablesort.DEBUG,
         asc: 'sorted ascending',
         desc: 'sorted descending',
-        compare: function(a, b) {
-            if (a > b) {
-                return 1;
-            } else if (a < b) {
-                return -1;
-            } else {
-                return 0;
-            }
+        compare: function(a, b, direction) {
+            if (a === "" || a === null) return direction === 1 ? 1 : -1;
+            if (b === "" || b === null) return direction === 1 ? -1 : 1;
+            if (a === b) return 0;
+            return a < b ? -1 : 1;
         }
     };
 

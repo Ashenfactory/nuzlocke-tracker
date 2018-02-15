@@ -3295,13 +3295,6 @@ var selectedGame = localStorage.getItem('selectedGame') ? localStorage.getItem('
 var mainTpl = _.template($('#main-template').html(), {variable: 'games'});
 var locTpl = _.template($('#loc-template').html(), {variable: 'game'});
 
-$.tablesort.defaults.compare = function(a, b, direction) {
-    if (a === "" || a === null) return direction === 1 ? 1 : -1;
-    if (b === "" || b === null) return direction === 1 ? -1 : 1;
-    if (a === b) return 0;
-    return a < b ? -1 : 1;
-};
-
 $('.message .close').on('click', function() {
 	$(this).closest('.message').transition('fade');
 });
@@ -3364,49 +3357,55 @@ function uploadFile(input) {
 function populateLocation(game, data) {
 	var id = game + data.id;
 
+	var encounterElm = $('#' + id + '-encounter');
+	var nicknameElm = $('#' + id + '-nickname');
+	var statusElm = $('#' + id + '-status');
+
 	if (data.encounter !== null && data.encounter !== '') {
-		$('#' + id + '-encounter').dropdown('set value', data.encounter);
-		$('#' + id + '-encounter').dropdown('set text', '<i class="' + data.encounter + ' pkmn"></i>' + data.name);
-		$('#' + id + '-encounter').data('name', data.name);
+		encounterElm.dropdown('set value', data.encounter);
+		encounterElm.dropdown('set text', '<i class="' + data.encounter + ' pkmn"></i>' + data.name);
+		encounterElm.data('name', data.name);
 		localStorage.setItem(id + '-encounter', data.encounter);
 		localStorage.setItem(id + '-name', data.name);
 	} else {
-		$('#' + id + '-encounter').dropdown('clear');
+		encounterElm.closest('td').data('sortValue', '');
+		encounterElm.dropdown('clear');
 		localStorage.removeItem(id + '-encounter');
 		localStorage.removeItem(id + '-name');
 	}
 
 	if (data.nickname !== null && data.nickname !== '') {
-		$('#' + id + '-nickname').val(data.nickname);
-		localStorage.setItem(id + '-nickname', data.nickname);
+		nicknameElm.val(data.nickname);
 	} else {
-		$('#' + id + '-nickname').val('');
-		localStorage.removeItem(id + '-nickname');
+		nicknameElm.val('').closest('td').data('sortValue', '');
 	}
 
 	if (data.status !== null && data.status !== '') {
-		$('#' + id + '-status').dropdown('set selected', data.status);
+		statusElm.dropdown('set selected', data.status);
 		localStorage.setItem(id + '-status', data.status);
 	} else {
-		$('#' + id + '-status').dropdown('clear');
+		statusElm.closest('td').data('sortValue', '');
+		statusElm.dropdown('clear');
 		localStorage.removeItem(id + '-status');
 	}
 }
 
-function clearLocation (game, index) {
-	var encounter = game + index + '-encounter';
-	var nickname = game + index + '-nickname';
-	var status = game + index + '-status';
-	var name = game + index + '-name';
+function clearLocation(id) {
+	var encounter = id + '-encounter';
+	var nickname = id + '-nickname';
+	var status = id + '-status';
+	var name = id + '-name';
+
+	$('#' + encounter).dropdown('clear');
+	$('#' + encounter).closest('td').data('sortValue', '');
+	$('#' + nickname).val('').closest('td').data('sortValue', '');
+	$('#' + status).dropdown('clear');
+	$('#' + status).closest('td').data('sortValue', '');
 
 	localStorage.removeItem(encounter);
 	localStorage.removeItem(nickname);
 	localStorage.removeItem(status);
 	localStorage.removeItem(name);
-
-	$('#' + encounter).dropdown('clear');
-	$('#' + nickname).val('');
-	$('#' + status).dropdown('clear');
 }
 
 $('#resetModal').modal({
@@ -3414,7 +3413,9 @@ $('#resetModal').modal({
 		var selectedGame = localStorage.getItem('selectedGame');
 
 		_.each(games[selectedGame].locations, function(location, index) {
-			clearLocation(selectedGame, index);
+			var id = selectedGame + index;
+
+			clearLocation(id);
 		});
 	}
 });
@@ -3457,29 +3458,39 @@ function initTab(tab) {
 	});
 
 	$('.singleReset.button').on('click', function() {
-		var selectedGame = localStorage.getItem('selectedGame');
-		clearLocation(selectedGame, $(this).data('index'));
+		var id = localStorage.getItem('selectedGame') + $(this).data('index');
+		clearLocation(id);
 	});
 
-	$('#' + tab + '-locations input').on('change', function() {
-		localStorage.setItem($(this).prop('id'), $(this).val());
-		$(this).closest('td').data('sortValue', $(this).val());
+	$('#' + tab + '-locations input[type="text"]').on('change', function() {
+		var elm = $(this);
+
+		if (elm.val() !== '' || elm.val() !== null) {
+			elm.closest('td').data('sortValue', elm.val());
+			localStorage.setItem(elm.prop('id'), elm.val());
+		} else {
+			elm.closest('td').data('sortValue', '');
+			localStorage.removeItem(elm.prop('id'));
+		}
 	});
 
 	$('#' + tab + '-locations .ui.dropdown').dropdown({
 		onChange: function(value, name) {
-			localStorage.setItem($(this).prop('id'), value);
-			$(this).closest('td').data('sortValue', name);
+			var elm = $(this);
+
+			elm.closest('td').data('sortValue', name);
+			localStorage.setItem(elm.prop('id'), value);
 		}
 	});
 	$('#' + tab + '-locations .encounter-picker').dropdown({
 		onChange: function(value, name) {
 			var regex = new RegExp(/[^>]*$/, 'i');
-			localStorage.setItem($(this).prop('id').slice(0, -9) + 'name', regex.exec(name));
+			var elm = $(this);
 
-			localStorage.setItem($(this).prop('id'), value);
-			$(this).closest('td').data('sortValue', name);
-			$(this).data('name', name);
+			elm.closest('td').data('sortValue', name);
+			elm.data('name', name);
+			localStorage.setItem(elm.prop('id').slice(0, -9) + 'name', regex.exec(name));
+			localStorage.setItem(elm.prop('id'), value);
 		},
 		onShow: function() {
 			$(this).find('input.search').first().focus();
@@ -3495,7 +3506,9 @@ function initTab(tab) {
 	});
 
 	$('#' + tab + '-locations .encounter-picker[data-name!=""]').each(function() {
-		$(this).dropdown('set text', '<i class="' + $(this).children('input').first().val() + ' pkmn"></i>' + $(this).data('name'));
+		var elm = $(this);
+
+		elm.dropdown('set text', '<i class="' + elm.children('input').first().val() + ' pkmn"></i>' + elm.data('name'));
 	});
 
 	$('#' + tab + '-locations').closest('table').tablesort();
