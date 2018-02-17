@@ -1,5 +1,3 @@
-$('html').removeClass('no-js').addClass('js');
-
 var games = {
 	'rby': {
 		'id': 'rby',
@@ -3291,40 +3289,8 @@ if (!localStorage.getItem('selectedGame')) {
 }
 
 var selectedGame = localStorage.getItem('selectedGame') ? localStorage.getItem('selectedGame') : 'rby';
-
 var mainTpl = _.template($('#main-template').html(), {variable: 'games'});
 var locTpl = _.template($('#loc-template').html(), {variable: 'game'});
-
-$('.message .close').on('click', function() {
-	$(this).closest('.message').transition('fade');
-});
-
-$('#mainContent').html(mainTpl(games));
-$('#' + selectedGame + '-locations').html(locTpl(games[selectedGame]));
-
-$('[data-tab="' + selectedGame + '"]').addClass('active');
-
-$('.menu .item').tab({
-	onFirstLoad: function(tabPath) {
-		$('#' + tabPath + '-locations').html(locTpl(games[tabPath]));
-		initTab(tabPath);
-	},
-	onLoad: function(tabPath) {
-		localStorage.setItem('selectedGame', tabPath);
-	}
-});
-
-$('.cookie.nag').nag({
-	'storageMethod': 'localstorage',
-	'key': 'accepts-cookies',
-	'value': true
-});
-
-$('.ui.dropdown').dropdown();
-
-$('#fileLoader').on('change', function() {
-	$('#importModal').modal('show');
-});
 
 function uploadFile(input) {
 	if (input.files && input.files[0]) {
@@ -3407,26 +3373,6 @@ function clearLocation(id) {
 	localStorage.removeItem(status);
 	localStorage.removeItem(name);
 }
-
-$('#resetModal').modal({
-	onApprove: function() {
-		var selectedGame = localStorage.getItem('selectedGame');
-
-		_.each(games[selectedGame].locations, function(location, index) {
-			var id = selectedGame + index;
-
-			clearLocation(id);
-		});
-	}
-});
-
-$('#resetModal').modal('attach events', '.reset.button', 'show');
-
-$('#importModal').modal({
-	onApprove: function() {
-		uploadFile($('#fileLoader')[0]);
-	}
-});
 
 function dateString() {
 	var d = new Date();
@@ -3514,4 +3460,57 @@ function initTab(tab) {
 	$('#' + tab + '-locations').closest('table').tablesort();
 }
 
-initTab(selectedGame);
+$('#resetModal').modal({
+	onApprove: function() {
+		var selectedGame = localStorage.getItem('selectedGame');
+
+		_.each(games[selectedGame].locations, function(location, index) {
+			var id = selectedGame + index;
+
+			clearLocation(id);
+		});
+	}
+});
+
+$('#importModal').modal({
+	onApprove: function() {
+		uploadFile($('#fileLoader')[0]);
+	}
+});
+
+$('.message .close').on('click', function() {
+	$(this).closest('.message').transition('fade');
+});
+
+$('#mainContent').html(mainTpl(games));
+$('#' + selectedGame + '-locations').html(locTpl(games[selectedGame]));
+
+$('[data-tab="' + selectedGame + '"]').addClass('active');
+
+$('.menu .item').tab({
+	onFirstLoad: function(tabPath) {
+		$('#' + tabPath + '-locations').html(locTpl(games[tabPath]));
+		initTab(tabPath);
+	},
+	onLoad: function(tabPath) {
+		localStorage.setItem('selectedGame', tabPath);
+	}
+});
+
+$('.cookie.nag').nag({
+	'storageMethod': 'localstorage',
+	'key': 'accepts-cookies',
+	'value': true
+});
+
+$('#resetModal').modal('attach events', '.resetData.button', 'show');
+
+$('#fileLoader').on('change', function() {
+	$('#importModal').modal('show');
+});
+
+$('#gameMenu').dropdown();
+
+$(function() {
+	initTab(selectedGame);
+});

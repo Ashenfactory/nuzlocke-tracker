@@ -8,6 +8,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
+		<script type="text/javascript">
+			document.documentElement.className = 'js';
+		</script>
 	</head>
 	<body>
 
@@ -34,7 +37,9 @@
 				<p id="messageContent"></p>
 			</div>
 
-			<div id="mainContent"></div>
+			<div id="mainContent">
+				<div class="ui loading segment"></div>
+			</div>
 
 			<div id="noscript" class="ui error message">
 				<div class="header">It looks like JavaScript is disabled</div>
@@ -75,7 +80,7 @@
 
 	<script type="text/template" id="main-template">
 		<div class="ui stackable top attached secondary menu">
-			<div class="ui dropdown item">
+			<div id="gameMenu" class="ui dropdown item">
 				<i class="sidebar icon"></i>
 				Games
 				<i class="dropdown icon"></i>
@@ -87,13 +92,13 @@
 			</div>
 			<div class="right menu">
 				<div class="item">
-					<button class="ui basic fluid saveData button"><i class="download icon"></i>Export</button>
+					<button class="ui green fluid saveData button"><i class="download icon"></i>Export</button>
 				</div>
 				<div class="item">
-					<button class="ui basic fluid loadData button"><i class="upload icon"></i>Import</button>
+					<button class="ui blue fluid loadData button"><i class="upload icon"></i>Import</button>
 				</div>
 				<div class="item">
-					<button class="ui basic fluid reset button"><i class="trash outline icon"></i>Reset</button>
+					<button class="ui red fluid resetData button"><i class="trash icon"></i>Reset</button>
 				</div>
 			</div>
 		</div>
@@ -149,7 +154,7 @@
 						</div>
 					</div>
 				</td>
-				<td><div class="ui basic singleReset fluid icon button" data-index="<%- index %>"><i class="trash outline icon"></i></div></td>
+				<td><div title="Delete" class="ui basic singleReset fluid icon button" data-index="<%- index %>"><i class="trash outline icon"></i></div></td>
 			</tr>
 		<% }); %>
 	</script>
