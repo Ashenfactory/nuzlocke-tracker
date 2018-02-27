@@ -9,7 +9,7 @@ var games = {
 		'id': 'gsc',
 		'title': 'Gold, Silver and Crystal',
 		'nameLimit': 10,
-		'locations': ["New Bark Town", "Route 29", "Cherrygrove City", "Route 30", "Route 31", "Dark Cave", "Violet City", "Sprout Tower", "Route 32", "Ruins of Alph", "Union Cave", "Route 33", "Azalea Town", "Slowpoke Well", "Ilex Forest", "Route 34", "Goldenrod City", "Route 35", "National Park", "Route 36", "Route 37", "Ecruteak City", "Burned Tower", "Tin Tower", "Route 38", "Route 39", "Olivine City", "Route 40", "Route 41", "Whirl Islands", "Cianwood City", "Route 42", "Mt. Mortar", "Mahogany Town", "Rocket Hideout", "Route 43", "Lake of Rage", "Route 44", "Ice Path", "Blackthorn City", "Dragon's Den", "Route 45", "Dark Cave 2", "Route 46", "Route 27", "Tohjo Falls", "Route 26", "Victory Road", "Indigo Plateau", "Vermillion City", "Route 6", "Saffron City", "Route 5", "Route 7", "Route 8", "Route 10", "Power Plant (Crystal, Trade)", "Rock Tunnel", "Route 9", "Cerulean City", "Route 24", "Route 25", "Route 4", "Route 16", "Route 17", "Route 18", "Fuschia City", "Route 15", "Route 14", "Route 13", "Route 12", "Route 11", "Diglett's Cave", "Route 2", "Pewter City", "Route 3", "Mt. Moon", "Viridian City", "Route 1", "Pallet Town", "Route 21", "Cinnabar Island", "Route 20", "Route 19", "Route 22", "Route 28", "Mt. Silver"]
+		'locations': ["New Bark Town", "Route 29", "Cherrygrove City", "Route 30", "Route 31", "Dark Cave", "Violet City", "Sprout Tower", "Route 32", "Ruins of Alph", "Union Cave", "Route 33", "Azalea Town", "Slowpoke Well", "Ilex Forest", "Route 34", "Goldenrod City", "Route 35", "National Park", "Route 36", "Route 37", "Ecruteak City", "Burned Tower", "Tin Tower", "Route 38", "Route 39", "Olivine City", "Route 40", "Route 41", "Whirl Islands", "Cianwood City", "Route 42", "Mt. Mortar", "Mahogany Town", "Rocket Hideout", "Route 43", "Lake of Rage", "Route 44", "Ice Path", "Blackthorn City", "Dragon's Den", "Route 45", "Dark Cave 2", "Route 46", "Route 27", "Tohjo Falls", "Route 26", "Victory Road", "Indigo Plateau", "Vermillion City", "Route 6", "Saffron City", "Route 5", "Route 7", "Route 8", "Route 10", "Rock Tunnel", "Route 9", "Cerulean City", "Route 24", "Route 25", "Route 4", "Route 16", "Route 17", "Route 18", "Fuschia City", "Route 15", "Route 14", "Route 13", "Route 12", "Route 11", "Diglett's Cave", "Route 2", "Pewter City", "Route 3", "Mt. Moon", "Viridian City", "Route 1", "Pallet Town", "Route 21", "Cinnabar Island", "Route 20", "Route 19", "Route 22", "Route 28", "Mt. Silver"]
 	},
 	'rse': {
 		'id': 'rse',
@@ -3424,7 +3424,7 @@ function initTab(tab) {
 		onChange: function(value, name) {
 			var elm = $(this);
 
-			elm.closest('td').data('sortValue', name);
+			elm.closest('td').data('sortValue', value);
 			localStorage.setItem(elm.prop('id'), value);
 		}
 	});
@@ -3433,7 +3433,7 @@ function initTab(tab) {
 			var regex = new RegExp(/[^>]*$/, 'i');
 			var elm = $(this);
 
-			elm.closest('td').data('sortValue', name);
+			elm.closest('td').data('sortValue', value);
 			elm.data('name', name);
 			localStorage.setItem(elm.prop('id').slice(0, -9) + 'name', regex.exec(name));
 			localStorage.setItem(elm.prop('id'), value);

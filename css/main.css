@@ -130,12 +130,18 @@ textarea {
 }
 
 @media only screen and (max-width:767px) {
-    .ui.secondary.menu .dropdown.item {
+    .ui.top.attached.menu > .item:first-child {
         border-bottom: 1px solid rgb(212, 212, 213);
     }
 
     .ui.table:not(.unstackable) tr > th.disabled {
         display: none !important;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .ui.top.attached.menu > .item:first-child {
+        border-radius: .28571429rem;
     }
 }
 
