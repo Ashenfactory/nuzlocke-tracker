@@ -129,6 +129,10 @@ textarea {
     min-height: 10em;
 }
 
+.ui.table:not(.unstackable) > thead > tr {
+    padding: 0;
+}
+
 @media only screen and (max-width:767px) {
     .ui.top.attached.menu > .item:first-child {
         border-bottom: 1px solid rgb(212, 212, 213);
