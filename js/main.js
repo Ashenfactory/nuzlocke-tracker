@@ -863,6 +863,7 @@ var games = {
 			"Route 6",
 			"Route 7",
 			"Wela Volcano Park",
+			"Dividing Peak Tunnel",
 			"Route 8",
 			"Fossil Restoration Center",
 			"Lush Jungle",
