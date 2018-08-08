@@ -4237,7 +4237,7 @@ function clearLocation(id) {
 
 function dateString() {
 	var d = new Date();
-	return d.getUTCFullYear() + '-' + ('0' + (d.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + d.getUTCDate()).slice(-2);
+	return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
 }
 
 function initTab(tab) {
