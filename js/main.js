@@ -4241,15 +4241,14 @@ function dateString() {
 }
 
 function initTab(tab) {
-	var selectedGame = localStorage.getItem('selectedGame');
-	var blobData = {id: selectedGame, locations: []};
+	var blobData = {id: tab, locations: []};
 
 	$('.saveData.button').on('click', function() {
-		_.each(games[selectedGame].locations, function(location, index) {
-			var encounter = localStorage.getItem(selectedGame + index + '-encounter');
-			var name = localStorage.getItem(selectedGame + index + '-name');
-			var nickname = localStorage.getItem(selectedGame + index + '-nickname');
-			var status = localStorage.getItem(selectedGame + index + '-status');
+		_.each(games[tab].locations, function(location, index) {
+			var encounter = localStorage.getItem(tab + index + '-encounter');
+			var name = localStorage.getItem(tab + index + '-name');
+			var nickname = localStorage.getItem(tab + index + '-nickname');
+			var status = localStorage.getItem(tab + index + '-status');
 
 			blobData.locations.push({'id': index, 'encounter': encounter, 'name': name, 'nickname': nickname, 'status': status});
 		});
@@ -4257,7 +4256,7 @@ function initTab(tab) {
 		blobData = JSON.stringify(blobData);
 
 		var blob = new Blob([blobData], {type: 'application/json;charset=utf-8'});
-		saveAs(blob, selectedGame + '.' + dateString() + '.json');
+		saveAs(blob, tab + '.' + dateString() + '.json');
 	});
 
 	$('.loadData.button').on('click', function() {
@@ -4265,7 +4264,7 @@ function initTab(tab) {
 	});
 
 	$('.singleReset.button').on('click', function() {
-		var id = selectedGame + $(this).data('index');
+		var id = tab + $(this).data('index');
 		clearLocation(id);
 	});
 
@@ -4290,8 +4289,6 @@ function initTab(tab) {
 		}
 	});
 
-	console.log(selectedGame);
-
 	$('#' + tab + '-locations .encounter-picker').dropdown({
 		onChange: function(value, name) {
 			var regex = new RegExp(/[^>]*$/, 'i');
@@ -4310,7 +4307,7 @@ function initTab(tab) {
 		'apiSettings': {
 			'response': {
 				'success': true,
-				'results': pkmnData.slice(0, games[selectedGame].dexLimit)
+				'results': pkmnData.slice(0, games[tab].dexLimit)
 			}
 		}
 	});
@@ -4354,10 +4351,10 @@ $('[data-tab="' + selectedGame + '"]').addClass('active');
 $('.menu .item').tab({
 	onFirstLoad: function(tabPath) {
 		$('#' + tabPath + '-locations').html(locTpl(games[tabPath]));
+		initTab(tabPath);
 	},
 	onLoad: function(tabPath) {
 		localStorage.setItem('selectedGame', tabPath);
-		initTab(tabPath);
 	}
 });
 
