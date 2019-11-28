@@ -4162,11 +4162,13 @@ function uploadFile(input) {
 				var data = JSON.parse(fr.result);
 
 				if (data && data.hasOwnProperty('locations')) {
+					if (localStorage.getItem('selectedGame') !== data.id) {
+						$('#gameMenu .menu').find('.item[data-tab="' + data.id + '"]').click();
+					}
+
 					_.each(data.locations, function(location) {
 						populateLocation(data.id, location);
 					});
-
-					$('#gameMenu .menu').find('.item[data-tab="' + data.id + '"]').click();
 				} else {
 					$('#errorMessage').removeClass('hidden');
 					$('#messageHeader').text('Incorrect format');
