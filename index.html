@@ -6,7 +6,7 @@
 		<title>Nuzlocke Tracker</title>
 		<meta name="description" content="A tool for tracking Pokémon encounters and captures during Nuzloke challenges">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" integrity="sha256-oDCP2dNW17Y1QhBwQ+u2kLaKxoauWvIGks3a4as9QKs=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ=" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/main.min.css">
 		<script>
 			document.documentElement.className = 'js';
@@ -48,7 +48,7 @@
 
 			<div class="ui inverted vertical footer segment">
 				<div class="ui center aligned container">
-					<p>Pokémon © 2002-<span class="copyright-year">2018</span> Pokémon. © 1995-<span class="copyright-year">2018</span> Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.</p>
+					<p>Pokémon © 2002-<span class="copyright-year">2019</span> Pokémon. © 1995-<span class="copyright-year">2019</span> Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.</p>
 				</div>
 			</div>
 		</div>
@@ -75,8 +75,6 @@
 			</div>
 		</div>
 
-		<input class="hidden" id="fileLoader" accept=".json, application/json" type="file">
-
 		<script type="text/template" id="main-template">
 			<div class="ui stackable top attached secondary menu">
 				<div id="gameMenu" class="ui dropdown item">
@@ -91,13 +89,14 @@
 				</div>
 				<div class="right menu">
 					<div class="item">
-						<button class="ui green fluid saveData button"><i class="download icon"></i>Export</button>
+						<button id="saveData" class="ui green fluid button"><i class="download icon"></i>Export</button>
 					</div>
 					<div class="item">
-						<button class="ui blue fluid loadData button"><i class="upload icon"></i>Import</button>
+						<label id="loadData" class="ui blue fluid button" for="fileLoader"><i class="upload icon"></i>Import</label>
+						<input class="visually-hidden" id="fileLoader" accept=".json, application/json" type="file">
 					</div>
 					<div class="item">
-						<button class="ui red fluid resetData button"><i class="trash icon"></i>Reset</button>
+						<button id="resetData" class="ui red fluid button"><i class="trash icon"></i>Reset</button>
 					</div>
 				</div>
 			</div>
@@ -158,11 +157,11 @@
 			<% }); %>
 		</script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="js/plugins.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" integrity="sha256-G7A4JrJjJlFqP0yamznwPjAApIKPkadeHfyIwiaa9e0=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js" integrity="sha256-RKNmL9+6j/3jB72OcIg8OQr91Bi4OgFPnKQOFS1O+fo=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js" integrity="sha256-FPJJt8nA+xL4RU6/gsriA8p8xAeLGatoyTjldvQKGdE=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" integrity="sha256-CgSoWC9w5wNmI1aN8dIMK+6DPelUEtvDr+Bc2m/0Nx8=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha256-u/J1Urdrk3nCYFefpoeTMgI5viU1ujCDu2fXXoSJjhg=" crossorigin="anonymous"></script>
 		<script src="js/main.min.js"></script>
 	</body>
 </html>

@@ -4165,6 +4165,8 @@ function uploadFile(input) {
 					_.each(data.locations, function(location) {
 						populateLocation(data.id, location);
 					});
+
+					$('#gameMenu .menu').find('.item[data-tab="' + data.id + '"]').click();
 				} else {
 					$('#errorMessage').removeClass('hidden');
 					$('#messageHeader').text('Incorrect format');
@@ -4235,15 +4237,10 @@ function clearLocation(id) {
 	localStorage.removeItem(name);
 }
 
-function dateString() {
-	var d = new Date();
-	return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
-}
-
 function initTab(tab) {
 	var blobData = {id: tab, locations: []};
 
-	$('.saveData.button').on('click', function() {
+	$('#saveData').on('click', function() {
 		_.each(games[tab].locations, function(location, index) {
 			var encounter = localStorage.getItem(tab + index + '-encounter');
 			var name = localStorage.getItem(tab + index + '-name');
@@ -4256,11 +4253,7 @@ function initTab(tab) {
 		blobData = JSON.stringify(blobData);
 
 		var blob = new Blob([blobData], {type: 'application/json;charset=utf-8'});
-		saveAs(blob, tab + '.' + dateString() + '.json');
-	});
-
-	$('.loadData.button').on('click', function() {
-		$('#fileLoader').trigger('click');
+		saveAs(blob, tab + '.' + new Date().toISOString().slice(0, 10) + '.json');
 	});
 
 	$('.singleReset.button').on('click', function() {
@@ -4298,12 +4291,26 @@ function initTab(tab) {
 			elm.data('name', name);
 			localStorage.setItem(elm.prop('id').slice(0, -9) + 'name', regex.exec(name));
 			localStorage.setItem(elm.prop('id'), value);
+			elm.find('.search').blur();
 		},
 		onShow: function() {
-			$(this).find('input.search').first().focus();
+			$(this).find('.search').focus();
+		},
+		onHide: function() {
+			var elm = $(this);
+			var value = elm.dropdown('get value');
+
+			elm.find('.search').val('');
+
+			if (value !== '') {
+				elm.dropdown('set selected', value);
+			} else {
+				elm.dropdown('restore placeholder text');
+			}
 		},
 		'forceSelection': false,
 		'filterRemoteData': true,
+		'selectOnKeydown': false,
 		'apiSettings': {
 			'response': {
 				'success': true,
@@ -4315,7 +4322,7 @@ function initTab(tab) {
 	$('#' + tab + '-locations .encounter-picker[data-name!=""]').each(function() {
 		var elm = $(this);
 
-		elm.dropdown('set text', '<i class="' + elm.children('input').first().val() + ' pkmn"></i>' + elm.data('name'));
+		elm.dropdown('set text', '<i class="' + elm.children('input').val() + ' pkmn"></i>' + elm.data('name'));
 	});
 
 	$('#' + tab + '-locations').closest('table').tablesort();
@@ -4348,7 +4355,7 @@ $('#' + selectedGame + '-locations').html(locTpl(games[selectedGame]));
 
 $('[data-tab="' + selectedGame + '"]').addClass('active');
 
-$('.menu .item').tab({
+$('#gameMenu .menu .item').tab({
 	onFirstLoad: function(tabPath) {
 		$('#' + tabPath + '-locations').html(locTpl(games[tabPath]));
 		initTab(tabPath);
@@ -4364,7 +4371,7 @@ $('.cookie.nag').nag({
 	'value': true
 });
 
-$('#resetModal').modal('attach events', '.resetData.button', 'show');
+$('#resetModal').modal('attach events', '#resetData', 'show');
 
 $('#fileLoader').on('change', function() {
 	$('#importModal').modal('show');

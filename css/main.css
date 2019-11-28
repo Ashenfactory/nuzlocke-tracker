@@ -157,6 +157,10 @@ textarea {
     }
 }
 
+.ui.search.selection.dropdown.encounter-picker > input:not([value=""]) ~ input.search {
+	padding-left: 2.5rem;
+}
+
 i.pkmn:not(.icon) {
     display: inline-block;
     width: 16px;
@@ -174,7 +178,7 @@ i.pkmn:not(.icon) {
 i.pkmn:not(.icon):before {
     display: inline-block;
     content: '';
-    background: url("./../img/sprites-usum.png") no-repeat -270px -750px;
+    background: url("./../img/sprites-usum.png") no-repeat -280px -750px;
     width: 40px;
     height: 30px;
     position: relative;
@@ -3410,9 +3414,21 @@ i.zeraora.pkmn:not(.icon):before {
 	background-position: -240px -750px;
 }
 
-
 .hidden {
     display: none !important;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+input.visually-hidden:focus + label,
+input.visually-hidden:focus-widthin + label {
+	outline: thin dotted;
 }
 
 @media print {
