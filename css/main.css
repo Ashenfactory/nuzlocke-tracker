@@ -137,6 +137,10 @@ textarea {
     min-height: 10em;
 }
 
+.ui.basic.button {
+	background-color: #fff !important;
+}
+
 .ui.table:not(.unstackable) > thead > tr {
     padding: 0;
 }
@@ -159,6 +163,10 @@ textarea {
 
 .ui.search.selection.dropdown.encounter-picker > input:not([value=""]) ~ input.search {
 	padding-left: 2.5rem;
+}
+
+.customLocation td:first-child {
+	font-weight: bold;
 }
 
 i.pkmn:not(.icon) {
@@ -3418,16 +3426,25 @@ i.zeraora.pkmn:not(.icon):before {
     display: none !important;
 }
 
-.visually-hidden {
-	position: absolute !important;
+input[type="file"] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
 	height: 1px;
-	width: 1px;
 	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	position: absolute !important;
+	white-space: nowrap;
+	width: 1px;
 }
 
-input.visually-hidden:focus + label,
-input.visually-hidden:focus-widthin + label {
+input[type="file"]:focus + label,
+input[type="file"]:focus-widthin + label,
+input[type="file"] + label:hover {
+    background-color: #f15d22;
+}
+
+input[type="file"]:focus + label,
+input[type="file"]:focus-widthin + label {
 	outline: thin dotted;
 }
 

@@ -5,50 +5,182 @@ var games = {
 		'nameLimit': 10,
 		'dexLimit': 151,
 		'locations': [
-			"Starter",
-			"Pallet Town",
-			"Route 1",
-			"Viridian City",
-			"Route 22",
-			"Route 2",
-			"Viridian Forest",
-			"Route 3",
-			"Route 4",
-			"Mt. Moon",
-			"Cerulean City",
-			"Route 24",
-			"Route 25",
-			"Route 5",
-			"Route 6",
-			"Vermillion City",
-			"Route 11",
-			"Diglett's Cave",
-			"Route 9",
-			"Route 10",
-			"Rock Tunnel",
-			"Pokémon Tower",
-			"Route 12",
-			"Route 8",
-			"Route 7",
-			"Celadon City",
-			"Route 16",
-			"Route 17",
-			"Route 18",
-			"Fuschia City",
-			"Safari Zone",
-			"Route 15",
-			"Route 14",
-			"Route 13",
-			"Power Plant",
-			"Route 19",
-			"Route 20",
-			"Seafoam Islands",
-			"Cinnabar Island",
-			"Pokémon Mansion",
-			"Route 21",
-			"Route 23",
-			"Victory Road",
-			"Cerulean Cave"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Pallet Town",
+				"value": 1
+			},
+			{
+				"name": "Route 1",
+				"value": 2
+			},
+			{
+				"name": "Viridian City",
+				"value": 3
+			},
+			{
+				"name": "Route 22",
+				"value": 4
+			},
+			{
+				"name": "Route 2",
+				"value": 5
+			},
+			{
+				"name": "Viridian Forest",
+				"value": 6
+			},
+			{
+				"name": "Route 3",
+				"value": 7
+			},
+			{
+				"name": "Route 4",
+				"value": 8
+			},
+			{
+				"name": "Mt. Moon",
+				"value": 9
+			},
+			{
+				"name": "Cerulean City",
+				"value": 10
+			},
+			{
+				"name": "Route 24",
+				"value": 11
+			},
+			{
+				"name": "Route 25",
+				"value": 12
+			},
+			{
+				"name": "Route 5",
+				"value": 13
+			},
+			{
+				"name": "Route 6",
+				"value": 14
+			},
+			{
+				"name": "Vermillion City",
+				"value": 15
+			},
+			{
+				"name": "Route 11",
+				"value": 16
+			},
+			{
+				"name": "Diglett's Cave",
+				"value": 17
+			},
+			{
+				"name": "Route 9",
+				"value": 18
+			},
+			{
+				"name": "Route 10",
+				"value": 19
+			},
+			{
+				"name": "Rock Tunnel",
+				"value": 20
+			},
+			{
+				"name": "Pokémon Tower",
+				"value": 21
+			},
+			{
+				"name": "Route 12",
+				"value": 22
+			},
+			{
+				"name": "Route 8",
+				"value": 23
+			},
+			{
+				"name": "Route 7",
+				"value": 24
+			},
+			{
+				"name": "Celadon City",
+				"value": 25
+			},
+			{
+				"name": "Route 16",
+				"value": 26
+			},
+			{
+				"name": "Route 17",
+				"value": 27
+			},
+			{
+				"name": "Route 18",
+				"value": 28
+			},
+			{
+				"name": "Fuschia City",
+				"value": 29
+			},
+			{
+				"name": "Safari Zone",
+				"value": 30
+			},
+			{
+				"name": "Route 15",
+				"value": 31
+			},
+			{
+				"name": "Route 14",
+				"value": 32
+			},
+			{
+				"name": "Route 13",
+				"value": 33
+			},
+			{
+				"name": "Power Plant",
+				"value": 34
+			},
+			{
+				"name": "Route 19",
+				"value": 35
+			},
+			{
+				"name": "Route 20",
+				"value": 36
+			},
+			{
+				"name": "Seafoam Islands",
+				"value": 37
+			},
+			{
+				"name": "Cinnabar Island",
+				"value": 38
+			},
+			{
+				"name": "Pokémon Mansion",
+				"value": 39
+			},
+			{
+				"name": "Route 21",
+				"value": 40
+			},
+			{
+				"name": "Route 23",
+				"value": 41
+			},
+			{
+				"name": "Victory Road",
+				"value": 42
+			},
+			{
+				"name": "Cerulean Cave",
+				"value": 43
+			}
 		]
 	},
 	'gsc': {
@@ -57,93 +189,354 @@ var games = {
 		'nameLimit': 10,
 		'dexLimit': 251,
 		'locations': [
-			"Starter",
-			"New Bark Town",
-			"Route 29",
-			"Cherrygrove City",
-			"Route 30",
-			"Route 31",
-			"Dark Cave",
-			"Violet City",
-			"Sprout Tower",
-			"Route 32",
-			"Ruins of Alph",
-			"Union Cave",
-			"Route 33",
-			"Azalea Town",
-			"Slowpoke Well",
-			"Ilex Forest",
-			"Route 34",
-			"Goldenrod City",
-			"Route 35",
-			"National Park",
-			"Route 36",
-			"Route 37",
-			"Ecruteak City",
-			"Burned Tower",
-			"Tin Tower",
-			"Route 38",
-			"Route 39",
-			"Olivine City",
-			"Route 40",
-			"Route 41",
-			"Whirl Islands",
-			"Cianwood City",
-			"Route 42",
-			"Mt. Mortar",
-			"Mahogany Town",
-			"Rocket Hideout",
-			"Route 43",
-			"Lake of Rage",
-			"Route 44",
-			"Ice Path",
-			"Blackthorn City",
-			"Dragon's Den",
-			"Route 45",
-			"Dark Cave 2",
-			"Route 46",
-			"Route 27",
-			"Tohjo Falls",
-			"Route 26",
-			"Victory Road",
-			"Indigo Plateau",
-			"Vermillion City",
-			"Route 6",
-			"Saffron City",
-			"Route 5",
-			"Route 7",
-			"Route 8",
-			"Route 10",
-			"Rock Tunnel",
-			"Route 9",
-			"Cerulean City",
-			"Route 24",
-			"Route 25",
-			"Route 4",
-			"Route 16",
-			"Route 17",
-			"Route 18",
-			"Fuschia City",
-			"Route 15",
-			"Route 14",
-			"Route 13",
-			"Route 12",
-			"Route 11",
-			"Diglett's Cave",
-			"Route 2",
-			"Pewter City",
-			"Route 3",
-			"Mt. Moon",
-			"Viridian City",
-			"Route 1",
-			"Pallet Town",
-			"Route 21",
-			"Cinnabar Island",
-			"Route 20",
-			"Route 19",
-			"Route 22",
-			"Route 28",
-			"Mt. Silver"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "New Bark Town",
+				"value": 1
+			},
+			{
+				"name": "Route 29",
+				"value": 2
+			},
+			{
+				"name": "Cherrygrove City",
+				"value": 3
+			},
+			{
+				"name": "Route 30",
+				"value": 4
+			},
+			{
+				"name": "Route 31",
+				"value": 5
+			},
+			{
+				"name": "Dark Cave",
+				"value": 6
+			},
+			{
+				"name": "Violet City",
+				"value": 7
+			},
+			{
+				"name": "Sprout Tower",
+				"value": 8
+			},
+			{
+				"name": "Route 32",
+				"value": 9
+			},
+			{
+				"name": "Ruins of Alph",
+				"value": 10
+			},
+			{
+				"name": "Union Cave",
+				"value": 11
+			},
+			{
+				"name": "Route 33",
+				"value": 12
+			},
+			{
+				"name": "Azalea Town",
+				"value": 13
+			},
+			{
+				"name": "Slowpoke Well",
+				"value": 14
+			},
+			{
+				"name": "Ilex Forest",
+				"value": 15
+			},
+			{
+				"name": "Route 34",
+				"value": 16
+			},
+			{
+				"name": "Goldenrod City",
+				"value": 17
+			},
+			{
+				"name": "Route 35",
+				"value": 18
+			},
+			{
+				"name": "National Park",
+				"value": 19
+			},
+			{
+				"name": "Route 36",
+				"value": 20
+			},
+			{
+				"name": "Route 37",
+				"value": 21
+			},
+			{
+				"name": "Ecruteak City",
+				"value": 22
+			},
+			{
+				"name": "Burned Tower",
+				"value": 23
+			},
+			{
+				"name": "Tin Tower",
+				"value": 24
+			},
+			{
+				"name": "Route 38",
+				"value": 25
+			},
+			{
+				"name": "Route 39",
+				"value": 26
+			},
+			{
+				"name": "Olivine City",
+				"value": 27
+			},
+			{
+				"name": "Route 40",
+				"value": 28
+			},
+			{
+				"name": "Route 41",
+				"value": 29
+			},
+			{
+				"name": "Whirl Islands",
+				"value": 30
+			},
+			{
+				"name": "Cianwood City",
+				"value": 31
+			},
+			{
+				"name": "Route 42",
+				"value": 32
+			},
+			{
+				"name": "Mt. Mortar",
+				"value": 33
+			},
+			{
+				"name": "Mahogany Town",
+				"value": 34
+			},
+			{
+				"name": "Rocket Hideout",
+				"value": 35
+			},
+			{
+				"name": "Route 43",
+				"value": 36
+			},
+			{
+				"name": "Lake of Rage",
+				"value": 37
+			},
+			{
+				"name": "Route 44",
+				"value": 38
+			},
+			{
+				"name": "Ice Path",
+				"value": 39
+			},
+			{
+				"name": "Blackthorn City",
+				"value": 40
+			},
+			{
+				"name": "Dragon's Den",
+				"value": 41
+			},
+			{
+				"name": "Route 45",
+				"value": 42
+			},
+			{
+				"name": "Dark Cave 2",
+				"value": 43
+			},
+			{
+				"name": "Route 46",
+				"value": 44
+			},
+			{
+				"name": "Route 27",
+				"value": 45
+			},
+			{
+				"name": "Tohjo Falls",
+				"value": 46
+			},
+			{
+				"name": "Route 26",
+				"value": 47
+			},
+			{
+				"name": "Victory Road",
+				"value": 48
+			},
+			{
+				"name": "Indigo Plateau",
+				"value": 49
+			},
+			{
+				"name": "Vermillion City",
+				"value": 50
+			},
+			{
+				"name": "Route 6",
+				"value": 51
+			},
+			{
+				"name": "Saffron City",
+				"value": 52
+			},
+			{
+				"name": "Route 5",
+				"value": 53
+			},
+			{
+				"name": "Route 7",
+				"value": 54
+			},
+			{
+				"name": "Route 8",
+				"value": 55
+			},
+			{
+				"name": "Route 10",
+				"value": 56
+			},
+			{
+				"name": "Rock Tunnel",
+				"value": 57
+			},
+			{
+				"name": "Route 9",
+				"value": 58
+			},
+			{
+				"name": "Cerulean City",
+				"value": 59
+			},
+			{
+				"name": "Route 24",
+				"value": 60
+			},
+			{
+				"name": "Route 25",
+				"value": 61
+			},
+			{
+				"name": "Route 4",
+				"value": 62
+			},
+			{
+				"name": "Route 16",
+				"value": 63
+			},
+			{
+				"name": "Route 17",
+				"value": 64
+			},
+			{
+				"name": "Route 18",
+				"value": 65
+			},
+			{
+				"name": "Fuschia City",
+				"value": 66
+			},
+			{
+				"name": "Route 15",
+				"value": 67
+			},
+			{
+				"name": "Route 14",
+				"value": 68
+			},
+			{
+				"name": "Route 13",
+				"value": 69
+			},
+			{
+				"name": "Route 12",
+				"value": 70
+			},
+			{
+				"name": "Route 11",
+				"value": 71
+			},
+			{
+				"name": "Diglett's Cave",
+				"value": 72
+			},
+			{
+				"name": "Route 2",
+				"value": 73
+			},
+			{
+				"name": "Pewter City",
+				"value": 74
+			},
+			{
+				"name": "Route 3",
+				"value": 75
+			},
+			{
+				"name": "Mt. Moon",
+				"value": 76
+			},
+			{
+				"name": "Viridian City",
+				"value": 77
+			},
+			{
+				"name": "Route 1",
+				"value": 78
+			},
+			{
+				"name": "Pallet Town",
+				"value": 79
+			},
+			{
+				"name": "Route 21",
+				"value": 80
+			},
+			{
+				"name": "Cinnabar Island",
+				"value": 81
+			},
+			{
+				"name": "Route 20",
+				"value": 82
+			},
+			{
+				"name": "Route 19",
+				"value": 83
+			},
+			{
+				"name": "Route 22",
+				"value": 84
+			},
+			{
+				"name": "Route 28",
+				"value": 85
+			},
+			{
+				"name": "Mt. Silver",
+				"value": 86
+			}
 		]
 	},
 	'rse': {
@@ -151,76 +544,287 @@ var games = {
 		'title': 'Ruby, Sapphire and Emerald',
 		'nameLimit': 10,
 		'dexLimit': 386,
-		'locations': ["Starter",
-			"Littleroot Town",
-			"Route 101",
-			"Route 102",
-			"Route 103",
-			"Petalburg City",
-			"Route 104",
-			"Petalburg Woods",
-			"Rustboro City",
-			"Route 115",
-			"Route 116",
-			"Rusturf Tunnel",
-			"Dewford Town",
-			"Route 106",
-			"Granite Cave",
-			"Route 107",
-			"Slateport City",
-			"Route 110",
-			"Altering Cave",
-			"New Mauville",
-			"Route 117",
-			"Route 111",
-			"Mirage Tower (Emerald)",
-			"Route 112",
-			"Fiery Path",
-			"Route 113",
-			"Route 114",
-			"Desert Underpass (Emerald)",
-			"Meteor Falls",
-			"Jagged Pass",
-			"Lavaridge Town",
-			"Route 118",
-			"Route 119",
-			"Fortree City",
-			"Route 120",
-			"Route 121",
-			"Safari Zone",
-			"Lilycove City",
-			"Route 122",
-			"Mt. Pyre",
-			"Route 123",
-			"Team Magma Hideout (Emerald)",
-			"Route 124",
-			"Mossdeep City",
-			"Route 125",
-			"Shoal Cave",
-			"Route 127",
-			"Route 128",
-			"Seafloor Cavern",
-			"Route 126",
-			"Sootopolis City",
-			"Cave of Origin",
-			"Route 129",
-			"Route 130",
-			"Route 131",
-			"Sky Pillar",
-			"Pacifidlog Town",
-			"Mirage Island",
-			"Route 105",
-			"Route 108",
-			"Abandoned Ship",
-			"Route 109",
-			"Route 132",
-			"Route 133",
-			"Route 134",
-			"Ever Grande City",
-			"Victory Road",
-			"S.S. Tidal",
-			"Battle Frontier",
-			"Artisan Cave"]
+		'locations': [
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Littleroot Town",
+				"value": 1
+			},
+			{
+				"name": "Route 101",
+				"value": 2
+			},
+			{
+				"name": "Route 102",
+				"value": 3
+			},
+			{
+				"name": "Route 103",
+				"value": 4
+			},
+			{
+				"name": "Petalburg City",
+				"value": 5
+			},
+			{
+				"name": "Route 104",
+				"value": 6
+			},
+			{
+				"name": "Petalburg Woods",
+				"value": 7
+			},
+			{
+				"name": "Rustboro City",
+				"value": 8
+			},
+			{
+				"name": "Route 115",
+				"value": 9
+			},
+			{
+				"name": "Route 116",
+				"value": 10
+			},
+			{
+				"name": "Rusturf Tunnel",
+				"value": 11
+			},
+			{
+				"name": "Dewford Town",
+				"value": 12
+			},
+			{
+				"name": "Route 106",
+				"value": 13
+			},
+			{
+				"name": "Granite Cave",
+				"value": 14
+			},
+			{
+				"name": "Route 107",
+				"value": 15
+			},
+			{
+				"name": "Slateport City",
+				"value": 16
+			},
+			{
+				"name": "Route 110",
+				"value": 17
+			},
+			{
+				"name": "Altering Cave",
+				"value": 18
+			},
+			{
+				"name": "New Mauville",
+				"value": 19
+			},
+			{
+				"name": "Route 117",
+				"value": 20
+			},
+			{
+				"name": "Route 111",
+				"value": 21
+			},
+			{
+				"name": "Mirage Tower (Emerald)",
+				"value": 22
+			},
+			{
+				"name": "Route 112",
+				"value": 23
+			},
+			{
+				"name": "Fiery Path",
+				"value": 24
+			},
+			{
+				"name": "Route 113",
+				"value": 25
+			},
+			{
+				"name": "Route 114",
+				"value": 26
+			},
+			{
+				"name": "Desert Underpass (Emerald)",
+				"value": 27
+			},
+			{
+				"name": "Meteor Falls",
+				"value": 28
+			},
+			{
+				"name": "Jagged Pass",
+				"value": 29
+			},
+			{
+				"name": "Lavaridge Town",
+				"value": 30
+			},
+			{
+				"name": "Route 118",
+				"value": 31
+			},
+			{
+				"name": "Route 119",
+				"value": 32
+			},
+			{
+				"name": "Fortree City",
+				"value": 33
+			},
+			{
+				"name": "Route 120",
+				"value": 34
+			},
+			{
+				"name": "Route 121",
+				"value": 35
+			},
+			{
+				"name": "Safari Zone",
+				"value": 36
+			},
+			{
+				"name": "Lilycove City",
+				"value": 37
+			},
+			{
+				"name": "Route 122",
+				"value": 38
+			},
+			{
+				"name": "Mt. Pyre",
+				"value": 39
+			},
+			{
+				"name": "Route 123",
+				"value": 40
+			},
+			{
+				"name": "Team Magma Hideout (Emerald)",
+				"value": 41
+			},
+			{
+				"name": "Route 124",
+				"value": 42
+			},
+			{
+				"name": "Mossdeep City",
+				"value": 43
+			},
+			{
+				"name": "Route 125",
+				"value": 44
+			},
+			{
+				"name": "Shoal Cave",
+				"value": 45
+			},
+			{
+				"name": "Route 127",
+				"value": 46
+			},
+			{
+				"name": "Route 128",
+				"value": 47
+			},
+			{
+				"name": "Seafloor Cavern",
+				"value": 48
+			},
+			{
+				"name": "Route 126",
+				"value": 49
+			},
+			{
+				"name": "Sootopolis City",
+				"value": 50
+			},
+			{
+				"name": "Cave of Origin",
+				"value": 51
+			},
+			{
+				"name": "Route 129",
+				"value": 52
+			},
+			{
+				"name": "Route 130",
+				"value": 53
+			},
+			{
+				"name": "Route 131",
+				"value": 54
+			},
+			{
+				"name": "Sky Pillar",
+				"value": 55
+			},
+			{
+				"name": "Pacifidlog Town",
+				"value": 56
+			},
+			{
+				"name": "Mirage Island",
+				"value": 57
+			},
+			{
+				"name": "Route 105",
+				"value": 58
+			},
+			{
+				"name": "Route 108",
+				"value": 59
+			},
+			{
+				"name": "Abandoned Ship",
+				"value": 60
+			},
+			{
+				"name": "Route 109",
+				"value": 61
+			},
+			{
+				"name": "Route 132",
+				"value": 62
+			},
+			{
+				"name": "Route 133",
+				"value": 63
+			},
+			{
+				"name": "Route 134",
+				"value": 64
+			},
+			{
+				"name": "Ever Grande City",
+				"value": 65
+			},
+			{
+				"name": "Victory Road",
+				"value": 66
+			},
+			{
+				"name": "S.S. Tidal",
+				"value": 67
+			},
+			{
+				"name": "Battle Frontier",
+				"value": 68
+			},
+			{
+				"name": "Artisan Cave",
+				"value": 69
+			}]
 	},
 	'frlg': {
 		'id': 'frlg',
@@ -228,76 +832,286 @@ var games = {
 		'nameLimit': 10,
 		'dexLimit': 386,
 		'locations': [
-			"Starter",
-			"Pallet Town",
-			"Route 1",
-			"Viridian City",
-			"Route 22",
-			"Route 2",
-			"Viridian Forest",
-			"Route 3",
-			"Route 4",
-			"Mt. Moon",
-			"Cerulean City",
-			"Route 24",
-			"Route 25",
-			"Route 5",
-			"Route 6",
-			"Vermillion City",
-			"Route 11",
-			"Diglett's Cave",
-			"Route 9",
-			"Route 10",
-			"Rock Tunnel",
-			"Pokémon Tower",
-			"Route 12",
-			"Route 8",
-			"Route 7",
-			"Celadon City",
-			"Route 16",
-			"Route 17",
-			"Route 18",
-			"Fuschia City",
-			"Safari Zone",
-			"Route 15",
-			"Route 14",
-			"Route 13",
-			"Power Plant",
-			"Route 19",
-			"Route 20",
-			"Seafoam Islands",
-			"Cinnabar Island",
-			"Pokémon Mansion",
-			"Route 21",
-			"One Island",
-			"Treasure Beach",
-			"Kindle Road",
-			"Mt. Ember",
-			"Cape Brink",
-			"Three Isle Port",
-			"Bond Bridge",
-			"Berry Forest",
-			"Route 23",
-			"Victory Road",
-			"Four Island",
-			"Icefall Cave",
-			"Five Island",
-			"Five Isle Meadow",
-			"Memorial Pillar",
-			"Water Labyrinth",
-			"Resort Gorgeous",
-			"Lost Cave",
-			"Water Path",
-			"Green Path",
-			"Pattern Bush",
-			"Outcast Island",
-			"Altering Cave",
-			"Ruin Valley",
-			"Trainer Tower",
-			"Canyon Entrance",
-			"Seavault Canyon",
-			"Tanoby Ruins",
-			"Cerulean Cave"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Pallet Town",
+				"value": 1
+			},
+			{
+				"name": "Route 1",
+				"value": 2
+			},
+			{
+				"name": "Viridian City",
+				"value": 3
+			},
+			{
+				"name": "Route 22",
+				"value": 4
+			},
+			{
+				"name": "Route 2",
+				"value": 5
+			},
+			{
+				"name": "Viridian Forest",
+				"value": 6
+			},
+			{
+				"name": "Route 3",
+				"value": 7
+			},
+			{
+				"name": "Route 4",
+				"value": 8
+			},
+			{
+				"name": "Mt. Moon",
+				"value": 9
+			},
+			{
+				"name": "Cerulean City",
+				"value": 10
+			},
+			{
+				"name": "Route 24",
+				"value": 11
+			},
+			{
+				"name": "Route 25",
+				"value": 12
+			},
+			{
+				"name": "Route 5",
+				"value": 13
+			},
+			{
+				"name": "Route 6",
+				"value": 14
+			},
+			{
+				"name": "Vermillion City",
+				"value": 15
+			},
+			{
+				"name": "Route 11",
+				"value": 16
+			},
+			{
+				"name": "Diglett's Cave",
+				"value": 17
+			},
+			{
+				"name": "Route 9",
+				"value": 18
+			},
+			{
+				"name": "Route 10",
+				"value": 19
+			},
+			{
+				"name": "Rock Tunnel",
+				"value": 20
+			},
+			{
+				"name": "Pokémon Tower",
+				"value": 21
+			},
+			{
+				"name": "Route 12",
+				"value": 22
+			},
+			{
+				"name": "Route 8",
+				"value": 23
+			},
+			{
+				"name": "Route 7",
+				"value": 24
+			},
+			{
+				"name": "Celadon City",
+				"value": 25
+			},
+			{
+				"name": "Route 16",
+				"value": 26
+			},
+			{
+				"name": "Route 17",
+				"value": 27
+			},
+			{
+				"name": "Route 18",
+				"value": 28
+			},
+			{
+				"name": "Fuschia City",
+				"value": 29
+			},
+			{
+				"name": "Safari Zone",
+				"value": 30
+			},
+			{
+				"name": "Route 15",
+				"value": 31
+			},
+			{
+				"name": "Route 14",
+				"value": 32
+			},
+			{
+				"name": "Route 13",
+				"value": 33
+			},
+			{
+				"name": "Power Plant",
+				"value": 34
+			},
+			{
+				"name": "Route 19",
+				"value": 35
+			},
+			{
+				"name": "Route 20",
+				"value": 36
+			},
+			{
+				"name": "Seafoam Islands",
+				"value": 37
+			},
+			{
+				"name": "Cinnabar Island",
+				"value": 38
+			},
+			{
+				"name": "Pokémon Mansion",
+				"value": 39
+			},
+			{
+				"name": "Route 21",
+				"value": 40
+			},
+			{
+				"name": "One Island",
+				"value": 41
+			},
+			{
+				"name": "Treasure Beach",
+				"value": 42
+			},
+			{
+				"name": "Kindle Road",
+				"value": 43
+			},
+			{
+				"name": "Mt. Ember",
+				"value": 44
+			},
+			{
+				"name": "Cape Brink",
+				"value": 45
+			},
+			{
+				"name": "Three Isle Port",
+				"value": 46
+			},
+			{
+				"name": "Bond Bridge",
+				"value": 47
+			},
+			{
+				"name": "Berry Forest",
+				"value": 48
+			},
+			{
+				"name": "Route 23",
+				"value": 49
+			},
+			{
+				"name": "Victory Road",
+				"value": 50
+			},
+			{
+				"name": "Four Island",
+				"value": 51
+			},
+			{
+				"name": "Icefall Cave",
+				"value": 52
+			},
+			{
+				"name": "Five Island",
+				"value": 53
+			},
+			{
+				"name": "Five Isle Meadow",
+				"value": 54
+			},
+			{
+				"name": "Memorial Pillar",
+				"value": 55
+			},
+			{
+				"name": "Water Labyrinth",
+				"value": 56
+			},
+			{
+				"name": "Resort Gorgeous",
+				"value": 57
+			},
+			{
+				"name": "Lost Cave",
+				"value": 58
+			},
+			{
+				"name": "Water Path",
+				"value": 59
+			},
+			{
+				"name": "Green Path",
+				"value": 60
+			},
+			{
+				"name": "Pattern Bush",
+				"value": 61
+			},
+			{
+				"name": "Outcast Island",
+				"value": 62
+			},
+			{
+				"name": "Altering Cave",
+				"value": 63
+			},
+			{
+				"name": "Ruin Valley",
+				"value": 64
+			},
+			{
+				"name": "Trainer Tower",
+				"value": 65
+			},
+			{
+				"name": "Canyon Entrance",
+				"value": 66
+			},
+			{
+				"name": "Seavault Canyon",
+				"value": 67
+			},
+			{
+				"name": "Tanoby Ruins",
+				"value": 68
+			},
+			{
+				"name": "Cerulean Cave",
+				"value": 69
+			}
 		]
 	},
 	'dpp': {
@@ -306,80 +1120,302 @@ var games = {
 		'nameLimit': 10,
 		'dexLimit': 493,
 		'locations': [
-			"Starter",
-			"Twinleaf Town",
-			"Route 201",
-			"Lake Verity",
-			"Route 202",
-			"Route 203",
-			"Oreburgh Gate",
-			"Oreburgh City",
-			"Oreburgh Mine",
-			"Route 207",
-			"Route 204",
-			"Ravaged Path",
-			"Floaroma Meadow",
-			"Route 205",
-			"Valley Windworks",
-			"Eterna Forest",
-			"The Old Chateau",
-			"Eterna City",
-			"Route 206",
-			"Wayward Cave",
-			"Mt. Coronet",
-			"Route 208",
-			"Hearthome City",
-			"Route 209",
-			"The Lost Tower",
-			"Solaceon Ruins",
-			"Route 210",
-			"Route 215",
-			"Veilstone City",
-			"Route 212",
-			"Trophy Garden",
-			"Pastoria City",
-			"Great Marsh",
-			"Route 213",
-			"Valor Lakefront",
-			"Lake Valor",
-			"Route 214",
-			"Ruin Maniac's Cave",
-			"Ruin Maniac's Tunnel",
-			"Celestic Town",
-			"Fuego Ironworks",
-			"Routes 219",
-			"Route 220",
-			"Route 221",
-			"Route 218",
-			"Canalave City",
-			"Iron Island",
-			"Route 211",
-			"Route 216",
-			"Route 217",
-			"Acuity Lakefront",
-			"Lake Acuity",
-			"Snowpoint Temple",
-			"Route 222",
-			"Sunyshore City",
-			"Route 223",
-			"Pokémon League",
-			"Victory Road",
-			"Route 224",
-			"Route 230",
-			"Route 229",
-			"Resort Area",
-			"Route 228",
-			"Route 226",
-			"Route 227",
-			"Stark Mountain",
-			"Route 225",
-			"Sendoff Spring",
-			"Turnback Cave",
-			"Distortion World",
-			"Spear Pillar",
-			"Newmoon Island",
-			"Flower Paradise",
-			"Hall of Origin"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Twinleaf Town",
+				"value": 1
+			},
+			{
+				"name": "Route 201",
+				"value": 2
+			},
+			{
+				"name": "Lake Verity",
+				"value": 3
+			},
+			{
+				"name": "Route 202",
+				"value": 4
+			},
+			{
+				"name": "Route 203",
+				"value": 5
+			},
+			{
+				"name": "Oreburgh Gate",
+				"value": 6
+			},
+			{
+				"name": "Oreburgh City",
+				"value": 7
+			},
+			{
+				"name": "Oreburgh Mine",
+				"value": 8
+			},
+			{
+				"name": "Route 207",
+				"value": 9
+			},
+			{
+				"name": "Route 204",
+				"value": 10
+			},
+			{
+				"name": "Ravaged Path",
+				"value": 11
+			},
+			{
+				"name": "Floaroma Meadow",
+				"value": 12
+			},
+			{
+				"name": "Route 205",
+				"value": 13
+			},
+			{
+				"name": "Valley Windworks",
+				"value": 14
+			},
+			{
+				"name": "Eterna Forest",
+				"value": 15
+			},
+			{
+				"name": "The Old Chateau",
+				"value": 16
+			},
+			{
+				"name": "Eterna City",
+				"value": 17
+			},
+			{
+				"name": "Route 206",
+				"value": 18
+			},
+			{
+				"name": "Wayward Cave",
+				"value": 19
+			},
+			{
+				"name": "Mt. Coronet",
+				"value": 20
+			},
+			{
+				"name": "Route 208",
+				"value": 21
+			},
+			{
+				"name": "Hearthome City",
+				"value": 22
+			},
+			{
+				"name": "Route 209",
+				"value": 23
+			},
+			{
+				"name": "The Lost Tower",
+				"value": 24
+			},
+			{
+				"name": "Solaceon Ruins",
+				"value": 25
+			},
+			{
+				"name": "Route 210",
+				"value": 26
+			},
+			{
+				"name": "Route 215",
+				"value": 27
+			},
+			{
+				"name": "Veilstone City",
+				"value": 28
+			},
+			{
+				"name": "Route 212",
+				"value": 29
+			},
+			{
+				"name": "Trophy Garden",
+				"value": 30
+			},
+			{
+				"name": "Pastoria City",
+				"value": 31
+			},
+			{
+				"name": "Great Marsh",
+				"value": 32
+			},
+			{
+				"name": "Route 213",
+				"value": 33
+			},
+			{
+				"name": "Valor Lakefront",
+				"value": 34
+			},
+			{
+				"name": "Lake Valor",
+				"value": 35
+			},
+			{
+				"name": "Route 214",
+				"value": 36
+			},
+			{
+				"name": "Ruin Maniac's Cave",
+				"value": 37
+			},
+			{
+				"name": "Ruin Maniac's Tunnel",
+				"value": 38
+			},
+			{
+				"name": "Celestic Town",
+				"value": 39
+			},
+			{
+				"name": "Fuego Ironworks",
+				"value": 40
+			},
+			{
+				"name": "Routes 219",
+				"value": 41
+			},
+			{
+				"name": "Route 220",
+				"value": 42
+			},
+			{
+				"name": "Route 221",
+				"value": 43
+			},
+			{
+				"name": "Route 218",
+				"value": 44
+			},
+			{
+				"name": "Canalave City",
+				"value": 45
+			},
+			{
+				"name": "Iron Island",
+				"value": 46
+			},
+			{
+				"name": "Route 211",
+				"value": 47
+			},
+			{
+				"name": "Route 216",
+				"value": 48
+			},
+			{
+				"name": "Route 217",
+				"value": 49
+			},
+			{
+				"name": "Acuity Lakefront",
+				"value": 50
+			},
+			{
+				"name": "Lake Acuity",
+				"value": 51
+			},
+			{
+				"name": "Snowpoint Temple",
+				"value": 52
+			},
+			{
+				"name": "Route 222",
+				"value": 53
+			},
+			{
+				"name": "Sunyshore City",
+				"value": 54
+			},
+			{
+				"name": "Route 223",
+				"value": 55
+			},
+			{
+				"name": "Pokémon League",
+				"value": 56
+			},
+			{
+				"name": "Victory Road",
+				"value": 57
+			},
+			{
+				"name": "Route 224",
+				"value": 58
+			},
+			{
+				"name": "Route 230",
+				"value": 59
+			},
+			{
+				"name": "Route 229",
+				"value": 60
+			},
+			{
+				"name": "Resort Area",
+				"value": 61
+			},
+			{
+				"name": "Route 228",
+				"value": 62
+			},
+			{
+				"name": "Route 226",
+				"value": 63
+			},
+			{
+				"name": "Route 227",
+				"value": 64
+			},
+			{
+				"name": "Stark Mountain",
+				"value": 65
+			},
+			{
+				"name": "Route 225",
+				"value": 66
+			},
+			{
+				"name": "Sendoff Spring",
+				"value": 67
+			},
+			{
+				"name": "Turnback Cave",
+				"value": 68
+			},
+			{
+				"name": "Distortion World",
+				"value": 69
+			},
+			{
+				"name": "Spear Pillar",
+				"value": 70
+			},
+			{
+				"name": "Newmoon Island",
+				"value": 71
+			},
+			{
+				"name": "Flower Paradise",
+				"value": 72
+			},
+			{
+				"name": "Hall of Origin",
+				"value": 73
+			}
 		]
 	},
 	'hgss': {
@@ -388,101 +1424,386 @@ var games = {
 		'nameLimit': 10,
 		'dexLimit': 493,
 		'locations': [
-			"Starter",
-			"New Bark Town",
-			"Route 29",
-			"Cherrygrove City",
-			"Route 30",
-			"Route 31",
-			"Dark Cave",
-			"Violet City",
-			"Sprout Tower",
-			"Route 32",
-			"Ruins of Alph",
-			"Union Cave",
-			"Route 33",
-			"Azalea Town",
-			"Slowpoke Well",
-			"Ilex Forest",
-			"Route 34",
-			"Goldenrod City",
-			"Route 35",
-			"National Park",
-			"Route 36",
-			"Route 37",
-			"Ecruteak City",
-			"Burned Tower",
-			"Bell Tower",
-			"Route 38",
-			"Route 39",
-			"Olivine City",
-			"Route 40",
-			"Route 41",
-			"Whirl Islands",
-			"Cianwood City",
-			"Cliff Edge Gate",
-			"Route 47",
-			"Cliff Cave",
-			"Route 48",
-			"Safari Zone Gate",
-			"Safari Zone",
-			"Route 42",
-			"Mt. Mortar",
-			"Mahogany Town",
-			"Rocket Hideout",
-			"Route 43",
-			"Lake of Rage",
-			"Route 44",
-			"Ice Path",
-			"Blackthorn City",
-			"Dragon's Den",
-			"Route 45",
-			"Dark Cave 2",
-			"Route 46",
-			"Route 27",
-			"Tohjo Falls",
-			"Route 26",
-			"Victory Road",
-			"Indigo Plateau",
-			"Vermillion City",
-			"Route 6",
-			"Saffron City",
-			"Route 5",
-			"Route 7",
-			"Route 8",
-			"Route 10",
-			"Power Plant",
-			"Rock Tunnel",
-			"Route 9",
-			"Cerulean City",
-			"Route 24",
-			"Route 25",
-			"Route 4",
-			"Route 16",
-			"Route 17",
-			"Route 18",
-			"Fuschia City",
-			"Route 15",
-			"Route 14",
-			"Route 13",
-			"Route 12",
-			"Route 11",
-			"Diglett's Cave",
-			"Route 2",
-			"Pewter City",
-			"Route 3",
-			"Mt. Moon",
-			"Viridian City",
-			"Route 1",
-			"Pallet Town",
-			"Route 21",
-			"Cinnabar Island",
-			"Route 20",
-			"Route 19",
-			"Route 22",
-			"Route 28",
-			"Mt. Silver",
-			"Cerulean Cave"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "New Bark Town",
+				"value": 1
+			},
+			{
+				"name": "Route 29",
+				"value": 2
+			},
+			{
+				"name": "Cherrygrove City",
+				"value": 3
+			},
+			{
+				"name": "Route 30",
+				"value": 4
+			},
+			{
+				"name": "Route 31",
+				"value": 5
+			},
+			{
+				"name": "Dark Cave",
+				"value": 6
+			},
+			{
+				"name": "Violet City",
+				"value": 7
+			},
+			{
+				"name": "Sprout Tower",
+				"value": 8
+			},
+			{
+				"name": "Route 32",
+				"value": 9
+			},
+			{
+				"name": "Ruins of Alph",
+				"value": 10
+			},
+			{
+				"name": "Union Cave",
+				"value": 11
+			},
+			{
+				"name": "Route 33",
+				"value": 12
+			},
+			{
+				"name": "Azalea Town",
+				"value": 13
+			},
+			{
+				"name": "Slowpoke Well",
+				"value": 14
+			},
+			{
+				"name": "Ilex Forest",
+				"value": 15
+			},
+			{
+				"name": "Route 34",
+				"value": 16
+			},
+			{
+				"name": "Goldenrod City",
+				"value": 17
+			},
+			{
+				"name": "Route 35",
+				"value": 18
+			},
+			{
+				"name": "National Park",
+				"value": 19
+			},
+			{
+				"name": "Route 36",
+				"value": 20
+			},
+			{
+				"name": "Route 37",
+				"value": 21
+			},
+			{
+				"name": "Ecruteak City",
+				"value": 22
+			},
+			{
+				"name": "Burned Tower",
+				"value": 23
+			},
+			{
+				"name": "Bell Tower",
+				"value": 24
+			},
+			{
+				"name": "Route 38",
+				"value": 25
+			},
+			{
+				"name": "Route 39",
+				"value": 26
+			},
+			{
+				"name": "Olivine City",
+				"value": 27
+			},
+			{
+				"name": "Route 40",
+				"value": 28
+			},
+			{
+				"name": "Route 41",
+				"value": 29
+			},
+			{
+				"name": "Whirl Islands",
+				"value": 30
+			},
+			{
+				"name": "Cianwood City",
+				"value": 31
+			},
+			{
+				"name": "Cliff Edge Gate",
+				"value": 32
+			},
+			{
+				"name": "Route 47",
+				"value": 33
+			},
+			{
+				"name": "Cliff Cave",
+				"value": 34
+			},
+			{
+				"name": "Route 48",
+				"value": 35
+			},
+			{
+				"name": "Safari Zone Gate",
+				"value": 36
+			},
+			{
+				"name": "Safari Zone",
+				"value": 37
+			},
+			{
+				"name": "Route 42",
+				"value": 38
+			},
+			{
+				"name": "Mt. Mortar",
+				"value": 39
+			},
+			{
+				"name": "Mahogany Town",
+				"value": 40
+			},
+			{
+				"name": "Rocket Hideout",
+				"value": 41
+			},
+			{
+				"name": "Route 43",
+				"value": 42
+			},
+			{
+				"name": "Lake of Rage",
+				"value": 43
+			},
+			{
+				"name": "Route 44",
+				"value": 44
+			},
+			{
+				"name": "Ice Path",
+				"value": 45
+			},
+			{
+				"name": "Blackthorn City",
+				"value": 46
+			},
+			{
+				"name": "Dragon's Den",
+				"value": 47
+			},
+			{
+				"name": "Route 45",
+				"value": 48
+			},
+			{
+				"name": "Dark Cave 2",
+				"value": 49
+			},
+			{
+				"name": "Route 46",
+				"value": 50
+			},
+			{
+				"name": "Route 27",
+				"value": 51
+			},
+			{
+				"name": "Tohjo Falls",
+				"value": 52
+			},
+			{
+				"name": "Route 26",
+				"value": 53
+			},
+			{
+				"name": "Victory Road",
+				"value": 54
+			},
+			{
+				"name": "Indigo Plateau",
+				"value": 55
+			},
+			{
+				"name": "Vermillion City",
+				"value": 56
+			},
+			{
+				"name": "Route 6",
+				"value": 57
+			},
+			{
+				"name": "Saffron City",
+				"value": 58
+			},
+			{
+				"name": "Route 5",
+				"value": 59
+			},
+			{
+				"name": "Route 7",
+				"value": 60
+			},
+			{
+				"name": "Route 8",
+				"value": 61
+			},
+			{
+				"name": "Route 10",
+				"value": 62
+			},
+			{
+				"name": "Power Plant",
+				"value": 63
+			},
+			{
+				"name": "Rock Tunnel",
+				"value": 64
+			},
+			{
+				"name": "Route 9",
+				"value": 65
+			},
+			{
+				"name": "Cerulean City",
+				"value": 66
+			},
+			{
+				"name": "Route 24",
+				"value": 67
+			},
+			{
+				"name": "Route 25",
+				"value": 68
+			},
+			{
+				"name": "Route 4",
+				"value": 69
+			},
+			{
+				"name": "Route 16",
+				"value": 70
+			},
+			{
+				"name": "Route 17",
+				"value": 71
+			},
+			{
+				"name": "Route 18",
+				"value": 72
+			},
+			{
+				"name": "Fuschia City",
+				"value": 73
+			},
+			{
+				"name": "Route 15",
+				"value": 74
+			},
+			{
+				"name": "Route 14",
+				"value": 75
+			},
+			{
+				"name": "Route 13",
+				"value": 76
+			},
+			{
+				"name": "Route 12",
+				"value": 77
+			},
+			{
+				"name": "Route 11",
+				"value": 78
+			},
+			{
+				"name": "Diglett's Cave",
+				"value": 79
+			},
+			{
+				"name": "Route 2",
+				"value": 80
+			},
+			{
+				"name": "Pewter City",
+				"value": 81
+			},
+			{
+				"name": "Route 3",
+				"value": 82
+			},
+			{
+				"name": "Mt. Moon",
+				"value": 83
+			},
+			{
+				"name": "Viridian City",
+				"value": 84
+			},
+			{
+				"name": "Route 1",
+				"value": 85
+			},
+			{
+				"name": "Pallet Town",
+				"value": 86
+			},
+			{
+				"name": "Route 21",
+				"value": 87
+			},
+			{
+				"name": "Cinnabar Island",
+				"value": 88
+			},
+			{
+				"name": "Route 20",
+				"value": 89
+			},
+			{
+				"name": "Route 19",
+				"value": 90
+			},
+			{
+				"name": "Route 22",
+				"value": 91
+			},
+			{
+				"name": "Route 28",
+				"value": 92
+			},
+			{
+				"name": "Mt. Silver",
+				"value": 93
+			},
+			{
+				"name": "Cerulean Cave",
+				"value": 94
+			}
 		]
 	},
 	'bw': {
@@ -491,55 +1812,202 @@ var games = {
 		'nameLimit': 10,
 		'dexLimit': 649,
 		'locations': [
-			"Starter",
-			"Nuvema Town",
-			"Route 1",
-			"Accumula Town",
-			"Route 2",
-			"Striaton City",
-			"Dreamyard",
-			"Route 3",
-			"Wellspring Cave",
-			"Nacrene City",
-			"Pinwheel Forest",
-			"Castelia City",
-			"Route 4",
-			"Desert Resort",
-			"Relic Castle",
-			"Route 16",
-			"Route 5",
-			"Driftveil Drawbridge",
-			"Driftveil City",
-			"Cold Storage",
-			"Route 6",
-			"Mistralton Cave",
-			"Chargestone Cave",
-			"Route 7",
-			"Celestial Tower",
-			"Twist Mountain",
-			"Iccirus City",
-			"Dragonspiral Tower",
-			"Route 8",
-			"Moor of Icirrus",
-			"Route 9",
-			"Route 10",
-			"Victory Road",
-			"Route 11",
-			"Village Bridge",
-			"Route 12",
-			"Route 13",
-			"Undella Town",
-			"Undella Bay",
-			"Route 14",
-			"Abundant Shrine",
-			"White Forest",
-			"Route 15",
-			"Marvelous Bridge",
-			"Lostlorn Forest",
-			"Route 17",
-			"Route 18",
-			"P2 Laboratory",
-			"Liberty Garden"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Nuvema Town",
+				"value": 1
+			},
+			{
+				"name": "Route 1",
+				"value": 2
+			},
+			{
+				"name": "Accumula Town",
+				"value": 3
+			},
+			{
+				"name": "Route 2",
+				"value": 4
+			},
+			{
+				"name": "Striaton City",
+				"value": 5
+			},
+			{
+				"name": "Dreamyard",
+				"value": 6
+			},
+			{
+				"name": "Route 3",
+				"value": 7
+			},
+			{
+				"name": "Wellspring Cave",
+				"value": 8
+			},
+			{
+				"name": "Nacrene City",
+				"value": 9
+			},
+			{
+				"name": "Pinwheel Forest",
+				"value": 10
+			},
+			{
+				"name": "Castelia City",
+				"value": 11
+			},
+			{
+				"name": "Route 4",
+				"value": 12
+			},
+			{
+				"name": "Desert Resort",
+				"value": 13
+			},
+			{
+				"name": "Relic Castle",
+				"value": 14
+			},
+			{
+				"name": "Route 16",
+				"value": 15
+			},
+			{
+				"name": "Route 5",
+				"value": 16
+			},
+			{
+				"name": "Driftveil Drawbridge",
+				"value": 17
+			},
+			{
+				"name": "Driftveil City",
+				"value": 18
+			},
+			{
+				"name": "Cold Storage",
+				"value": 19
+			},
+			{
+				"name": "Route 6",
+				"value": 20
+			},
+			{
+				"name": "Mistralton Cave",
+				"value": 21
+			},
+			{
+				"name": "Chargestone Cave",
+				"value": 22
+			},
+			{
+				"name": "Route 7",
+				"value": 23
+			},
+			{
+				"name": "Celestial Tower",
+				"value": 24
+			},
+			{
+				"name": "Twist Mountain",
+				"value": 25
+			},
+			{
+				"name": "Iccirus City",
+				"value": 26
+			},
+			{
+				"name": "Dragonspiral Tower",
+				"value": 27
+			},
+			{
+				"name": "Route 8",
+				"value": 28
+			},
+			{
+				"name": "Moor of Icirrus",
+				"value": 29
+			},
+			{
+				"name": "Route 9",
+				"value": 30
+			},
+			{
+				"name": "Route 10",
+				"value": 31
+			},
+			{
+				"name": "Victory Road",
+				"value": 32
+			},
+			{
+				"name": "Route 11",
+				"value": 33
+			},
+			{
+				"name": "Village Bridge",
+				"value": 34
+			},
+			{
+				"name": "Route 12",
+				"value": 35
+			},
+			{
+				"name": "Route 13",
+				"value": 36
+			},
+			{
+				"name": "Undella Town",
+				"value": 37
+			},
+			{
+				"name": "Undella Bay",
+				"value": 38
+			},
+			{
+				"name": "Route 14",
+				"value": 39
+			},
+			{
+				"name": "Abundant Shrine",
+				"value": 40
+			},
+			{
+				"name": "White Forest",
+				"value": 41
+			},
+			{
+				"name": "Route 15",
+				"value": 42
+			},
+			{
+				"name": "Marvelous Bridge",
+				"value": 43
+			},
+			{
+				"name": "Lostlorn Forest",
+				"value": 44
+			},
+			{
+				"name": "Route 17",
+				"value": 45
+			},
+			{
+				"name": "Route 18",
+				"value": 46
+			},
+			{
+				"name": "P2 Laboratory",
+				"value": 47
+			},
+			{
+				"name": "Liberty Garden",
+				"value": 48
+			}
 		]
 	},
 	'bw2': {
@@ -548,71 +2016,266 @@ var games = {
 		'nameLimit': 10,
 		'dexLimit': 649,
 		'locations': [
-			"Starter",
-			"Aspertia City",
-			"Route 19",
-			"Floccesy Town",
-			"Route 20",
-			"Floccesy Ranch",
-			"Aspertia Gym",
-			"Virbank City",
-			"Virbank Complex",
-			"Castelia City",
-			"Castelia Sewers",
-			"Relic Passage",
-			"Route 4",
-			"Desert Resort",
-			"Relic Castle",
-			"Route 16",
-			"Lostlorn Forest",
-			"Route 5",
-			"Driftveil Drawbridge",
-			"Driftveil City",
-			"Route 6",
-			"Mistralton Cave",
-			"Chargestone Cave",
-			"Route 7",
-			"Celestial Tower",
-			"Reversal Mountain",
-			"Strange House",
-			"Undella Town",
-			"Undella Bay",
-			"Route 13",
-			"Route 12",
-			"Village Bridge",
-			"Route 11",
-			"Route 9",
-			"Seaside Cave",
-			"Route 21",
-			"Humilau City",
-			"Route 22",
-			"Giant Chasm",
-			"Route 23",
-			"Victory Road",
-			"Old Victory Road",
-			"Marvelous Bridge",
-			"Route 15",
-			"Route 14",
-			"Abundant Shrine",
-			"Moor of Icirrus",
-			"Icirrus City",
-			"Dragonspiral Tower",
-			"Twist Mountain",
-			"Clay Tunnel",
-			"Underground Ruins",
-			"Pinwheel Forest",
-			"Nacrene City",
-			"Route 3",
-			"Wellspring Cave",
-			"Striaton City",
-			"Dreamyard",
-			"Route 2",
-			"Accumula Town",
-			"Route 1",
-			"Route 17",
-			"Route 18",
-			"P2 Laboratory",
-			"Nature Preserve"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Aspertia City",
+				"value": 1
+			},
+			{
+				"name": "Route 19",
+				"value": 2
+			},
+			{
+				"name": "Floccesy Town",
+				"value": 3
+			},
+			{
+				"name": "Route 20",
+				"value": 4
+			},
+			{
+				"name": "Floccesy Ranch",
+				"value": 5
+			},
+			{
+				"name": "Aspertia Gym",
+				"value": 6
+			},
+			{
+				"name": "Virbank City",
+				"value": 7
+			},
+			{
+				"name": "Virbank Complex",
+				"value": 8
+			},
+			{
+				"name": "Castelia City",
+				"value": 9
+			},
+			{
+				"name": "Castelia Sewers",
+				"value": 10
+			},
+			{
+				"name": "Relic Passage",
+				"value": 11
+			},
+			{
+				"name": "Route 4",
+				"value": 12
+			},
+			{
+				"name": "Desert Resort",
+				"value": 13
+			},
+			{
+				"name": "Relic Castle",
+				"value": 14
+			},
+			{
+				"name": "Route 16",
+				"value": 15
+			},
+			{
+				"name": "Lostlorn Forest",
+				"value": 16
+			},
+			{
+				"name": "Route 5",
+				"value": 17
+			},
+			{
+				"name": "Driftveil Drawbridge",
+				"value": 18
+			},
+			{
+				"name": "Driftveil City",
+				"value": 19
+			},
+			{
+				"name": "Route 6",
+				"value": 20
+			},
+			{
+				"name": "Mistralton Cave",
+				"value": 21
+			},
+			{
+				"name": "Chargestone Cave",
+				"value": 22
+			},
+			{
+				"name": "Route 7",
+				"value": 23
+			},
+			{
+				"name": "Celestial Tower",
+				"value": 24
+			},
+			{
+				"name": "Reversal Mountain",
+				"value": 25
+			},
+			{
+				"name": "Strange House",
+				"value": 26
+			},
+			{
+				"name": "Undella Town",
+				"value": 27
+			},
+			{
+				"name": "Undella Bay",
+				"value": 28
+			},
+			{
+				"name": "Route 13",
+				"value": 29
+			},
+			{
+				"name": "Route 12",
+				"value": 30
+			},
+			{
+				"name": "Village Bridge",
+				"value": 31
+			},
+			{
+				"name": "Route 11",
+				"value": 32
+			},
+			{
+				"name": "Route 9",
+				"value": 33
+			},
+			{
+				"name": "Seaside Cave",
+				"value": 34
+			},
+			{
+				"name": "Route 21",
+				"value": 35
+			},
+			{
+				"name": "Humilau City",
+				"value": 36
+			},
+			{
+				"name": "Route 22",
+				"value": 37
+			},
+			{
+				"name": "Giant Chasm",
+				"value": 38
+			},
+			{
+				"name": "Route 23",
+				"value": 39
+			},
+			{
+				"name": "Victory Road",
+				"value": 40
+			},
+			{
+				"name": "Old Victory Road",
+				"value": 41
+			},
+			{
+				"name": "Marvelous Bridge",
+				"value": 42
+			},
+			{
+				"name": "Route 15",
+				"value": 43
+			},
+			{
+				"name": "Route 14",
+				"value": 44
+			},
+			{
+				"name": "Abundant Shrine",
+				"value": 45
+			},
+			{
+				"name": "Moor of Icirrus",
+				"value": 46
+			},
+			{
+				"name": "Icirrus City",
+				"value": 47
+			},
+			{
+				"name": "Dragonspiral Tower",
+				"value": 48
+			},
+			{
+				"name": "Twist Mountain",
+				"value": 49
+			},
+			{
+				"name": "Clay Tunnel",
+				"value": 50
+			},
+			{
+				"name": "Underground Ruins",
+				"value": 51
+			},
+			{
+				"name": "Pinwheel Forest",
+				"value": 52
+			},
+			{
+				"name": "Nacrene City",
+				"value": 53
+			},
+			{
+				"name": "Route 3",
+				"value": 54
+			},
+			{
+				"name": "Wellspring Cave",
+				"value": 55
+			},
+			{
+				"name": "Striaton City",
+				"value": 56
+			},
+			{
+				"name": "Dreamyard",
+				"value": 57
+			},
+			{
+				"name": "Route 2",
+				"value": 58
+			},
+			{
+				"name": "Accumula Town",
+				"value": 59
+			},
+			{
+				"name": "Route 1",
+				"value": 60
+			},
+			{
+				"name": "Route 17",
+				"value": 61
+			},
+			{
+				"name": "Route 18",
+				"value": 62
+			},
+			{
+				"name": "P2 Laboratory",
+				"value": 63
+			},
+			{
+				"name": "Nature Preserve",
+				"value": 64
+			}
 		]
 	},
 	'xy': {
@@ -621,51 +2284,186 @@ var games = {
 		'nameLimit': 12,
 		'dexLimit': 721,
 		'locations': [
-			"Starter",
-			"Aquacorde Town",
-			"Route 2",
-			"Santalune Forest",
-			"Route 3",
-			"Route 22",
-			"Route 4",
-			"Lumiose City",
-			"Route 5",
-			"Route 6",
-			"Parfum Palace",
-			"Route 7",
-			"Battle Chateau",
-			"Connecting Cave",
-			"Route 8",
-			"Ambrette Town",
-			"Route 9",
-			"Glittering Cave",
-			"Cyllage City",
-			"Route 10",
-			"Route 11",
-			"Reflection Cave",
-			"Shalour City",
-			"Tower of Mystery",
-			"Route 12",
-			"Azure Bay",
-			"Route 13",
-			"Route 14",
-			"Laverre City",
-			"Route 15",
-			"Lost Hotel",
-			"Route 16",
-			"Frost Cavern",
-			"Route 17",
-			"Team Flare Secret HQ",
-			"Route 18",
-			"Couriway Town",
-			"Route 19",
-			"Route 20",
-			"Pokémon Village",
-			"Route 21",
-			"Victory Road",
-			"Terminus Cave",
-			"Sea Spirit's Den",
-			"Friend Safari"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Aquacorde Town",
+				"value": 1
+			},
+			{
+				"name": "Route 2",
+				"value": 2
+			},
+			{
+				"name": "Santalune Forest",
+				"value": 3
+			},
+			{
+				"name": "Route 3",
+				"value": 4
+			},
+			{
+				"name": "Route 22",
+				"value": 5
+			},
+			{
+				"name": "Route 4",
+				"value": 6
+			},
+			{
+				"name": "Lumiose City",
+				"value": 7
+			},
+			{
+				"name": "Route 5",
+				"value": 8
+			},
+			{
+				"name": "Route 6",
+				"value": 9
+			},
+			{
+				"name": "Parfum Palace",
+				"value": 10
+			},
+			{
+				"name": "Route 7",
+				"value": 11
+			},
+			{
+				"name": "Battle Chateau",
+				"value": 12
+			},
+			{
+				"name": "Connecting Cave",
+				"value": 13
+			},
+			{
+				"name": "Route 8",
+				"value": 14
+			},
+			{
+				"name": "Ambrette Town",
+				"value": 15
+			},
+			{
+				"name": "Route 9",
+				"value": 16
+			},
+			{
+				"name": "Glittering Cave",
+				"value": 17
+			},
+			{
+				"name": "Cyllage City",
+				"value": 18
+			},
+			{
+				"name": "Route 10",
+				"value": 19
+			},
+			{
+				"name": "Route 11",
+				"value": 20
+			},
+			{
+				"name": "Reflection Cave",
+				"value": 21
+			},
+			{
+				"name": "Shalour City",
+				"value": 22
+			},
+			{
+				"name": "Tower of Mystery",
+				"value": 23
+			},
+			{
+				"name": "Route 12",
+				"value": 24
+			},
+			{
+				"name": "Azure Bay",
+				"value": 25
+			},
+			{
+				"name": "Route 13",
+				"value": 26
+			},
+			{
+				"name": "Route 14",
+				"value": 27
+			},
+			{
+				"name": "Laverre City",
+				"value": 28
+			},
+			{
+				"name": "Route 15",
+				"value": 29
+			},
+			{
+				"name": "Lost Hotel",
+				"value": 30
+			},
+			{
+				"name": "Route 16",
+				"value": 31
+			},
+			{
+				"name": "Frost Cavern",
+				"value": 32
+			},
+			{
+				"name": "Route 17",
+				"value": 33
+			},
+			{
+				"name": "Team Flare Secret HQ",
+				"value": 34
+			},
+			{
+				"name": "Route 18",
+				"value": 35
+			},
+			{
+				"name": "Couriway Town",
+				"value": 36
+			},
+			{
+				"name": "Route 19",
+				"value": 37
+			},
+			{
+				"name": "Route 20",
+				"value": 38
+			},
+			{
+				"name": "Pokémon Village",
+				"value": 39
+			},
+			{
+				"name": "Route 21",
+				"value": 40
+			},
+			{
+				"name": "Victory Road",
+				"value": 41
+			},
+			{
+				"name": "Terminus Cave",
+				"value": 42
+			},
+			{
+				"name": "Sea Spirit's Den",
+				"value": 43
+			},
+			{
+				"name": "Friend Safari",
+				"value": 44
+			}
 		]
 	},
 	'oras': {
@@ -674,85 +2472,322 @@ var games = {
 		'nameLimit': 12,
 		'dexLimit': 721,
 		'locations': [
-			"Starter",
-			"Littleroot Town",
-			"Route 101",
-			"Route 102",
-			"Route 103",
-			"Petalburg City",
-			"Route 104",
-			"Petalburg Woods",
-			"Rustboro City",
-			"Route 115",
-			"Route 116",
-			"Rusturf Tunnel",
-			"Dewford Town",
-			"Route 106",
-			"Granite Cave",
-			"Route 107",
-			"Slateport City",
-			"Route 110",
-			"Altering Cave",
-			"New Mauville",
-			"Route 117",
-			"Route 111",
-			"Route 112",
-			"Fiery Path",
-			"Route 113",
-			"Route 114",
-			"Meteor Falls",
-			"Jagged Pass",
-			"Lavaridge Town",
-			"Route 118",
-			"Southern Island",
-			"Route 119",
-			"Fortree City",
-			"Route 120",
-			"Route 121",
-			"Safari Zone",
-			"Lilycove City",
-			"Route 122",
-			"Mt. Pyre",
-			"Route 123",
-			"Team Aqua/Magma Hideout Entrance",
-			"Route 124",
-			"Mossdeep City",
-			"Route 125",
-			"Shoal Cave",
-			"Route 127",
-			"Route 128",
-			"Seafloor Cavern",
-			"Route 126",
-			"Sootopolis City",
-			"Cave of Origin",
-			"Soaring",
-			"Route 129",
-			"Route 130",
-			"Route 131",
-			"Sky Pillar",
-			"Pacifidlog Town",
-			"Mirage Island",
-			"Route 105",
-			"Route 108",
-			"Abandoned Ship",
-			"Route 109",
-			"Route 132",
-			"Route 133",
-			"Route 134",
-			"Ever Grande City",
-			"Victory Road",
-			"S.S. Tidal",
-			"Pathless Plain",
-			"Nameless Cavern",
-			"Fabled Cave",
-			"Gnarled Den",
-			"Trackless Forest",
-			"Crescent Isle",
-			"Battle Resort",
-			"Mirage Cave",
-			"Mirage Forest",
-			"Mirage Island",
-			"Mirage Mountain"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Littleroot Town",
+				"value": 1
+			},
+			{
+				"name": "Route 101",
+				"value": 2
+			},
+			{
+				"name": "Route 102",
+				"value": 3
+			},
+			{
+				"name": "Route 103",
+				"value": 4
+			},
+			{
+				"name": "Petalburg City",
+				"value": 5
+			},
+			{
+				"name": "Route 104",
+				"value": 6
+			},
+			{
+				"name": "Petalburg Woods",
+				"value": 7
+			},
+			{
+				"name": "Rustboro City",
+				"value": 8
+			},
+			{
+				"name": "Route 115",
+				"value": 9
+			},
+			{
+				"name": "Route 116",
+				"value": 10
+			},
+			{
+				"name": "Rusturf Tunnel",
+				"value": 11
+			},
+			{
+				"name": "Dewford Town",
+				"value": 12
+			},
+			{
+				"name": "Route 106",
+				"value": 13
+			},
+			{
+				"name": "Granite Cave",
+				"value": 14
+			},
+			{
+				"name": "Route 107",
+				"value": 15
+			},
+			{
+				"name": "Slateport City",
+				"value": 16
+			},
+			{
+				"name": "Route 110",
+				"value": 17
+			},
+			{
+				"name": "Altering Cave",
+				"value": 18
+			},
+			{
+				"name": "New Mauville",
+				"value": 19
+			},
+			{
+				"name": "Route 117",
+				"value": 20
+			},
+			{
+				"name": "Route 111",
+				"value": 21
+			},
+			{
+				"name": "Route 112",
+				"value": 22
+			},
+			{
+				"name": "Fiery Path",
+				"value": 23
+			},
+			{
+				"name": "Route 113",
+				"value": 24
+			},
+			{
+				"name": "Route 114",
+				"value": 25
+			},
+			{
+				"name": "Meteor Falls",
+				"value": 26
+			},
+			{
+				"name": "Jagged Pass",
+				"value": 27
+			},
+			{
+				"name": "Lavaridge Town",
+				"value": 28
+			},
+			{
+				"name": "Route 118",
+				"value": 29
+			},
+			{
+				"name": "Southern Island",
+				"value": 30
+			},
+			{
+				"name": "Route 119",
+				"value": 31
+			},
+			{
+				"name": "Fortree City",
+				"value": 32
+			},
+			{
+				"name": "Route 120",
+				"value": 33
+			},
+			{
+				"name": "Route 121",
+				"value": 34
+			},
+			{
+				"name": "Safari Zone",
+				"value": 35
+			},
+			{
+				"name": "Lilycove City",
+				"value": 36
+			},
+			{
+				"name": "Route 122",
+				"value": 37
+			},
+			{
+				"name": "Mt. Pyre",
+				"value": 38
+			},
+			{
+				"name": "Route 123",
+				"value": 39
+			},
+			{
+				"name": "Team Aqua/Magma Hideout Entrance",
+				"value": 40
+			},
+			{
+				"name": "Route 124",
+				"value": 41
+			},
+			{
+				"name": "Mossdeep City",
+				"value": 42
+			},
+			{
+				"name": "Route 125",
+				"value": 43
+			},
+			{
+				"name": "Shoal Cave",
+				"value": 44
+			},
+			{
+				"name": "Route 127",
+				"value": 45
+			},
+			{
+				"name": "Route 128",
+				"value": 46
+			},
+			{
+				"name": "Seafloor Cavern",
+				"value": 47
+			},
+			{
+				"name": "Route 126",
+				"value": 48
+			},
+			{
+				"name": "Sootopolis City",
+				"value": 49
+			},
+			{
+				"name": "Cave of Origin",
+				"value": 50
+			},
+			{
+				"name": "Soaring",
+				"value": 51
+			},
+			{
+				"name": "Route 129",
+				"value": 52
+			},
+			{
+				"name": "Route 130",
+				"value": 53
+			},
+			{
+				"name": "Route 131",
+				"value": 54
+			},
+			{
+				"name": "Sky Pillar",
+				"value": 55
+			},
+			{
+				"name": "Pacifidlog Town",
+				"value": 56
+			},
+			{
+				"name": "Mirage Island",
+				"value": 57
+			},
+			{
+				"name": "Route 105",
+				"value": 58
+			},
+			{
+				"name": "Route 108",
+				"value": 59
+			},
+			{
+				"name": "Abandoned Ship",
+				"value": 60
+			},
+			{
+				"name": "Route 109",
+				"value": 61
+			},
+			{
+				"name": "Route 132",
+				"value": 62
+			},
+			{
+				"name": "Route 133",
+				"value": 63
+			},
+			{
+				"name": "Route 134",
+				"value": 64
+			},
+			{
+				"name": "Ever Grande City",
+				"value": 65
+			},
+			{
+				"name": "Victory Road",
+				"value": 66
+			},
+			{
+				"name": "S.S. Tidal",
+				"value": 67
+			},
+			{
+				"name": "Pathless Plain",
+				"value": 68
+			},
+			{
+				"name": "Nameless Cavern",
+				"value": 69
+			},
+			{
+				"name": "Fabled Cave",
+				"value": 70
+			},
+			{
+				"name": "Gnarled Den",
+				"value": 71
+			},
+			{
+				"name": "Trackless Forest",
+				"value": 72
+			},
+			{
+				"name": "Crescent Isle",
+				"value": 73
+			},
+			{
+				"name": "Battle Resort",
+				"value": 74
+			},
+			{
+				"name": "Mirage Cave",
+				"value": 75
+			},
+			{
+				"name": "Mirage Forest",
+				"value": 76
+			},
+			{
+				"name": "Mirage Island",
+				"value": 77
+			},
+			{
+				"name": "Mirage Mountain",
+				"value": 78
+			}
 		]
 	},
 	'sm': {
@@ -761,76 +2796,286 @@ var games = {
 		'nameLimit': 12,
 		'dexLimit': 802,
 		'locations': [
-			"Starter",
-			"Hau'oli Outskirts",
-			"Iki Town",
-			"Route 1",
-			"Melemele Sea",
-			"Hau'oli City",
-			"Route 2",
-			"Berry Fields",
-			"Verdant Cavern",
-			"Hau'oli Cemetery",
-			"Route 3",
-			"Melemele Meadow",
-			"Seaward Cave",
-			"Kala'e Bay",
-			"Ten Carat Hill",
-			"Hano Beach",
-			"Route 4",
-			"Paniola Town",
-			"Paniola Ranch",
-			"Route 5",
-			"Brooklet Hill",
-			"Route 6",
-			"Route 7",
-			"Wela Volcano Park",
-			"Route 8",
-			"Fossil Restoration Center",
-			"Lush Jungle",
-			"Diglett's Tunnel",
-			"Route 9",
-			"Konikoni City",
-			"Memorial Hill",
-			"Akala Outskirts",
-			"Malie City",
-			"Malie Garden",
-			"Route 10",
-			"Mount Hokulani",
-			"Route 11",
-			"Route 12",
-			"Secluded Shore",
-			"Blush Mountain",
-			"Route 13",
-			"Haina Desert",
-			"Tapu Village",
-			"Route 15",
-			"Aether House",
-			"Route 14",
-			"Thrifty Megamart",
-			"Route 16",
-			"Ula'ula Meadow",
-			"Lake of the Moone/Sunne",
-			"Route 17",
-			"Shady House",
-			"Seafolk Village",
-			"Poni Wilds",
-			"Ancient Poni Path",
-			"Poni Breaker Coast",
-			"Exeggutor Island",
-			"Vast Poni Canyon",
-			"Altar of the Moone/Sunne",
-			"Mount Lanakila",
-			"Poni Grove",
-			"Poni Plains",
-			"Poni Meadow",
-			"Resolution Cave",
-			"Poni Coast",
-			"Poni Gauntlet",
-			"Ruins of Conflict",
-			"Ruins of Life",
-			"Ruins of Abundance",
-			"Ruins of Hope"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Hau'oli Outskirts",
+				"value": 1
+			},
+			{
+				"name": "Iki Town",
+				"value": 2
+			},
+			{
+				"name": "Route 1",
+				"value": 3
+			},
+			{
+				"name": "Melemele Sea",
+				"value": 4
+			},
+			{
+				"name": "Hau'oli City",
+				"value": 5
+			},
+			{
+				"name": "Route 2",
+				"value": 6
+			},
+			{
+				"name": "Berry Fields",
+				"value": 7
+			},
+			{
+				"name": "Verdant Cavern",
+				"value": 8
+			},
+			{
+				"name": "Hau'oli Cemetery",
+				"value": 9
+			},
+			{
+				"name": "Route 3",
+				"value": 10
+			},
+			{
+				"name": "Melemele Meadow",
+				"value": 11
+			},
+			{
+				"name": "Seaward Cave",
+				"value": 12
+			},
+			{
+				"name": "Kala'e Bay",
+				"value": 13
+			},
+			{
+				"name": "Ten Carat Hill",
+				"value": 14
+			},
+			{
+				"name": "Hano Beach",
+				"value": 15
+			},
+			{
+				"name": "Route 4",
+				"value": 16
+			},
+			{
+				"name": "Paniola Town",
+				"value": 17
+			},
+			{
+				"name": "Paniola Ranch",
+				"value": 18
+			},
+			{
+				"name": "Route 5",
+				"value": 19
+			},
+			{
+				"name": "Brooklet Hill",
+				"value": 20
+			},
+			{
+				"name": "Route 6",
+				"value": 21
+			},
+			{
+				"name": "Route 7",
+				"value": 22
+			},
+			{
+				"name": "Wela Volcano Park",
+				"value": 23
+			},
+			{
+				"name": "Route 8",
+				"value": 24
+			},
+			{
+				"name": "Fossil Restoration Center",
+				"value": 25
+			},
+			{
+				"name": "Lush Jungle",
+				"value": 26
+			},
+			{
+				"name": "Diglett's Tunnel",
+				"value": 27
+			},
+			{
+				"name": "Route 9",
+				"value": 28
+			},
+			{
+				"name": "Konikoni City",
+				"value": 29
+			},
+			{
+				"name": "Memorial Hill",
+				"value": 30
+			},
+			{
+				"name": "Akala Outskirts",
+				"value": 31
+			},
+			{
+				"name": "Malie City",
+				"value": 32
+			},
+			{
+				"name": "Malie Garden",
+				"value": 33
+			},
+			{
+				"name": "Route 10",
+				"value": 34
+			},
+			{
+				"name": "Mount Hokulani",
+				"value": 35
+			},
+			{
+				"name": "Route 11",
+				"value": 36
+			},
+			{
+				"name": "Route 12",
+				"value": 37
+			},
+			{
+				"name": "Secluded Shore",
+				"value": 38
+			},
+			{
+				"name": "Blush Mountain",
+				"value": 39
+			},
+			{
+				"name": "Route 13",
+				"value": 40
+			},
+			{
+				"name": "Haina Desert",
+				"value": 41
+			},
+			{
+				"name": "Tapu Village",
+				"value": 42
+			},
+			{
+				"name": "Route 15",
+				"value": 43
+			},
+			{
+				"name": "Aether House",
+				"value": 44
+			},
+			{
+				"name": "Route 14",
+				"value": 45
+			},
+			{
+				"name": "Thrifty Megamart",
+				"value": 46
+			},
+			{
+				"name": "Route 16",
+				"value": 47
+			},
+			{
+				"name": "Ula'ula Meadow",
+				"value": 48
+			},
+			{
+				"name": "Lake of the Moone/Sunne",
+				"value": 49
+			},
+			{
+				"name": "Route 17",
+				"value": 50
+			},
+			{
+				"name": "Shady House",
+				"value": 51
+			},
+			{
+				"name": "Seafolk Village",
+				"value": 52
+			},
+			{
+				"name": "Poni Wilds",
+				"value": 53
+			},
+			{
+				"name": "Ancient Poni Path",
+				"value": 54
+			},
+			{
+				"name": "Poni Breaker Coast",
+				"value": 55
+			},
+			{
+				"name": "Exeggutor Island",
+				"value": 56
+			},
+			{
+				"name": "Vast Poni Canyon",
+				"value": 57
+			},
+			{
+				"name": "Altar of the Moone/Sunne",
+				"value": 58
+			},
+			{
+				"name": "Mount Lanakila",
+				"value": 59
+			},
+			{
+				"name": "Poni Grove",
+				"value": 60
+			},
+			{
+				"name": "Poni Plains",
+				"value": 61
+			},
+			{
+				"name": "Poni Meadow",
+				"value": 62
+			},
+			{
+				"name": "Resolution Cave",
+				"value": 63
+			},
+			{
+				"name": "Poni Coast",
+				"value": 64
+			},
+			{
+				"name": "Poni Gauntlet",
+				"value": 65
+			},
+			{
+				"name": "Ruins of Conflict",
+				"value": 66
+			},
+			{
+				"name": "Ruins of Life",
+				"value": 67
+			},
+			{
+				"name": "Ruins of Abundance",
+				"value": 68
+			},
+			{
+				"name": "Ruins of Hope",
+				"value": 69
+			}
 		]
 	},
 	'usum': {
@@ -839,77 +3084,302 @@ var games = {
 		'nameLimit': 12,
 		'dexLimit': 807,
 		'locations': [
-			"Starter",
-			"Hau'oli Outskirts",
-			"Iki Town",
-			"Route 1",
-			"Melemele Sea",
-			"Hau'oli City",
-			"Route 2",
-			"Berry Fields",
-			"Verdant Cavern",
-			"Hau'oli Cemetery",
-			"Route 3",
-			"Melemele Meadow",
-			"Seaward Cave",
-			"Kala'e Bay",
-			"Ten Carat Hill",
-			"Hano Beach",
-			"Route 4",
-			"Paniola Town",
-			"Paniola Ranch",
-			"Route 5",
-			"Brooklet Hill",
-			"Route 6",
-			"Route 7",
-			"Wela Volcano Park",
-			"Dividing Peak Tunnel",
-			"Route 8",
-			"Fossil Restoration Center",
-			"Lush Jungle",
-			"Diglett's Tunnel",
-			"Route 9",
-			"Konikoni City",
-			"Memorial Hill",
-			"Akala Outskirts",
-			"Malie City",
-			"Malie Garden",
-			"Route 10",
-			"Mount Hokulani",
-			"Route 11",
-			"Route 12",
-			"Secluded Shore",
-			"Blush Mountain",
-			"Route 13",
-			"Haina Desert",
-			"Tapu Village",
-			"Route 15",
-			"Aether House",
-			"Route 14",
-			"Thrifty Megamart",
-			"Route 16",
-			"Ula'ula Meadow",
-			"Lake of the Moone/Sunne",
-			"Route 17",
-			"Shady House",
-			"Seafolk Village",
-			"Poni Wilds",
-			"Ancient Poni Path",
-			"Poni Breaker Coast",
-			"Exeggutor Island",
-			"Vast Poni Canyon",
-			"Altar of the Moone/Sunne",
-			"Mount Lanakila",
-			"Poni Grove",
-			"Poni Plains",
-			"Poni Meadow",
-			"Resolution Cave",
-			"Poni Coast",
-			"Poni Gauntlet",
-			"Ruins of Conflict",
-			"Ruins of Life",
-			"Ruins of Abundance",
-			"Ruins of Hope"
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Hau'oli Outskirts",
+				"value": 1
+			},
+			{
+				"name": "Iki Town",
+				"value": 2
+			},
+			{
+				"name": "Route 1",
+				"value": 3
+			},
+			{
+				"name": "Melemele Sea",
+				"value": 4
+			},
+			{
+				"name": "Hau'oli City",
+				"value": 5
+			},
+			{
+				"name": "Route 2",
+				"value": 6
+			},
+			{
+				"name": "Berry Fields",
+				"value": 7
+			},
+			{
+				"name": "Verdant Cavern",
+				"value": 8
+			},
+			{
+				"name": "Hau'oli Cemetery",
+				"value": 9
+			},
+			{
+				"name": "Route 3",
+				"value": 10
+			},
+			{
+				"name": "Melemele Meadow",
+				"value": 11
+			},
+			{
+				"name": "Seaward Cave",
+				"value": 12
+			},
+			{
+				"name": "Kala'e Bay",
+				"value": 13
+			},
+			{
+				"name": "Ten Carat Hill",
+				"value": 14
+			},
+			{
+				"name": "Hano Beach",
+				"value": 15
+			},
+			{
+				"name": "Route 4",
+				"value": 16
+			},
+			{
+				"name": "Paniola Town",
+				"value": 17
+			},
+			{
+				"name": "Paniola Ranch",
+				"value": 18
+			},
+			{
+				"name": "Route 5",
+				"value": 19
+			},
+			{
+				"name": "Brooklet Hill",
+				"value": 20
+			},
+			{
+				"name": "Route 6",
+				"value": 21
+			},
+			{
+				"name": "Route 7",
+				"value": 22
+			},
+			{
+				"name": "Wela Volcano Park",
+				"value": 23
+			},
+			{
+				"name": "Dividing Peak Tunnel",
+				"value": 24
+			},
+			{
+				"name": "Route 8",
+				"value": 25
+			},
+			{
+				"name": "Fossil Restoration Center",
+				"value": 26
+			},
+			{
+				"name": "Lush Jungle",
+				"value": 27
+			},
+			{
+				"name": "Diglett's Tunnel",
+				"value": 28
+			},
+			{
+				"name": "Route 9",
+				"value": 29
+			},
+			{
+				"name": "Konikoni City",
+				"value": 30
+			},
+			{
+				"name": "Memorial Hill",
+				"value": 31
+			},
+			{
+				"name": "Akala Outskirts",
+				"value": 32
+			},
+			{
+				"name": "Malie City",
+				"value": 33
+			},
+			{
+				"name": "Malie Garden",
+				"value": 34
+			},
+			{
+				"name": "Route 10",
+				"value": 35
+			},
+			{
+				"name": "Mount Hokulani",
+				"value": 36
+			},
+			{
+				"name": "Route 11",
+				"value": 37
+			},
+			{
+				"name": "Route 12",
+				"value": 38
+			},
+			{
+				"name": "Secluded Shore",
+				"value": 39
+			},
+			{
+				"name": "Blush Mountain",
+				"value": 40
+			},
+			{
+				"name": "Route 13",
+				"value": 41
+			},
+			{
+				"name": "Haina Desert",
+				"value": 42
+			},
+			{
+				"name": "Tapu Village",
+				"value": 43
+			},
+			{
+				"name": "Route 15",
+				"value": 44
+			},
+			{
+				"name": "Aether House",
+				"value": 45
+			},
+			{
+				"name": "Route 14",
+				"value": 46
+			},
+			{
+				"name": "Thrifty Megamart",
+				"value": 47
+			},
+			{
+				"name": "Route 16",
+				"value": 48
+			},
+			{
+				"name": "Ula'ula Meadow",
+				"value": 49
+			},
+			{
+				"name": "Lake of the Moone/Sunne",
+				"value": 50
+			},
+			{
+				"name": "Route 17",
+				"value": 51
+			},
+			{
+				"name": "Shady House",
+				"value": 52
+			},
+			{
+				"name": "Seafolk Village",
+				"value": 53
+			},
+			{
+				"name": "Poni Wilds",
+				"value": 54
+			},
+			{
+				"name": "Ancient Poni Path",
+				"value": 55
+			},
+			{
+				"name": "Poni Breaker Coast",
+				"value": 56
+			},
+			{
+				"name": "Exeggutor Island",
+				"value": 57
+			},
+			{
+				"name": "Vast Poni Canyon",
+				"value": 58
+			},
+			{
+				"name": "Altar of the Moone/Sunne",
+				"value": 59
+			},
+			{
+				"name": "Mount Lanakila",
+				"value": 60
+			},
+			{
+				"name": "Poni Grove",
+				"value": 61
+			},
+			{
+				"name": "Poni Plains",
+				"value": 62
+			},
+			{
+				"name": "Poni Meadow",
+				"value": 63
+			},
+			{
+				"name": "Resolution Cave",
+				"value": 64
+			},
+			{
+				"name": "Poni Coast",
+				"value": 65
+			},
+			{
+				"name": "Poni Gauntlet",
+				"value": 66
+			},
+			{
+				"name": "Ruins of Conflict",
+				"value": 67
+			},
+			{
+				"name": "Ruins of Life",
+				"value": 68
+			},
+			{
+				"name": "Ruins of Abundance",
+				"value": 69
+			},
+			{
+				"name": "Ruins of Hope",
+				"value": 70
+			}
+		]
+	},
+	'custom': {
+		'id': 'custom',
+		'title': 'Custom Game',
+		'nameLimit': 12,
+		'dexLimit': 807,
+		'locations': [
+			{
+				"name": "Starter",
+				"value": 0
+			}
 		]
 	}
 };
@@ -3488,7 +5958,7 @@ var pkmnData = [
 		"value": "reshiram"
 	},
 	{
-		"name": '<i class="zekrom  pkmn"></i>Zekrom ',
+		"name": '<i class="zekrom pkmn"></i>Zekrom',
 		"value": "zekrom"
 	},
 	{
@@ -4239,42 +6709,52 @@ function clearLocation(id) {
 	localStorage.removeItem(name);
 }
 
-function initTab(tab) {
-	var blobData = {id: tab, locations: []};
+function sortLocations(game) {
+	var locations = games[game].locations;
+	var customLocations = JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]');
+	var initialLength = customLocations.length;
 
-	$('#saveData').on('click', function() {
-		_.each(games[tab].locations, function(location, index) {
-			var encounter = localStorage.getItem(tab + index + '-encounter');
-			var name = localStorage.getItem(tab + index + '-name');
-			var nickname = localStorage.getItem(tab + index + '-nickname');
-			var status = localStorage.getItem(tab + index + '-status');
-
-			blobData.locations.push({'id': index, 'encounter': encounter, 'name': name, 'nickname': nickname, 'status': status});
+	if (initialLength) {
+		//Sort by order property, ensuring that all locations ordered directly after hardcoded locations get sorted first
+		//which potentially reduces the number of iterations to complete
+		customLocations.sort(function(a, b) {
+			return a.order < b.order ? -1 : a.order > b.order ? 1 : 0;
 		});
 
-		blobData = JSON.stringify(blobData);
+		//The order property of locations essentially make up one-to-one "chains" that each originate from a hardcoded location.
+		//The actual order of the locations as is doesn't necessarily relate to the aformentioned property, since it's subject to change
+		//which is why we're simply iterating over the array until it's empty.
+		//This is almost certainly unoptimal, but it works.
+		while (customLocations.length !== 0) {
+			initialLength = customLocations.length;
+			var locationRemoval = [];
 
-		var blob = new Blob([blobData], {type: 'application/json;charset=utf-8'});
-		saveAs(blob, tab + '.' + new Date().toISOString().slice(0, 10) + '.json');
-	});
+			_.each(customLocations, function(customLocation, index) {
+				var insertIndex = _.findIndex(locations, function(e) { return e.value == customLocation.order; });
 
-	$('.singleReset.button').on('click', function() {
-		var id = tab + $(this).data('index');
-		clearLocation(id);
-	});
+				if (insertIndex !== -1) {
+					//Insert location into the main location array
+					locations.splice(insertIndex + 1, 0, customLocations[index]);
 
-	$('#' + tab + '-locations input[type="text"]').on('change', function() {
-		var elm = $(this);
+					//Mark inserted location for deletion in the original array
+					locationRemoval.push(customLocation.value);
+				}
+			});
 
-		if (elm.val() !== '' || elm.val() !== null) {
-			elm.closest('td').data('sortValue', elm.val());
-			localStorage.setItem(elm.prop('id'), elm.val());
-		} else {
-			elm.closest('td').data('sortValue', '');
-			localStorage.removeItem(elm.prop('id'));
+			//Once all locations have been iterated, delete all the ones that were able to be placed to prevent duplicates and satisfy the while-loop.
+			_.each(locationRemoval, function(value) {
+				customLocations.splice(_.indexOf(customLocations, _.findWhere(customLocations, {'value': value})), 1);
+			});
+
+			//If the initialLength is unchanged by the end of the interation, something's gone wrong and the loop will never end unless we break out
+			if (initialLength === customLocations.length) {
+				break;
+			}
 		}
-	});
+	}
+}
 
+function initTab(tab) {
 	$('#' + tab + '-locations .ui.dropdown').dropdown({
 		onChange: function(value, name) {
 			var elm = $(this);
@@ -4328,64 +6808,217 @@ function initTab(tab) {
 	});
 
 	$('#' + tab + '-locations').closest('table').tablesort();
+	$('#' + tab + '-locations').closest('table').find('th').first().trigger('click');
 }
 
-$('#resetModal').modal({
-	onApprove: function() {
-		var selectedGame = localStorage.getItem('selectedGame');
+function saveData(game) {
+	var blobData = {id: game, locations: []};
 
-		_.each(games[selectedGame].locations, function(location, index) {
-			var id = selectedGame + index;
+	_.each(games[game].locations, function(location, index) {
+		var encounter = localStorage.getItem(game + index + '-encounter');
+		var name = localStorage.getItem(game + index + '-name');
+		var nickname = localStorage.getItem(game + index + '-nickname');
+		var status = localStorage.getItem(game + index + '-status');
 
-			clearLocation(id);
-		});
+		blobData.locations.push({'id': index, 'encounter': encounter, 'name': name, 'nickname': nickname, 'status': status});
+	});
+
+	blobData = JSON.stringify(blobData);
+
+	var blob = new Blob([blobData], {type: 'application/json;charset=utf-8'});
+	saveAs(blob, game + '.' + new Date().toISOString().slice(0, 10) + '.json');
+}
+
+function addLocation(location, game) {
+	var customLocations = JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]');
+
+	if (customLocations.length) {
+		location.value = 'c' + (parseInt(_.last(customLocations).value.slice(1)) + 1);
+	} else {
+		location.value = 'c0';
 	}
-});
 
-$('#importModal').modal({
-	onApprove: function() {
-		uploadFile($('#fileLoader')[0]);
+	var duplicateLocationOrder = _.findIndex(customLocations, function(e) { return e.order == location.order; });
+
+	if (duplicateLocationOrder !== -1) {
+		customLocations[duplicateLocationOrder].order = location.value;
 	}
-});
 
-$('.message .close').on('click', function() {
-	$(this).closest('.message').transition('fade');
-});
+	customLocations.push(location);
 
-$('#mainContent').html(mainTpl(games));
-$('#' + selectedGame + '-locations').html(locTpl(games[selectedGame]));
+	localStorage.setItem(game + '-custom-locations', JSON.stringify(customLocations));
 
-$('[data-tab="' + selectedGame + '"]').addClass('active');
+	updateTab(game, true);
+}
 
-$('#gameMenu .menu .item').tab({
-	onFirstLoad: function(tabPath) {
-		$('#' + tabPath + '-locations').html(locTpl(games[tabPath]));
-		initTab(tabPath);
-	},
-	onLoad: function(tabPath) {
-		localStorage.setItem('selectedGame', tabPath);
+function removeLocation(value, game) {
+	var customLocations = JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]');
+
+	var location = _.findWhere(customLocations, {'value': value});
+
+	var dependantLocation = _.findIndex(customLocations, function(e) { return e.order == location.value; });
+
+	if (dependantLocation) {
+		customLocations[dependantLocation].order = location.order;
 	}
-});
 
-$('.cookie.nag').nag({
-	'storageMethod': 'localstorage',
-	'key': 'accepts-cookies',
-	'value': true
-});
+	customLocations.splice(_.findIndex(customLocations, function(e) { return e.value == location.value; }), 1);
 
-$('#resetModal').modal('attach events', '#resetData', 'show');
+	localStorage.setItem(game + '-custom-locations', JSON.stringify(customLocations));
 
-$('#fileLoader').on('change', function() {
-	$('#importModal').modal('show');
-});
+	updateTab(game, true);
+}
 
-var currentYear = (new Date()).getUTCFullYear();
+function updateTab(game, updateDropdown) {
+	sortLocations(game);
+	$('#' + game + '-locations').html(locTpl(games[game]));
+	initTab(game);
 
-$('.copyright-year').text(currentYear);
+	if (updateDropdown) {
+		updateLocationDropdown();
+	}
+}
 
-$('#gameMenu').dropdown();
+function updateLocationDropdown() {
+	var locations = [];
+
+	_.each(games[selectedGame].locations, function(location) {
+		locations.push({'name': 'After ' + location.name, 'value': location.value});
+	});
+
+	$('#locationOrder').dropdown('change values', locations);
+	$('#locationOrder').dropdown('set selected', '0');
+}
+
+sortLocations(selectedGame);
 
 $(function() {
+	$(document).on('click', '#saveData', function() {
+		saveData(selectedGame);
+	}).on('click', '.singleReset.button', function() {
+		var id = selectedGame + $(this).data('locationId');
+
+		if ($(this).closest('tr').hasClass('customLocation')) {
+			$('#clearModal').data('target', $(this).data('locationId'));
+			$('#clearModal').modal('show');
+		} else {
+			clearLocation(id);
+		}
+	}).on('change', '#' + selectedGame + '-locations input[type="text"]', function() {
+		var elm = $(this);
+
+		if (elm.val() !== '' || elm.val() !== null) {
+			elm.closest('td').data('sortValue', elm.val());
+			localStorage.setItem(elm.prop('id'), elm.val());
+		} else {
+			elm.closest('td').data('sortValue', '');
+			localStorage.removeItem(elm.prop('id'));
+		}
+	});
+
+	$('#resetModal').modal({
+		onApprove: function(e) {
+			_.each(games[selectedGame].locations, function(location, index) {
+				clearLocation(selectedGame + index);
+			});
+
+			if (e.data('action') === 'remove') {
+				localStorage.removeItem(selectedGame + '-custom-locations');
+
+				games[selectedGame].locations = _.filter(games[selectedGame].locations, function(location) {
+					return !location.value.startsWith('c');
+				});
+
+				updateTab(selectedGame, true);
+			}
+		}
+	});
+
+	$('#clearModal').modal({
+		onApprove: function(e) {
+			if (e.data('action') === 'clear') {
+				clearLocation($(this).data('target'));
+			} else if (e.data('action') === 'remove') {
+				removeLocation($(this).data('target'), selectedGame);
+			}
+
+			$(this).removeData('target');
+		}
+	});
+
+	$('#importModal').modal({
+		onApprove: function() {
+			uploadFile($('#fileLoader')[0]);
+		}
+	});
+
+	$('#customLocationName').on('input', function() {
+		$(this).parent('.field').toggleClass('error', false);
+	});
+
+	$('#locationModal').modal({
+		onApprove: function() {
+			var locationName = $('#customLocationName').val().trim();
+
+			$('#customLocationName').parent().toggleClass('error', locationName == false);
+
+			if (locationName == false) {
+				return false;
+			}
+
+			addLocation({'name': locationName, 'order': $('#locationOrder').dropdown('get value') || "0"}, selectedGame);
+
+			$('#customLocationName').val('');
+			$('#locationOrder').dropdown('set selected', '0');
+		}
+	});
+
+	$('.message .close').on('click', function() {
+		$(this).closest('.message').transition('fade');
+	});
+
+	$('#mainContent').html(mainTpl(games));
+
+	$('#' + selectedGame + '-locations').html(locTpl(games[selectedGame]));
+
+	$('[data-tab="' + selectedGame + '"]').addClass('active');
+
+	$('#gameMenu .menu .item').tab({
+		onFirstLoad: function(tabPath) {
+			updateTab(tabPath, false);
+		},
+		onLoad: function(tabPath) {
+			localStorage.setItem('selectedGame', tabPath);
+			updateLocationDropdown();
+		}
+	});
+
+	$('.cookie.nag').nag({
+		'storageMethod': 'localstorage',
+		'key': 'accepts-cookies',
+		'value': true
+	});
+
+	$('#resetModal').modal('attach events', '#resetData', 'show');
+
+	$('#locationModal').modal('attach events', '.addLocation', 'show');
+
+	$('#fileLoader').on('change', function() {
+		$('#importModal').modal('show');
+	});
+
+	$('.copyright-year').text((new Date()).getUTCFullYear());
+
+	$('#gameMenu').dropdown();
+
+	$('#locationOrder').dropdown({
+		onChange: function(value) {
+			$('#locationOrder').val(value);
+		}
+	});
+
 	initTab(selectedGame);
+
+	updateLocationDropdown();
 });
 

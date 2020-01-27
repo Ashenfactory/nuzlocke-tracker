@@ -6,7 +6,7 @@
 		<title>Nuzlocke Tracker</title>
 		<meta name="description" content="A tool for tracking Pokémon encounters and captures during Nuzloke challenges">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ=" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha384-JKIDqM48bt14NZpzl9v0AP36VK2C/X6RuSPfimxpoWdSANUXblZUX1cgdQw8cZUK" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/main.min.css">
 		<script>
 			document.documentElement.className = 'js';
@@ -48,7 +48,7 @@
 
 			<div class="ui inverted vertical footer segment">
 				<div class="ui center aligned container">
-					<p>Pokémon © 2002-<span class="copyright-year">2019</span> Pokémon. © 1995-<span class="copyright-year">2019</span> Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.</p>
+					<p>Pokémon © 2002-<span class="copyright-year">2020</span> Pokémon. © 1995-<span class="copyright-year">2020</span> Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo.</p>
 				</div>
 			</div>
 		</div>
@@ -56,27 +56,63 @@
 		<div id="importModal" class="ui modal tiny">
 			<div class="header">Import</div>
 			<div class="content">
-				<p>Are you sure you want to import the selected file? Any unsaved data will be lost.</p>
+				<p>Are you sure you want to import the selected file? Any existing data for the associated game will be replaced.</p>
 			</div>
 			<div class="actions">
-				<div class="ui approve button">Yes</div>
-				<div class="ui cancel button">No</div>
+				<div class="ui approve button">Import data</div>
+				<div class="ui cancel button">Cancel</div>
+			</div>
+		</div>
+
+		<div id="clearModal" class="ui modal tiny">
+			<div class="header">Clear custom location</div>
+			<div class="content">
+				<p>Do you wish to clear this location's data, or remove the location entirely?</p>
+			</div>
+			<div class="actions">
+				<div class="ui approve button" data-action="clear">Clear data</div>
+				<div class="ui approve button" data-action="remove">Remove location</div>
+				<div class="ui cancel button">Cancel</div>
 			</div>
 		</div>
 
 		<div id="resetModal" class="ui modal tiny">
 			<div class="header">Reset</div>
 			<div class="content">
-				<p>Really clear all data associated with this game? Any unsaved data will be lost.</p>
+				<p>Do you wish to clear all values or perform a total reset of this game, which also removes all custom locations? Any unsaved data will be lost.</p>
 			</div>
 			<div class="actions">
-				<div class="ui approve button">Yes</div>
-				<div class="ui cancel button">No</div>
+				<div class="ui approve button" data-action="clear">Clear values</div>
+				<div class="ui approve button" data-action="remove">Total reset</div>
+				<div class="ui cancel button">Cancel</div>
+			</div>
+		</div>
+
+		<div id="locationModal" class="ui modal tiny">
+			<div class="header">Add location</div>
+			<div class="content ui form">
+				<div class="field">
+					<label for="customLocationName">Name</label>
+					<input type="text" id="customLocationName" required>
+				</div>
+				<div class="field">
+					<label for="locationOrder">Order</label>
+					<div id="locationOrder" class="ui selection dropdown">
+						<input name="location" type="hidden" required>
+						<div class="default text">Select a location</div>
+						<i class="dropdown icon"></i>
+						<div class="menu"></div>
+					</div>
+				</div>
+			</div>
+			<div class="actions">
+				<div class="ui approve button">Add</div>
+				<div class="ui cancel button">Cancel</div>
 			</div>
 		</div>
 
 		<script type="text/template" id="main-template">
-			<div class="ui stackable top attached secondary menu">
+			<div class="ui stackable top attached borderless menu">
 				<div id="gameMenu" class="ui dropdown item">
 					<i class="sidebar icon"></i>
 					Games
@@ -92,17 +128,24 @@
 						<button id="saveData" class="ui green fluid button"><i class="download icon"></i>Export</button>
 					</div>
 					<div class="item">
-						<label id="loadData" class="ui blue fluid button" for="fileLoader"><i class="upload icon"></i>Import</label>
-						<input class="visually-hidden" id="fileLoader" accept=".json, application/json" type="file">
+						<input id="fileLoader" accept=".json, application/json" type="file">
+						<label id="loadData" class="ui blue fluid button fileInput" for="fileLoader"><i class="upload icon"></i>Import</label>
 					</div>
 					<div class="item">
-						<button id="resetData" class="ui red fluid button"><i class="trash icon"></i>Reset</button>
+						<button id="resetData" class="ui red fluid button"><i class="remove icon"></i>Reset</button>
 					</div>
 				</div>
 			</div>
 			<% _.each(games, function(game) { %>
 			<div class="ui bottom attached segment tab" data-tab="<%= game.id %>">
-				<h2 class="ui header"><%- game.title %></h2>
+				<div class="ui secondary stackable menu">
+					<div class="horizontally fitted item">
+						<h2 class="ui header"><%- game.title %></h2>
+					</div>
+					<div class="right horizontally fitted item">
+						<button class="ui basic fluid button addLocation"><i class="plus icon"></i>Add location</button>
+					</div>
+				</div>
 				<table class="ui table sortable selectable">
 					<thead>
 						<tr>
@@ -122,24 +165,24 @@
 
 		<script type="text/template" id="loc-template">
 			<% _.each(game.locations, function(location, index) { %>
-				<tr>
-					<td data-sort-value="<%- index %>"><%- location %></td>
-					<td data-sort-value="<%- localStorage.getItem(game.id + index + '-encounter') %>">
-						<div data-name="<% if (localStorage.getItem(game.id + index + '-name')) { print(localStorage.getItem(game.id + index + '-name')) } %>" id="<%- game.id + index %>-encounter" class="ui fluid search selection dropdown encounter-picker">
-							<input value="<% if (localStorage.getItem(game.id + index + '-encounter')) { print(localStorage.getItem(game.id + index + '-encounter')) } %>" name="pokemon" type="hidden">
+				<tr <% if (location.order !== undefined) { print('class="customLocation"') } %>>
+					<td data-sort-value="<%- index %>"><%- location.name %></td>
+					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-encounter') %>">
+						<div data-name="<% if (localStorage.getItem(game.id + location.value + '-name')) { print(localStorage.getItem(game.id + location.value + '-name')) } %>" id="<%- game.id + location.value %>-encounter" class="ui fluid search selection dropdown encounter-picker">
+							<input value="<% if (localStorage.getItem(game.id + location.value + '-encounter')) { print(localStorage.getItem(game.id + location.value + '-encounter')) } %>" name="pokemon" type="hidden">
 							<i class="dropdown icon"></i>
 							<div class="default text">Encounter</div>
 							<div class="menu"></div>
 						</div>
 					</td>
-					<td data-sort-value="<%- localStorage.getItem(game.id + index + '-nickname') %>">
+					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-nickname') %>">
 						<div class="ui fluid input">
-							<input autocomplete="off" maxlength="<%- game.nameLimit %>" value="<% if (localStorage.getItem(game.id + index + '-nickname')) { print(localStorage.getItem(game.id + index + '-nickname')) } %>" id="<%- game.id + index %>-nickname" placeholder="Nickname" type="text">
+							<input autocomplete="off" maxlength="<%- game.nameLimit %>" value="<% if (localStorage.getItem(game.id + location.value + '-nickname')) { print(localStorage.getItem(game.id + location.value + '-nickname')) } %>" id="<%- game.id + location.value %>-nickname" placeholder="Nickname" type="text">
 						</div>
 					</td>
-					<td data-sort-value="<%- localStorage.getItem(game.id + index + '-status') %>">
-						<div id="<%- game.id + index %>-status" class="ui fluid selection dropdown">
-							<input value="<% if (localStorage.getItem(game.id + index + '-status')) { print(localStorage.getItem(game.id + index + '-status')) } %>" name="status" type="hidden">
+					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-status') %>">
+						<div id="<%- game.id + location.value %>-status" class="ui fluid selection dropdown">
+							<input value="<% if (localStorage.getItem(game.id + location.value + '-status')) { print(localStorage.getItem(game.id + location.value + '-status')) } %>" name="status" type="hidden">
 							<i class="dropdown icon"></i>
 							<div class="default text">Status</div>
 							<div class="menu">
@@ -148,20 +191,20 @@
 								<div class="item" data-value="traded"><i class="exchange icon"></i>Traded</div>
 								<div class="item" data-value="missed"><i class="ban icon"></i>Missed</div>
 								<div class="item" data-value="stored"><i class="hdd outline icon"></i>Stored</div>
-								<div class="item" data-value="deceased"><i class="remove icon"></i>Deceased</div>
+								<div class="item" data-value="deceased"><i class="remove user icon"></i>Deceased</div>
 							</div>
 						</div>
 					</td>
-					<td><div title="Delete" class="ui basic singleReset fluid icon button" data-index="<%- index %>"><i class="trash icon"></i></div></td>
+					<td><div title="Delete" class="ui basic singleReset fluid icon button" data-location-id="<%- location.value %>"><i class="remove icon"></i></div></td>
 				</tr>
 			<% }); %>
 		</script>
 
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
 		<script src="js/plugins.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" integrity="sha256-G7A4JrJjJlFqP0yamznwPjAApIKPkadeHfyIwiaa9e0=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" integrity="sha256-CgSoWC9w5wNmI1aN8dIMK+6DPelUEtvDr+Bc2m/0Nx8=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha256-u/J1Urdrk3nCYFefpoeTMgI5viU1ujCDu2fXXoSJjhg=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" integrity="sha384-5DWzr9S4agqS3WKvPrhFKJagpYyHOBsf3/DxuDKORyqCv2sYer9c/ExdhPOL8CGh" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" integrity="sha384-HtPdw6a7QeUoz9fgdEIk3iL4WifPUg7BuiWndgaxmBDiCHMYfOO2nEJ9J3YPg6+S" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha384-KQ8aykg/lc6595wSrMplFVs4kRS66x+EdkX7EQsJ2Pe6FX7l3tMqyD1Am0c2dKBG" crossorigin="anonymous"></script>
 		<script src="js/main.min.js"></script>
 	</body>
 </html>
