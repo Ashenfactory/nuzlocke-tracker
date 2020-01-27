@@ -6627,18 +6627,29 @@ function uploadFile(input) {
 	if (input.files && input.files[0]) {
 		file = input.files[0];
 		fr = new FileReader();
+
 		fr.onload = function () {
 			try {
 				var data = JSON.parse(fr.result);
 
 				if (data && data.hasOwnProperty('locations')) {
+					resetGame(data.id, true);
+
 					if (localStorage.getItem('selectedGame') !== data.id) {
 						$('#gameMenu .menu').find('.item[data-tab="' + data.id + '"]').click();
+					}
+
+					if (data.customLocations.length) {
+						localStorage.setItem(data.id + '-custom-locations', JSON.stringify(data.customLocations));
+					} else {
+						localStorage.removeItem(data.id + '-custom-locations');
 					}
 
 					_.each(data.locations, function(location) {
 						populateLocation(data.id, location);
 					});
+
+					updateTab(data.id, true);
 				} else {
 					$('#errorMessage').removeClass('hidden');
 					$('#messageHeader').text('Incorrect format');
@@ -6710,7 +6721,10 @@ function clearLocation(id) {
 }
 
 function sortLocations(game) {
-	var locations = games[game].locations;
+	var locations = _.filter(games[game].locations, function(location) {
+		return location.value[0] !== 'c';
+	});
+
 	var customLocations = JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]');
 	var initialLength = customLocations.length;
 
@@ -6752,6 +6766,8 @@ function sortLocations(game) {
 			}
 		}
 	}
+
+	games[game].locations = locations;
 }
 
 function initTab(tab) {
@@ -6812,20 +6828,23 @@ function initTab(tab) {
 }
 
 function saveData(game) {
-	var blobData = {id: game, locations: []};
+	var blobData = {id: game, locations: [], customLocations: JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]')} ;
 
-	_.each(games[game].locations, function(location, index) {
-		var encounter = localStorage.getItem(game + index + '-encounter');
-		var name = localStorage.getItem(game + index + '-name');
-		var nickname = localStorage.getItem(game + index + '-nickname');
-		var status = localStorage.getItem(game + index + '-status');
+	_.each(games[game].locations, function(location) {
+		var encounter = localStorage.getItem(game + location.value + '-encounter');
+		var name = localStorage.getItem(game + location.value + '-name');
+		var nickname = localStorage.getItem(game + location.value + '-nickname');
+		var status = localStorage.getItem(game + location.value + '-status');
 
-		blobData.locations.push({'id': index, 'encounter': encounter, 'name': name, 'nickname': nickname, 'status': status});
+		if (encounter !== null || name !== null || nickname !== null || status !== null) {
+			blobData.locations.push({'id': location.value, 'encounter': encounter, 'name': name, 'nickname': nickname, 'status': status});
+		}
 	});
 
 	blobData = JSON.stringify(blobData);
 
 	var blob = new Blob([blobData], {type: 'application/json;charset=utf-8'});
+
 	saveAs(blob, game + '.' + new Date().toISOString().slice(0, 10) + '.json');
 }
 
@@ -6853,9 +6872,7 @@ function addLocation(location, game) {
 
 function removeLocation(value, game) {
 	var customLocations = JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]');
-
 	var location = _.findWhere(customLocations, {'value': value});
-
 	var dependantLocation = _.findIndex(customLocations, function(e) { return e.order == location.value; });
 
 	if (dependantLocation) {
@@ -6890,6 +6907,22 @@ function updateLocationDropdown() {
 	$('#locationOrder').dropdown('set selected', '0');
 }
 
+function resetGame(game, removeLocations) {
+	_.each(games[selectedGame].locations, function(location) {
+		clearLocation(selectedGame + location.value);
+	});
+
+	if (removeLocations) {
+		localStorage.removeItem(selectedGame + '-custom-locations');
+
+		games[selectedGame].locations = _.filter(games[selectedGame].locations, function(location) {
+			return location.value[0] !== 'c';
+		});
+
+		updateTab(selectedGame, true);
+	}
+}
+
 sortLocations(selectedGame);
 
 $(function() {
@@ -6918,19 +6951,7 @@ $(function() {
 
 	$('#resetModal').modal({
 		onApprove: function(e) {
-			_.each(games[selectedGame].locations, function(location, index) {
-				clearLocation(selectedGame + index);
-			});
-
-			if (e.data('action') === 'remove') {
-				localStorage.removeItem(selectedGame + '-custom-locations');
-
-				games[selectedGame].locations = _.filter(games[selectedGame].locations, function(location) {
-					return !location.value.startsWith('c');
-				});
-
-				updateTab(selectedGame, true);
-			}
+			resetGame(selectedGame, e.data('action') === 'remove');
 		}
 	});
 
