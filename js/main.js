@@ -7009,6 +7009,7 @@ $(function() {
 			updateTab(tabPath, false);
 		},
 		onLoad: function(tabPath) {
+			selectedGame = tabPath;
 			localStorage.setItem('selectedGame', tabPath);
 			updateLocationDropdown();
 		}
