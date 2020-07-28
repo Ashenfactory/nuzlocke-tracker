@@ -8736,7 +8736,7 @@ function resetGame(game, removeLocations) {
 sortLocations(selectedGame);
 
 $(function() {
-	_.each(pkmnDataEach, function(pokemon) {
+	_.each(pkmnData, function(pokemon) {
 		preloadImage(pokemon.image);
 	});
 
