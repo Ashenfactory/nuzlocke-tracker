@@ -3370,11 +3370,228 @@ var games = {
 			}
 		]
 	},
+	'swsh': {
+		'id': 'swsh',
+		'title': 'Sword and Shield',
+		'nameLimit': 12,
+		'dexLimit': 893,
+		'locations': [
+			{
+				"name": "Starter",
+				"value": 0
+			},
+			{
+				"name": "Slumbering Weald",
+				"value": 1
+			},
+			{
+				"name": "Route 1",
+				"value": 2
+			},
+			{
+				"name": "Wedgehurst",
+				"value": 3
+			},
+			{
+				"name": "Route 2",
+				"value": 4
+			},
+			{
+				"name": "Wild Area: Rolling Fields",
+				"value": 5
+			},
+			{
+				"name": "Wild Area: Dappled Grove",
+				"value": 6
+			},
+			{
+				"name": "Wild Area: West Lake Axewell",
+				"value": 7
+			},
+			{
+				"name": "Wild Area: Watchtower Ruins",
+				"value": 8
+			},
+			{
+				"name": "Wild Area: East Lake Axewell",
+				"value": 9
+			},
+			{
+				"name": "Wild Area: South Lake Miloch",
+				"value": 10
+			},
+			{
+				"name": "Wild Area: Giant's Seat",
+				"value": 11
+			},
+			{
+				"name": "Wild Area: North Lake Miloch",
+				"value": 12
+			},
+			{
+				"name": "Motostoke",
+				"value": 13
+			},
+			{
+				"name": "Route 3",
+				"value": 14
+			},
+			{
+				"name": "Galar Mine",
+				"value": 15
+			},
+
+			{
+				"name": "Route 4",
+				"value": 16
+			},
+			{
+				"name": "Route 5",
+				"value": 17
+			},
+			{
+				"name": "Hulbury",
+				"value": 18
+			},
+			{
+				"name": "Galar Mine No. 2",
+				"value": 19
+			},
+			{
+				"name": "Motostoke Outskirts",
+				"value": 20
+			},
+			{
+				"name": "Motostoke Stadium",
+				"value": 21
+			},
+			{
+				"name": "Wild Area: Motostoke Riverbank",
+				"value": 22
+			},
+			{
+				"name": "Wild Area: Bridge Field",
+				"value": 23
+			},
+			{
+				"name": "Wild Area: Stony Wilderness",
+				"value": 24
+			},
+			{
+				"name": "Wild Area: Giant's Mirror",
+				"value": 25
+			},
+			{
+				"name": "Wild Area: Dusty Bowl",
+				"value": 26
+			},
+			{
+				"name": "Wild Area: Giant's Cap",
+				"value": 27
+			},
+			{
+				"name": "Wild Area: Hammerlocke Hills",
+				"value": 28
+			},
+			{
+				"name": "Wild Area: Lake of Outrage",
+				"value": 29
+			},
+			{
+				"name": "Route 6",
+				"value": 30
+			},
+			{
+				"name": "Glimwood Tangle",
+				"value": 31
+			},
+			{
+				"name": "Router 7",
+				"value": 32
+			},
+			{
+				"name": "Route 8",
+				"value": 33
+			},
+			{
+				"name": "Route 9",
+				"value": 34
+			},
+			{
+				"name": "Wild Area: Axew's Eye",
+				"value": 35
+			},
+			{
+				"name": "Isle of Armor: Fields of Honor",
+				"value": 36
+			},
+			{
+				"name": "Isle of Armor: Soothing Wetlands",
+				"value": 37
+			},
+			{
+				"name": "Isle of Armor: Forest of Focus",
+				"value": 38
+			},
+			{
+				"name": "Isle of Armor: Challenge Beach",
+				"value": 39
+			},
+			{
+				"name": "Isle of Armor: Brawlers' Cave",
+				"value": 40
+			},
+			{
+				"name": "Isle of Armor: Challenge Road",
+				"value": 41
+			},
+			{
+				"name": "Isle of Armor: Courageous Cavern",
+				"value": 42
+			},
+			{
+				"name": "Isle of Armor: Loop Lagoon",
+				"value": 43
+			},
+			{
+				"name": "Isle of Armor: Training Lowlands",
+				"value": 44
+			},
+			{
+				"name": "Isle of Armor: Warm-Up Tunnel",
+				"value": 45
+			},
+			{
+				"name": "Isle of Armor: Potbottom Desert",
+				"value": 46
+			},
+			{
+				"name": "Isle of Armor: Workout Sea",
+				"value": 47
+			},
+			{
+				"name": "Isle of Armor: Stepping-Stone Sea",
+				"value": 48
+			},
+			{
+				"name": "Isle of Armor: Insular Sea",
+				"value": 49
+			},
+			{
+				"name": "Isle of Armor: Honeycalm Sea",
+				"value": 50
+			},
+			{
+				"name": "Isle of Armor: Honeycalm Island",
+				"value": 51
+			}
+		]
+	},
 	'custom': {
 		'id': 'custom',
 		'title': 'Custom Game',
 		'nameLimit': 12,
-		'dexLimit': 807,
+		'dexLimit': 893,
 		'locations': [
 			{
 				"name": "Starter",
@@ -3386,3232 +3603,3929 @@ var games = {
 
 var pkmnData = [
 	{
-		"name": '<i class="bulbasaur pkmn"></i>Bulbasaur',
+		"name": '<i class="pkmn bulbasaur"></i>Bulbasaur',
 		"value": "bulbasaur"
 	},
 	{
-		"name": '<i class="ivysaur pkmn"></i>Ivysaur',
+		"name": '<i class="pkmn ivysaur"></i>Ivysaur',
 		"value": "ivysaur"
 	},
 	{
-		"name": '<i class="venusaur pkmn"></i>Venusaur',
+		"name": '<i class="pkmn venusaur"></i>Venusaur',
 		"value": "venusaur"
 	},
 	{
-		"name": '<i class="charmander pkmn"></i>Charmander',
+		"name": '<i class="pkmn charmander"></i>Charmander',
 		"value": "charmander"
 	},
 	{
-		"name": '<i class="charmeleon pkmn"></i>Charmeleon',
+		"name": '<i class="pkmn charmeleon"></i>Charmeleon',
 		"value": "charmeleon"
 	},
 	{
-		"name": '<i class="charizard pkmn"></i>Charizard',
+		"name": '<i class="pkmn charizard"></i>Charizard',
 		"value": "charizard"
 	},
 	{
-		"name": '<i class="squirtle pkmn"></i>Squirtle',
+		"name": '<i class="pkmn squirtle"></i>Squirtle',
 		"value": "squirtle"
 	},
 	{
-		"name": '<i class="wartortle pkmn"></i>Wartortle',
+		"name": '<i class="pkmn wartortle"></i>Wartortle',
 		"value": "wartortle"
 	},
 	{
-		"name": '<i class="blastoise pkmn"></i>Blastoise',
+		"name": '<i class="pkmn blastoise"></i>Blastoise',
 		"value": "blastoise"
 	},
 	{
-		"name": '<i class="caterpie pkmn"></i>Caterpie',
+		"name": '<i class="pkmn caterpie"></i>Caterpie',
 		"value": "caterpie"
 	},
 	{
-		"name": '<i class="metapod pkmn"></i>Metapod',
+		"name": '<i class="pkmn metapod"></i>Metapod',
 		"value": "metapod"
 	},
 	{
-		"name": '<i class="butterfree pkmn"></i>Butterfree',
+		"name": '<i class="pkmn butterfree"></i>Butterfree',
 		"value": "butterfree"
 	},
 	{
-		"name": '<i class="weedle pkmn"></i>Weedle',
-		"value": "weedle"
+		"name": '<i class="pkmn weedle"></i>Weedle',
+		"value": "weedle",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kakuna pkmn"></i>Kakuna',
-		"value": "kakuna"
+		"name": '<i class="pkmn kakuna"></i>Kakuna',
+		"value": "kakuna",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="beedrill pkmn"></i>Beedrill',
-		"value": "beedrill"
+		"name": '<i class="pkmn beedrill"></i>Beedrill',
+		"value": "beedrill",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pidgey pkmn"></i>Pidgey',
-		"value": "pidgey"
+		"name": '<i class="pkmn pidgey"></i>Pidgey',
+		"value": "pidgey",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pidgeotto pkmn"></i>Pidgeotto',
-		"value": "pidgeotto"
+		"name": '<i class="pkmn pidgeotto"></i>Pidgeotto',
+		"value": "pidgeotto",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pidgeot pkmn"></i>Pidgeot',
-		"value": "pidgeot"
+		"name": '<i class="pkmn pidgeot"></i>Pidgeot',
+		"value": "pidgeot",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="rattata pkmn"></i>Rattata',
-		"value": "rattata"
+		"name": '<i class="pkmn rattata"></i>Rattata',
+		"value": "rattata",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="raticate pkmn"></i>Raticate',
-		"value": "raticate"
+		"name": '<i class="pkmn raticate"></i>Raticate',
+		"value": "raticate",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="spearow pkmn"></i>Spearow',
-		"value": "spearow"
+		"name": '<i class="pkmn spearow"></i>Spearow',
+		"value": "spearow",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="fearow pkmn"></i>Fearow',
-		"value": "fearow"
+		"name": '<i class="pkmn fearow"></i>Fearow',
+		"value": "fearow",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="ekans pkmn"></i>Ekans',
-		"value": "ekans"
+		"name": '<i class="pkmn ekans"></i>Ekans',
+		"value": "ekans",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="arbok pkmn"></i>Arbok',
-		"value": "arbok"
+		"name": '<i class="pkmn arbok"></i>Arbok',
+		"value": "arbok",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pikachu pkmn"></i>Pikachu',
+		"name": '<i class="pkmn pikachu"></i>Pikachu',
 		"value": "pikachu"
 	},
 	{
-		"name": '<i class="raichu pkmn"></i>Raichu',
+		"name": '<i class="pkmn raichu"></i>Raichu',
 		"value": "raichu"
 	},
 	{
-		"name": '<i class="sandshrew pkmn"></i>Sandshrew',
+		"name": '<i class="pkmn sandshrew"></i>Sandshrew',
 		"value": "sandshrew"
 	},
 	{
-		"name": '<i class="sandslash pkmn"></i>Sandslash',
+		"name": '<i class="pkmn sandslash"></i>Sandslash',
 		"value": "sandslash"
 	},
 	{
-		"name": '<i class="nidoran-female pkmn"></i>Nidoran♀',
-		"value": "nidoran-female"
+		"name": '<i class="pkmn nidoran-female"></i>Nidoran♀',
+		"value": "nidoran-female",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="nidorina pkmn"></i>Nidorina',
-		"value": "nidorina"
+		"name": '<i class="pkmn nidorina"></i>Nidorina',
+		"value": "nidorina",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="nidoqueen pkmn"></i>Nidoqueen',
-		"value": "nidoqueen"
+		"name": '<i class="pkmn nidoqueen"></i>Nidoqueen',
+		"value": "nidoqueen",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="nidoran-male pkmn"></i>Nidoran♂',
-		"value": "nidoran-male"
+		"name": '<i class="pkmn nidoran-male"></i>Nidoran♂',
+		"value": "nidoran-male",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="nidorino pkmn"></i>Nidorino',
-		"value": "nidorino"
+		"name": '<i class="pkmn nidorino"></i>Nidorino',
+		"value": "nidorino",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="nidoking pkmn"></i>Nidoking',
-		"value": "nidoking"
+		"name": '<i class="pkmn nidoking"></i>Nidoking',
+		"value": "nidoking",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="clefairy pkmn"></i>Clefairy',
+		"name": '<i class="pkmn clefairy"></i>Clefairy',
 		"value": "clefairy"
 	},
 	{
-		"name": '<i class="clefable pkmn"></i>Clefable',
+		"name": '<i class="pkmn clefable"></i>Clefable',
 		"value": "clefable"
 	},
 	{
-		"name": '<i class="vulpix pkmn"></i>Vulpix',
+		"name": '<i class="pkmn vulpix"></i>Vulpix',
 		"value": "vulpix"
 	},
 	{
-		"name": '<i class="ninetales pkmn"></i>Ninetales',
+		"name": '<i class="pkmn ninetales"></i>Ninetales',
 		"value": "ninetales"
 	},
 	{
-		"name": '<i class="jigglypuff pkmn"></i>Jigglypuff',
+		"name": '<i class="pkmn jigglypuff"></i>Jigglypuff',
 		"value": "jigglypuff"
 	},
 	{
-		"name": '<i class="wigglytuff pkmn"></i>Wigglytuff',
+		"name": '<i class="pkmn wigglytuff"></i>Wigglytuff',
 		"value": "wigglytuff"
 	},
 	{
-		"name": '<i class="zubat pkmn"></i>Zubat',
-		"value": "zubat"
+		"name": '<i class="pkmn zubat"></i>Zubat',
+		"value": "zubat",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="golbat pkmn"></i>Golbat',
-		"value": "golbat"
+		"name": '<i class="pkmn golbat"></i>Golbat',
+		"value": "golbat",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="oddish pkmn"></i>Oddish',
+		"name": '<i class="pkmn oddish"></i>Oddish',
 		"value": "oddish"
 	},
 	{
-		"name": '<i class="gloom pkmn"></i>Gloom',
+		"name": '<i class="pkmn gloom"></i>Gloom',
 		"value": "gloom"
 	},
 	{
-		"name": '<i class="vileplume pkmn"></i>Vileplume',
+		"name": '<i class="pkmn vileplume"></i>Vileplume',
 		"value": "vileplume"
 	},
 	{
-		"name": '<i class="paras pkmn"></i>Paras',
-		"value": "paras"
+		"name": '<i class="pkmn paras"></i>Paras',
+		"value": "paras",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="parasect pkmn"></i>Parasect',
-		"value": "parasect"
+		"name": '<i class="pkmn parasect"></i>Parasect',
+		"value": "parasect",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="venonat pkmn"></i>Venonat',
-		"value": "venonat"
+		"name": '<i class="pkmn venonat"></i>Venonat',
+		"value": "venonat",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="venomoth pkmn"></i>Venomoth',
-		"value": "venomoth"
+		"name": '<i class="pkmn venomoth"></i>Venomoth',
+		"value": "venomoth",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="diglett pkmn"></i>Diglett',
+		"name": '<i class="pkmn diglett"></i>Diglett',
 		"value": "diglett"
 	},
 	{
-		"name": '<i class="dugtrio pkmn"></i>Dugtrio',
+		"name": '<i class="pkmn dugtrio"></i>Dugtrio',
 		"value": "dugtrio"
 	},
 	{
-		"name": '<i class="meowth pkmn"></i>Meowth',
+		"name": '<i class="pkmn meowth"></i>Meowth',
 		"value": "meowth"
 	},
 	{
-		"name": '<i class="persian pkmn"></i>Persian',
+		"name": '<i class="pkmn persian"></i>Persian',
 		"value": "persian"
 	},
 	{
-		"name": '<i class="psyduck pkmn"></i>Psyduck',
+		"name": '<i class="pkmn psyduck"></i>Psyduck',
 		"value": "psyduck"
 	},
 	{
-		"name": '<i class="golduck pkmn"></i>Golduck',
+		"name": '<i class="pkmn golduck"></i>Golduck',
 		"value": "golduck"
 	},
 	{
-		"name": '<i class="mankey pkmn"></i>Mankey',
-		"value": "mankey"
+		"name": '<i class="pkmn mankey"></i>Mankey',
+		"value": "mankey",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="primeape pkmn"></i>Primeape',
-		"value": "primeape"
+		"name": '<i class="pkmn primeape"></i>Primeape',
+		"value": "primeape",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="growlithe pkmn"></i>Growlithe',
+		"name": '<i class="pkmn growlithe"></i>Growlithe',
 		"value": "growlithe"
 	},
 	{
-		"name": '<i class="arcanine pkmn"></i>Arcanine',
+		"name": '<i class="pkmn arcanine"></i>Arcanine',
 		"value": "arcanine"
 	},
 	{
-		"name": '<i class="poliwag pkmn"></i>Poliwag',
+		"name": '<i class="pkmn poliwag"></i>Poliwag',
 		"value": "poliwag"
 	},
 	{
-		"name": '<i class="poliwhirl pkmn"></i>Poliwhirl',
+		"name": '<i class="pkmn poliwhirl"></i>Poliwhirl',
 		"value": "poliwhirl"
 	},
 	{
-		"name": '<i class="poliwrath pkmn"></i>Poliwrath',
+		"name": '<i class="pkmn poliwrath"></i>Poliwrath',
 		"value": "poliwrath"
 	},
 	{
-		"name": '<i class="abra pkmn"></i>Abra',
+		"name": '<i class="pkmn abra"></i>Abra',
 		"value": "abra"
 	},
 	{
-		"name": '<i class="kadabra pkmn"></i>Kadabra',
+		"name": '<i class="pkmn kadabra"></i>Kadabra',
 		"value": "kadabra"
 	},
 	{
-		"name": '<i class="alakazam pkmn"></i>Alakazam',
+		"name": '<i class="pkmn alakazam"></i>Alakazam',
 		"value": "alakazam"
 	},
 	{
-		"name": '<i class="machop pkmn"></i>Machop',
+		"name": '<i class="pkmn machop"></i>Machop',
 		"value": "machop"
 	},
 	{
-		"name": '<i class="machoke pkmn"></i>Machoke',
+		"name": '<i class="pkmn machoke"></i>Machoke',
 		"value": "machoke"
 	},
 	{
-		"name": '<i class="machamp pkmn"></i>Machamp',
+		"name": '<i class="pkmn machamp"></i>Machamp',
 		"value": "machamp"
 	},
 	{
-		"name": '<i class="bellsprout pkmn"></i>Bellsprout',
-		"value": "bellsprout"
+		"name": '<i class="pkmn bellsprout"></i>Bellsprout',
+		"value": "bellsprout",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="weepinbell pkmn"></i>Weepinbell',
-		"value": "weepinbell"
+		"name": '<i class="pkmn weepinbell"></i>Weepinbell',
+		"value": "weepinbell",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="victreebel pkmn"></i>Victreebel',
-		"value": "victreebel"
+		"name": '<i class="pkmn victreebel"></i>Victreebel',
+		"value": "victreebel",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="tentacool pkmn"></i>Tentacool',
+		"name": '<i class="pkmn tentacool"></i>Tentacool',
 		"value": "tentacool"
 	},
 	{
-		"name": '<i class="tentacruel pkmn"></i>Tentacruel',
+		"name": '<i class="pkmn tentacruel"></i>Tentacruel',
 		"value": "tentacruel"
 	},
 	{
-		"name": '<i class="geodude pkmn"></i>Geodude',
-		"value": "geodude"
+		"name": '<i class="pkmn geodude"></i>Geodude',
+		"value": "geodude",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="graveler pkmn"></i>Graveler',
-		"value": "graveler"
+		"name": '<i class="pkmn graveler"></i>Graveler',
+		"value": "graveler",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="golem pkmn"></i>Golem',
-		"value": "golem"
+		"name": '<i class="pkmn golem"></i>Golem',
+		"value": "golem",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="ponyta pkmn"></i>Ponyta',
+		"name": '<i class="pkmn ponyta"></i>Ponyta',
 		"value": "ponyta"
 	},
 	{
-		"name": '<i class="rapidash pkmn"></i>Rapidash',
+		"name": '<i class="pkmn rapidash"></i>Rapidash',
 		"value": "rapidash"
 	},
 	{
-		"name": '<i class="slowpoke pkmn"></i>Slowpoke',
+		"name": '<i class="pkmn slowpoke"></i>Slowpoke',
 		"value": "slowpoke"
 	},
 	{
-		"name": '<i class="slowbro pkmn"></i>Slowbro',
+		"name": '<i class="pkmn slowbro"></i>Slowbro',
 		"value": "slowbro"
 	},
 	{
-		"name": '<i class="magnemite pkmn"></i>Magnemite',
+		"name": '<i class="pkmn magnemite"></i>Magnemite',
 		"value": "magnemite"
 	},
 	{
-		"name": '<i class="magneton pkmn"></i>Magneton',
+		"name": '<i class="pkmn magneton"></i>Magneton',
 		"value": "magneton"
 	},
 	{
-		"name": '<i class="farfetchd pkmn"></i>Farfetch\'d',
+		"name": '<i class="pkmn farfetchd"></i>Farfetch\'d',
 		"value": "farfetchd"
 	},
 	{
-		"name": '<i class="doduo pkmn"></i>Doduo',
-		"value": "doduo"
+		"name": '<i class="pkmn doduo"></i>Doduo',
+		"value": "doduo",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dodrio pkmn"></i>Dodrio',
-		"value": "dodrio"
+		"name": '<i class="pkmn dodrio"></i>Dodrio',
+		"value": "dodrio",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="seel pkmn"></i>Seel',
-		"value": "seel"
+		"name": '<i class="pkmn seel"></i>Seel',
+		"value": "seel",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dewgong pkmn"></i>Dewgong',
-		"value": "dewgong"
+		"name": '<i class="pkmn dewgong"></i>Dewgong',
+		"value": "dewgong",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="grimer pkmn"></i>Grimer',
-		"value": "grimer"
+		"name": '<i class="pkmn grimer"></i>Grimer',
+		"value": "grimer",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="muk pkmn"></i>Muk',
-		"value": "muk"
+		"name": '<i class="pkmn muk"></i>Muk',
+		"value": "muk",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="shellder pkmn"></i>Shellder',
+		"name": '<i class="pkmn shellder"></i>Shellder',
 		"value": "shellder"
 	},
 	{
-		"name": '<i class="cloyster pkmn"></i>Cloyster',
+		"name": '<i class="pkmn cloyster"></i>Cloyster',
 		"value": "cloyster"
 	},
 	{
-		"name": '<i class="gastly pkmn"></i>Gastly',
+		"name": '<i class="pkmn gastly"></i>Gastly',
 		"value": "gastly"
 	},
 	{
-		"name": '<i class="haunter pkmn"></i>Haunter',
+		"name": '<i class="pkmn haunter"></i>Haunter',
 		"value": "haunter"
 	},
 	{
-		"name": '<i class="gengar pkmn"></i>Gengar',
+		"name": '<i class="pkmn gengar"></i>Gengar',
 		"value": "gengar"
 	},
 	{
-		"name": '<i class="onix pkmn"></i>Onix',
+		"name": '<i class="pkmn onix"></i>Onix',
 		"value": "onix"
 	},
 	{
-		"name": '<i class="drowzee pkmn"></i>Drowzee',
-		"value": "drowzee"
+		"name": '<i class="pkmn drowzee"></i>Drowzee',
+		"value": "drowzee",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="hypno pkmn"></i>Hypno',
-		"value": "hypno"
+		"name": '<i class="pkmn hypno"></i>Hypno',
+		"value": "hypno",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="krabby pkmn"></i>Krabby',
+		"name": '<i class="pkmn krabby"></i>Krabby',
 		"value": "krabby"
 	},
 	{
-		"name": '<i class="kingler pkmn"></i>Kingler',
+		"name": '<i class="pkmn kingler"></i>Kingler',
 		"value": "kingler"
 	},
 	{
-		"name": '<i class="voltorb pkmn"></i>Voltorb',
-		"value": "voltorb"
+		"name": '<i class="pkmn voltorb"></i>Voltorb',
+		"value": "voltorb",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="electrode pkmn"></i>Electrode',
-		"value": "electrode"
+		"name": '<i class="pkmn electrode"></i>Electrode',
+		"value": "electrode",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="exeggcute pkmn"></i>Exeggcute',
+		"name": '<i class="pkmn exeggcute"></i>Exeggcute',
 		"value": "exeggcute"
 	},
 	{
-		"name": '<i class="exeggutor pkmn"></i>Exeggutor',
+		"name": '<i class="pkmn exeggutor"></i>Exeggutor',
 		"value": "exeggutor"
 	},
 	{
-		"name": '<i class="cubone pkmn"></i>Cubone',
+		"name": '<i class="pkmn cubone"></i>Cubone',
 		"value": "cubone"
 	},
 	{
-		"name": '<i class="marowak pkmn"></i>Marowak',
+		"name": '<i class="pkmn marowak"></i>Marowak',
 		"value": "marowak"
 	},
 	{
-		"name": '<i class="hitmonlee pkmn"></i>Hitmonlee',
+		"name": '<i class="pkmn hitmonlee"></i>Hitmonlee',
 		"value": "hitmonlee"
 	},
 	{
-		"name": '<i class="hitmonchan pkmn"></i>Hitmonchan',
+		"name": '<i class="pkmn hitmonchan"></i>Hitmonchan',
 		"value": "hitmonchan"
 	},
 	{
-		"name": '<i class="lickitung pkmn"></i>Lickitung',
+		"name": '<i class="pkmn lickitung"></i>Lickitung',
 		"value": "lickitung"
 	},
 	{
-		"name": '<i class="koffing pkmn"></i>Koffing',
+		"name": '<i class="pkmn koffing"></i>Koffing',
 		"value": "koffing"
 	},
 	{
-		"name": '<i class="weezing pkmn"></i>Weezing',
+		"name": '<i class="pkmn weezing"></i>Weezing',
 		"value": "weezing"
 	},
 	{
-		"name": '<i class="rhyhorn pkmn"></i>Rhyhorn',
+		"name": '<i class="pkmn rhyhorn"></i>Rhyhorn',
 		"value": "rhyhorn"
 	},
 	{
-		"name": '<i class="rhydon pkmn"></i>Rhydon',
+		"name": '<i class="pkmn rhydon"></i>Rhydon',
 		"value": "rhydon"
 	},
 	{
-		"name": '<i class="chansey pkmn"></i>Chansey',
+		"name": '<i class="pkmn chansey"></i>Chansey',
 		"value": "chansey"
 	},
 	{
-		"name": '<i class="tangela pkmn"></i>Tangela',
+		"name": '<i class="pkmn tangela"></i>Tangela',
 		"value": "tangela"
 	},
 	{
-		"name": '<i class="kangaskhan pkmn"></i>Kangaskhan',
+		"name": '<i class="pkmn kangaskhan"></i>Kangaskhan',
 		"value": "kangaskhan"
 	},
 	{
-		"name": '<i class="horsea pkmn"></i>Horsea',
+		"name": '<i class="pkmn horsea"></i>Horsea',
 		"value": "horsea"
 	},
 	{
-		"name": '<i class="seadra pkmn"></i>Seadra',
+		"name": '<i class="pkmn seadra"></i>Seadra',
 		"value": "seadra"
 	},
 	{
-		"name": '<i class="goldeen pkmn"></i>Goldeen',
+		"name": '<i class="pkmn goldeen"></i>Goldeen',
 		"value": "goldeen"
 	},
 	{
-		"name": '<i class="seaking pkmn"></i>Seaking',
+		"name": '<i class="pkmn seaking"></i>Seaking',
 		"value": "seaking"
 	},
 	{
-		"name": '<i class="staryu pkmn"></i>Staryu',
+		"name": '<i class="pkmn staryu"></i>Staryu',
 		"value": "staryu"
 	},
 	{
-		"name": '<i class="starmie pkmn"></i>Starmie',
+		"name": '<i class="pkmn starmie"></i>Starmie',
 		"value": "starmie"
 	},
 	{
-		"name": '<i class="mr-mime pkmn"></i>Mr. Mime',
+		"name": '<i class="pkmn mr-mime"></i>Mr. Mime',
 		"value": "mr-mime"
 	},
 	{
-		"name": '<i class="scyther pkmn"></i>Scyther',
+		"name": '<i class="pkmn scyther"></i>Scyther',
 		"value": "scyther"
 	},
 	{
-		"name": '<i class="jynx pkmn"></i>Jynx',
-		"value": "jynx"
+		"name": '<i class="pkmn jynx"></i>Jynx',
+		"value": "jynx",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="electabuzz pkmn"></i>Electabuzz',
-		"value": "electabuzz"
+		"name": '<i class="pkmn electabuzz"></i>Electabuzz',
+		"value": "electabuzz",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="magmar pkmn"></i>Magmar',
-		"value": "magmar"
+		"name": '<i class="pkmn magmar"></i>Magmar',
+		"value": "magmar",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pinsir pkmn"></i>Pinsir',
+		"name": '<i class="pkmn pinsir"></i>Pinsir',
 		"value": "pinsir"
 	},
 	{
-		"name": '<i class="tauros pkmn"></i>Tauros',
+		"name": '<i class="pkmn tauros"></i>Tauros',
 		"value": "tauros"
 	},
 	{
-		"name": '<i class="magikarp pkmn"></i>Magikarp',
+		"name": '<i class="pkmn magikarp"></i>Magikarp',
 		"value": "magikarp"
 	},
 	{
-		"name": '<i class="gyarados pkmn"></i>Gyarados',
+		"name": '<i class="pkmn gyarados"></i>Gyarados',
 		"value": "gyarados"
 	},
 	{
-		"name": '<i class="lapras pkmn"></i>Lapras',
+		"name": '<i class="pkmn lapras"></i>Lapras',
 		"value": "lapras"
 	},
 	{
-		"name": '<i class="ditto pkmn"></i>Ditto',
+		"name": '<i class="pkmn ditto"></i>Ditto',
 		"value": "ditto"
 	},
 	{
-		"name": '<i class="eevee pkmn"></i>Eevee',
+		"name": '<i class="pkmn eevee"></i>Eevee',
 		"value": "eevee"
 	},
 	{
-		"name": '<i class="vaporeon pkmn"></i>Vaporeon',
+		"name": '<i class="pkmn vaporeon"></i>Vaporeon',
 		"value": "vaporeon"
 	},
 	{
-		"name": '<i class="jolteon pkmn"></i>Jolteon',
+		"name": '<i class="pkmn jolteon"></i>Jolteon',
 		"value": "jolteon"
 	},
 	{
-		"name": '<i class="flareon pkmn"></i>Flareon',
+		"name": '<i class="pkmn flareon"></i>Flareon',
 		"value": "flareon"
 	},
 	{
-		"name": '<i class="porygon pkmn"></i>Porygon',
+		"name": '<i class="pkmn porygon"></i>Porygon',
 		"value": "porygon"
 	},
 	{
-		"name": '<i class="omanyte pkmn"></i>Omanyte',
-		"value": "omanyte"
+		"name": '<i class="pkmn omanyte"></i>Omanyte',
+		"value": "omanyte",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="omastar pkmn"></i>Omastar',
-		"value": "omastar"
+		"name": '<i class="pkmn omastar"></i>Omastar',
+		"value": "omastar",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kabuto pkmn"></i>Kabuto',
-		"value": "kabuto"
+		"name": '<i class="pkmn kabuto"></i>Kabuto',
+		"value": "kabuto",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kabutops pkmn"></i>Kabutops',
-		"value": "kabutops"
+		"name": '<i class="pkmn kabutops"></i>Kabutops',
+		"value": "kabutops",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="aerodactyl pkmn"></i>Aerodactyl',
-		"value": "aerodactyl"
+		"name": '<i class="pkmn aerodactyl"></i>Aerodactyl',
+		"value": "aerodactyl",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="snorlax pkmn"></i>Snorlax',
+		"name": '<i class="pkmn snorlax"></i>Snorlax',
 		"value": "snorlax"
 	},
 	{
-		"name": '<i class="articuno pkmn"></i>Articuno',
-		"value": "articuno"
+		"name": '<i class="pkmn articuno"></i>Articuno',
+		"value": "articuno",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="zapdos pkmn"></i>Zapdos',
-		"value": "zapdos"
+		"name": '<i class="pkmn zapdos"></i>Zapdos',
+		"value": "zapdos",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="moltres pkmn"></i>Moltres',
-		"value": "moltres"
+		"name": '<i class="pkmn moltres"></i>Moltres',
+		"value": "moltres",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dratini pkmn"></i>Dratini',
-		"value": "dratini"
+		"name": '<i class="pkmn dratini"></i>Dratini',
+		"value": "dratini",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dragonair pkmn"></i>Dragonair',
-		"value": "dragonair"
+		"name": '<i class="pkmn dragonair"></i>Dragonair',
+		"value": "dragonair",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dragonite pkmn"></i>Dragonite',
-		"value": "dragonite"
+		"name": '<i class="pkmn dragonite"></i>Dragonite',
+		"value": "dragonite",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="mewtwo pkmn"></i>Mewtwo',
+		"name": '<i class="pkmn mewtwo"></i>Mewtwo',
 		"value": "mewtwo"
 	},
 	{
-		"name": '<i class="mew pkmn"></i>Mew',
+		"name": '<i class="pkmn mew"></i>Mew',
 		"value": "mew"
 	},
 	{
-		"name": '<i class="chikorita pkmn"></i>Chikorita',
-		"value": "chikorita"
+		"name": '<i class="pkmn chikorita"></i>Chikorita',
+		"value": "chikorita",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="bayleef pkmn"></i>Bayleef',
-		"value": "bayleef"
+		"name": '<i class="pkmn bayleef"></i>Bayleef',
+		"value": "bayleef",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="meganium pkmn"></i>Meganium',
-		"value": "meganium"
+		"name": '<i class="pkmn meganium"></i>Meganium',
+		"value": "meganium",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="cyndaquil pkmn"></i>Cyndaquil',
-		"value": "cyndaquil"
+		"name": '<i class="pkmn cyndaquil"></i>Cyndaquil',
+		"value": "cyndaquil",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="quilava pkmn"></i>Quilava',
-		"value": "quilava"
+		"name": '<i class="pkmn quilava"></i>Quilava',
+		"value": "quilava",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="typhlosion pkmn"></i>Typhlosion',
-		"value": "typhlosion"
+		"name": '<i class="pkmn typhlosion"></i>Typhlosion',
+		"value": "typhlosion",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="totodile pkmn"></i>Totodile',
-		"value": "totodile"
+		"name": '<i class="pkmn totodile"></i>Totodile',
+		"value": "totodile",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="croconaw pkmn"></i>Croconaw',
-		"value": "croconaw"
+		"name": '<i class="pkmn croconaw"></i>Croconaw',
+		"value": "croconaw",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="feraligatr pkmn"></i>Feraligatr',
-		"value": "feraligatr"
+		"name": '<i class="pkmn feraligatr"></i>Feraligatr',
+		"value": "feraligatr",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="sentret pkmn"></i>Sentret',
-		"value": "sentret"
+		"name": '<i class="pkmn sentret"></i>Sentret',
+		"value": "sentret",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="furret pkmn"></i>Furret',
-		"value": "furret"
+		"name": '<i class="pkmn furret"></i>Furret',
+		"value": "furret",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="hoothoot pkmn"></i>Hoothoot',
+		"name": '<i class="pkmn hoothoot"></i>Hoothoot',
 		"value": "hoothoot"
 	},
 	{
-		"name": '<i class="noctowl pkmn"></i>Noctowl',
+		"name": '<i class="pkmn noctowl"></i>Noctowl',
 		"value": "noctowl"
 	},
 	{
-		"name": '<i class="ledyba pkmn"></i>Ledyba',
-		"value": "ledyba"
+		"name": '<i class="pkmn ledyba"></i>Ledyba',
+		"value": "ledyba",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="ledian pkmn"></i>Ledian',
-		"value": "ledian"
+		"name": '<i class="pkmn ledian"></i>Ledian',
+		"value": "ledian",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="spinarak pkmn"></i>Spinarak',
-		"value": "spinarak"
+		"name": '<i class="pkmn spinarak"></i>Spinarak',
+		"value": "spinarak",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="ariados pkmn"></i>Ariados',
-		"value": "ariados"
+		"name": '<i class="pkmn ariados"></i>Ariados',
+		"value": "ariados",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="crobat pkmn"></i>Crobat',
-		"value": "crobat"
+		"name": '<i class="pkmn crobat"></i>Crobat',
+		"value": "crobat",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="chinchou pkmn"></i>Chinchou',
+		"name": '<i class="pkmn chinchou"></i>Chinchou',
 		"value": "chinchou"
 	},
 	{
-		"name": '<i class="lanturn pkmn"></i>Lanturn',
+		"name": '<i class="pkmn lanturn"></i>Lanturn',
 		"value": "lanturn"
 	},
 	{
-		"name": '<i class="pichu pkmn"></i>Pichu',
+		"name": '<i class="pkmn pichu"></i>Pichu',
 		"value": "pichu"
 	},
 	{
-		"name": '<i class="cleffa pkmn"></i>Cleffa',
+		"name": '<i class="pkmn cleffa"></i>Cleffa',
 		"value": "cleffa"
 	},
 	{
-		"name": '<i class="igglybuff pkmn"></i>Igglybuff',
+		"name": '<i class="pkmn igglybuff"></i>Igglybuff',
 		"value": "igglybuff"
 	},
 	{
-		"name": '<i class="togepi pkmn"></i>Togepi',
+		"name": '<i class="pkmn togepi"></i>Togepi',
 		"value": "togepi"
 	},
 	{
-		"name": '<i class="togetic pkmn"></i>Togetic',
+		"name": '<i class="pkmn togetic"></i>Togetic',
 		"value": "togetic"
 	},
 	{
-		"name": '<i class="natu pkmn"></i>Natu',
+		"name": '<i class="pkmn natu"></i>Natu',
 		"value": "natu"
 	},
 	{
-		"name": '<i class="xatu pkmn"></i>Xatu',
+		"name": '<i class="pkmn xatu"></i>Xatu',
 		"value": "xatu"
 	},
 	{
-		"name": '<i class="mareep pkmn"></i>Mareep',
-		"value": "mareep"
+		"name": '<i class="pkmn mareep"></i>Mareep',
+		"value": "mareep",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="flaaffy pkmn"></i>Flaaffy',
-		"value": "flaaffy"
+		"name": '<i class="pkmn flaaffy"></i>Flaaffy',
+		"value": "flaaffy",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="ampharos pkmn"></i>Ampharos',
-		"value": "ampharos"
+		"name": '<i class="pkmn ampharos"></i>Ampharos',
+		"value": "ampharos",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="bellossom pkmn"></i>Bellossom',
+		"name": '<i class="pkmn bellossom"></i>Bellossom',
 		"value": "bellossom"
 	},
 	{
-		"name": '<i class="marill pkmn"></i>Marill',
+		"name": '<i class="pkmn marill"></i>Marill',
 		"value": "marill"
 	},
 	{
-		"name": '<i class="azumarill pkmn"></i>Azumarill',
+		"name": '<i class="pkmn azumarill"></i>Azumarill',
 		"value": "azumarill"
 	},
 	{
-		"name": '<i class="sudowoodo pkmn"></i>Sudowoodo',
+		"name": '<i class="pkmn sudowoodo"></i>Sudowoodo',
 		"value": "sudowoodo"
 	},
 	{
-		"name": '<i class="politoed pkmn"></i>Politoed',
+		"name": '<i class="pkmn politoed"></i>Politoed',
 		"value": "politoed"
 	},
 	{
-		"name": '<i class="hoppip pkmn"></i>Hoppip',
-		"value": "hoppip"
+		"name": '<i class="pkmn hoppip"></i>Hoppip',
+		"value": "hoppip",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="skiploom pkmn"></i>Skiploom',
-		"value": "skiploom"
+		"name": '<i class="pkmn skiploom"></i>Skiploom',
+		"value": "skiploom",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="jumpluff pkmn"></i>Jumpluff',
-		"value": "jumpluff"
+		"name": '<i class="pkmn jumpluff"></i>Jumpluff',
+		"value": "jumpluff",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="aipom pkmn"></i>Aipom',
-		"value": "aipom"
+		"name": '<i class="pkmn aipom"></i>Aipom',
+		"value": "aipom",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="sunkern pkmn"></i>Sunkern',
-		"value": "sunkern"
+		"name": '<i class="pkmn sunkern"></i>Sunkern',
+		"value": "sunkern",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="sunflora pkmn"></i>Sunflora',
-		"value": "sunflora"
+		"name": '<i class="pkmn sunflora"></i>Sunflora',
+		"value": "sunflora",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="yanma pkmn"></i>Yanma',
-		"value": "yanma"
+		"name": '<i class="pkmn yanma"></i>Yanma',
+		"value": "yanma",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="wooper pkmn"></i>Wooper',
+		"name": '<i class="pkmn wooper"></i>Wooper',
 		"value": "wooper"
 	},
 	{
-		"name": '<i class="quagsire pkmn"></i>Quagsire',
+		"name": '<i class="pkmn quagsire"></i>Quagsire',
 		"value": "quagsire"
 	},
 	{
-		"name": '<i class="espeon pkmn"></i>Espeon',
+		"name": '<i class="pkmn espeon"></i>Espeon',
 		"value": "espeon"
 	},
 	{
-		"name": '<i class="umbreon pkmn"></i>Umbreon',
+		"name": '<i class="pkmn umbreon"></i>Umbreon',
 		"value": "umbreon"
 	},
 	{
-		"name": '<i class="murkrow pkmn"></i>Murkrow',
-		"value": "murkrow"
+		"name": '<i class="pkmn murkrow"></i>Murkrow',
+		"value": "murkrow",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="slowking pkmn"></i>Slowking',
+		"name": '<i class="pkmn slowking"></i>Slowking',
 		"value": "slowking"
 	},
 	{
-		"name": '<i class="misdreavus pkmn"></i>Misdreavus',
-		"value": "misdreavus"
+		"name": '<i class="pkmn misdreavus"></i>Misdreavus',
+		"value": "misdreavus",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="unown-a pkmn"></i>Unown',
-		"value": "unown-a"
+		"name": '<i class="pkmn unown"></i>Unown',
+		"value": "unown",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="wobbuffet pkmn"></i>Wobbuffet',
+		"name": '<i class="pkmn wobbuffet"></i>Wobbuffet',
 		"value": "wobbuffet"
 	},
 	{
-		"name": '<i class="girafarig pkmn"></i>Girafarig',
-		"value": "girafarig"
+		"name": '<i class="pkmn girafarig"></i>Girafarig',
+		"value": "girafarig",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pineco pkmn"></i>Pineco',
-		"value": "pineco"
+		"name": '<i class="pkmn pineco"></i>Pineco',
+		"value": "pineco",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="forretress pkmn"></i>Forretress',
-		"value": "forretress"
+		"name": '<i class="pkmn forretress"></i>Forretress',
+		"value": "forretress",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dunsparce pkmn"></i>Dunsparce',
+		"name": '<i class="pkmn dunsparce"></i>Dunsparce',
 		"value": "dunsparce"
 	},
 	{
-		"name": '<i class="gligar pkmn"></i>Gligar',
-		"value": "gligar"
+		"name": '<i class="pkmn gligar"></i>Gligar',
+		"value": "gligar",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="steelix pkmn"></i>Steelix',
+		"name": '<i class="pkmn steelix"></i>Steelix',
 		"value": "steelix"
 	},
 	{
-		"name": '<i class="snubbull pkmn"></i>Snubbull',
-		"value": "snubbull"
+		"name": '<i class="pkmn snubbull"></i>Snubbull',
+		"value": "snubbull",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="granbull pkmn"></i>Granbull',
-		"value": "granbull"
+		"name": '<i class="pkmn granbull"></i>Granbull',
+		"value": "granbull",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="qwilfish pkmn"></i>Qwilfish',
+		"name": '<i class="pkmn qwilfish"></i>Qwilfish',
 		"value": "qwilfish"
 	},
 	{
-		"name": '<i class="scizor pkmn"></i>Scizor',
+		"name": '<i class="pkmn scizor"></i>Scizor',
 		"value": "scizor"
 	},
 	{
-		"name": '<i class="shuckle pkmn"></i>Shuckle',
+		"name": '<i class="pkmn shuckle"></i>Shuckle',
 		"value": "shuckle"
 	},
 	{
-		"name": '<i class="heracross pkmn"></i>Heracross',
+		"name": '<i class="pkmn heracross"></i>Heracross',
 		"value": "heracross"
 	},
 	{
-		"name": '<i class="sneasel pkmn"></i>Sneasel',
+		"name": '<i class="pkmn sneasel"></i>Sneasel',
 		"value": "sneasel"
 	},
 	{
-		"name": '<i class="teddiursa pkmn"></i>Teddiursa',
-		"value": "teddiursa"
+		"name": '<i class="pkmn teddiursa"></i>Teddiursa',
+		"value": "teddiursa",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="ursaring pkmn"></i>Ursaring',
-		"value": "ursaring"
+		"name": '<i class="pkmn ursaring"></i>Ursaring',
+		"value": "ursaring",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="slugma pkmn"></i>Slugma',
-		"value": "slugma"
+		"name": '<i class="pkmn slugma"></i>Slugma',
+		"value": "slugma",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="magcargo pkmn"></i>Magcargo',
-		"value": "magcargo"
+		"name": '<i class="pkmn magcargo"></i>Magcargo',
+		"value": "magcargo",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="swinub pkmn"></i>Swinub',
+		"name": '<i class="pkmn swinub"></i>Swinub',
 		"value": "swinub"
 	},
 	{
-		"name": '<i class="piloswine pkmn"></i>Piloswine',
+		"name": '<i class="pkmn piloswine"></i>Piloswine',
 		"value": "piloswine"
 	},
 	{
-		"name": '<i class="corsola pkmn"></i>Corsola',
+		"name": '<i class="pkmn corsola"></i>Corsola',
 		"value": "corsola"
 	},
 	{
-		"name": '<i class="remoraid pkmn"></i>Remoraid',
+		"name": '<i class="pkmn remoraid"></i>Remoraid',
 		"value": "remoraid"
 	},
 	{
-		"name": '<i class="octillery pkmn"></i>Octillery',
+		"name": '<i class="pkmn octillery"></i>Octillery',
 		"value": "octillery"
 	},
 	{
-		"name": '<i class="delibird pkmn"></i>Delibird',
+		"name": '<i class="pkmn delibird"></i>Delibird',
 		"value": "delibird"
 	},
 	{
-		"name": '<i class="mantine pkmn"></i>Mantine',
+		"name": '<i class="pkmn mantine"></i>Mantine',
 		"value": "mantine"
 	},
 	{
-		"name": '<i class="skarmory pkmn"></i>Skarmory',
+		"name": '<i class="pkmn skarmory"></i>Skarmory',
 		"value": "skarmory"
 	},
 	{
-		"name": '<i class="houndour pkmn"></i>Houndour',
-		"value": "houndour"
+		"name": '<i class="pkmn houndour"></i>Houndour',
+		"value": "houndour",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="houndoom pkmn"></i>Houndoom',
-		"value": "houndoom"
+		"name": '<i class="pkmn houndoom"></i>Houndoom',
+		"value": "houndoom",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kingdra pkmn"></i>Kingdra',
+		"name": '<i class="pkmn kingdra"></i>Kingdra',
 		"value": "kingdra"
 	},
 	{
-		"name": '<i class="phanpy pkmn"></i>Phanpy',
-		"value": "phanpy"
+		"name": '<i class="pkmn phanpy"></i>Phanpy',
+		"value": "phanpy",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="donphan pkmn"></i>Donphan',
-		"value": "donphan"
+		"name": '<i class="pkmn donphan"></i>Donphan',
+		"value": "donphan",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="porygon2 pkmn"></i>Porygon2',
+		"name": '<i class="pkmn porygon2"></i>Porygon2',
 		"value": "porygon2"
 	},
 	{
-		"name": '<i class="stantler pkmn"></i>Stantler',
-		"value": "stantler"
+		"name": '<i class="pkmn stantler"></i>Stantler',
+		"value": "stantler",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="smeargle pkmn"></i>Smeargle',
-		"value": "smeargle"
+		"name": '<i class="pkmn smeargle"></i>Smeargle',
+		"value": "smeargle",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="tyrogue pkmn"></i>Tyrogue',
+		"name": '<i class="pkmn tyrogue"></i>Tyrogue',
 		"value": "tyrogue"
 	},
 	{
-		"name": '<i class="hitmontop pkmn"></i>Hitmontop',
+		"name": '<i class="pkmn hitmontop"></i>Hitmontop',
 		"value": "hitmontop"
 	},
 	{
-		"name": '<i class="smoochum pkmn"></i>Smoochum',
-		"value": "smoochum"
+		"name": '<i class="pkmn smoochum"></i>Smoochum',
+		"value": "smoochum",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="elekid pkmn"></i>Elekid',
-		"value": "elekid"
+		"name": '<i class="pkmn elekid"></i>Elekid',
+		"value": "elekid",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="magby pkmn"></i>Magby',
-		"value": "magby"
+		"name": '<i class="pkmn magby"></i>Magby',
+		"value": "magby",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="miltank pkmn"></i>Miltank',
+		"name": '<i class="pkmn miltank"></i>Miltank',
 		"value": "miltank"
 	},
 	{
-		"name": '<i class="blissey pkmn"></i>Blissey',
+		"name": '<i class="pkmn blissey"></i>Blissey',
 		"value": "blissey"
 	},
 	{
-		"name": '<i class="raikou pkmn"></i>Raikou',
-		"value": "raikou"
+		"name": '<i class="pkmn raikou"></i>Raikou',
+		"value": "raikou",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="entei pkmn"></i>Entei',
-		"value": "entei"
+		"name": '<i class="pkmn entei"></i>Entei',
+		"value": "entei",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="suicune pkmn"></i>Suicune',
-		"value": "suicune"
+		"name": '<i class="pkmn suicune"></i>Suicune',
+		"value": "suicune",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="larvitar pkmn"></i>Larvitar',
+		"name": '<i class="pkmn larvitar"></i>Larvitar',
 		"value": "larvitar"
 	},
 	{
-		"name": '<i class="pupitar pkmn"></i>Pupitar',
+		"name": '<i class="pkmn pupitar"></i>Pupitar',
 		"value": "pupitar"
 	},
 	{
-		"name": '<i class="tyranitar pkmn"></i>Tyranitar',
+		"name": '<i class="pkmn tyranitar"></i>Tyranitar',
 		"value": "tyranitar"
 	},
 	{
-		"name": '<i class="lugia pkmn"></i>Lugia',
-		"value": "lugia"
+		"name": '<i class="pkmn lugia"></i>Lugia',
+		"value": "lugia",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="ho-oh pkmn"></i>Ho-Oh',
-		"value": "ho-oh"
+		"name": '<i class="pkmn ho-oh"></i>Ho-Oh',
+		"value": "ho-oh",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="celebi pkmn"></i>Celebi',
+		"name": '<i class="pkmn celebi"></i>Celebi',
 		"value": "celebi"
 	},
 	{
-		"name": '<i class="treecko pkmn"></i>Treecko',
-		"value": "treecko"
+		"name": '<i class="pkmn treecko"></i>Treecko',
+		"value": "treecko",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="grovyle pkmn"></i>Grovyle',
-		"value": "grovyle"
+		"name": '<i class="pkmn grovyle"></i>Grovyle',
+		"value": "grovyle",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="sceptile pkmn"></i>Sceptile',
-		"value": "sceptile"
+		"name": '<i class="pkmn sceptile"></i>Sceptile',
+		"value": "sceptile",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="torchic pkmn"></i>Torchic',
-		"value": "torchic"
+		"name": '<i class="pkmn torchic"></i>Torchic',
+		"value": "torchic",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="combusken pkmn"></i>Combusken',
-		"value": "combusken"
+		"name": '<i class="pkmn combusken"></i>Combusken',
+		"value": "combusken",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="blaziken pkmn"></i>Blaziken',
-		"value": "blaziken"
+		"name": '<i class="pkmn blaziken"></i>Blaziken',
+		"value": "blaziken",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="mudkip pkmn"></i>Mudkip',
-		"value": "mudkip"
+		"name": '<i class="pkmn mudkip"></i>Mudkip',
+		"value": "mudkip",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="marshtomp pkmn"></i>Marshtomp',
-		"value": "marshtomp"
+		"name": '<i class="pkmn marshtomp"></i>Marshtomp',
+		"value": "marshtomp",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="swampert pkmn"></i>Swampert',
-		"value": "swampert"
+		"name": '<i class="pkmn swampert"></i>Swampert',
+		"value": "swampert",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="poochyena pkmn"></i>Poochyena',
-		"value": "poochyena"
+		"name": '<i class="pkmn poochyena"></i>Poochyena',
+		"value": "poochyena",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="mightyena pkmn"></i>Mightyena',
-		"value": "mightyena"
+		"name": '<i class="pkmn mightyena"></i>Mightyena',
+		"value": "mightyena",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="zigzagoon pkmn"></i>Zigzagoon',
+		"name": '<i class="pkmn zigzagoon"></i>Zigzagoon',
 		"value": "zigzagoon"
 	},
 	{
-		"name": '<i class="linoone pkmn"></i>Linoone',
+		"name": '<i class="pkmn linoone"></i>Linoone',
 		"value": "linoone"
 	},
 	{
-		"name": '<i class="wurmple pkmn"></i>Wurmple',
-		"value": "wurmple"
+		"name": '<i class="pkmn wurmple"></i>Wurmple',
+		"value": "wurmple",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="silcoon pkmn"></i>Silcoon',
-		"value": "silcoon"
+		"name": '<i class="pkmn silcoon"></i>Silcoon',
+		"value": "silcoon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="beautifly pkmn"></i>Beautifly',
-		"value": "beautifly"
+		"name": '<i class="pkmn beautifly"></i>Beautifly',
+		"value": "beautifly",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="cascoon pkmn"></i>Cascoon',
-		"value": "cascoon"
+		"name": '<i class="pkmn cascoon"></i>Cascoon',
+		"value": "cascoon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dustox pkmn"></i>Dustox',
-		"value": "dustox"
+		"name": '<i class="pkmn dustox"></i>Dustox',
+		"value": "dustox",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="lotad pkmn"></i>Lotad',
+		"name": '<i class="pkmn lotad"></i>Lotad',
 		"value": "lotad"
 	},
 	{
-		"name": '<i class="lombre pkmn"></i>Lombre',
+		"name": '<i class="pkmn lombre"></i>Lombre',
 		"value": "lombre"
 	},
 	{
-		"name": '<i class="ludicolo pkmn"></i>Ludicolo',
+		"name": '<i class="pkmn ludicolo"></i>Ludicolo',
 		"value": "ludicolo"
 	},
 	{
-		"name": '<i class="seedot pkmn"></i>Seedot',
+		"name": '<i class="pkmn seedot"></i>Seedot',
 		"value": "seedot"
 	},
 	{
-		"name": '<i class="nuzleaf pkmn"></i>Nuzleaf',
+		"name": '<i class="pkmn nuzleaf"></i>Nuzleaf',
 		"value": "nuzleaf"
 	},
 	{
-		"name": '<i class="shiftry pkmn"></i>Shiftry',
+		"name": '<i class="pkmn shiftry"></i>Shiftry',
 		"value": "shiftry"
 	},
 	{
-		"name": '<i class="taillow pkmn"></i>Taillow',
-		"value": "taillow"
+		"name": '<i class="pkmn taillow"></i>Taillow',
+		"value": "taillow",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="swellow pkmn"></i>Swellow',
-		"value": "swellow"
+		"name": '<i class="pkmn swellow"></i>Swellow',
+		"value": "swellow",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="wingull pkmn"></i>Wingull',
+		"name": '<i class="pkmn wingull"></i>Wingull',
 		"value": "wingull"
 	},
 	{
-		"name": '<i class="pelipper pkmn"></i>Pelipper',
+		"name": '<i class="pkmn pelipper"></i>Pelipper',
 		"value": "pelipper"
 	},
 	{
-		"name": '<i class="ralts pkmn"></i>Ralts',
+		"name": '<i class="pkmn ralts"></i>Ralts',
 		"value": "ralts"
 	},
 	{
-		"name": '<i class="kirlia pkmn"></i>Kirlia',
+		"name": '<i class="pkmn kirlia"></i>Kirlia',
 		"value": "kirlia"
 	},
 	{
-		"name": '<i class="gardevoir pkmn"></i>Gardevoir',
+		"name": '<i class="pkmn gardevoir"></i>Gardevoir',
 		"value": "gardevoir"
 	},
 	{
-		"name": '<i class="surskit pkmn"></i>Surskit',
-		"value": "surskit"
+		"name": '<i class="pkmn surskit"></i>Surskit',
+		"value": "surskit",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="masquerain pkmn"></i>Masquerain',
-		"value": "masquerain"
+		"name": '<i class="pkmn masquerain"></i>Masquerain',
+		"value": "masquerain",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="shroomish pkmn"></i>Shroomish',
-		"value": "shroomish"
+		"name": '<i class="pkmn shroomish"></i>Shroomish',
+		"value": "shroomish",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="breloom pkmn"></i>Breloom',
-		"value": "breloom"
+		"name": '<i class="pkmn breloom"></i>Breloom',
+		"value": "breloom",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="slakoth pkmn"></i>Slakoth',
-		"value": "slakoth"
+		"name": '<i class="pkmn slakoth"></i>Slakoth',
+		"value": "slakoth",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="vigoroth pkmn"></i>Vigoroth',
-		"value": "vigoroth"
+		"name": '<i class="pkmn vigoroth"></i>Vigoroth',
+		"value": "vigoroth",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="slaking pkmn"></i>Slaking',
-		"value": "slaking"
+		"name": '<i class="pkmn slaking"></i>Slaking',
+		"value": "slaking",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="nincada pkmn"></i>Nincada',
+		"name": '<i class="pkmn nincada"></i>Nincada',
 		"value": "nincada"
 	},
 	{
-		"name": '<i class="ninjask pkmn"></i>Ninjask',
+		"name": '<i class="pkmn ninjask"></i>Ninjask',
 		"value": "ninjask"
 	},
 	{
-		"name": '<i class="shedinja pkmn"></i>Shedinja',
+		"name": '<i class="pkmn shedinja"></i>Shedinja',
 		"value": "shedinja"
 	},
 	{
-		"name": '<i class="whismur pkmn"></i>Whismur',
+		"name": '<i class="pkmn whismur"></i>Whismur',
 		"value": "whismur"
 	},
 	{
-		"name": '<i class="loudred pkmn"></i>Loudred',
+		"name": '<i class="pkmn loudred"></i>Loudred',
 		"value": "loudred"
 	},
 	{
-		"name": '<i class="exploud pkmn"></i>Exploud',
+		"name": '<i class="pkmn exploud"></i>Exploud',
 		"value": "exploud"
 	},
 	{
-		"name": '<i class="makuhita pkmn"></i>Makuhita',
-		"value": "makuhita"
+		"name": '<i class="pkmn makuhita"></i>Makuhita',
+		"value": "makuhita",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="hariyama pkmn"></i>Hariyama',
-		"value": "hariyama"
+		"name": '<i class="pkmn hariyama"></i>Hariyama',
+		"value": "hariyama",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="azurill pkmn"></i>Azurill',
+		"name": '<i class="pkmn azurill"></i>Azurill',
 		"value": "azurill"
 	},
 	{
-		"name": '<i class="nosepass pkmn"></i>Nosepass',
-		"value": "nosepass"
+		"name": '<i class="pkmn nosepass"></i>Nosepass',
+		"value": "nosepass",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="skitty pkmn"></i>Skitty',
-		"value": "skitty"
+		"name": '<i class="pkmn skitty"></i>Skitty',
+		"value": "skitty",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="delcatty pkmn"></i>Delcatty',
-		"value": "delcatty"
+		"name": '<i class="pkmn delcatty"></i>Delcatty',
+		"value": "delcatty",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="sableye pkmn"></i>Sableye',
+		"name": '<i class="pkmn sableye"></i>Sableye',
 		"value": "sableye"
 	},
 	{
-		"name": '<i class="mawile pkmn"></i>Mawile',
+		"name": '<i class="pkmn mawile"></i>Mawile',
 		"value": "mawile"
 	},
 	{
-		"name": '<i class="aron pkmn"></i>Aron',
-		"value": "aron"
+		"name": '<i class="pkmn aron"></i>Aron',
+		"value": "aron",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="lairon pkmn"></i>Lairon',
-		"value": "lairon"
+		"name": '<i class="pkmn lairon"></i>Lairon',
+		"value": "lairon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="aggron pkmn"></i>Aggron',
-		"value": "aggron"
+		"name": '<i class="pkmn aggron"></i>Aggron',
+		"value": "aggron",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="meditite pkmn"></i>Meditite',
-		"value": "meditite"
+		"name": '<i class="pkmn meditite"></i>Meditite',
+		"value": "meditite",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="medicham pkmn"></i>Medicham',
-		"value": "medicham"
+		"name": '<i class="pkmn medicham"></i>Medicham',
+		"value": "medicham",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="electrike pkmn"></i>Electrike',
+		"name": '<i class="pkmn electrike"></i>Electrike',
 		"value": "electrike"
 	},
 	{
-		"name": '<i class="manectric pkmn"></i>Manectric',
+		"name": '<i class="pkmn manectric"></i>Manectric',
 		"value": "manectric"
 	},
 	{
-		"name": '<i class="plusle pkmn"></i>Plusle',
-		"value": "plusle"
+		"name": '<i class="pkmn plusle"></i>Plusle',
+		"value": "plusle",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="minun pkmn"></i>Minun',
-		"value": "minun"
+		"name": '<i class="pkmn minun"></i>Minun',
+		"value": "minun",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="volbeat pkmn"></i>Volbeat',
-		"value": "volbeat"
+		"name": '<i class="pkmn volbeat"></i>Volbeat',
+		"value": "volbeat",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="illumise pkmn"></i>Illumise',
-		"value": "illumise"
+		"name": '<i class="pkmn illumise"></i>Illumise',
+		"value": "illumise",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="roselia pkmn"></i>Roselia',
+		"name": '<i class="pkmn roselia"></i>Roselia',
 		"value": "roselia"
 	},
 	{
-		"name": '<i class="gulpin pkmn"></i>Gulpin',
-		"value": "gulpin"
+		"name": '<i class="pkmn gulpin"></i>Gulpin',
+		"value": "gulpin",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="swalot pkmn"></i>Swalot',
-		"value": "swalot"
+		"name": '<i class="pkmn swalot"></i>Swalot',
+		"value": "swalot",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="carvanha pkmn"></i>Carvanha',
+		"name": '<i class="pkmn carvanha"></i>Carvanha',
 		"value": "carvanha"
 	},
 	{
-		"name": '<i class="sharpedo pkmn"></i>Sharpedo',
+		"name": '<i class="pkmn sharpedo"></i>Sharpedo',
 		"value": "sharpedo"
 	},
 	{
-		"name": '<i class="wailmer pkmn"></i>Wailmer',
+		"name": '<i class="pkmn wailmer"></i>Wailmer',
 		"value": "wailmer"
 	},
 	{
-		"name": '<i class="wailord pkmn"></i>Wailord',
+		"name": '<i class="pkmn wailord"></i>Wailord',
 		"value": "wailord"
 	},
 	{
-		"name": '<i class="numel pkmn"></i>Numel',
-		"value": "numel"
+		"name": '<i class="pkmn numel"></i>Numel',
+		"value": "numel",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="camerupt pkmn"></i>Camerupt',
-		"value": "camerupt"
+		"name": '<i class="pkmn camerupt"></i>Camerupt',
+		"value": "camerupt",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="torkoal pkmn"></i>Torkoal',
+		"name": '<i class="pkmn torkoal"></i>Torkoal',
 		"value": "torkoal"
 	},
 	{
-		"name": '<i class="spoink pkmn"></i>Spoink',
-		"value": "spoink"
+		"name": '<i class="pkmn spoink"></i>Spoink',
+		"value": "spoink",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="grumpig pkmn"></i>Grumpig',
-		"value": "grumpig"
+		"name": '<i class="pkmn grumpig"></i>Grumpig',
+		"value": "grumpig",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="spinda pkmn"></i>Spinda',
-		"value": "spinda"
+		"name": '<i class="pkmn spinda"></i>Spinda',
+		"value": "spinda",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="trapinch pkmn"></i>Trapinch',
+		"name": '<i class="pkmn trapinch"></i>Trapinch',
 		"value": "trapinch"
 	},
 	{
-		"name": '<i class="vibrava pkmn"></i>Vibrava',
+		"name": '<i class="pkmn vibrava"></i>Vibrava',
 		"value": "vibrava"
 	},
 	{
-		"name": '<i class="flygon pkmn"></i>Flygon',
+		"name": '<i class="pkmn flygon"></i>Flygon',
 		"value": "flygon"
 	},
 	{
-		"name": '<i class="cacnea pkmn"></i>Cacnea',
-		"value": "cacnea"
+		"name": '<i class="pkmn cacnea"></i>Cacnea',
+		"value": "cacnea",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="cacturne pkmn"></i>Cacturne',
-		"value": "cacturne"
+		"name": '<i class="pkmn cacturne"></i>Cacturne',
+		"value": "cacturne",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="swablu pkmn"></i>Swablu',
-		"value": "swablu"
+		"name": '<i class="pkmn swablu"></i>Swablu',
+		"value": "swablu",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="altaria pkmn"></i>Altaria',
-		"value": "altaria"
+		"name": '<i class="pkmn altaria"></i>Altaria',
+		"value": "altaria",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="zangoose pkmn"></i>Zangoose',
-		"value": "zangoose"
+		"name": '<i class="pkmn zangoose"></i>Zangoose',
+		"value": "zangoose",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="seviper pkmn"></i>Seviper',
-		"value": "seviper"
+		"name": '<i class="pkmn seviper"></i>Seviper',
+		"value": "seviper",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="lunatone pkmn"></i>Lunatone',
+		"name": '<i class="pkmn lunatone"></i>Lunatone',
 		"value": "lunatone"
 	},
 	{
-		"name": '<i class="solrock pkmn"></i>Solrock',
+		"name": '<i class="pkmn solrock"></i>Solrock',
 		"value": "solrock"
 	},
 	{
-		"name": '<i class="barboach pkmn"></i>Barboach',
+		"name": '<i class="pkmn barboach"></i>Barboach',
 		"value": "barboach"
 	},
 	{
-		"name": '<i class="whiscash pkmn"></i>Whiscash',
+		"name": '<i class="pkmn whiscash"></i>Whiscash',
 		"value": "whiscash"
 	},
 	{
-		"name": '<i class="corphish pkmn"></i>Corphish',
+		"name": '<i class="pkmn corphish"></i>Corphish',
 		"value": "corphish"
 	},
 	{
-		"name": '<i class="crawdaunt pkmn"></i>Crawdaunt',
+		"name": '<i class="pkmn crawdaunt"></i>Crawdaunt',
 		"value": "crawdaunt"
 	},
 	{
-		"name": '<i class="baltoy pkmn"></i>Baltoy',
+		"name": '<i class="pkmn baltoy"></i>Baltoy',
 		"value": "baltoy"
 	},
 	{
-		"name": '<i class="claydol pkmn"></i>Claydol',
+		"name": '<i class="pkmn claydol"></i>Claydol',
 		"value": "claydol"
 	},
 	{
-		"name": '<i class="lileep pkmn"></i>Lileep',
-		"value": "lileep"
+		"name": '<i class="pkmn lileep"></i>Lileep',
+		"value": "lileep",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="cradily pkmn"></i>Cradily',
-		"value": "cradily"
+		"name": '<i class="pkmn cradily"></i>Cradily',
+		"value": "cradily",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="anorith pkmn"></i>Anorith',
-		"value": "anorith"
+		"name": '<i class="pkmn anorith"></i>Anorith',
+		"value": "anorith",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="armaldo pkmn"></i>Armaldo',
-		"value": "armaldo"
+		"name": '<i class="pkmn armaldo"></i>Armaldo',
+		"value": "armaldo",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="feebas pkmn"></i>Feebas',
+		"name": '<i class="pkmn feebas"></i>Feebas',
 		"value": "feebas"
 	},
 	{
-		"name": '<i class="milotic pkmn"></i>Milotic',
+		"name": '<i class="pkmn milotic"></i>Milotic',
 		"value": "milotic"
 	},
 	{
-		"name": '<i class="castform pkmn"></i>Castform',
-		"value": "castform"
+		"name": '<i class="pkmn castform"></i>Castform',
+		"value": "castform",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kecleon pkmn"></i>Kecleon',
-		"value": "kecleon"
+		"name": '<i class="pkmn kecleon"></i>Kecleon',
+		"value": "kecleon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="shuppet pkmn"></i>Shuppet',
-		"value": "shuppet"
+		"name": '<i class="pkmn shuppet"></i>Shuppet',
+		"value": "shuppet",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="banette pkmn"></i>Banette',
-		"value": "banette"
+		"name": '<i class="pkmn banette"></i>Banette',
+		"value": "banette",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="duskull pkmn"></i>Duskull',
+		"name": '<i class="pkmn duskull"></i>Duskull',
 		"value": "duskull"
 	},
 	{
-		"name": '<i class="dusclops pkmn"></i>Dusclops',
+		"name": '<i class="pkmn dusclops"></i>Dusclops',
 		"value": "dusclops"
 	},
 	{
-		"name": '<i class="tropius pkmn"></i>Tropius',
-		"value": "tropius"
+		"name": '<i class="pkmn tropius"></i>Tropius',
+		"value": "tropius",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="chimecho pkmn"></i>Chimecho',
-		"value": "chimecho"
+		"name": '<i class="pkmn chimecho"></i>Chimecho',
+		"value": "chimecho",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="absol pkmn"></i>Absol',
-		"value": "absol"
+		"name": '<i class="pkmn absol"></i>Absol',
+		"value": "absol",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="wynaut pkmn"></i>Wynaut',
+		"name": '<i class="pkmn wynaut"></i>Wynaut',
 		"value": "wynaut"
 	},
 	{
-		"name": '<i class="snorunt pkmn"></i>Snorunt',
+		"name": '<i class="pkmn snorunt"></i>Snorunt',
 		"value": "snorunt"
 	},
 	{
-		"name": '<i class="glalie pkmn"></i>Glalie',
+		"name": '<i class="pkmn glalie"></i>Glalie',
 		"value": "glalie"
 	},
 	{
-		"name": '<i class="spheal pkmn"></i>Spheal',
-		"value": "spheal"
+		"name": '<i class="pkmn spheal"></i>Spheal',
+		"value": "spheal",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="sealeo pkmn"></i>Sealeo',
-		"value": "sealeo"
+		"name": '<i class="pkmn sealeo"></i>Sealeo',
+		"value": "sealeo",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="walrein pkmn"></i>Walrein',
-		"value": "walrein"
+		"name": '<i class="pkmn walrein"></i>Walrein',
+		"value": "walrein",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="clamperl pkmn"></i>Clamperl',
-		"value": "clamperl"
+		"name": '<i class="pkmn clamperl"></i>Clamperl',
+		"value": "clamperl",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="huntail pkmn"></i>Huntail',
-		"value": "huntail"
+		"name": '<i class="pkmn huntail"></i>Huntail',
+		"value": "huntail",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="gorebyss pkmn"></i>Gorebyss',
-		"value": "gorebyss"
+		"name": '<i class="pkmn gorebyss"></i>Gorebyss',
+		"value": "gorebyss",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="relicanth pkmn"></i>Relicanth',
-		"value": "relicanth"
+		"name": '<i class="pkmn relicanth"></i>Relicanth',
+		"value": "relicanth",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="luvdisc pkmn"></i>Luvdisc',
-		"value": "luvdisc"
+		"name": '<i class="pkmn luvdisc"></i>Luvdisc',
+		"value": "luvdisc",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="bagon pkmn"></i>Bagon',
-		"value": "bagon"
+		"name": '<i class="pkmn bagon"></i>Bagon',
+		"value": "bagon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="shelgon pkmn"></i>Shelgon',
-		"value": "shelgon"
+		"name": '<i class="pkmn shelgon"></i>Shelgon',
+		"value": "shelgon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="salamence pkmn"></i>Salamence',
-		"value": "salamence"
+		"name": '<i class="pkmn salamence"></i>Salamence',
+		"value": "salamence",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="beldum pkmn"></i>Beldum',
-		"value": "beldum"
+		"name": '<i class="pkmn beldum"></i>Beldum',
+		"value": "beldum",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="metang pkmn"></i>Metang',
-		"value": "metang"
+		"name": '<i class="pkmn metang"></i>Metang',
+		"value": "metang",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="metagross pkmn"></i>Metagross',
-		"value": "metagross"
+		"name": '<i class="pkmn metagross"></i>Metagross',
+		"value": "metagross",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="regirock pkmn"></i>Regirock',
-		"value": "regirock"
+		"name": '<i class="pkmn regirock"></i>Regirock',
+		"value": "regirock",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="regice pkmn"></i>Regice',
-		"value": "regice"
+		"name": '<i class="pkmn regice"></i>Regice',
+		"value": "regice",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="registeel pkmn"></i>Registeel',
-		"value": "registeel"
+		"name": '<i class="pkmn registeel"></i>Registeel',
+		"value": "registeel",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="latias pkmn"></i>Latias',
-		"value": "latias"
+		"name": '<i class="pkmn latias"></i>Latias',
+		"value": "latias",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="latios pkmn"></i>Latios',
-		"value": "latios"
+		"name": '<i class="pkmn latios"></i>Latios',
+		"value": "latios",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kyogre pkmn"></i>Kyogre',
-		"value": "kyogre"
+		"name": '<i class="pkmn kyogre"></i>Kyogre',
+		"value": "kyogre",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="groudon pkmn"></i>Groudon',
-		"value": "groudon"
+		"name": '<i class="pkmn groudon"></i>Groudon',
+		"value": "groudon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="rayquaza pkmn"></i>Rayquaza',
-		"value": "rayquaza"
+		"name": '<i class="pkmn rayquaza"></i>Rayquaza',
+		"value": "rayquaza",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="jirachi pkmn"></i>Jirachi',
+		"name": '<i class="pkmn jirachi"></i>Jirachi',
 		"value": "jirachi"
 	},
 	{
-		"name": '<i class="deoxys pkmn"></i>Deoxys',
-		"value": "deoxys"
+		"name": '<i class="pkmn deoxys"></i>Deoxys',
+		"value": "deoxys",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="turtwig pkmn"></i>Turtwig',
-		"value": "turtwig"
+		"name": '<i class="pkmn turtwig"></i>Turtwig',
+		"value": "turtwig",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="grotle pkmn"></i>Grotle',
-		"value": "grotle"
+		"name": '<i class="pkmn grotle"></i>Grotle',
+		"value": "grotle",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="torterra pkmn"></i>Torterra',
-		"value": "torterra"
+		"name": '<i class="pkmn torterra"></i>Torterra',
+		"value": "torterra",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="chimchar pkmn"></i>Chimchar',
-		"value": "chimchar"
+		"name": '<i class="pkmn chimchar"></i>Chimchar',
+		"value": "chimchar",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="monferno pkmn"></i>Monferno',
-		"value": "monferno"
+		"name": '<i class="pkmn monferno"></i>Monferno',
+		"value": "monferno",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="infernape pkmn"></i>Infernape',
-		"value": "infernape"
+		"name": '<i class="pkmn infernape"></i>Infernape',
+		"value": "infernape",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="piplup pkmn"></i>Piplup',
-		"value": "piplup"
+		"name": '<i class="pkmn piplup"></i>Piplup',
+		"value": "piplup",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="prinplup pkmn"></i>Prinplup',
-		"value": "prinplup"
+		"name": '<i class="pkmn prinplup"></i>Prinplup',
+		"value": "prinplup",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="empoleon pkmn"></i>Empoleon',
-		"value": "empoleon"
+		"name": '<i class="pkmn empoleon"></i>Empoleon',
+		"value": "empoleon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="starly pkmn"></i>Starly',
-		"value": "starly"
+		"name": '<i class="pkmn starly"></i>Starly',
+		"value": "starly",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="staravia pkmn"></i>Staravia',
-		"value": "staravia"
+		"name": '<i class="pkmn staravia"></i>Staravia',
+		"value": "staravia",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="staraptor pkmn"></i>Staraptor',
-		"value": "staraptor"
+		"name": '<i class="pkmn staraptor"></i>Staraptor',
+		"value": "staraptor",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="bidoof pkmn"></i>Bidoof',
-		"value": "bidoof"
+		"name": '<i class="pkmn bidoof"></i>Bidoof',
+		"value": "bidoof",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="bibarel pkmn"></i>Bibarel',
-		"value": "bibarel"
+		"name": '<i class="pkmn bibarel"></i>Bibarel',
+		"value": "bibarel",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kricketot pkmn"></i>Kricketot',
-		"value": "kricketot"
+		"name": '<i class="pkmn kricketot"></i>Kricketot',
+		"value": "kricketot",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kricketune pkmn"></i>Kricketune',
-		"value": "kricketune"
+		"name": '<i class="pkmn kricketune"></i>Kricketune',
+		"value": "kricketune",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="shinx pkmn"></i>Shinx',
+		"name": '<i class="pkmn shinx"></i>Shinx',
 		"value": "shinx"
 	},
 	{
-		"name": '<i class="luxio pkmn"></i>Luxio',
+		"name": '<i class="pkmn luxio"></i>Luxio',
 		"value": "luxio"
 	},
 	{
-		"name": '<i class="luxray pkmn"></i>Luxray',
+		"name": '<i class="pkmn luxray"></i>Luxray',
 		"value": "luxray"
 	},
 	{
-		"name": '<i class="budew pkmn"></i>Budew',
+		"name": '<i class="pkmn budew"></i>Budew',
 		"value": "budew"
 	},
 	{
-		"name": '<i class="roserade pkmn"></i>Roserade',
+		"name": '<i class="pkmn roserade"></i>Roserade',
 		"value": "roserade"
 	},
 	{
-		"name": '<i class="cranidos pkmn"></i>Cranidos',
-		"value": "cranidos"
+		"name": '<i class="pkmn cranidos"></i>Cranidos',
+		"value": "cranidos",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="rampardos pkmn"></i>Rampardos',
-		"value": "rampardos"
+		"name": '<i class="pkmn rampardos"></i>Rampardos',
+		"value": "rampardos",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="shieldon pkmn"></i>Shieldon',
-		"value": "shieldon"
+		"name": '<i class="pkmn shieldon"></i>Shieldon',
+		"value": "shieldon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="bastiodon pkmn"></i>Bastiodon',
-		"value": "bastiodon"
+		"name": '<i class="pkmn bastiodon"></i>Bastiodon',
+		"value": "bastiodon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="burmy-plant pkmn"></i>Burmy',
-		"value": "burmy-plant"
+		"name": '<i class="pkmn burmy"></i>Burmy',
+		"value": "burmy",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="wormadam-plant pkmn"></i>Wormadam',
-		"value": "wormadam-plant"
+		"name": '<i class="pkmn wormadam"></i>Wormadam',
+		"value": "wormadam",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="mothim pkmn"></i>Mothim',
-		"value": "mothim"
+		"name": '<i class="pkmn mothim"></i>Mothim',
+		"value": "mothim",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="combee pkmn"></i>Combee',
+		"name": '<i class="pkmn combee"></i>Combee',
 		"value": "combee"
 	},
 	{
-		"name": '<i class="vespiquen pkmn"></i>Vespiquen',
+		"name": '<i class="pkmn vespiquen"></i>Vespiquen',
 		"value": "vespiquen"
 	},
 	{
-		"name": '<i class="pachirisu pkmn"></i>Pachirisu',
-		"value": "pachirisu"
+		"name": '<i class="pkmn pachirisu"></i>Pachirisu',
+		"value": "pachirisu",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="buizel pkmn"></i>Buizel',
-		"value": "buizel"
+		"name": '<i class="pkmn buizel"></i>Buizel',
+		"value": "buizel",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="floatzel pkmn"></i>Floatzel',
-		"value": "floatzel"
+		"name": '<i class="pkmn floatzel"></i>Floatzel',
+		"value": "floatzel",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="cherubi pkmn"></i>Cherubi',
+		"name": '<i class="pkmn cherubi"></i>Cherubi',
 		"value": "cherubi"
 	},
 	{
-		"name": '<i class="cherrim pkmn"></i>Cherrim',
+		"name": '<i class="pkmn cherrim"></i>Cherrim',
 		"value": "cherrim"
 	},
 	{
-		"name": '<i class="shellos-east pkmn"></i>Shellos',
-		"value": "shellos-east"
+		"name": '<i class="pkmn shellos"></i>Shellos',
+		"value": "shellos"
 	},
 	{
-		"name": '<i class="gastrodon-east pkmn"></i>Gastrodon',
-		"value": "gastrodon-east"
+		"name": '<i class="pkmn gastrodon"></i>Gastrodon',
+		"value": "gastrodon"
 	},
 	{
-		"name": '<i class="ambipom pkmn"></i>Ambipom',
-		"value": "ambipom"
+		"name": '<i class="pkmn ambipom"></i>Ambipom',
+		"value": "ambipom",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="drifloon pkmn"></i>Drifloon',
+		"name": '<i class="pkmn drifloon"></i>Drifloon',
 		"value": "drifloon"
 	},
 	{
-		"name": '<i class="drifblim pkmn"></i>Drifblim',
+		"name": '<i class="pkmn drifblim"></i>Drifblim',
 		"value": "drifblim"
 	},
 	{
-		"name": '<i class="buneary pkmn"></i>Buneary',
+		"name": '<i class="pkmn buneary"></i>Buneary',
 		"value": "buneary"
 	},
 	{
-		"name": '<i class="lopunny pkmn"></i>Lopunny',
+		"name": '<i class="pkmn lopunny"></i>Lopunny',
 		"value": "lopunny"
 	},
 	{
-		"name": '<i class="mismagius pkmn"></i>Mismagius',
-		"value": "mismagius"
+		"name": '<i class="pkmn mismagius"></i>Mismagius',
+		"value": "mismagius",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="honchkrow pkmn"></i>Honchkrow',
-		"value": "honchkrow"
+		"name": '<i class="pkmn honchkrow"></i>Honchkrow',
+		"value": "honchkrow",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="glameow pkmn"></i>Glameow',
-		"value": "glameow"
+		"name": '<i class="pkmn glameow"></i>Glameow',
+		"value": "glameow",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="purugly pkmn"></i>Purugly',
-		"value": "purugly"
+		"name": '<i class="pkmn purugly"></i>Purugly',
+		"value": "purugly",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="chingling pkmn"></i>Chingling',
-		"value": "chingling"
+		"name": '<i class="pkmn chingling"></i>Chingling',
+		"value": "chingling",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="stunky pkmn"></i>Stunky',
+		"name": '<i class="pkmn stunky"></i>Stunky',
 		"value": "stunky"
 	},
 	{
-		"name": '<i class="skuntank pkmn"></i>Skuntank',
+		"name": '<i class="pkmn skuntank"></i>Skuntank',
 		"value": "skuntank"
 	},
 	{
-		"name": '<i class="bronzor pkmn"></i>Bronzor',
+		"name": '<i class="pkmn bronzor"></i>Bronzor',
 		"value": "bronzor"
 	},
 	{
-		"name": '<i class="bronzong pkmn"></i>Bronzong',
+		"name": '<i class="pkmn bronzong"></i>Bronzong',
 		"value": "bronzong"
 	},
 	{
-		"name": '<i class="bonsly pkmn"></i>Bonsly',
+		"name": '<i class="pkmn bonsly"></i>Bonsly',
 		"value": "bonsly"
 	},
 	{
-		"name": '<i class="mime-jr pkmn"></i>Mime Jr.',
+		"name": '<i class="pkmn mime-jr"></i>Mime Jr.',
 		"value": "mime-jr"
 	},
 	{
-		"name": '<i class="happiny pkmn"></i>Happiny',
+		"name": '<i class="pkmn happiny"></i>Happiny',
 		"value": "happiny"
 	},
 	{
-		"name": '<i class="chatot pkmn"></i>Chatot',
-		"value": "chatot"
+		"name": '<i class="pkmn chatot"></i>Chatot',
+		"value": "chatot",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="spiritomb pkmn"></i>Spiritomb',
-		"value": "spiritomb"
+		"name": '<i class="pkmn spiritomb"></i>Spiritomb',
+		"value": "spiritomb",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="gible pkmn"></i>Gible',
-		"value": "gible"
+		"name": '<i class="pkmn gible"></i>Gible',
+		"value": "gible",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="gabite pkmn"></i>Gabite',
-		"value": "gabite"
+		"name": '<i class="pkmn gabite"></i>Gabite',
+		"value": "gabite",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="garchomp pkmn"></i>Garchomp',
-		"value": "garchomp"
+		"name": '<i class="pkmn garchomp"></i>Garchomp',
+		"value": "garchomp",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="munchlax pkmn"></i>Munchlax',
+		"name": '<i class="pkmn munchlax"></i>Munchlax',
 		"value": "munchlax"
 	},
 	{
-		"name": '<i class="riolu pkmn"></i>Riolu',
+		"name": '<i class="pkmn riolu"></i>Riolu',
 		"value": "riolu"
 	},
 	{
-		"name": '<i class="lucario pkmn"></i>Lucario',
+		"name": '<i class="pkmn lucario"></i>Lucario',
 		"value": "lucario"
 	},
 	{
-		"name": '<i class="hippopotas pkmn"></i>Hippopotas',
+		"name": '<i class="pkmn hippopotas"></i>Hippopotas',
 		"value": "hippopotas"
 	},
 	{
-		"name": '<i class="hippowdon pkmn"></i>Hippowdon',
+		"name": '<i class="pkmn hippowdon"></i>Hippowdon',
 		"value": "hippowdon"
 	},
 	{
-		"name": '<i class="skorupi pkmn"></i>Skorupi',
+		"name": '<i class="pkmn skorupi"></i>Skorupi',
 		"value": "skorupi"
 	},
 	{
-		"name": '<i class="drapion pkmn"></i>Drapion',
+		"name": '<i class="pkmn drapion"></i>Drapion',
 		"value": "drapion"
 	},
 	{
-		"name": '<i class="croagunk pkmn"></i>Croagunk',
+		"name": '<i class="pkmn croagunk"></i>Croagunk',
 		"value": "croagunk"
 	},
 	{
-		"name": '<i class="toxicroak pkmn"></i>Toxicroak',
+		"name": '<i class="pkmn toxicroak"></i>Toxicroak',
 		"value": "toxicroak"
 	},
 	{
-		"name": '<i class="carnivine pkmn"></i>Carnivine',
-		"value": "carnivine"
+		"name": '<i class="pkmn carnivine"></i>Carnivine',
+		"value": "carnivine",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="finneon pkmn"></i>Finneon',
-		"value": "finneon"
+		"name": '<i class="pkmn finneon"></i>Finneon',
+		"value": "finneon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="lumineon pkmn"></i>Lumineon',
-		"value": "lumineon"
+		"name": '<i class="pkmn lumineon"></i>Lumineon',
+		"value": "lumineon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="mantyke pkmn"></i>Mantyke',
+		"name": '<i class="pkmn mantyke"></i>Mantyke',
 		"value": "mantyke"
 	},
 	{
-		"name": '<i class="snover pkmn"></i>Snover',
+		"name": '<i class="pkmn snover"></i>Snover',
 		"value": "snover"
 	},
 	{
-		"name": '<i class="abomasnow pkmn"></i>Abomasnow',
+		"name": '<i class="pkmn abomasnow"></i>Abomasnow',
 		"value": "abomasnow"
 	},
 	{
-		"name": '<i class="weavile pkmn"></i>Weavile',
+		"name": '<i class="pkmn weavile"></i>Weavile',
 		"value": "weavile"
 	},
 	{
-		"name": '<i class="magnezone pkmn"></i>Magnezone',
+		"name": '<i class="pkmn magnezone"></i>Magnezone',
 		"value": "magnezone"
 	},
 	{
-		"name": '<i class="lickilicky pkmn"></i>Lickilicky',
+		"name": '<i class="pkmn lickilicky"></i>Lickilicky',
 		"value": "lickilicky"
 	},
 	{
-		"name": '<i class="rhyperior pkmn"></i>Rhyperior',
+		"name": '<i class="pkmn rhyperior"></i>Rhyperior',
 		"value": "rhyperior"
 	},
 	{
-		"name": '<i class="tangrowth pkmn"></i>Tangrowth',
+		"name": '<i class="pkmn tangrowth"></i>Tangrowth',
 		"value": "tangrowth"
 	},
 	{
-		"name": '<i class="electivire pkmn"></i>Electivire',
-		"value": "electivire"
+		"name": '<i class="pkmn electivire"></i>Electivire',
+		"value": "electivire",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="magmortar pkmn"></i>Magmortar',
-		"value": "magmortar"
+		"name": '<i class="pkmn magmortar"></i>Magmortar',
+		"value": "magmortar",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="togekiss pkmn"></i>Togekiss',
+		"name": '<i class="pkmn togekiss"></i>Togekiss',
 		"value": "togekiss"
 	},
 	{
-		"name": '<i class="yanmega pkmn"></i>Yanmega',
-		"value": "yanmega"
+		"name": '<i class="pkmn yanmega"></i>Yanmega',
+		"value": "yanmega",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="leafeon pkmn"></i>Leafeon',
+		"name": '<i class="pkmn leafeon"></i>Leafeon',
 		"value": "leafeon"
 	},
 	{
-		"name": '<i class="glaceon pkmn"></i>Glaceon',
+		"name": '<i class="pkmn glaceon"></i>Glaceon',
 		"value": "glaceon"
 	},
 	{
-		"name": '<i class="gliscor pkmn"></i>Gliscor',
-		"value": "gliscor"
+		"name": '<i class="pkmn gliscor"></i>Gliscor',
+		"value": "gliscor",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="mamoswine pkmn"></i>Mamoswine',
+		"name": '<i class="pkmn mamoswine"></i>Mamoswine',
 		"value": "mamoswine"
 	},
 	{
-		"name": '<i class="porygon-z pkmn"></i>Porygon-Z',
+		"name": '<i class="pkmn porygon-z"></i>Porygon-Z',
 		"value": "porygon-z"
 	},
 	{
-		"name": '<i class="gallade pkmn"></i>Gallade',
+		"name": '<i class="pkmn gallade"></i>Gallade',
 		"value": "gallade"
 	},
 	{
-		"name": '<i class="probopass pkmn"></i>Probopass',
-		"value": "probopass"
+		"name": '<i class="pkmn probopass"></i>Probopass',
+		"value": "probopass",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dusknoir pkmn"></i>Dusknoir',
+		"name": '<i class="pkmn dusknoir"></i>Dusknoir',
 		"value": "dusknoir"
 	},
 	{
-		"name": '<i class="froslass pkmn"></i>Froslass',
+		"name": '<i class="pkmn froslass"></i>Froslass',
 		"value": "froslass"
 	},
 	{
-		"name": '<i class="rotom pkmn"></i>Rotom',
+		"name": '<i class="pkmn rotom"></i>Rotom',
 		"value": "rotom"
 	},
 	{
-		"name": '<i class="uxie pkmn"></i>Uxie',
-		"value": "uxie"
+		"name": '<i class="pkmn uxie"></i>Uxie',
+		"value": "uxie",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="mesprit pkmn"></i>Mesprit',
-		"value": "mesprit"
+		"name": '<i class="pkmn mesprit"></i>Mesprit',
+		"value": "mesprit",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="azelf pkmn"></i>Azelf',
-		"value": "azelf"
+		"name": '<i class="pkmn azelf"></i>Azelf',
+		"value": "azelf",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dialga pkmn"></i>Dialga',
-		"value": "dialga"
+		"name": '<i class="pkmn dialga"></i>Dialga',
+		"value": "dialga",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="palkia pkmn"></i>Palkia',
-		"value": "palkia"
+		"name": '<i class="pkmn palkia"></i>Palkia',
+		"value": "palkia",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="heatran pkmn"></i>Heatran',
-		"value": "heatran"
+		"name": '<i class="pkmn heatran"></i>Heatran',
+		"value": "heatran",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="regigigas pkmn"></i>Regigigas',
-		"value": "regigigas"
+		"name": '<i class="pkmn regigigas"></i>Regigigas',
+		"value": "regigigas",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="giratina pkmn"></i>Giratina',
-		"value": "giratina"
+		"name": '<i class="pkmn giratina"></i>Giratina',
+		"value": "giratina",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="cresselia pkmn"></i>Cresselia',
-		"value": "cresselia"
+		"name": '<i class="pkmn cresselia"></i>Cresselia',
+		"value": "cresselia",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="phione pkmn"></i>Phione',
-		"value": "phione"
+		"name": '<i class="pkmn phione"></i>Phione',
+		"value": "phione",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="manaphy pkmn"></i>Manaphy',
-		"value": "manaphy"
+		"name": '<i class="pkmn manaphy"></i>Manaphy',
+		"value": "manaphy",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="darkrai pkmn"></i>Darkrai',
-		"value": "darkrai"
+		"name": '<i class="pkmn darkrai"></i>Darkrai',
+		"value": "darkrai",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="shaymin pkmn"></i>Shaymin',
-		"value": "shaymin"
+		"name": '<i class="pkmn shaymin"></i>Shaymin',
+		"value": "shaymin",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="arceus pkmn"></i>Arceus',
-		"value": "arceus"
+		"name": '<i class="pkmn arceus"></i>Arceus',
+		"value": "arceus",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="victini pkmn"></i>Victini',
-		"value": "victini"
+		"name": '<i class="pkmn victini"></i>Victini',
+		"value": "victini",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="snivy pkmn"></i>Snivy',
-		"value": "snivy"
+		"name": '<i class="pkmn snivy"></i>Snivy',
+		"value": "snivy",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="servine pkmn"></i>Servine',
-		"value": "servine"
+		"name": '<i class="pkmn servine"></i>Servine',
+		"value": "servine",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="serperior pkmn"></i>Serperior',
-		"value": "serperior"
+		"name": '<i class="pkmn serperior"></i>Serperior',
+		"value": "serperior",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="tepig pkmn"></i>Tepig',
-		"value": "tepig"
+		"name": '<i class="pkmn tepig"></i>Tepig',
+		"value": "tepig",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pignite pkmn"></i>Pignite',
-		"value": "pignite"
+		"name": '<i class="pkmn pignite"></i>Pignite',
+		"value": "pignite",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="emboar pkmn"></i>Emboar',
-		"value": "emboar"
+		"name": '<i class="pkmn emboar"></i>Emboar',
+		"value": "emboar",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="oshawott pkmn"></i>Oshawott',
-		"value": "oshawott"
+		"name": '<i class="pkmn oshawott"></i>Oshawott',
+		"value": "oshawott",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="dewott pkmn"></i>Dewott',
-		"value": "dewott"
+		"name": '<i class="pkmn dewott"></i>Dewott',
+		"value": "dewott",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="samurott pkmn"></i>Samurott',
-		"value": "samurott"
+		"name": '<i class="pkmn samurott"></i>Samurott',
+		"value": "samurott",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="patrat pkmn"></i>Patrat',
-		"value": "patrat"
+		"name": '<i class="pkmn patrat"></i>Patrat',
+		"value": "patrat",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="watchog pkmn"></i>Watchog',
-		"value": "watchog"
+		"name": '<i class="pkmn watchog"></i>Watchog',
+		"value": "watchog",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="lillipup pkmn"></i>Lillipup',
+		"name": '<i class="pkmn lillipup"></i>Lillipup',
 		"value": "lillipup"
 	},
 	{
-		"name": '<i class="herdier pkmn"></i>Herdier',
+		"name": '<i class="pkmn herdier"></i>Herdier',
 		"value": "herdier"
 	},
 	{
-		"name": '<i class="stoutland pkmn"></i>Stoutland',
+		"name": '<i class="pkmn stoutland"></i>Stoutland',
 		"value": "stoutland"
 	},
 	{
-		"name": '<i class="purrloin pkmn"></i>Purrloin',
+		"name": '<i class="pkmn purrloin"></i>Purrloin',
 		"value": "purrloin"
 	},
 	{
-		"name": '<i class="liepard pkmn"></i>Liepard',
+		"name": '<i class="pkmn liepard"></i>Liepard',
 		"value": "liepard"
 	},
 	{
-		"name": '<i class="pansage pkmn"></i>Pansage',
-		"value": "pansage"
+		"name": '<i class="pkmn pansage"></i>Pansage',
+		"value": "pansage",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="simisage pkmn"></i>Simisage',
-		"value": "simisage"
+		"name": '<i class="pkmn simisage"></i>Simisage',
+		"value": "simisage",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pansear pkmn"></i>Pansear',
-		"value": "pansear"
+		"name": '<i class="pkmn pansear"></i>Pansear',
+		"value": "pansear",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="simisear pkmn"></i>Simisear',
-		"value": "simisear"
+		"name": '<i class="pkmn simisear"></i>Simisear',
+		"value": "simisear",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="panpour pkmn"></i>Panpour',
-		"value": "panpour"
+		"name": '<i class="pkmn panpour"></i>Panpour',
+		"value": "panpour",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="simipour pkmn"></i>Simipour',
-		"value": "simipour"
+		"name": '<i class="pkmn simipour"></i>Simipour',
+		"value": "simipour",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="munna pkmn"></i>Munna',
+		"name": '<i class="pkmn munna"></i>Munna',
 		"value": "munna"
 	},
 	{
-		"name": '<i class="musharna pkmn"></i>Musharna',
+		"name": '<i class="pkmn musharna"></i>Musharna',
 		"value": "musharna"
 	},
 	{
-		"name": '<i class="pidove pkmn"></i>Pidove',
+		"name": '<i class="pkmn pidove"></i>Pidove',
 		"value": "pidove"
 	},
 	{
-		"name": '<i class="tranquill pkmn"></i>Tranquill',
+		"name": '<i class="pkmn tranquill"></i>Tranquill',
 		"value": "tranquill"
 	},
 	{
-		"name": '<i class="unfezant-male pkmn"></i>Unfezant',
-		"value": "unfezant-male"
+		"name": '<i class="pkmn unfezant"></i>Unfezant',
+		"value": "unfezant"
 	},
 	{
-		"name": '<i class="blitzle pkmn"></i>Blitzle',
-		"value": "blitzle"
+		"name": '<i class="pkmn blitzle"></i>Blitzle',
+		"value": "blitzle",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="zebstrika pkmn"></i>Zebstrika',
-		"value": "zebstrika"
+		"name": '<i class="pkmn zebstrika"></i>Zebstrika',
+		"value": "zebstrika",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="roggenrola pkmn"></i>Roggenrola',
+		"name": '<i class="pkmn roggenrola"></i>Roggenrola',
 		"value": "roggenrola"
 	},
 	{
-		"name": '<i class="boldore pkmn"></i>Boldore',
+		"name": '<i class="pkmn boldore"></i>Boldore',
 		"value": "boldore"
 	},
 	{
-		"name": '<i class="gigalith pkmn"></i>Gigalith',
+		"name": '<i class="pkmn gigalith"></i>Gigalith',
 		"value": "gigalith"
 	},
 	{
-		"name": '<i class="woobat pkmn"></i>Woobat',
+		"name": '<i class="pkmn woobat"></i>Woobat',
 		"value": "woobat"
 	},
 	{
-		"name": '<i class="swoobat pkmn"></i>Swoobat',
+		"name": '<i class="pkmn swoobat"></i>Swoobat',
 		"value": "swoobat"
 	},
 	{
-		"name": '<i class="drilbur pkmn"></i>Drilbur',
+		"name": '<i class="pkmn drilbur"></i>Drilbur',
 		"value": "drilbur"
 	},
 	{
-		"name": '<i class="excadrill pkmn"></i>Excadrill',
+		"name": '<i class="pkmn excadrill"></i>Excadrill',
 		"value": "excadrill"
 	},
 	{
-		"name": '<i class="audino pkmn"></i>Audino',
-		"value": "audino"
+		"name": '<i class="pkmn audino"></i>Audino',
+		"value": "audino",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="timburr pkmn"></i>Timburr',
+		"name": '<i class="pkmn timburr"></i>Timburr',
 		"value": "timburr"
 	},
 	{
-		"name": '<i class="gurdurr pkmn"></i>Gurdurr',
+		"name": '<i class="pkmn gurdurr"></i>Gurdurr',
 		"value": "gurdurr"
 	},
 	{
-		"name": '<i class="conkeldurr pkmn"></i>Conkeldurr',
+		"name": '<i class="pkmn conkeldurr"></i>Conkeldurr',
 		"value": "conkeldurr"
 	},
 	{
-		"name": '<i class="tympole pkmn"></i>Tympole',
+		"name": '<i class="pkmn tympole"></i>Tympole',
 		"value": "tympole"
 	},
 	{
-		"name": '<i class="palpitoad pkmn"></i>Palpitoad',
+		"name": '<i class="pkmn palpitoad"></i>Palpitoad',
 		"value": "palpitoad"
 	},
 	{
-		"name": '<i class="seismitoad pkmn"></i>Seismitoad',
+		"name": '<i class="pkmn seismitoad"></i>Seismitoad',
 		"value": "seismitoad"
 	},
 	{
-		"name": '<i class="throh pkmn"></i>Throh',
+		"name": '<i class="pkmn throh"></i>Throh',
 		"value": "throh"
 	},
 	{
-		"name": '<i class="sawk pkmn"></i>Sawk',
+		"name": '<i class="pkmn sawk"></i>Sawk',
 		"value": "sawk"
 	},
 	{
-		"name": '<i class="sewaddle pkmn"></i>Sewaddle',
-		"value": "sewaddle"
+		"name": '<i class="pkmn sewaddle"></i>Sewaddle',
+		"value": "sewaddle",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="swadloon pkmn"></i>Swadloon',
-		"value": "swadloon"
+		"name": '<i class="pkmn swadloon"></i>Swadloon',
+		"value": "swadloon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="leavanny pkmn"></i>Leavanny',
-		"value": "leavanny"
+		"name": '<i class="pkmn leavanny"></i>Leavanny',
+		"value": "leavanny",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="venipede pkmn"></i>Venipede',
+		"name": '<i class="pkmn venipede"></i>Venipede',
 		"value": "venipede"
 	},
 	{
-		"name": '<i class="whirlipede pkmn"></i>Whirlipede',
+		"name": '<i class="pkmn whirlipede"></i>Whirlipede',
 		"value": "whirlipede"
 	},
 	{
-		"name": '<i class="scolipede pkmn"></i>Scolipede',
+		"name": '<i class="pkmn scolipede"></i>Scolipede',
 		"value": "scolipede"
 	},
 	{
-		"name": '<i class="cottonee pkmn"></i>Cottonee',
+		"name": '<i class="pkmn cottonee"></i>Cottonee',
 		"value": "cottonee"
 	},
 	{
-		"name": '<i class="whimsicott pkmn"></i>Whimsicott',
+		"name": '<i class="pkmn whimsicott"></i>Whimsicott',
 		"value": "whimsicott"
 	},
 	{
-		"name": '<i class="petilil pkmn"></i>Petilil',
+		"name": '<i class="pkmn petilil"></i>Petilil',
 		"value": "petilil"
 	},
 	{
-		"name": '<i class="lilligant pkmn"></i>Lilligant',
+		"name": '<i class="pkmn lilligant"></i>Lilligant',
 		"value": "lilligant"
 	},
 	{
-		"name": '<i class="basculin-red-striped pkmn"></i>Basculin',
-		"value": "basculin-red-striped"
+		"name": '<i class="pkmn basculin"></i>Basculin',
+		"value": "basculin"
 	},
 	{
-		"name": '<i class="sandile pkmn"></i>Sandile',
+		"name": '<i class="pkmn sandile"></i>Sandile',
 		"value": "sandile"
 	},
 	{
-		"name": '<i class="krokorok pkmn"></i>Krokorok',
+		"name": '<i class="pkmn krokorok"></i>Krokorok',
 		"value": "krokorok"
 	},
 	{
-		"name": '<i class="krookodile pkmn"></i>Krookodile',
+		"name": '<i class="pkmn krookodile"></i>Krookodile',
 		"value": "krookodile"
 	},
 	{
-		"name": '<i class="darumaka pkmn"></i>Darumaka',
+		"name": '<i class="pkmn darumaka"></i>Darumaka',
 		"value": "darumaka"
 	},
 	{
-		"name": '<i class="darmanitan pkmn"></i>Darmanitan',
+		"name": '<i class="pkmn darmanitan"></i>Darmanitan',
 		"value": "darmanitan"
 	},
 	{
-		"name": '<i class="maractus pkmn"></i>Maractus',
+		"name": '<i class="pkmn maractus"></i>Maractus',
 		"value": "maractus"
 	},
 	{
-		"name": '<i class="dwebble pkmn"></i>Dwebble',
+		"name": '<i class="pkmn dwebble"></i>Dwebble',
 		"value": "dwebble"
 	},
 	{
-		"name": '<i class="crustle pkmn"></i>Crustle',
+		"name": '<i class="pkmn crustle"></i>Crustle',
 		"value": "crustle"
 	},
 	{
-		"name": '<i class="scraggy pkmn"></i>Scraggy',
+		"name": '<i class="pkmn scraggy"></i>Scraggy',
 		"value": "scraggy"
 	},
 	{
-		"name": '<i class="scrafty pkmn"></i>Scrafty',
+		"name": '<i class="pkmn scrafty"></i>Scrafty',
 		"value": "scrafty"
 	},
 	{
-		"name": '<i class="sigilyph pkmn"></i>Sigilyph',
+		"name": '<i class="pkmn sigilyph"></i>Sigilyph',
 		"value": "sigilyph"
 	},
 	{
-		"name": '<i class="yamask pkmn"></i>Yamask',
+		"name": '<i class="pkmn yamask"></i>Yamask',
 		"value": "yamask"
 	},
 	{
-		"name": '<i class="cofagrigus pkmn"></i>Cofagrigus',
+		"name": '<i class="pkmn cofagrigus"></i>Cofagrigus',
 		"value": "cofagrigus"
 	},
 	{
-		"name": '<i class="tirtouga pkmn"></i>Tirtouga',
-		"value": "tirtouga"
+		"name": '<i class="pkmn tirtouga"></i>Tirtouga',
+		"value": "tirtouga",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="carracosta pkmn"></i>Carracosta',
-		"value": "carracosta"
+		"name": '<i class="pkmn carracosta"></i>Carracosta',
+		"value": "carracosta",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="archen pkmn"></i>Archen',
-		"value": "archen"
+		"name": '<i class="pkmn archen"></i>Archen',
+		"value": "archen",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="archeops pkmn"></i>Archeops',
-		"value": "archeops"
+		"name": '<i class="pkmn archeops"></i>Archeops',
+		"value": "archeops",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="trubbish pkmn"></i>Trubbish',
+		"name": '<i class="pkmn trubbish"></i>Trubbish',
 		"value": "trubbish"
 	},
 	{
-		"name": '<i class="garbodor pkmn"></i>Garbodor',
+		"name": '<i class="pkmn garbodor"></i>Garbodor',
 		"value": "garbodor"
 	},
 	{
-		"name": '<i class="zorua pkmn"></i>Zorua',
+		"name": '<i class="pkmn zorua"></i>Zorua',
 		"value": "zorua"
 	},
 	{
-		"name": '<i class="zoroark pkmn"></i>Zoroark',
+		"name": '<i class="pkmn zoroark"></i>Zoroark',
 		"value": "zoroark"
 	},
 	{
-		"name": '<i class="minccino pkmn"></i>Minccino',
+		"name": '<i class="pkmn minccino"></i>Minccino',
 		"value": "minccino"
 	},
 	{
-		"name": '<i class="cinccino pkmn"></i>Cinccino',
+		"name": '<i class="pkmn cinccino"></i>Cinccino',
 		"value": "cinccino"
 	},
 	{
-		"name": '<i class="gothita pkmn"></i>Gothita',
+		"name": '<i class="pkmn gothita"></i>Gothita',
 		"value": "gothita"
 	},
 	{
-		"name": '<i class="gothorita pkmn"></i>Gothorita',
+		"name": '<i class="pkmn gothorita"></i>Gothorita',
 		"value": "gothorita"
 	},
 	{
-		"name": '<i class="gothitelle pkmn"></i>Gothitelle',
+		"name": '<i class="pkmn gothitelle"></i>Gothitelle',
 		"value": "gothitelle"
 	},
 	{
-		"name": '<i class="solosis pkmn"></i>Solosis',
+		"name": '<i class="pkmn solosis"></i>Solosis',
 		"value": "solosis"
 	},
 	{
-		"name": '<i class="duosion pkmn"></i>Duosion',
+		"name": '<i class="pkmn duosion"></i>Duosion',
 		"value": "duosion"
 	},
 	{
-		"name": '<i class="reuniclus pkmn"></i>Reuniclus',
+		"name": '<i class="pkmn reuniclus"></i>Reuniclus',
 		"value": "reuniclus"
 	},
 	{
-		"name": '<i class="ducklett pkmn"></i>Ducklett',
-		"value": "ducklett"
+		"name": '<i class="pkmn ducklett"></i>Ducklett',
+		"value": "ducklett",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="swanna pkmn"></i>Swanna',
-		"value": "swanna"
+		"name": '<i class="pkmn swanna"></i>Swanna',
+		"value": "swanna",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="vanillite pkmn"></i>Vanillite',
+		"name": '<i class="pkmn vanillite"></i>Vanillite',
 		"value": "vanillite"
 	},
 	{
-		"name": '<i class="vanillish pkmn"></i>Vanillish',
+		"name": '<i class="pkmn vanillish"></i>Vanillish',
 		"value": "vanillish"
 	},
 	{
-		"name": '<i class="vanilluxe pkmn"></i>Vanilluxe',
+		"name": '<i class="pkmn vanilluxe"></i>Vanilluxe',
 		"value": "vanilluxe"
 	},
 	{
-		"name": '<i class="deerling-spring pkmn"></i>Deerling',
-		"value": "deerling-spring"
+		"name": '<i class="pkmn deerling"></i>Deerling',
+		"value": "deerling",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="sawsbuck-spring pkmn"></i>Sawsbuck',
-		"value": "sawsbuck-spring"
+		"name": '<i class="pkmn sawsbuck"></i>Sawsbuck',
+		"value": "sawsbuck",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="emolga pkmn"></i>Emolga',
+		"name": '<i class="pkmn emolga"></i>Emolga',
 		"value": "emolga"
 	},
 	{
-		"name": '<i class="karrablast pkmn"></i>Karrablast',
+		"name": '<i class="pkmn karrablast"></i>Karrablast',
 		"value": "karrablast"
 	},
 	{
-		"name": '<i class="escavalier pkmn"></i>Escavalier',
+		"name": '<i class="pkmn escavalier"></i>Escavalier',
 		"value": "escavalier"
 	},
 	{
-		"name": '<i class="foongus pkmn"></i>Foongus',
+		"name": '<i class="pkmn foongus"></i>Foongus',
 		"value": "foongus"
 	},
 	{
-		"name": '<i class="amoonguss pkmn"></i>Amoonguss',
+		"name": '<i class="pkmn amoonguss"></i>Amoonguss',
 		"value": "amoonguss"
 	},
 	{
-		"name": '<i class="frillish-male pkmn"></i>Frillish',
-		"value": "frillish-male"
+		"name": '<i class="pkmn frillish"></i>Frillish',
+		"value": "frillish"
 	},
 	{
-		"name": '<i class="jellicent-male pkmn"></i>Jellicent',
-		"value": "jellicent-male"
+		"name": '<i class="pkmn jellicent"></i>Jellicent',
+		"value": "jellicent"
 	},
 	{
-		"name": '<i class="alomomola pkmn"></i>Alomomola',
-		"value": "alomomola"
+		"name": '<i class="pkmn alomomola"></i>Alomomola',
+		"value": "alomomola",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="joltik pkmn"></i>Joltik',
+		"name": '<i class="pkmn joltik"></i>Joltik',
 		"value": "joltik"
 	},
 	{
-		"name": '<i class="galvantula pkmn"></i>Galvantula',
+		"name": '<i class="pkmn galvantula"></i>Galvantula',
 		"value": "galvantula"
 	},
 	{
-		"name": '<i class="ferroseed pkmn"></i>Ferroseed',
+		"name": '<i class="pkmn ferroseed"></i>Ferroseed',
 		"value": "ferroseed"
 	},
 	{
-		"name": '<i class="ferrothorn pkmn"></i>Ferrothorn',
+		"name": '<i class="pkmn ferrothorn"></i>Ferrothorn',
 		"value": "ferrothorn"
 	},
 	{
-		"name": '<i class="klink pkmn"></i>Klink',
+		"name": '<i class="pkmn klink"></i>Klink',
 		"value": "klink"
 	},
 	{
-		"name": '<i class="klang pkmn"></i>Klang',
+		"name": '<i class="pkmn klang"></i>Klang',
 		"value": "klang"
 	},
 	{
-		"name": '<i class="klinklang pkmn"></i>Klinklang',
+		"name": '<i class="pkmn klinklang"></i>Klinklang',
 		"value": "klinklang"
 	},
 	{
-		"name": '<i class="tynamo pkmn"></i>Tynamo',
-		"value": "tynamo"
+		"name": '<i class="pkmn tynamo"></i>Tynamo',
+		"value": "tynamo",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="eelektrik pkmn"></i>Eelektrik',
-		"value": "eelektrik"
+		"name": '<i class="pkmn eelektrik"></i>Eelektrik',
+		"value": "eelektrik",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="eelektross pkmn"></i>Eelektross',
-		"value": "eelektross"
+		"name": '<i class="pkmn eelektross"></i>Eelektross',
+		"value": "eelektross",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="elgyem pkmn"></i>Elgyem',
+		"name": '<i class="pkmn elgyem"></i>Elgyem',
 		"value": "elgyem"
 	},
 	{
-		"name": '<i class="beheeyem pkmn"></i>Beheeyem',
+		"name": '<i class="pkmn beheeyem"></i>Beheeyem',
 		"value": "beheeyem"
 	},
 	{
-		"name": '<i class="litwick pkmn"></i>Litwick',
+		"name": '<i class="pkmn litwick"></i>Litwick',
 		"value": "litwick"
 	},
 	{
-		"name": '<i class="lampent pkmn"></i>Lampent',
+		"name": '<i class="pkmn lampent"></i>Lampent',
 		"value": "lampent"
 	},
 	{
-		"name": '<i class="chandelure pkmn"></i>Chandelure',
+		"name": '<i class="pkmn chandelure"></i>Chandelure',
 		"value": "chandelure"
 	},
 	{
-		"name": '<i class="axew pkmn"></i>Axew',
+		"name": '<i class="pkmn axew"></i>Axew',
 		"value": "axew"
 	},
 	{
-		"name": '<i class="fraxure pkmn"></i>Fraxure',
+		"name": '<i class="pkmn fraxure"></i>Fraxure',
 		"value": "fraxure"
 	},
 	{
-		"name": '<i class="haxorus pkmn"></i>Haxorus',
+		"name": '<i class="pkmn haxorus"></i>Haxorus',
 		"value": "haxorus"
 	},
 	{
-		"name": '<i class="cubchoo pkmn"></i>Cubchoo',
+		"name": '<i class="pkmn cubchoo"></i>Cubchoo',
 		"value": "cubchoo"
 	},
 	{
-		"name": '<i class="beartic pkmn"></i>Beartic',
+		"name": '<i class="pkmn beartic"></i>Beartic',
 		"value": "beartic"
 	},
 	{
-		"name": '<i class="cryogonal pkmn"></i>Cryogonal',
-		"value": "cryogonal"
+		"name": '<i class="pkmn cryogonal"></i>Cryogonal',
+		"value": "cryogonal",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="shelmet pkmn"></i>Shelmet',
+		"name": '<i class="pkmn shelmet"></i>Shelmet',
 		"value": "shelmet"
 	},
 	{
-		"name": '<i class="accelgor pkmn"></i>Accelgor',
+		"name": '<i class="pkmn accelgor"></i>Accelgor',
 		"value": "accelgor"
 	},
 	{
-		"name": '<i class="stunfisk pkmn"></i>Stunfisk',
+		"name": '<i class="pkmn stunfisk"></i>Stunfisk',
 		"value": "stunfisk"
 	},
 	{
-		"name": '<i class="mienfoo pkmn"></i>Mienfoo',
+		"name": '<i class="pkmn mienfoo"></i>Mienfoo',
 		"value": "mienfoo"
 	},
 	{
-		"name": '<i class="mienshao pkmn"></i>Mienshao',
+		"name": '<i class="pkmn mienshao"></i>Mienshao',
 		"value": "mienshao"
 	},
 	{
-		"name": '<i class="druddigon pkmn"></i>Druddigon',
+		"name": '<i class="pkmn druddigon"></i>Druddigon',
 		"value": "druddigon"
 	},
 	{
-		"name": '<i class="golett pkmn"></i>Golett',
+		"name": '<i class="pkmn golett"></i>Golett',
 		"value": "golett"
 	},
 	{
-		"name": '<i class="golurk pkmn"></i>Golurk',
+		"name": '<i class="pkmn golurk"></i>Golurk',
 		"value": "golurk"
 	},
 	{
-		"name": '<i class="pawniard pkmn"></i>Pawniard',
+		"name": '<i class="pkmn pawniard"></i>Pawniard',
 		"value": "pawniard"
 	},
 	{
-		"name": '<i class="bisharp pkmn"></i>Bisharp',
+		"name": '<i class="pkmn bisharp"></i>Bisharp',
 		"value": "bisharp"
 	},
 	{
-		"name": '<i class="bouffalant pkmn"></i>Bouffalant',
+		"name": '<i class="pkmn bouffalant"></i>Bouffalant',
 		"value": "bouffalant"
 	},
 	{
-		"name": '<i class="rufflet pkmn"></i>Rufflet',
+		"name": '<i class="pkmn rufflet"></i>Rufflet',
 		"value": "rufflet"
 	},
 	{
-		"name": '<i class="braviary pkmn"></i>Braviary',
+		"name": '<i class="pkmn braviary"></i>Braviary',
 		"value": "braviary"
 	},
 	{
-		"name": '<i class="vullaby pkmn"></i>Vullaby',
+		"name": '<i class="pkmn vullaby"></i>Vullaby',
 		"value": "vullaby"
 	},
 	{
-		"name": '<i class="mandibuzz pkmn"></i>Mandibuzz',
+		"name": '<i class="pkmn mandibuzz"></i>Mandibuzz',
 		"value": "mandibuzz"
 	},
 	{
-		"name": '<i class="heatmor pkmn"></i>Heatmor',
+		"name": '<i class="pkmn heatmor"></i>Heatmor',
 		"value": "heatmor"
 	},
 	{
-		"name": '<i class="durant pkmn"></i>Durant',
+		"name": '<i class="pkmn durant"></i>Durant',
 		"value": "durant"
 	},
 	{
-		"name": '<i class="deino pkmn"></i>Deino',
+		"name": '<i class="pkmn deino"></i>Deino',
 		"value": "deino"
 	},
 	{
-		"name": '<i class="zweilous pkmn"></i>Zweilous',
+		"name": '<i class="pkmn zweilous"></i>Zweilous',
 		"value": "zweilous"
 	},
 	{
-		"name": '<i class="hydreigon pkmn"></i>Hydreigon',
+		"name": '<i class="pkmn hydreigon"></i>Hydreigon',
 		"value": "hydreigon"
 	},
 	{
-		"name": '<i class="larvesta pkmn"></i>Larvesta',
+		"name": '<i class="pkmn larvesta"></i>Larvesta',
 		"value": "larvesta"
 	},
 	{
-		"name": '<i class="volcarona pkmn"></i>Volcarona',
+		"name": '<i class="pkmn volcarona"></i>Volcarona',
 		"value": "volcarona"
 	},
 	{
-		"name": '<i class="cobalion pkmn"></i>Cobalion',
+		"name": '<i class="pkmn cobalion"></i>Cobalion',
 		"value": "cobalion"
 	},
 	{
-		"name": '<i class="terrakion pkmn"></i>Terrakion',
+		"name": '<i class="pkmn terrakion"></i>Terrakion',
 		"value": "terrakion"
 	},
 	{
-		"name": '<i class="virizion pkmn"></i>Virizion',
+		"name": '<i class="pkmn virizion"></i>Virizion',
 		"value": "virizion"
 	},
 	{
-		"name": '<i class="tornadus pkmn"></i>Tornadus',
-		"value": "tornadus"
+		"name": '<i class="pkmn tornadus"></i>Tornadus',
+		"value": "tornadus",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="thundurus pkmn"></i>Thundurus',
-		"value": "thundurus"
+		"name": '<i class="pkmn thundurus"></i>Thundurus',
+		"value": "thundurus",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="reshiram pkmn"></i>Reshiram',
+		"name": '<i class="pkmn reshiram"></i>Reshiram',
 		"value": "reshiram"
 	},
 	{
-		"name": '<i class="zekrom pkmn"></i>Zekrom',
+		"name": '<i class="pkmn zekrom"></i>Zekrom',
 		"value": "zekrom"
 	},
 	{
-		"name": '<i class="landorus pkmn"></i>Landorus',
-		"value": "landorus"
+		"name": '<i class="pkmn landorus"></i>Landorus',
+		"value": "landorus",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kyurem pkmn"></i>Kyurem',
+		"name": '<i class="pkmn kyurem"></i>Kyurem',
 		"value": "kyurem"
 	},
 	{
-		"name": '<i class="keldeo pkmn"></i>Keldeo',
+		"name": '<i class="pkmn keldeo"></i>Keldeo',
 		"value": "keldeo"
 	},
 	{
-		"name": '<i class="meloetta pkmn"></i>Meloetta',
-		"value": "meloetta"
+		"name": '<i class="pkmn meloetta"></i>Meloetta',
+		"value": "meloetta",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="genesect pkmn"></i>Genesect',
-		"value": "genesect"
+		"name": '<i class="pkmn genesect"></i>Genesect',
+		"value": "genesect",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="chespin pkmn"></i>Chespin',
-		"value": "chespin"
+		"name": '<i class="pkmn chespin"></i>Chespin',
+		"value": "chespin",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="quilladin pkmn"></i>Quilladin',
-		"value": "quilladin"
+		"name": '<i class="pkmn quilladin"></i>Quilladin',
+		"value": "quilladin",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="chesnaught pkmn"></i>Chesnaught',
-		"value": "chesnaught"
+		"name": '<i class="pkmn chesnaught"></i>Chesnaught',
+		"value": "chesnaught",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="fennekin pkmn"></i>Fennekin',
-		"value": "fennekin"
+		"name": '<i class="pkmn fennekin"></i>Fennekin',
+		"value": "fennekin",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="braixen pkmn"></i>Braixen',
-		"value": "braixen"
+		"name": '<i class="pkmn braixen"></i>Braixen',
+		"value": "braixen",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="delphox pkmn"></i>Delphox',
-		"value": "delphox"
+		"name": '<i class="pkmn delphox"></i>Delphox',
+		"value": "delphox",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="froakie pkmn"></i>Froakie',
-		"value": "froakie"
+		"name": '<i class="pkmn froakie"></i>Froakie',
+		"value": "froakie",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="frogadier pkmn"></i>Frogadier',
-		"value": "frogadier"
+		"name": '<i class="pkmn frogadier"></i>Frogadier',
+		"value": "frogadier",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="greninja pkmn"></i>Greninja',
-		"value": "greninja"
+		"name": '<i class="pkmn greninja"></i>Greninja',
+		"value": "greninja",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="bunnelby pkmn"></i>Bunnelby',
+		"name": '<i class="pkmn bunnelby"></i>Bunnelby',
 		"value": "bunnelby"
 	},
 	{
-		"name": '<i class="diggersby pkmn"></i>Diggersby',
+		"name": '<i class="pkmn diggersby"></i>Diggersby',
 		"value": "diggersby"
 	},
 	{
-		"name": '<i class="fletchling pkmn"></i>Fletchling',
+		"name": '<i class="pkmn fletchling"></i>Fletchling',
 		"value": "fletchling"
 	},
 	{
-		"name": '<i class="fletchinder pkmn"></i>Fletchinder',
+		"name": '<i class="pkmn fletchinder"></i>Fletchinder',
 		"value": "fletchinder"
 	},
 	{
-		"name": '<i class="talonflame pkmn"></i>Talonflame',
+		"name": '<i class="pkmn talonflame"></i>Talonflame',
 		"value": "talonflame"
 	},
 	{
-		"name": '<i class="scatterbug pkmn"></i>Scatterbug',
-		"value": "scatterbug"
+		"name": '<i class="pkmn scatterbug"></i>Scatterbug',
+		"value": "scatterbug",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="spewpa pkmn"></i>Spewpa',
-		"value": "spewpa"
+		"name": '<i class="pkmn spewpa"></i>Spewpa',
+		"value": "spewpa",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="vivillon-meadow pkmn"></i>Vivillon',
-		"value": "vivillon-meadow"
+		"name": '<i class="pkmn vivillon"></i>Vivillon',
+		"value": "vivillon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="litleo pkmn"></i>Litleo',
-		"value": "litleo"
+		"name": '<i class="pkmn litleo"></i>Litleo',
+		"value": "litleo",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pyroar-male pkmn"></i>Pyroar',
-		"value": "pyroar-male"
+		"name": '<i class="pkmn pyroar"></i>Pyroar',
+		"value": "pyroar",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="flabebe-red pkmn"></i>Flabébé',
-		"value": "flabebe-red"
+		"name": '<i class="pkmn flabebe"></i>Flabébé',
+		"value": "flabebe",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="floette-red pkmn"></i>Floette',
-		"value": "floette-red"
+		"name": '<i class="pkmn floette"></i>Floette',
+		"value": "floette",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="florges-red pkmn"></i>Florges',
-		"value": "florges-red"
+		"name": '<i class="pkmn florges"></i>Florges',
+		"value": "florges",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="skiddo pkmn"></i>Skiddo',
-		"value": "skiddo"
+		"name": '<i class="pkmn skiddo"></i>Skiddo',
+		"value": "skiddo",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="gogoat pkmn"></i>Gogoat',
-		"value": "gogoat"
+		"name": '<i class="pkmn gogoat"></i>Gogoat',
+		"value": "gogoat",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pancham pkmn"></i>Pancham',
+		"name": '<i class="pkmn pancham"></i>Pancham',
 		"value": "pancham"
 	},
 	{
-		"name": '<i class="pangoro pkmn"></i>Pangoro',
+		"name": '<i class="pkmn pangoro"></i>Pangoro',
 		"value": "pangoro"
 	},
 	{
-		"name": '<i class="furfrou-natural pkmn"></i>Furfrou',
-		"value": "furfrou-natural"
+		"name": '<i class="pkmn furfrou"></i>Furfrou',
+		"value": "furfrou",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="espurr pkmn"></i>Espurr',
+		"name": '<i class="pkmn espurr"></i>Espurr',
 		"value": "espurr"
 	},
 	{
-		"name": '<i class="meowstic-male pkmn"></i>Meowstic',
-		"value": "meowstic-male"
+		"name": '<i class="pkmn meowstic"></i>Meowstic',
+		"value": "meowstic"
 	},
 	{
-		"name": '<i class="honedge pkmn"></i>Honedge',
+		"name": '<i class="pkmn honedge"></i>Honedge',
 		"value": "honedge"
 	},
 	{
-		"name": '<i class="doublade pkmn"></i>Doublade',
+		"name": '<i class="pkmn doublade"></i>Doublade',
 		"value": "doublade"
 	},
 	{
-		"name": '<i class="aegislash-shield pkmn"></i>Aegislash',
-		"value": "aegislash-shield"
+		"name": '<i class="pkmn aegislash~"></i>Aegislash',
+		"value": "aegislash"
 	},
 	{
-		"name": '<i class="spritzee pkmn"></i>Spritzee',
+		"name": '<i class="pkmn spritzee"></i>Spritzee',
 		"value": "spritzee"
 	},
 	{
-		"name": '<i class="aromatisse pkmn"></i>Aromatisse',
+		"name": '<i class="pkmn aromatisse"></i>Aromatisse',
 		"value": "aromatisse"
 	},
 	{
-		"name": '<i class="swirlix pkmn"></i>Swirlix',
+		"name": '<i class="pkmn swirlix"></i>Swirlix',
 		"value": "swirlix"
 	},
 	{
-		"name": '<i class="slurpuff pkmn"></i>Slurpuff',
+		"name": '<i class="pkmn slurpuff"></i>Slurpuff',
 		"value": "slurpuff"
 	},
 	{
-		"name": '<i class="inkay pkmn"></i>Inkay',
+		"name": '<i class="pkmn inkay"></i>Inkay',
 		"value": "inkay"
 	},
 	{
-		"name": '<i class="malamar pkmn"></i>Malamar',
+		"name": '<i class="pkmn malamar"></i>Malamar',
 		"value": "malamar"
 	},
 	{
-		"name": '<i class="binacle pkmn"></i>Binacle',
+		"name": '<i class="pkmn binacle"></i>Binacle',
 		"value": "binacle"
 	},
 	{
-		"name": '<i class="barbaracle pkmn"></i>Barbaracle',
+		"name": '<i class="pkmn barbaracle"></i>Barbaracle',
 		"value": "barbaracle"
 	},
 	{
-		"name": '<i class="skrelp pkmn"></i>Skrelp',
+		"name": '<i class="pkmn skrelp"></i>Skrelp',
 		"value": "skrelp"
 	},
 	{
-		"name": '<i class="dragalge pkmn"></i>Dragalge',
+		"name": '<i class="pkmn dragalge"></i>Dragalge',
 		"value": "dragalge"
 	},
 	{
-		"name": '<i class="clauncher pkmn"></i>Clauncher',
+		"name": '<i class="pkmn clauncher"></i>Clauncher',
 		"value": "clauncher"
 	},
 	{
-		"name": '<i class="clawitzer pkmn"></i>Clawitzer',
+		"name": '<i class="pkmn clawitzer"></i>Clawitzer',
 		"value": "clawitzer"
 	},
 	{
-		"name": '<i class="helioptile pkmn"></i>Helioptile',
+		"name": '<i class="pkmn helioptile"></i>Helioptile',
 		"value": "helioptile"
 	},
 	{
-		"name": '<i class="heliolisk pkmn"></i>Heliolisk',
+		"name": '<i class="pkmn heliolisk"></i>Heliolisk',
 		"value": "heliolisk"
 	},
 	{
-		"name": '<i class="tyrunt pkmn"></i>Tyrunt',
-		"value": "tyrunt"
+		"name": '<i class="pkmn tyrunt"></i>Tyrunt',
+		"value": "tyrunt",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="tyrantrum pkmn"></i>Tyrantrum',
-		"value": "tyrantrum"
+		"name": '<i class="pkmn tyrantrum"></i>Tyrantrum',
+		"value": "tyrantrum",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="amaura pkmn"></i>Amaura',
-		"value": "amaura"
+		"name": '<i class="pkmn amaura"></i>Amaura',
+		"value": "amaura",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="aurorus pkmn"></i>Aurorus',
-		"value": "aurorus"
+		"name": '<i class="pkmn aurorus"></i>Aurorus',
+		"value": "aurorus",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="sylveon pkmn"></i>Sylveon',
+		"name": '<i class="pkmn sylveon"></i>Sylveon',
 		"value": "sylveon"
 	},
 	{
-		"name": '<i class="hawlucha pkmn"></i>Hawlucha',
+		"name": '<i class="pkmn hawlucha"></i>Hawlucha',
 		"value": "hawlucha"
 	},
 	{
-		"name": '<i class="dedenne pkmn"></i>Dedenne',
+		"name": '<i class="pkmn dedenne"></i>Dedenne',
 		"value": "dedenne"
 	},
 	{
-		"name": '<i class="carbink pkmn"></i>Carbink',
-		"value": "carbink"
+		"name": '<i class="pkmn carbink"></i>Carbink',
+		"value": "carbink",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="goomy pkmn"></i>Goomy',
+		"name": '<i class="pkmn goomy"></i>Goomy',
 		"value": "goomy"
 	},
 	{
-		"name": '<i class="sliggoo pkmn"></i>Sliggoo',
+		"name": '<i class="pkmn sliggoo"></i>Sliggoo',
 		"value": "sliggoo"
 	},
 	{
-		"name": '<i class="goodra pkmn"></i>Goodra',
+		"name": '<i class="pkmn goodra"></i>Goodra',
 		"value": "goodra"
 	},
 	{
-		"name": '<i class="klefki pkmn"></i>Klefki',
+		"name": '<i class="pkmn klefki"></i>Klefki',
 		"value": "klefki"
 	},
 	{
-		"name": '<i class="phantump pkmn"></i>Phantump',
+		"name": '<i class="pkmn phantump"></i>Phantump',
 		"value": "phantump"
 	},
 	{
-		"name": '<i class="trevenant pkmn"></i>Trevenant',
+		"name": '<i class="pkmn trevenant"></i>Trevenant',
 		"value": "trevenant"
 	},
 	{
-		"name": '<i class="pumpkaboo-average pkmn"></i>Pumpkaboo',
-		"value": "pumpkaboo-average"
+		"name": '<i class="pkmn pumpkaboo"></i>Pumpkaboo',
+		"value": "pumpkaboo"
 	},
 	{
-		"name": '<i class="gourgeist-average pkmn"></i>Gourgeist',
-		"value": "gourgeist-average"
+		"name": '<i class="pkmn gourgeist"></i>Gourgeist',
+		"value": "gourgeist"
 	},
 	{
-		"name": '<i class="bergmite pkmn"></i>Bergmite',
+		"name": '<i class="pkmn bergmite"></i>Bergmite',
 		"value": "bergmite"
 	},
 	{
-		"name": '<i class="avalugg pkmn"></i>Avalugg',
+		"name": '<i class="pkmn avalugg"></i>Avalugg',
 		"value": "avalugg"
 	},
 	{
-		"name": '<i class="noibat pkmn"></i>Noibat',
+		"name": '<i class="pkmn noibat"></i>Noibat',
 		"value": "noibat"
 	},
 	{
-		"name": '<i class="noivern pkmn"></i>Noivern',
+		"name": '<i class="pkmn noivern"></i>Noivern',
 		"value": "noivern"
 	},
 	{
-		"name": '<i class="xerneas-active pkmn"></i>Xerneas',
-		"value": "xerneas-active"
+		"name": '<i class="pkmn xerneas"></i>Xerneas',
+		"value": "xerneas",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="yveltal pkmn"></i>Yveltal',
-		"value": "yveltal"
+		"name": '<i class="pkmn yveltal"></i>Yveltal',
+		"value": "yveltal",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="zygarde-50 pkmn"></i>Zygarde',
-		"value": "zygarde-50"
+		"name": '<i class="pkmn zygarde"></i>Zygarde',
+		"value": "zygarde",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="diancie pkmn"></i>Diancie',
-		"value": "diancie"
+		"name": '<i class="pkmn diancie"></i>Diancie',
+		"value": "diancie",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="hoopa pkmn"></i>Hoopa',
-		"value": "hoopa"
+		"name": '<i class="pkmn hoopa"></i>Hoopa',
+		"value": "hoopa",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="volcanion pkmn"></i>Volcanion',
-		"value": "volcanion"
+		"name": '<i class="pkmn volcanion"></i>Volcanion',
+		"value": "volcanion",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="rowlet pkmn"></i>Rowlet',
+		"name": '<i class="pkmn rowlet"></i>Rowlet',
 		"value": "rowlet"
 	},
 	{
-		"name": '<i class="dartrix pkmn"></i>Dartrix',
+		"name": '<i class="pkmn dartrix"></i>Dartrix',
 		"value": "dartrix"
 	},
 	{
-		"name": '<i class="decidueye pkmn"></i>Decidueye',
+		"name": '<i class="pkmn decidueye"></i>Decidueye',
 		"value": "decidueye"
 	},
 	{
-		"name": '<i class="litten pkmn"></i>Litten',
+		"name": '<i class="pkmn litten"></i>Litten',
 		"value": "litten"
 	},
 	{
-		"name": '<i class="torracat pkmn"></i>Torracat',
+		"name": '<i class="pkmn torracat"></i>Torracat',
 		"value": "torracat"
 	},
 	{
-		"name": '<i class="incineroar pkmn"></i>Incineroar',
+		"name": '<i class="pkmn incineroar"></i>Incineroar',
 		"value": "incineroar"
 	},
 	{
-		"name": '<i class="popplio pkmn"></i>Popplio',
+		"name": '<i class="pkmn popplio"></i>Popplio',
 		"value": "popplio"
 	},
 	{
-		"name": '<i class="brionne pkmn"></i>Brionne',
+		"name": '<i class="pkmn brionne"></i>Brionne',
 		"value": "brionne"
 	},
 	{
-		"name": '<i class="primarina pkmn"></i>Primarina',
+		"name": '<i class="pkmn primarina"></i>Primarina',
 		"value": "primarina"
 	},
 	{
-		"name": '<i class="pikipek pkmn"></i>Pikipek',
-		"value": "pikipek"
+		"name": '<i class="pkmn pikipek"></i>Pikipek',
+		"value": "pikipek",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="trumbeak pkmn"></i>Trumbeak',
-		"value": "trumbeak"
+		"name": '<i class="pkmn trumbeak"></i>Trumbeak',
+		"value": "trumbeak",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="toucannon pkmn"></i>Toucannon',
-		"value": "toucannon"
+		"name": '<i class="pkmn toucannon"></i>Toucannon',
+		"value": "toucannon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="yungoos pkmn"></i>Yungoos',
-		"value": "yungoos"
+		"name": '<i class="pkmn yungoos"></i>Yungoos',
+		"value": "yungoos",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="gumshoos pkmn"></i>Gumshoos',
-		"value": "gumshoos"
+		"name": '<i class="pkmn gumshoos"></i>Gumshoos',
+		"value": "gumshoos",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="grubbin pkmn"></i>Grubbin',
+		"name": '<i class="pkmn grubbin"></i>Grubbin',
 		"value": "grubbin"
 	},
 	{
-		"name": '<i class="charjabug pkmn"></i>Charjabug',
+		"name": '<i class="pkmn charjabug"></i>Charjabug',
 		"value": "charjabug"
 	},
 	{
-		"name": '<i class="vikavolt pkmn"></i>Vikavolt',
+		"name": '<i class="pkmn vikavolt"></i>Vikavolt',
 		"value": "vikavolt"
 	},
 	{
-		"name": '<i class="crabrawler pkmn"></i>Crabrawler',
-		"value": "crabrawler"
+		"name": '<i class="pkmn crabrawler"></i>Crabrawler',
+		"value": "crabrawler",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="crabominable pkmn"></i>Crabominable',
-		"value": "crabominable"
+		"name": '<i class="pkmn crabominable"></i>Crabominable',
+		"value": "crabominable",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="oricorio-baile pkmn"></i>Oricorio',
-		"value": "oricorio-baile"
+		"name": '<i class="pkmn oricorio"></i>Oricorio',
+		"value": "oricorio",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="cutiefly pkmn"></i>Cutiefly',
+		"name": '<i class="pkmn cutiefly"></i>Cutiefly',
 		"value": "cutiefly"
 	},
 	{
-		"name": '<i class="ribombee pkmn"></i>Ribombee',
+		"name": '<i class="pkmn ribombee"></i>Ribombee',
 		"value": "ribombee"
 	},
 	{
-		"name": '<i class="rockruff pkmn"></i>Rockruff',
+		"name": '<i class="pkmn rockruff"></i>Rockruff',
 		"value": "rockruff"
 	},
 	{
-		"name": '<i class="lycanroc-midday pkmn"></i>Lycanroc',
-		"value": "lycanroc-midday"
+		"name": '<i class="pkmn lycanroc"></i>Lycanroc',
+		"value": "lycanroc"
 	},
 	{
-		"name": '<i class="wishiwashi pkmn"></i>Wishiwashi',
+		"name": '<i class="pkmn wishiwashi"></i>Wishiwashi',
 		"value": "wishiwashi"
 	},
 	{
-		"name": '<i class="mareanie pkmn"></i>Mareanie',
+		"name": '<i class="pkmn mareanie"></i>Mareanie',
 		"value": "mareanie"
 	},
 	{
-		"name": '<i class="toxapex pkmn"></i>Toxapex',
+		"name": '<i class="pkmn toxapex"></i>Toxapex',
 		"value": "toxapex"
 	},
 	{
-		"name": '<i class="mudbray pkmn"></i>Mudbray',
+		"name": '<i class="pkmn mudbray"></i>Mudbray',
 		"value": "mudbray"
 	},
 	{
-		"name": '<i class="mudsdale pkmn"></i>Mudsdale',
+		"name": '<i class="pkmn mudsdale"></i>Mudsdale',
 		"value": "mudsdale"
 	},
 	{
-		"name": '<i class="dewpider pkmn"></i>Dewpider',
+		"name": '<i class="pkmn dewpider"></i>Dewpider',
 		"value": "dewpider"
 	},
 	{
-		"name": '<i class="araquanid pkmn"></i>Araquanid',
+		"name": '<i class="pkmn araquanid"></i>Araquanid',
 		"value": "araquanid"
 	},
 	{
-		"name": '<i class="fomantis pkmn"></i>Fomantis',
+		"name": '<i class="pkmn fomantis"></i>Fomantis',
 		"value": "fomantis"
 	},
 	{
-		"name": '<i class="lurantis pkmn"></i>Lurantis',
+		"name": '<i class="pkmn lurantis"></i>Lurantis',
 		"value": "lurantis"
 	},
 	{
-		"name": '<i class="morelull pkmn"></i>Morelull',
+		"name": '<i class="pkmn morelull"></i>Morelull',
 		"value": "morelull"
 	},
 	{
-		"name": '<i class="shiinotic pkmn"></i>Shiinotic',
+		"name": '<i class="pkmn shiinotic"></i>Shiinotic',
 		"value": "shiinotic"
 	},
 	{
-		"name": '<i class="salandit pkmn"></i>Salandit',
+		"name": '<i class="pkmn salandit"></i>Salandit',
 		"value": "salandit"
 	},
 	{
-		"name": '<i class="salazzle pkmn"></i>Salazzle',
+		"name": '<i class="pkmn salazzle"></i>Salazzle',
 		"value": "salazzle"
 	},
 	{
-		"name": '<i class="stufful pkmn"></i>Stufful',
+		"name": '<i class="pkmn stufful"></i>Stufful',
 		"value": "stufful"
 	},
 	{
-		"name": '<i class="bewear pkmn"></i>Bewear',
+		"name": '<i class="pkmn bewear"></i>Bewear',
 		"value": "bewear"
 	},
 	{
-		"name": '<i class="bounsweet pkmn"></i>Bounsweet',
+		"name": '<i class="pkmn bounsweet"></i>Bounsweet',
 		"value": "bounsweet"
 	},
 	{
-		"name": '<i class="steenee pkmn"></i>Steenee',
+		"name": '<i class="pkmn steenee"></i>Steenee',
 		"value": "steenee"
 	},
 	{
-		"name": '<i class="tsareena pkmn"></i>Tsareena',
+		"name": '<i class="pkmn tsareena"></i>Tsareena',
 		"value": "tsareena"
 	},
 	{
-		"name": '<i class="comfey pkmn"></i>Comfey',
+		"name": '<i class="pkmn comfey"></i>Comfey',
 		"value": "comfey"
 	},
 	{
-		"name": '<i class="oranguru pkmn"></i>Oranguru',
+		"name": '<i class="pkmn oranguru"></i>Oranguru',
 		"value": "oranguru"
 	},
 	{
-		"name": '<i class="passimian pkmn"></i>Passimian',
+		"name": '<i class="pkmn passimian"></i>Passimian',
 		"value": "passimian"
 	},
 	{
-		"name": '<i class="wimpod pkmn"></i>Wimpod',
+		"name": '<i class="pkmn wimpod"></i>Wimpod',
 		"value": "wimpod"
 	},
 	{
-		"name": '<i class="golisopod pkmn"></i>Golisopod',
+		"name": '<i class="pkmn golisopod"></i>Golisopod',
 		"value": "golisopod"
 	},
 	{
-		"name": '<i class="sandygast pkmn"></i>Sandygast',
+		"name": '<i class="pkmn sandygast"></i>Sandygast',
 		"value": "sandygast"
 	},
 	{
-		"name": '<i class="palossand pkmn"></i>Palossand',
+		"name": '<i class="pkmn palossand"></i>Palossand',
 		"value": "palossand"
 	},
 	{
-		"name": '<i class="pyukumuku pkmn"></i>Pyukumuku',
+		"name": '<i class="pkmn pyukumuku"></i>Pyukumuku',
 		"value": "pyukumuku"
 	},
 	{
-		"name": '<i class="type-null pkmn"></i>Type: Null',
+		"name": '<i class="pkmn type-null"></i>Type: Null',
 		"value": "type-null"
 	},
 	{
-		"name": '<i class="silvally pkmn"></i>Silvally',
+		"name": '<i class="pkmn silvally"></i>Silvally',
 		"value": "silvally"
 	},
 	{
-		"name": '<i class="minior pkmn"></i>Minior',
-		"value": "minior"
+		"name": '<i class="pkmn minior"></i>Minior',
+		"value": "minior",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="komala pkmn"></i>Komala',
-		"value": "komala"
+		"name": '<i class="pkmn komala"></i>Komala',
+		"value": "komala",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="turtonator pkmn"></i>Turtonator',
+		"name": '<i class="pkmn turtonator"></i>Turtonator',
 		"value": "turtonator"
 	},
 	{
-		"name": '<i class="togedemaru pkmn"></i>Togedemaru',
+		"name": '<i class="pkmn togedemaru"></i>Togedemaru',
 		"value": "togedemaru"
 	},
 	{
-		"name": '<i class="mimikyu pkmn"></i>Mimikyu',
+		"name": '<i class="pkmn mimikyu"></i>Mimikyu',
 		"value": "mimikyu"
 	},
 	{
-		"name": '<i class="bruxish pkmn"></i>Bruxish',
-		"value": "bruxish"
+		"name": '<i class="pkmn bruxish"></i>Bruxish',
+		"value": "bruxish",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="drampa pkmn"></i>Drampa',
+		"name": '<i class="pkmn drampa"></i>Drampa',
 		"value": "drampa"
 	},
 	{
-		"name": '<i class="dhelmise pkmn"></i>Dhelmise',
+		"name": '<i class="pkmn dhelmise"></i>Dhelmise',
 		"value": "dhelmise"
 	},
 	{
-		"name": '<i class="jangmo-o pkmn"></i>Jangmo-o',
+		"name": '<i class="pkmn jangmo-o"></i>Jangmo-o',
 		"value": "jangmo-o"
 	},
 	{
-		"name": '<i class="hakamo-o pkmn"></i>Hakamo-o',
+		"name": '<i class="pkmn hakamo-o"></i>Hakamo-o',
 		"value": "hakamo-o"
 	},
 	{
-		"name": '<i class="kommo-o pkmn"></i>Kommo-o',
+		"name": '<i class="pkmn kommo-o"></i>Kommo-o',
 		"value": "kommo-o"
 	},
 	{
-		"name": '<i class="tapu-koko pkmn"></i>Tapu Koko',
-		"value": "tapu-koko"
+		"name": '<i class="pkmn tapu-koko"></i>Tapu Koko',
+		"value": "tapu-koko",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="tapu-lele pkmn"></i>Tapu Lele',
-		"value": "tapu-lele"
+		"name": '<i class="pkmn tapu-lele"></i>Tapu Lele',
+		"value": "tapu-lele",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="tapu-bulu pkmn"></i>Tapu Bulu',
-		"value": "tapu-bulu"
+		"name": '<i class="pkmn tapu-bulu"></i>Tapu Bulu',
+		"value": "tapu-bulu",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="tapu-fini pkmn"></i>Tapu Fini',
-		"value": "tapu-fini"
+		"name": '<i class="pkmn tapu-fini"></i>Tapu Fini',
+		"value": "tapu-fini",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="cosmog pkmn"></i>Cosmog',
+		"name": '<i class="pkmn cosmog"></i>Cosmog',
 		"value": "cosmog"
 	},
 	{
-		"name": '<i class="cosmoem pkmn"></i>Cosmoem',
+		"name": '<i class="pkmn cosmoem"></i>Cosmoem',
 		"value": "cosmoem"
 	},
 	{
-		"name": '<i class="solgaleo pkmn"></i>Solgaleo',
+		"name": '<i class="pkmn solgaleo"></i>Solgaleo',
 		"value": "solgaleo"
 	},
 	{
-		"name": '<i class="lunala pkmn"></i>Lunala',
+		"name": '<i class="pkmn lunala"></i>Lunala',
 		"value": "lunala"
 	},
 	{
-		"name": '<i class="nihilego pkmn"></i>Nihilego',
-		"value": "nihilego"
+		"name": '<i class="pkmn nihilego"></i>Nihilego',
+		"value": "nihilego",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="buzzwole pkmn"></i>Buzzwole',
-		"value": "buzzwole"
+		"name": '<i class="pkmn buzzwole"></i>Buzzwole',
+		"value": "buzzwole",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="pheromosa pkmn"></i>Pheromosa',
-		"value": "pheromosa"
+		"name": '<i class="pkmn pheromosa"></i>Pheromosa',
+		"value": "pheromosa",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="xurkitree pkmn"></i>Xurkitree',
-		"value": "xurkitree"
+		"name": '<i class="pkmn xurkitree"></i>Xurkitree',
+		"value": "xurkitree",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="celesteela pkmn"></i>Celesteela',
-		"value": "celesteela"
+		"name": '<i class="pkmn celesteela"></i>Celesteela',
+		"value": "celesteela",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="kartana pkmn"></i>Kartana',
-		"value": "kartana"
+		"name": '<i class="pkmn kartana"></i>Kartana',
+		"value": "kartana",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="guzzlord pkmn"></i>Guzzlord',
-		"value": "guzzlord"
+		"name": '<i class="pkmn guzzlord"></i>Guzzlord',
+		"value": "guzzlord",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="necrozma pkmn"></i>Necrozma',
+		"name": '<i class="pkmn necrozma"></i>Necrozma',
 		"value": "necrozma"
 	},
 	{
-		"name": '<i class="magearna pkmn"></i>Magearna',
+		"name": '<i class="pkmn magearna"></i>Magearna',
 		"value": "magearna"
 	},
 	{
-		"name": '<i class="marshadow pkmn"></i>Marshadow',
+		"name": '<i class="pkmn marshadow"></i>Marshadow',
 		"value": "marshadow"
 	},
 	{
-		"name": '<i class="poipole pkmn"></i>Poipole',
-		"value": "poipole"
+		"name": '<i class="pkmn poipole"></i>Poipole',
+		"value": "poipole",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="naganadel pkmn"></i>Naganadel',
-		"value": "naganadel"
+		"name": '<i class="pkmn naganadel"></i>Naganadel',
+		"value": "naganadel",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="stakataka pkmn"></i>Stakataka',
-		"value": "stakataka"
+		"name": '<i class="pkmn stakataka"></i>Stakataka',
+		"value": "stakataka",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="blacephalon pkmn"></i>Blacephalon',
-		"value": "blacephalon"
+		"name": '<i class="pkmn blacephalon"></i>Blacephalon',
+		"value": "blacephalon",
+		"exclude": ['swsh']
 	},
 	{
-		"name": '<i class="zeraora pkmn"></i>Zeraora',
+		"name": '<i class="pkmn zeraora"></i>Zeraora',
 		"value": "zeraora"
+	},
+	{
+		"name": '<i class="pkmn meltan"></i>Meltan',
+		"value": "meltan"
+	},
+	{
+		"name": '<i class="pkmn melmetal"></i>Melmetal',
+		"value": "melmetal"
+	},
+	{
+		"name": '<i class="pkmn grookey"></i>Grookey',
+		"value": "grookey"
+	},
+	{
+		"name": '<i class="pkmn thwackey"></i>Thwackey',
+		"value": "thwackey"
+	},
+	{
+		"name": '<i class="pkmn rillaboom"></i>Rillaboom',
+		"value": "rillaboom"
+	},
+	{
+		"name": '<i class="pkmn scorbunny"></i>Scorbunny',
+		"value": "scorbunny"
+	},
+	{
+		"name": '<i class="pkmn raboot"></i>Raboot',
+		"value": "raboot"
+	},
+	{
+		"name": '<i class="pkmn cinderace"></i>Cinderace',
+		"value": "cinderace"
+	},
+	{
+		"name": '<i class="pkmn sobble"></i>Sobble',
+		"value": "sobble"
+	},
+	{
+		"name": '<i class="pkmn drizzile"></i>Drizzile',
+		"value": "drizzile"
+	},
+	{
+		"name": '<i class="pkmn inteleon"></i>Inteleon',
+		"value": "inteleon"
+	},
+	{
+		"name": '<i class="pkmn skwovet"></i>Skwovet',
+		"value": "skwovet"
+	},
+	{
+		"name": '<i class="pkmn greedent"></i>Greedent',
+		"value": "greedent"
+	},
+	{
+		"name": '<i class="pkmn rookidee"></i>Rookidee',
+		"value": "rookidee"
+	},
+	{
+		"name": '<i class="pkmn corvisquire"></i>Corvisquire',
+		"value": "corvisquire"
+	},
+	{
+		"name": '<i class="pkmn corviknight"></i>Corviknight',
+		"value": "corviknight"
+	},
+	{
+		"name": '<i class="pkmn blipbug"></i>Blipbug',
+		"value": "blipbug"
+	},
+	{
+		"name": '<i class="pkmn dottler"></i>Dottler',
+		"value": "dottler"
+	},
+	{
+		"name": '<i class="pkmn orbeetle"></i>Orbeetle',
+		"value": "orbeetle"
+	},
+	{
+		"name": '<i class="pkmn nickit"></i>Nickit',
+		"value": "nickit"
+	},
+	{
+		"name": '<i class="pkmn thievul"></i>Thievul',
+		"value": "thievul"
+	},
+	{
+		"name": '<i class="pkmn gossifleur"></i>Gossifleur',
+		"value": "gossifleur"
+	},
+	{
+		"name": '<i class="pkmn eldegoss"></i>Eldegoss',
+		"value": "eldegoss"
+	},
+	{
+		"name": '<i class="pkmn wooloo"></i>Wooloo',
+		"value": "wooloo"
+	},
+	{
+		"name": '<i class="pkmn dubwool"></i>Dubwool',
+		"value": "dubwool"
+	},
+	{
+		"name": '<i class="pkmn chewtle"></i>Chewtle',
+		"value": "chewtle"
+	},
+	{
+		"name": '<i class="pkmn drednaw"></i>Drednaw',
+		"value": "drednaw"
+	},
+	{
+		"name": '<i class="pkmn yamper"></i>Yamper',
+		"value": "yamper"
+	},
+	{
+		"name": '<i class="pkmn boltund"></i>Boltund',
+		"value": "boltund"
+	},
+	{
+		"name": '<i class="pkmn rolycoly"></i>Rolycoly',
+		"value": "rolycoly"
+	},
+	{
+		"name": '<i class="pkmn carkol"></i>Carkol',
+		"value": "carkol"
+	},
+	{
+		"name": '<i class="pkmn coalossal"></i>Coalossal',
+		"value": "coalossal"
+	},
+	{
+		"name": '<i class="pkmn applin"></i>Applin',
+		"value": "applin"
+	},
+	{
+		"name": '<i class="pkmn flapple"></i>Flapple',
+		"value": "flapple"
+	},
+	{
+		"name": '<i class="pkmn appletun"></i>Appletun',
+		"value": "appletun"
+	},
+	{
+		"name": '<i class="pkmn silicobra"></i>Silicobra',
+		"value": "silicobra"
+	},
+	{
+		"name": '<i class="pkmn sandaconda"></i>Sandaconda',
+		"value": "sandaconda"
+	},
+	{
+		"name": '<i class="pkmn cramorant"></i>Cramorant',
+		"value": "cramorant"
+	},
+	{
+		"name": '<i class="pkmn arrokuda"></i>Arrokuda',
+		"value": "arrokuda"
+	},
+	{
+		"name": '<i class="pkmn barraskewda"></i>Barraskewda',
+		"value": "barraskewda"
+	},
+	{
+		"name": '<i class="pkmn toxel"></i>Toxel',
+		"value": "toxel"
+	},
+	{
+		"name": '<i class="pkmn toxtricity"></i>Toxtricity',
+		"value": "toxtricity"
+	},
+	{
+		"name": '<i class="pkmn sizzlipede"></i>Sizzlipede',
+		"value": "sizzlipede"
+	},
+	{
+		"name": '<i class="pkmn centiskorch"></i>Centiskorch',
+		"value": "centiskorch"
+	},
+	{
+		"name": '<i class="pkmn clobbopus"></i>Clobbopus',
+		"value": "clobbopus"
+	},
+	{
+		"name": '<i class="pkmn grapploct"></i>Grapploct',
+		"value": "grapploct"
+	},
+	{
+		"name": '<i class="pkmn sinistea"></i>Sinistea',
+		"value": "sinistea"
+	},
+	{
+		"name": '<i class="pkmn polteageist"></i>Polteageist',
+		"value": "polteageist"
+	},
+	{
+		"name": '<i class="pkmn hatenna"></i>Hatenna',
+		"value": "hatenna"
+	},
+	{
+		"name": '<i class="pkmn hattrem"></i>Hattrem',
+		"value": "hattrem"
+	},
+	{
+		"name": '<i class="pkmn hatterene"></i>Hatterene',
+		"value": "hatterene"
+	},
+	{
+		"name": '<i class="pkmn impidimp"></i>Impidimp',
+		"value": "impidimp"
+	},
+	{
+		"name": '<i class="pkmn morgrem"></i>Morgrem',
+		"value": "morgrem"
+	},
+	{
+		"name": '<i class="pkmn grimmsnarl"></i>Grimmsnarl',
+		"value": "grimmsnarl"
+	},
+	{
+		"name": '<i class="pkmn obstagoon"></i>Obstagoon',
+		"value": "obstagoon"
+	},
+	{
+		"name": '<i class="pkmn perrserker"></i>Perrserker',
+		"value": "perrserker"
+	},
+	{
+		"name": '<i class="pkmn cursola"></i>Cursola',
+		"value": "cursola"
+	},
+	{
+		"name": '<i class="pkmn sirfetchd"></i>Sirfetch\'d',
+		"value": "sirfetchd"
+	},
+	{
+		"name": '<i class="pkmn mr-rime"></i>Mr. Rime',
+		"value": "mr-rime"
+	},
+	{
+		"name": '<i class="pkmn runerigus"></i>Runerigus',
+		"value": "runerigus"
+	},
+	{
+		"name": '<i class="pkmn milcery"></i>Milcery',
+		"value": "milcery"
+	},
+	{
+		"name": '<i class="pkmn alcremie"></i>Alcremie',
+		"value": "alcremie"
+	},
+	{
+		"name": '<i class="pkmn falinks"></i>Falinks',
+		"value": "falinks"
+	},
+	{
+		"name": '<i class="pkmn pincurchin"></i>Pincurchin',
+		"value": "pincurchin"
+	},
+	{
+		"name": '<i class="pkmn snom"></i>Snom',
+		"value": "snom"
+	},
+	{
+		"name": '<i class="pkmn frosmoth"></i>Frosmoth',
+		"value": "frosmoth"
+	},
+	{
+		"name": '<i class="pkmn stonjourner"></i>Stonjourner',
+		"value": "stonjourner"
+	},
+	{
+		"name": '<i class="pkmn eiscue"></i>Eiscue',
+		"value": "eiscue"
+	},
+	{
+		"name": '<i class="pkmn indeedee"></i>Indeedee',
+		"value": "indeedee"
+	},
+	{
+		"name": '<i class="pkmn morpeko"></i>Morpeko',
+		"value": "morpeko"
+	},
+	{
+		"name": '<i class="pkmn cufant"></i>Cufant',
+		"value": "cufant"
+	},
+	{
+		"name": '<i class="pkmn copperajah"></i>Copperajah',
+		"value": "copperajah"
+	},
+	{
+		"name": '<i class="pkmn dracozolt"></i>Dracozolt',
+		"value": "dracozolt"
+	},
+	{
+		"name": '<i class="pkmn arctozolt"></i>Arctozolt',
+		"value": "arctozolt"
+	},
+	{
+		"name": '<i class="pkmn dracovish"></i>Dracovish',
+		"value": "dracovish"
+	},
+	{
+		"name": '<i class="pkmn arctovish"></i>Arctovish',
+		"value": "arctovish"
+	},
+	{
+		"name": '<i class="pkmn duraludon"></i>Duraludon',
+		"value": "duraludon"
+	},
+	{
+		"name": '<i class="pkmn dreepy"></i>Dreepy',
+		"value": "dreepy"
+	},
+	{
+		"name": '<i class="pkmn drakloak"></i>Drakloak',
+		"value": "drakloak"
+	},
+	{
+		"name": '<i class="pkmn dragapult"></i>Dragapult',
+		"value": "dragapult"
+	},
+	{
+		"name": '<i class="pkmn zacian"></i>Zacian',
+		"value": "zacian"
+	},
+	{
+		"name": '<i class="pkmn zamazenta"></i>Zamazenta',
+		"value": "zamazenta"
+	},
+	{
+		"name": '<i class="pkmn eternatus"></i>Eternatus',
+		"value": "eternatus"
+	},
+	{
+		"name": '<i class="pkmn kubfu"></i>Kubfu',
+		"value": "kubfu"
+	},
+	{
+		"name": '<i class="pkmn urshifu"></i>Urshifu',
+		"value": "urshifu"
+	},
+	{
+		"name": '<i class="pkmn zarude"></i>Zarude',
+		"value": "zarude"
 	}
 ];
 
@@ -6675,7 +7589,7 @@ function populateLocation(game, data) {
 
 	if (data.encounter !== null && data.encounter !== '') {
 		encounterElm.dropdown('set value', data.encounter);
-		encounterElm.dropdown('set text', '<i class="' + data.encounter + ' pkmn"></i>' + data.name);
+		encounterElm.dropdown('set text', '<i class="pkmn ' + data.encounter + '"></i>' + data.name);
 		encounterElm.data('name', data.name);
 		localStorage.setItem(id + '-encounter', data.encounter);
 		localStorage.setItem(id + '-name', data.name);
@@ -6794,25 +7708,13 @@ function initTab(tab) {
 		onShow: function() {
 			$(this).find('.search').focus();
 		},
-		onHide: function() {
-			var elm = $(this);
-			var value = elm.dropdown('get value');
-
-			elm.find('.search').val('');
-
-			if (value !== '') {
-				elm.dropdown('set selected', value);
-			} else {
-				elm.dropdown('restore placeholder text');
-			}
-		},
 		'forceSelection': false,
 		'filterRemoteData': true,
 		'selectOnKeydown': false,
 		'apiSettings': {
 			'response': {
 				'success': true,
-				'results': pkmnData.slice(0, games[tab].dexLimit)
+				'results': pkmnData.slice(0, games[tab].dexLimit).filter(function(pokemon) { return pokemon.exclude === undefined || pokemon.exclude.includes(games[tab])})
 			}
 		}
 	});
@@ -6820,7 +7722,7 @@ function initTab(tab) {
 	$('#' + tab + '-locations .encounter-picker[data-name!=""]').each(function() {
 		var elm = $(this);
 
-		elm.dropdown('set text', '<i class="' + elm.children('input').val() + ' pkmn"></i>' + elm.data('name'));
+		elm.dropdown('set text', '<i class="pkmn ' + elm.children('input').val() + '"></i>' + elm.data('name'));
 	});
 
 	$('#' + tab + '-locations').closest('table').tablesort();

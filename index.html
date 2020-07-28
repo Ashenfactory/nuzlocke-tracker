@@ -2,11 +2,10 @@
 <html class="no-js" lang="en-us">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>Nuzlocke Tracker</title>
 		<meta name="description" content="A tool for tracking Pokémon encounters and captures during Nuzloke challenges">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha384-JKIDqM48bt14NZpzl9v0AP36VK2C/X6RuSPfimxpoWdSANUXblZUX1cgdQw8cZUK" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.6/semantic.min.css" integrity="sha512-iSqS4kzNsM1EfZCUXG3mUIbdTLwJbH/axMoyliD6Ko5bShJbzbXVIgyK5FJqFnPiDsfw7ZLVUhx9nlGGcIeFTg==" crossorigin="anonymous" />
 		<link rel="stylesheet" href="css/main.min.css">
 		<script>
 			document.documentElement.className = 'js';
@@ -22,12 +21,6 @@
 			</div>
 
 			<div class="ui container">
-			<!--[if lte IE 9]>
-				<div class="ui error message">
-					<div class="header">You are using an outdated browser</div>
-					<p>Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-				</div>
-			<![endif]-->
 				<h1 class="ui header">Nuzlocke Tracker</h1>
 
 				<div id="errorMessage" class="ui hidden negative message">
@@ -168,7 +161,7 @@
 				<tr <% if (location.order !== undefined) { print('class="customLocation"') } %>>
 					<td data-sort-value="<%- index %>"><%- location.name %></td>
 					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-encounter') %>">
-						<div data-name="<% if (localStorage.getItem(game.id + location.value + '-name')) { print(localStorage.getItem(game.id + location.value + '-name')) } %>" id="<%- game.id + location.value %>-encounter" class="ui fluid search selection dropdown encounter-picker">
+						<div data-name="<% if (localStorage.getItem(game.id + location.value + '-name')) { print(localStorage.getItem(game.id + location.value + '-name')) } %>" id="<%- game.id + location.value %>-encounter" class="ui fluid search selection long dropdown encounter-picker">
 							<input value="<% if (localStorage.getItem(game.id + location.value + '-encounter')) { print(localStorage.getItem(game.id + location.value + '-encounter')) } %>" name="pokemon" type="hidden">
 							<i class="dropdown icon"></i>
 							<div class="default text">Encounter</div>
@@ -181,7 +174,7 @@
 						</div>
 					</td>
 					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-status') %>">
-						<div id="<%- game.id + location.value %>-status" class="ui fluid selection dropdown">
+						<div id="<%- game.id + location.value %>-status" class="ui fluid selection long dropdown">
 							<input value="<% if (localStorage.getItem(game.id + location.value + '-status')) { print(localStorage.getItem(game.id + location.value + '-status')) } %>" name="status" type="hidden">
 							<i class="dropdown icon"></i>
 							<div class="default text">Status</div>
@@ -200,11 +193,11 @@
 			<% }); %>
 		</script>
 
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 		<script src="js/plugins.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" integrity="sha384-5DWzr9S4agqS3WKvPrhFKJagpYyHOBsf3/DxuDKORyqCv2sYer9c/ExdhPOL8CGh" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" integrity="sha384-HtPdw6a7QeUoz9fgdEIk3iL4WifPUg7BuiWndgaxmBDiCHMYfOO2nEJ9J3YPg6+S" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js" integrity="sha384-KQ8aykg/lc6595wSrMplFVs4kRS66x+EdkX7EQsJ2Pe6FX7l3tMqyD1Am0c2dKBG" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.js" integrity="sha512-HKvDCFVKg8ZPGjecy6on7UECEpE76Y86h3GaE4JMCz+deFWdjcW/tWnh0hCfaBvURvlOa9f5CNVzt7EFkulYbw==" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.6/semantic.min.js" integrity="sha512-NVlJzayXuSvGMZlWvctk3taLRDlsypiqHywmEyqchhwyCrxBoRKWbwsglb5wtefQQfN4MIZ0tJjgPKLvx4oRaw==" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js" integrity="sha512-k8F8QynmFNURwbUJC8drKA+fo3YfNvjqKzStdydD6au+MzvxBoRnxH8E31RJXwDY9DrnEiPhh9wBoDSIxhkyHQ==" crossorigin="anonymous"></script>
 		<script src="js/main.min.js"></script>
 	</body>
 </html>
