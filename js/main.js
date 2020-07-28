@@ -8630,7 +8630,7 @@ function initTab(tab) {
 	$('#' + tab + '-locations .encounter-picker[data-name!=""]').each(function() {
 		var elm = $(this);
 
-		elm.dropdown('set text', '<img class="pkmn" src="img/' + elm.children('input').val() + '.png">' +  elm.data('name'));
+		elm.dropdown('set text', '<img class="pkmn" src="img/' + elm.children('input').val() + '.png">' + elm.data('name'));
 	});
 
 	$('#' + tab + '-locations').closest('table').tablesort();
@@ -8736,6 +8736,15 @@ function resetGame(game, removeLocations) {
 sortLocations(selectedGame);
 
 $(function() {
+	_.each(pkmnDataEach, function(pokemon) {
+		preloadImage(pokemon.image);
+	});
+
+	function preloadImage(url) {
+		var img = new Image();
+		img.src = url;
+	}
+
 	$(document).on('click', '#saveData', function() {
 		saveData(selectedGame);
 	}).on('click', '.singleReset.button', function() {
