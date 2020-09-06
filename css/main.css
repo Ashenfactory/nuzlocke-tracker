@@ -1,3 +1,7 @@
+body {
+    overflow: auto;
+}
+
 .no-js #mainContent, .js #noscript {
     display: none;
 }
@@ -60,6 +64,11 @@
 @media only screen and (max-width:767px) {
     .ui.top.attached.menu > .item:first-child {
         border-bottom: 1px solid rgb(212, 212, 213);
+        border-radius: .28571429rem .28571429rem 0 0;
+    }
+
+    .dark-theme .ui.top.attached.menu > .item:first-child {
+        border-bottom: none;
     }
 
     .ui.table:not(.unstackable) tr > th.disabled {
