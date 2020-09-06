@@ -174,7 +174,7 @@
 				<tr <% if (location.order !== undefined) { print('class="customLocation"') } %>>
 					<td data-sort-value="<%- index %>"><%- location.name %></td>
 					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-encounter') %>">
-						<div data-name="<% if (localStorage.getItem(game.id + location.value + '-name')) { print(localStorage.getItem(game.id + location.value + '-name')) } %>" id="<%- game.id + location.value %>-encounter" class="ui fluid search selection long dropdown encounter-picker">
+						<div data-name="<% if (localStorage.getItem(game.id + location.value + '-name')) { print(localStorage.getItem(game.id + location.value + '-name')) } %>" id="<%- game.id + location.value %>-encounter" class="ui<%= game.darkTheme ? ' inverted' : '' %> fluid search selection long dropdown encounter-picker">
 							<input value="<% if (localStorage.getItem(game.id + location.value + '-encounter')) { print(localStorage.getItem(game.id + location.value + '-encounter')) } %>" name="pokemon" type="hidden">
 							<i class="dropdown icon"></i>
 							<div class="default text">Encounter</div>
@@ -182,12 +182,12 @@
 						</div>
 					</td>
 					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-nickname') %>">
-						<div class="ui fluid input">
+						<div class="ui<%= game.darkTheme ? ' inverted' : '' %> fluid input">
 							<input autocomplete="off" maxlength="<%- game.nameLimit %>" value="<% if (localStorage.getItem(game.id + location.value + '-nickname')) { print(localStorage.getItem(game.id + location.value + '-nickname')) } %>" id="<%- game.id + location.value %>-nickname" placeholder="Nickname" type="text">
 						</div>
 					</td>
 					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-status') %>">
-						<div id="<%- game.id + location.value %>-status" class="ui fluid selection long dropdown">
+						<div id="<%- game.id + location.value %>-status" class="ui<%= game.darkTheme ? ' inverted' : '' %> fluid selection long dropdown">
 							<input value="<% if (localStorage.getItem(game.id + location.value + '-status')) { print(localStorage.getItem(game.id + location.value + '-status')) } %>" name="status" type="hidden">
 							<i class="dropdown icon"></i>
 							<div class="default text">Status</div>
@@ -201,7 +201,7 @@
 							</div>
 						</div>
 					</td>
-					<td><div title="Delete" class="ui basic singleReset fluid icon button" data-location-id="<%- location.value %>"><i class="remove icon"></i></div></td>
+					<td><div title="Delete" class="ui<%= game.darkTheme ? ' inverted' : '' %> basic singleReset fluid icon button" data-location-id="<%- location.value %>"><i class="remove icon"></i></div></td>
 				</tr>
 			<% }); %>
 		</script>

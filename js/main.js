@@ -8698,7 +8698,11 @@ function removeLocation(value, game) {
 
 function updateTab(game, updateDropdown) {
 	sortLocations(game);
-	$('#' + game + '-locations').html(locTpl(games[game]));
+
+	var data = _.clone(games[game]);
+	data.darkTheme =  localStorage.getItem('darkTheme') === 'true';
+
+	$('#' + game + '-locations').html(locTpl(data));
 	initTab(game);
 
 	if (updateDropdown) {
@@ -8839,7 +8843,10 @@ $(function() {
 
 	$('#mainContent').html(mainTpl(games));
 
-	$('#' + selectedGame + '-locations').html(locTpl(games[selectedGame]));
+	var data = _.clone(games[selectedGame]);
+	data.darkTheme =  darkTheme;
+
+	$('#' + selectedGame + '-locations').html(locTpl(data));
 
 	$('[data-tab="' + selectedGame + '"]').addClass('active');
 
