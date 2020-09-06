@@ -71,7 +71,7 @@ body {
         border-bottom: none;
     }
 
-    .ui.table:not(.unstackable) tr > th.disabled {
+    .ui.table:not(.unstackable) > thead > tr > th:not(.rowspanned).disabled {
         display: none !important;
     }
 }
