@@ -8735,6 +8735,26 @@ function resetGame(game, removeLocations) {
 
 sortLocations(selectedGame);
 
+var darkTheme = localStorage.getItem('darkTheme') === 'true';
+
+$('#dark-theme').prop('checked', darkTheme)
+.on('change', function() {
+	localStorage.setItem('darkTheme', this.checked);
+	document.body.classList = this.checked ? 'dark-theme' : '';
+
+	if (this.checked) {
+		$('.ui:not(.footer)').addClass('inverted');
+	} else {
+		$('.ui:not(.footer)').removeClass('inverted');
+	}
+});
+
+document.body.classList = darkTheme ? 'dark-theme' : '';
+
+if (darkTheme) {
+	$('.ui.loading.segment').addClass('inverted');
+}
+
 $(function() {
 	_.each(pkmnData, function(pokemon) {
 		preloadImage(pokemon.image);
@@ -8857,6 +8877,10 @@ $(function() {
 			$('#locationOrder').val(value);
 		}
 	});
+
+	if (darkTheme) {
+		$('.ui:not(.footer)').addClass('inverted');
+	}
 
 	initTab(selectedGame);
 
