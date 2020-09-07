@@ -1,10 +1,16 @@
 <!doctype html>
-<html class="no-js" lang="en-us">
+<html class="no-js" lang="en-US">
 	<head>
 		<meta charset="utf-8">
 		<title>Nuzlocke Tracker</title>
-		<meta name="description" content="A tool for tracking Pokémon encounters and captures during Nuzloke challenges">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta property="og:description" name="description" content="A tool for tracking Pokémon encounters and captures during Nuzloke challenges">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta property="og:title" content="Nuzlocke Tracker">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://ashenfactory.github.io/nuzlocke-tracker/">
+	  	<meta property="og:locale" content="en_US">
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.6/semantic.min.css" integrity="sha512-iSqS4kzNsM1EfZCUXG3mUIbdTLwJbH/axMoyliD6Ko5bShJbzbXVIgyK5FJqFnPiDsfw7ZLVUhx9nlGGcIeFTg==" crossorigin="anonymous" />
 		<link rel="stylesheet" href="css/main.min.css?2020-07-28">
 		<script>
@@ -117,98 +123,8 @@
 			</div>
 		</div>
 
-		<script type="text/template" id="main-template">
-			<div class="ui stackable top attached borderless menu">
-				<div id="gameMenu" class="ui dropdown item">
-					<i class="sidebar icon"></i>
-					Games
-					<i class="dropdown icon"></i>
-					<div class="menu">
-						<% _.each(games, function(game) { %>
-						<a class="item" data-tab="<%- game.id %>"><%- game.title %></a>
-						<% }); %>
-					</div>
-				</div>
-				<div class="right menu">
-					<div class="item">
-						<button id="saveData" class="ui green fluid button"><i class="download icon"></i>Export</button>
-					</div>
-					<div class="item">
-						<input id="fileLoader" accept=".json, application/json" type="file">
-						<label id="loadData" class="ui blue fluid button fileInput" for="fileLoader"><i class="upload icon"></i>Import</label>
-					</div>
-					<div class="item">
-						<button id="resetData" class="ui red fluid button"><i class="remove icon"></i>Reset</button>
-					</div>
-				</div>
-			</div>
-			<% _.each(games, function(game) { %>
-			<div class="ui bottom attached segment tab" data-tab="<%= game.id %>">
-				<div class="ui secondary stackable menu">
-					<div class="horizontally fitted item">
-						<h2 class="ui header"><%- game.title %></h2>
-					</div>
-					<div class="right horizontally fitted item">
-						<button class="ui basic fluid button addLocation"><i class="plus icon"></i>Add location</button>
-					</div>
-				</div>
-				<table class="ui table sortable selectable">
-					<thead>
-						<tr>
-							<th class="center aligned four wide">Location</th>
-							<th class="center aligned four wide">Encounter</th>
-							<th class="center aligned four wide">Nickname</th>
-							<th class="center aligned three wide">Status</th>
-							<th class="center aligned no-sort one wide disabled"></th>
-						</tr>
-					</thead>
-					<tbody id="<%- game.id %>-locations">
-					</tbody>
-				</table>
-			</div>
-			<% }); %>
-		</script>
-
-		<script type="text/template" id="loc-template">
-			<% _.each(game.locations, function(location, index) { %>
-				<tr <% if (location.order !== undefined) { print('class="customLocation"') } %>>
-					<td data-sort-value="<%- index %>"><%- location.name %></td>
-					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-encounter') %>">
-						<div data-name="<% if (localStorage.getItem(game.id + location.value + '-name')) { print(localStorage.getItem(game.id + location.value + '-name')) } %>" id="<%- game.id + location.value %>-encounter" class="ui<%= game.darkTheme ? ' inverted' : '' %> fluid search selection long dropdown encounter-picker">
-							<input value="<% if (localStorage.getItem(game.id + location.value + '-encounter')) { print(localStorage.getItem(game.id + location.value + '-encounter')) } %>" name="pokemon" type="hidden">
-							<i class="dropdown icon"></i>
-							<div class="default text">Encounter</div>
-							<div class="menu"></div>
-						</div>
-					</td>
-					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-nickname') %>">
-						<div class="ui<%= game.darkTheme ? ' inverted' : '' %> fluid input">
-							<input autocomplete="off" maxlength="<%- game.nameLimit %>" value="<% if (localStorage.getItem(game.id + location.value + '-nickname')) { print(localStorage.getItem(game.id + location.value + '-nickname')) } %>" id="<%- game.id + location.value %>-nickname" placeholder="Nickname" type="text">
-						</div>
-					</td>
-					<td data-sort-value="<%- localStorage.getItem(game.id + location.value + '-status') %>">
-						<div id="<%- game.id + location.value %>-status" class="ui<%= game.darkTheme ? ' inverted' : '' %> fluid selection long dropdown">
-							<input value="<% if (localStorage.getItem(game.id + location.value + '-status')) { print(localStorage.getItem(game.id + location.value + '-status')) } %>" name="status" type="hidden">
-							<i class="dropdown icon"></i>
-							<div class="default text">Status</div>
-							<div class="menu">
-								<div class="item" data-value="captured"><i class="checkmark icon"></i>Captured</div>
-								<div class="item" data-value="received"><i class="gift icon"></i>Received</div>
-								<div class="item" data-value="traded"><i class="exchange icon"></i>Traded</div>
-								<div class="item" data-value="missed"><i class="ban icon"></i>Missed</div>
-								<div class="item" data-value="stored"><i class="hdd outline icon"></i>Stored</div>
-								<div class="item" data-value="deceased"><i class="remove user icon"></i>Deceased</div>
-							</div>
-						</div>
-					</td>
-					<td><div title="Delete" class="ui<%= game.darkTheme ? ' inverted' : '' %> basic singleReset fluid icon button" data-location-id="<%- location.value %>"><i class="remove icon"></i></div></td>
-				</tr>
-			<% }); %>
-		</script>
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 		<script src="js/plugins.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.js" integrity="sha512-HKvDCFVKg8ZPGjecy6on7UECEpE76Y86h3GaE4JMCz+deFWdjcW/tWnh0hCfaBvURvlOa9f5CNVzt7EFkulYbw==" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.6/semantic.min.js" integrity="sha512-NVlJzayXuSvGMZlWvctk3taLRDlsypiqHywmEyqchhwyCrxBoRKWbwsglb5wtefQQfN4MIZ0tJjgPKLvx4oRaw==" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js" integrity="sha512-k8F8QynmFNURwbUJC8drKA+fo3YfNvjqKzStdydD6au+MzvxBoRnxH8E31RJXwDY9DrnEiPhh9wBoDSIxhkyHQ==" crossorigin="anonymous"></script>
 		<script src="js/main.min.js?2020-07-28"></script>

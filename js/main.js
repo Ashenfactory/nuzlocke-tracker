@@ -4,6 +4,7 @@ var games = {
 		'title': 'Red, Blue and Yellow',
 		'nameLimit': 10,
 		'dexLimit': 151,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -188,6 +189,7 @@ var games = {
 		'title': 'Gold, Silver and Crystal',
 		'nameLimit': 10,
 		'dexLimit': 251,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -544,6 +546,7 @@ var games = {
 		'title': 'Ruby, Sapphire and Emerald',
 		'nameLimit': 10,
 		'dexLimit': 386,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -831,6 +834,7 @@ var games = {
 		'title': 'FireRed and LeafGreen',
 		'nameLimit': 10,
 		'dexLimit': 386,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -1119,6 +1123,7 @@ var games = {
 		'title': 'Diamond, Pearl and Platinum',
 		'nameLimit': 10,
 		'dexLimit': 493,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -1423,6 +1428,7 @@ var games = {
 		'title': 'HeartGold and SoulSilver',
 		'nameLimit': 10,
 		'dexLimit': 493,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -1811,6 +1817,7 @@ var games = {
 		'title': 'Black and White',
 		'nameLimit': 10,
 		'dexLimit': 649,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -2015,6 +2022,7 @@ var games = {
 		'title': 'Black 2 and White 2',
 		'nameLimit': 10,
 		'dexLimit': 649,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -2283,6 +2291,7 @@ var games = {
 		'title': 'X and Y',
 		'nameLimit': 12,
 		'dexLimit': 721,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -2471,6 +2480,7 @@ var games = {
 		'title': 'Omega Ruby and Alpha Sapphire',
 		'nameLimit': 12,
 		'dexLimit': 721,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -2795,6 +2805,7 @@ var games = {
 		'title': 'Sun and Moon',
 		'nameLimit': 12,
 		'dexLimit': 802,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -3083,6 +3094,7 @@ var games = {
 		'title': 'Ultra Sun and Ultra Moon',
 		'nameLimit': 12,
 		'dexLimit': 807,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -3375,6 +3387,7 @@ var games = {
 		'title': 'Sword and Shield',
 		'nameLimit': 12,
 		'dexLimit': 893,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -3592,6 +3605,7 @@ var games = {
 		'title': 'Custom Game',
 		'nameLimit': 12,
 		'dexLimit': 893,
+		'loaded': false,
 		'locations': [
 			{
 				"name": "Starter",
@@ -8426,9 +8440,120 @@ if (!localStorage.getItem('selectedGame')) {
 	localStorage.setItem('selectedGame', 'rby');
 }
 
-var selectedGame = localStorage.getItem('selectedGame') ? localStorage.getItem('selectedGame') : 'rby';
-var mainTpl = _.template($('#main-template').html(), {variable: 'games'});
-var locTpl = _.template($('#loc-template').html(), {variable: 'game'});
+var selectedGame = games[localStorage.getItem('selectedGame')] ? localStorage.getItem('selectedGame') : 'rby';
+
+function escapeHTML(str, jsContext) {
+    var string = new Option(str).innerHTML;
+
+    if (jsContext) {
+    	string.replace(/"/g, '\"').replace(/'/g, "\'").replace(/\n/g, '\\n').replace(/\/r/g, '\\r');
+    } else {
+    	string.replace(/"/g, '&quot;');
+    }
+
+    return string;
+}
+
+function renderMain() {
+	var linksString = '';
+	var segmentsString = '';
+
+	for (var game in games) {
+		linksString += '<a class="item" data-tab="' + games[game].id + '">' + games[game].title + '</a>';
+
+		segmentsString += '<div class="ui bottom attached segment tab" data-tab="' + games[game].id + '">' +
+			'<div class="ui secondary stackable menu">' +
+				'<div class="horizontally fitted item">' +
+					'<h2 class="ui header">' + games[game].title + '</h2>' +
+				'</div>' +
+				'<div class="right horizontally fitted item">' +
+					'<button class="ui basic fluid button addLocation"><i class="plus icon"></i>Add location</button>' +
+				'</div>' +
+			'</div>' +
+			'<table class="ui table sortable selectable">' +
+				'<thead>' +
+					'<tr>' +
+						'<th class="center aligned four wide">Location</th>' +
+						'<th class="center aligned four wide">Encounter</th>' +
+						'<th class="center aligned four wide">Nickname</th>' +
+						'<th class="center aligned three wide">Status</th>' +
+						'<th class="center aligned no-sort one wide disabled"></th>' +
+					'</tr>' +
+				'</thead>' +
+				'<tbody id="' + games[game].id + '-locations">' +
+				'</tbody>' +
+			'</table>' +
+		'</div>';
+	};
+
+
+	return '<div class="ui stackable top attached borderless menu">' +
+		'<div id="gameMenu" class="ui dropdown item">' +
+			'<i class="sidebar icon"></i>' +
+			'Games' +
+			'<i class="dropdown icon"></i>' +
+			'<div class="menu">' +
+				linksString +
+			'</div>' +
+		'</div>' +
+		'<div class="right menu">' +
+			'<div class="item">' +
+				'<button id="saveData" class="ui green fluid button"><i class="download icon"></i>Export</button>' +
+			'</div>' +
+			'<div class="item">' +
+				'<input id="fileLoader" accept=".json, application/json" type="file">' +
+				'<label id="loadData" class="ui blue fluid button fileInput" for="fileLoader"><i class="upload icon"></i>Import</label>' +
+			'</div>' +
+			'<div class="item">' +
+				'<button id="resetData" class="ui red fluid button"><i class="remove icon"></i>Reset</button>' +
+			'</div>' +
+		'</div>' +
+	'</div>' +
+	segmentsString;
+}
+
+function renderLocations(game, darkTheme) {
+	string = '';
+
+	game.locations.forEach(function(location, index) {
+		var locationValue = escapeHTML(location.value);
+
+		string += '<tr' + (location.order !== undefined ? ' class="customLocation"' : '' ) + '>' +
+			'<td data-sort-value="' + index + '">' + escapeHTML(location.name) + '</td>' +
+			'<td data-sort-value="' + escapeHTML(localStorage.getItem(game.id + location.value + '-encounter')) + '">' +
+				'<div data-name="' + (localStorage.getItem(game.id + location.value + '-name') ? escapeHTML(localStorage.getItem(game.id + location.value + '-name')) : '') + '" id="' + game.id + locationValue + '-encounter" class="ui' + (darkTheme ? ' inverted' : '') + ' fluid search selection long dropdown encounter-picker">' +
+					'<input value="' + (localStorage.getItem(game.id + location.value + '-encounter') ? escapeHTML(localStorage.getItem(game.id + location.value + '-encounter'), true) : '') + '" name="pokemon" type="hidden">' +
+					'<i class="dropdown icon"></i>' +
+					'<div class="default text">Encounter</div>' +
+					'<div class="menu"></div>' +
+				'</div>' +
+			'</td>' +
+			'<td data-sort-value="' + escapeHTML(localStorage.getItem(game.id + location.value + '-nickname')) + '">' +
+				'<div class="ui' + (darkTheme ? ' inverted' : '') + ' fluid input">' +
+					'<input autocomplete="off" maxlength="' + game.nameLimit + '" class="nickname-input" value="' + (localStorage.getItem(game.id + location.value + '-nickname') ? escapeHTML(localStorage.getItem(game.id + location.value + '-nickname')) : '') + '" id="' + game.id + locationValue + '-nickname" placeholder="Nickname" type="text">' +
+				'</div>' +
+			'</td>' +
+			'<td data-sort-value="' + escapeHTML(localStorage.getItem(game.id + location.value + '-status')) + '">' +
+				'<div id="' + game.id + locationValue + '-status" class="ui' +  (darkTheme ? ' inverted' : '') + ' fluid selection long dropdown">' +
+					'<input value="' + (localStorage.getItem(game.id + location.value + '-status') ? escapeHTML(localStorage.getItem(game.id + location.value + '-status')) : '') + '" name="status" type="hidden">' +
+					'<i class="dropdown icon"></i>' +
+					'<div class="default text">Status</div>' +
+					'<div class="menu">' +
+						'<div class="item" data-value="captured"><i class="checkmark icon"></i>Captured</div>' +
+						'<div class="item" data-value="received"><i class="gift icon"></i>Received</div>' +
+						'<div class="item" data-value="traded"><i class="exchange icon"></i>Traded</div>' +
+						'<div class="item" data-value="missed"><i class="ban icon"></i>Missed</div>' +
+						'<div class="item" data-value="stored"><i class="hdd outline icon"></i>Stored</div>' +
+						'<div class="item" data-value="deceased"><i class="remove user icon"></i>Deceased</div>' +
+					'</div>' +
+				'</div>' +
+			'</td>' +
+			'<td><div title="Delete" class="ui' + (darkTheme ? ' inverted' : '') + ' basic singleReset fluid icon button" data-location-id="' + locationValue + '"><i class="remove icon"></i></div></td>' +
+		'</tr>';
+	});
+
+	return string;
+}
 
 function uploadFile(input) {
 	if (input.files && input.files[0]) {
@@ -8442,21 +8567,21 @@ function uploadFile(input) {
 				if (data && data.hasOwnProperty('locations')) {
 					resetGame(data.id, true);
 
-					if (localStorage.getItem('selectedGame') !== data.id) {
-						$('#gameMenu .menu').find('.item[data-tab="' + data.id + '"]').click();
-					}
-
 					if (data.customLocations.length) {
 						localStorage.setItem(data.id + '-custom-locations', JSON.stringify(data.customLocations));
 					} else {
 						localStorage.removeItem(data.id + '-custom-locations');
 					}
 
-					_.each(data.locations, function(location) {
+					data.locations.forEach(function(location) {
 						populateLocation(data.id, location);
 					});
 
 					updateTab(data.id, true);
+
+					if (localStorage.getItem('selectedGame') !== data.id) {
+						$('#gameMenu .menu').find('.item[data-tab="' + data.id + '"]').click();
+					}
 				} else {
 					$('#errorMessage').removeClass('hidden');
 					$('#messageHeader').text('Incorrect format');
@@ -8528,7 +8653,7 @@ function clearLocation(id) {
 }
 
 function sortLocations(game) {
-	var locations = _.filter(games[game].locations, function(location) {
+	var locations = games[game].locations.filter(function(location) {
 		return location.value[0] !== 'c';
 	});
 
@@ -8550,8 +8675,8 @@ function sortLocations(game) {
 			initialLength = customLocations.length;
 			var locationRemoval = [];
 
-			_.each(customLocations, function(customLocation, index) {
-				var insertIndex = _.findIndex(locations, function(e) { return e.value == customLocation.order; });
+			customLocations.forEach(function(customLocation, index) {
+				var insertIndex = locations.findIndex(function(e) { return e.value == customLocation.order; });
 
 				if (insertIndex !== -1) {
 					//Insert location into the main location array
@@ -8563,8 +8688,8 @@ function sortLocations(game) {
 			});
 
 			//Once all locations have been iterated, delete all the ones that were able to be placed to prevent duplicates and satisfy the while-loop.
-			_.each(locationRemoval, function(value) {
-				customLocations.splice(_.indexOf(customLocations, _.findWhere(customLocations, {'value': value})), 1);
+			locationRemoval.forEach(function(value) {
+				customLocations.splice(customLocations.indexOf(customLocations.find(function(location) {location.value == value})), 1);
 			});
 
 			//If the initialLength is unchanged by the end of the interation, something's gone wrong and the loop will never end unless we break out
@@ -8630,7 +8755,7 @@ function initTab(tab) {
 	$('#' + tab + '-locations .encounter-picker[data-name!=""]').each(function() {
 		var elm = $(this);
 
-		elm.dropdown('set text', '<img class="pkmn" src="img/' + elm.children('input').val() + '.png">' + elm.data('name'));
+		elm.dropdown('set text', '<img class="pkmn" src="img/' + escapeHTML(elm.children('input').val()) + '.png" onerror="this.src=\'img/unknown.png\'">' + escapeHTML(elm.data('name')));
 	});
 
 	$('#' + tab + '-locations').closest('table').tablesort();
@@ -8640,7 +8765,7 @@ function initTab(tab) {
 function saveData(game) {
 	var blobData = {id: game, locations: [], customLocations: JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]')} ;
 
-	_.each(games[game].locations, function(location) {
+	games[game].locations.forEach(function(location) {
 		var encounter = localStorage.getItem(game + location.value + '-encounter');
 		var name = localStorage.getItem(game + location.value + '-name');
 		var nickname = localStorage.getItem(game + location.value + '-nickname');
@@ -8662,12 +8787,12 @@ function addLocation(location, game) {
 	var customLocations = JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]');
 
 	if (customLocations.length) {
-		location.value = 'c' + (parseInt(_.last(customLocations).value.slice(1)) + 1);
+		location.value = 'c' + (parseInt((customLocations[customLocations.length - 1]).value.slice(1)) + 1);
 	} else {
 		location.value = 'c0';
 	}
 
-	var duplicateLocationOrder = _.findIndex(customLocations, function(e) { return e.order == location.order; });
+	var duplicateLocationOrder = customLocations.findIndex(function(e) { return e.order == location.order; });
 
 	if (duplicateLocationOrder !== -1) {
 		customLocations[duplicateLocationOrder].order = location.value;
@@ -8682,14 +8807,14 @@ function addLocation(location, game) {
 
 function removeLocation(value, game) {
 	var customLocations = JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]');
-	var location = _.findWhere(customLocations, {'value': value});
-	var dependantLocation = _.findIndex(customLocations, function(e) { return e.order == location.value; });
+	var location = customLocations.find(function(location) {location.value == value});
+	var dependantLocation = customLocations.findIndex(function(e) { return e.order == location.value; });
 
 	if (dependantLocation) {
 		customLocations[dependantLocation].order = location.order;
 	}
 
-	customLocations.splice(_.findIndex(customLocations, function(e) { return e.value == location.value; }), 1);
+	customLocations.splice(customLocations.findIndex(function(e) { return e.value == location.value; }), 1);
 
 	localStorage.setItem(game + '-custom-locations', JSON.stringify(customLocations));
 
@@ -8699,22 +8824,21 @@ function removeLocation(value, game) {
 function updateTab(game, updateDropdown) {
 	sortLocations(game);
 
-	var data = _.clone(games[game]);
-	data.darkTheme =  localStorage.getItem('darkTheme') === 'true';
-
-	$('#' + game + '-locations').html(locTpl(data));
+	$('#' + game + '-locations').html(renderLocations(games[game], localStorage.getItem('darkTheme') === 'true'));
 	initTab(game);
 
 	if (updateDropdown) {
 		updateLocationDropdown();
 	}
+
+	games[game].loaded = true;
 }
 
 function updateLocationDropdown() {
 	var locations = [];
 
-	_.each(games[selectedGame].locations, function(location) {
-		locations.push({'name': 'After ' + location.name, 'value': location.value});
+	games[selectedGame].locations.forEach(function(location) {
+		locations.push({'name': 'After ' + escapeHTML(location.name), 'value': location.value});
 	});
 
 	$('#locationOrder').dropdown('change values', locations);
@@ -8722,18 +8846,16 @@ function updateLocationDropdown() {
 }
 
 function resetGame(game, removeLocations) {
-	_.each(games[selectedGame].locations, function(location) {
+	games[selectedGame].locations.forEach(function(location) {
 		clearLocation(selectedGame + location.value);
 	});
 
 	if (removeLocations) {
 		localStorage.removeItem(selectedGame + '-custom-locations');
 
-		games[selectedGame].locations = _.filter(games[selectedGame].locations, function(location) {
+		games[selectedGame].locations = games[selectedGame].locations.filter(function(location) {
 			return location.value[0] !== 'c';
 		});
-
-		updateTab(selectedGame, true);
 	}
 }
 
@@ -8760,7 +8882,7 @@ if (darkTheme) {
 }
 
 $(function() {
-	_.each(pkmnData, function(pokemon) {
+	pkmnData.forEach(function(pokemon) {
 		preloadImage(pokemon.image);
 	});
 
@@ -8780,7 +8902,7 @@ $(function() {
 		} else {
 			clearLocation(id);
 		}
-	}).on('change', '#' + selectedGame + '-locations input[type="text"]', function() {
+	}).on('change', '.nickname-input', function() {
 		var elm = $(this);
 
 		if (elm.val() !== '' || elm.val() !== null) {
@@ -8795,6 +8917,7 @@ $(function() {
 	$('#resetModal').modal({
 		onApprove: function(e) {
 			resetGame(selectedGame, e.data('action') === 'remove');
+			updateTab(selectedGame, true);
 		}
 	});
 
@@ -8841,18 +8964,17 @@ $(function() {
 		$(this).closest('.message').transition('fade');
 	});
 
-	$('#mainContent').html(mainTpl(games));
+	$('#mainContent').html(renderMain());
 
-	var data = _.clone(games[selectedGame]);
-	data.darkTheme =  darkTheme;
-
-	$('#' + selectedGame + '-locations').html(locTpl(data));
+	$('#' + selectedGame + '-locations').html(renderLocations(games[selectedGame], darkTheme));
 
 	$('[data-tab="' + selectedGame + '"]').addClass('active');
 
 	$('#gameMenu .menu .item').tab({
 		onFirstLoad: function(tabPath) {
-			updateTab(tabPath, false);
+			if (!games[tabPath].loaded) {
+				updateTab(tabPath, false);
+			}
 		},
 		onLoad: function(tabPath) {
 			selectedGame = tabPath;

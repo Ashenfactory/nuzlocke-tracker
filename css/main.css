@@ -152,6 +152,15 @@ input[type="file"]:focus-widthin + label {
     float: right;
 }
 
+.toggle .icon {
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+.toggle:hover label::before {
+    background-color: rgba(0, 0, 0, .15) !important;
+}
+
 .dark-theme {
     background: #2a2a2e;
 }
