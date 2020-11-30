@@ -3386,7 +3386,7 @@ var games = {
 		'id': 'swsh',
 		'title': 'Sword and Shield',
 		'nameLimit': 12,
-		'dexLimit': 893,
+		'dexLimit': 898,
 		'loaded': false,
 		'locations': [
 			{
@@ -3597,6 +3597,90 @@ var games = {
 			{
 				"name": "Isle of Armor: Honeycalm Island",
 				"value": 51
+			},
+			{
+				"name": "Crown Tundra: Slippery Slope",
+				"value": 52
+			},
+			{
+				"name": "Crown Tundra: Freezington",
+				"value": 53
+			},
+			{
+				"name": "Crown Tundra: Max Lair",
+				"value": 54
+			},
+			{
+				"name": "Crown Tundra: Frostpoint Field",
+				"value": 55
+			},
+			{
+				"name": "Crown Tundra: Giant's Bed",
+				"value": 56
+			},
+			{
+				"name": "Crown Tundra: Old Cemetery",
+				"value": 57
+			},
+			{
+				"name": "Crown Tundra: Snowslide Slope",
+				"value": 58
+			},
+			{
+				"name": "Crown Tundra: Tunnel to the Top",
+				"value": 59
+			},
+			{
+				"name": "Crown Tundra: Path to the Peak",
+				"value": 60
+			},
+			{
+				"name": "Crown Tundra: Crown Shrine",
+				"value": 61
+			},
+			{
+				"name": "Crown Tundra: Giant's Foot",
+				"value": 62
+			},
+			{
+				"name": "Crown Tundra: Roaring-Sea Caves",
+				"value": 63
+			},
+			{
+				"name": "Crown Tundra: Frigrid Sea",
+				"value": 64
+			},
+			{
+				"name": "Crown Tundra: Three-Point Pass",
+				"value": 65
+			},
+			{
+				"name": "Crown Tundra: Ballimere Lake",
+				"value": 66
+			},
+			{
+				"name": "Crown Tundra: Lakeside Cave",
+				"value": 67
+			},
+			{
+				"name": "Crown Tundra: Dyna Tree Hill",
+				"value": 68
+			},
+			{
+				"name": "Crown Tundra: Rock Peak Ruins",
+				"value": 69
+			},
+			{
+				"name": "Crown Tundra: Iceberg Ruins",
+				"value": 70
+			},
+			{
+				"name": "Crown Tundra: Iron Ruins",
+				"value": 71
+			},
+			{
+				"name": "Crown Tundra: Split-Decision Ruins",
+				"value": 72
 			}
 		]
 	},
@@ -3604,7 +3688,7 @@ var games = {
 		'id': 'custom',
 		'title': 'Custom Game',
 		'nameLimit': 12,
-		'dexLimit': 893,
+		'dexLimit': 898,
 		'loaded': false,
 		'locations': [
 			{
@@ -3771,38 +3855,32 @@ var pkmnData = [
 	{
 		"name": 'Nidoran♀',
 		"value": "nidoran-female",
-		"image": "img/nidoran-female.png",
-		"exclude": ['swsh']
+		"image": "img/nidoran-female.png"
 	},
 	{
 		"name": 'Nidorina',
 		"value": "nidorina",
-		"image": "img/nidorina.png",
-		"exclude": ['swsh']
+		"image": "img/nidorina.png"
 	},
 	{
 		"name": 'Nidoqueen',
 		"value": "nidoqueen",
-		"image": "img/nidoqueen.png",
-		"exclude": ['swsh']
+		"image": "img/nidoqueen.png"
 	},
 	{
 		"name": 'Nidoran♂',
 		"value": "nidoran-male",
-		"image": "img/nidoran-male.png",
-		"exclude": ['swsh']
+		"image": "img/nidoran-male.png"
 	},
 	{
 		"name": 'Nidorino',
 		"value": "nidorino",
-		"image": "img/nidorino.png",
-		"exclude": ['swsh']
+		"image": "img/nidorino.png"
 	},
 	{
 		"name": 'Nidoking',
 		"value": "nidoking",
-		"image": "img/nidoking.png",
-		"exclude": ['swsh']
+		"image": "img/nidoking.png"
 	},
 	{
 		"name": 'Clefairy',
@@ -3837,14 +3915,12 @@ var pkmnData = [
 	{
 		"name": 'Zubat',
 		"value": "zubat",
-		"image": "img/zubat.png",
-		"exclude": ['swsh']
+		"image": "img/zubat.png"
 	},
 	{
 		"name": 'Golbat',
 		"value": "golbat",
-		"image": "img/golbat.png",
-		"exclude": ['swsh']
+		"image": "img/golbat.png"
 	},
 	{
 		"name": 'Oddish',
@@ -4276,20 +4352,17 @@ var pkmnData = [
 	{
 		"name": 'Jynx',
 		"value": "jynx",
-		"image": "img/jynx.png",
-		"exclude": ['swsh']
+		"image": "img/jynx.png"
 	},
 	{
 		"name": 'Electabuzz',
 		"value": "electabuzz",
-		"image": "img/electabuzz.png",
-		"exclude": ['swsh']
+		"image": "img/electabuzz.png"
 	},
 	{
 		"name": 'Magmar',
 		"value": "magmar",
-		"image": "img/magmar.png",
-		"exclude": ['swsh']
+		"image": "img/magmar.png"
 	},
 	{
 		"name": 'Pinsir',
@@ -4349,32 +4422,27 @@ var pkmnData = [
 	{
 		"name": 'Omanyte',
 		"value": "omanyte",
-		"image": "img/omanyte.png",
-		"exclude": ['swsh']
+		"image": "img/omanyte.png"
 	},
 	{
 		"name": 'Omastar',
 		"value": "omastar",
-		"image": "img/omastar.png",
-		"exclude": ['swsh']
+		"image": "img/omastar.png"
 	},
 	{
 		"name": 'Kabuto',
 		"value": "kabuto",
-		"image": "img/kabuto.png",
-		"exclude": ['swsh']
+		"image": "img/kabuto.png"
 	},
 	{
 		"name": 'Kabutops',
 		"value": "kabutops",
-		"image": "img/kabutops.png",
-		"exclude": ['swsh']
+		"image": "img/kabutops.png"
 	},
 	{
 		"name": 'Aerodactyl',
 		"value": "aerodactyl",
-		"image": "img/aerodactyl.png",
-		"exclude": ['swsh']
+		"image": "img/aerodactyl.png"
 	},
 	{
 		"name": 'Snorlax',
@@ -4384,38 +4452,32 @@ var pkmnData = [
 	{
 		"name": 'Articuno',
 		"value": "articuno",
-		"image": "img/articuno.png",
-		"exclude": ['swsh']
+		"image": "img/articuno.png"
 	},
 	{
 		"name": 'Zapdos',
 		"value": "zapdos",
-		"image": "img/zapdos.png",
-		"exclude": ['swsh']
+		"image": "img/zapdos.png"
 	},
 	{
 		"name": 'Moltres',
 		"value": "moltres",
-		"image": "img/moltres.png",
-		"exclude": ['swsh']
+		"image": "img/moltres.png"
 	},
 	{
 		"name": 'Dratini',
 		"value": "dratini",
-		"image": "img/dratini.png",
-		"exclude": ['swsh']
+		"image": "img/dratini.png"
 	},
 	{
 		"name": 'Dragonair',
 		"value": "dragonair",
-		"image": "img/dragonair.png",
-		"exclude": ['swsh']
+		"image": "img/dragonair.png"
 	},
 	{
 		"name": 'Dragonite',
 		"value": "dragonite",
-		"image": "img/dragonite.png",
-		"exclude": ['swsh']
+		"image": "img/dragonite.png"
 	},
 	{
 		"name": 'Mewtwo',
@@ -4905,20 +4967,17 @@ var pkmnData = [
 	{
 		"name": 'Smoochum',
 		"value": "smoochum",
-		"image": "img/smoochum.png",
-		"exclude": ['swsh']
+		"image": "img/smoochum.png"
 	},
 	{
 		"name": 'Elekid',
 		"value": "elekid",
-		"image": "img/elekid.png",
-		"exclude": ['swsh']
+		"image": "img/elekid.png"
 	},
 	{
 		"name": 'Magby',
 		"value": "magby",
-		"image": "img/magby.png",
-		"exclude": ['swsh']
+		"image": "img/magby.png"
 	},
 	{
 		"name": 'Miltank',
@@ -4933,20 +4992,17 @@ var pkmnData = [
 	{
 		"name": 'Raikou',
 		"value": "raikou",
-		"image": "img/raikou.png",
-		"exclude": ['swsh']
+		"image": "img/raikou.png"
 	},
 	{
 		"name": 'Entei',
 		"value": "entei",
-		"image": "img/entei.png",
-		"exclude": ['swsh']
+		"image": "img/entei.png"
 	},
 	{
 		"name": 'Suicune',
 		"value": "suicune",
-		"image": "img/suicune.png",
-		"exclude": ['swsh']
+		"image": "img/suicune.png"
 	},
 	{
 		"name": 'Larvitar',
@@ -4966,14 +5022,12 @@ var pkmnData = [
 	{
 		"name": 'Lugia',
 		"value": "lugia",
-		"image": "img/lugia.png",
-		"exclude": ['swsh']
+		"image": "img/lugia.png"
 	},
 	{
 		"name": 'Ho-Oh',
 		"value": "ho-oh",
-		"image": "img/ho-oh.png",
-		"exclude": ['swsh']
+		"image": "img/ho-oh.png"
 	},
 	{
 		"name": 'Celebi',
@@ -4983,56 +5037,47 @@ var pkmnData = [
 	{
 		"name": 'Treecko',
 		"value": "treecko",
-		"image": "img/treecko.png",
-		"exclude": ['swsh']
+		"image": "img/treecko.png"
 	},
 	{
 		"name": 'Grovyle',
 		"value": "grovyle",
-		"image": "img/grovyle.png",
-		"exclude": ['swsh']
+		"image": "img/grovyle.png"
 	},
 	{
 		"name": 'Sceptile',
 		"value": "sceptile",
-		"image": "img/sceptile.png",
-		"exclude": ['swsh']
+		"image": "img/sceptile.png"
 	},
 	{
 		"name": 'Torchic',
 		"value": "torchic",
-		"image": "img/torchic.png",
-		"exclude": ['swsh']
+		"image": "img/torchic.png"
 	},
 	{
 		"name": 'Combusken',
 		"value": "combusken",
-		"image": "img/combusken.png",
-		"exclude": ['swsh']
+		"image": "img/combusken.png"
 	},
 	{
 		"name": 'Blaziken',
 		"value": "blaziken",
-		"image": "img/blaziken.png",
-		"exclude": ['swsh']
+		"image": "img/blaziken.png"
 	},
 	{
 		"name": 'Mudkip',
 		"value": "mudkip",
-		"image": "img/mudkip.png",
-		"exclude": ['swsh']
+		"image": "img/mudkip.png"
 	},
 	{
 		"name": 'Marshtomp',
 		"value": "marshtomp",
-		"image": "img/marshtomp.png",
-		"exclude": ['swsh']
+		"image": "img/marshtomp.png"
 	},
 	{
 		"name": 'Swampert',
 		"value": "swampert",
-		"image": "img/swampert.png",
-		"exclude": ['swsh']
+		"image": "img/swampert.png"
 	},
 	{
 		"name": 'Poochyena',
@@ -5273,20 +5318,17 @@ var pkmnData = [
 	{
 		"name": 'Aron',
 		"value": "aron",
-		"image": "img/aron.png",
-		"exclude": ['swsh']
+		"image": "img/aron.png"
 	},
 	{
 		"name": 'Lairon',
 		"value": "lairon",
-		"image": "img/lairon.png",
-		"exclude": ['swsh']
+		"image": "img/lairon.png"
 	},
 	{
 		"name": 'Aggron',
 		"value": "aggron",
-		"image": "img/aggron.png",
-		"exclude": ['swsh']
+		"image": "img/aggron.png"
 	},
 	{
 		"name": 'Meditite',
@@ -5436,14 +5478,12 @@ var pkmnData = [
 	{
 		"name": 'Swablu',
 		"value": "swablu",
-		"image": "img/swablu.png",
-		"exclude": ['swsh']
+		"image": "img/swablu.png"
 	},
 	{
 		"name": 'Altaria',
 		"value": "altaria",
-		"image": "img/altaria.png",
-		"exclude": ['swsh']
+		"image": "img/altaria.png"
 	},
 	{
 		"name": 'Zangoose',
@@ -5500,26 +5540,22 @@ var pkmnData = [
 	{
 		"name": 'Lileep',
 		"value": "lileep",
-		"image": "img/lileep.png",
-		"exclude": ['swsh']
+		"image": "img/lileep.png"
 	},
 	{
 		"name": 'Cradily',
 		"value": "cradily",
-		"image": "img/cradily.png",
-		"exclude": ['swsh']
+		"image": "img/cradily.png"
 	},
 	{
 		"name": 'Anorith',
 		"value": "anorith",
-		"image": "img/anorith.png",
-		"exclude": ['swsh']
+		"image": "img/anorith.png"
 	},
 	{
 		"name": 'Armaldo',
 		"value": "armaldo",
-		"image": "img/armaldo.png",
-		"exclude": ['swsh']
+		"image": "img/armaldo.png"
 	},
 	{
 		"name": 'Feebas',
@@ -5580,8 +5616,7 @@ var pkmnData = [
 	{
 		"name": 'Absol',
 		"value": "absol",
-		"image": "img/absol.png",
-		"exclude": ['swsh']
+		"image": "img/absol.png"
 	},
 	{
 		"name": 'Wynaut',
@@ -5601,20 +5636,17 @@ var pkmnData = [
 	{
 		"name": 'Spheal',
 		"value": "spheal",
-		"image": "img/spheal.png",
-		"exclude": ['swsh']
+		"image": "img/spheal.png"
 	},
 	{
 		"name": 'Sealeo',
 		"value": "sealeo",
-		"image": "img/sealeo.png",
-		"exclude": ['swsh']
+		"image": "img/sealeo.png"
 	},
 	{
 		"name": 'Walrein',
 		"value": "walrein",
-		"image": "img/walrein.png",
-		"exclude": ['swsh']
+		"image": "img/walrein.png"
 	},
 	{
 		"name": 'Clamperl',
@@ -5637,8 +5669,7 @@ var pkmnData = [
 	{
 		"name": 'Relicanth',
 		"value": "relicanth",
-		"image": "img/relicanth.png",
-		"exclude": ['swsh']
+		"image": "img/relicanth.png"
 	},
 	{
 		"name": 'Luvdisc',
@@ -5649,86 +5680,72 @@ var pkmnData = [
 	{
 		"name": 'Bagon',
 		"value": "bagon",
-		"image": "img/bagon.png",
-		"exclude": ['swsh']
+		"image": "img/bagon.png"
 	},
 	{
 		"name": 'Shelgon',
 		"value": "shelgon",
-		"image": "img/shelgon.png",
-		"exclude": ['swsh']
+		"image": "img/shelgon.png"
 	},
 	{
 		"name": 'Salamence',
 		"value": "salamence",
-		"image": "img/salamence.png",
-		"exclude": ['swsh']
+		"image": "img/salamence.png"
 	},
 	{
 		"name": 'Beldum',
 		"value": "beldum",
-		"image": "img/beldum.png",
-		"exclude": ['swsh']
+		"image": "img/beldum.png"
 	},
 	{
 		"name": 'Metang',
 		"value": "metang",
-		"image": "img/metang.png",
-		"exclude": ['swsh']
+		"image": "img/metang.png"
 	},
 	{
 		"name": 'Metagross',
 		"value": "metagross",
-		"image": "img/metagross.png",
-		"exclude": ['swsh']
+		"image": "img/metagross.png"
 	},
 	{
 		"name": 'Regirock',
 		"value": "regirock",
-		"image": "img/regirock.png",
-		"exclude": ['swsh']
+		"image": "img/regirock.png"
 	},
 	{
 		"name": 'Regice',
 		"value": "regice",
-		"image": "img/regice.png",
-		"exclude": ['swsh']
+		"image": "img/regice.png"
 	},
 	{
 		"name": 'Registeel',
 		"value": "registeel",
-		"image": "img/registeel.png",
-		"exclude": ['swsh']
+		"image": "img/registeel.png"
 	},
 	{
 		"name": 'Latias',
 		"value": "latias",
-		"image": "img/latias.png",
-		"exclude": ['swsh']
+		"image": "img/latias.png"
 	},
 	{
 		"name": 'Latios',
 		"value": "latios",
-		"image": "img/latios.png",
-		"exclude": ['swsh']
+		"image": "img/latios.png"
 	},
 	{
 		"name": 'Kyogre',
 		"value": "kyogre",
-		"image": "img/kyogre.png",
-		"exclude": ['swsh']
+		"image": "img/kyogre.png"
 	},
 	{
 		"name": 'Groudon',
 		"value": "groudon",
-		"image": "img/groudon.png",
-		"exclude": ['swsh']
+		"image": "img/groudon.png"
 	},
 	{
 		"name": 'Rayquaza',
 		"value": "rayquaza",
-		"image": "img/rayquaza.png",
-		"exclude": ['swsh']
+		"image": "img/rayquaza.png"
 	},
 	{
 		"name": 'Jirachi',
@@ -6052,26 +6069,22 @@ var pkmnData = [
 	{
 		"name": 'Spiritomb',
 		"value": "spiritomb",
-		"image": "img/spiritomb.png",
-		"exclude": ['swsh']
+		"image": "img/spiritomb.png"
 	},
 	{
 		"name": 'Gible',
 		"value": "gible",
-		"image": "img/gible.png",
-		"exclude": ['swsh']
+		"image": "img/gible.png"
 	},
 	{
 		"name": 'Gabite',
 		"value": "gabite",
-		"image": "img/gabite.png",
-		"exclude": ['swsh']
+		"image": "img/gabite.png"
 	},
 	{
 		"name": 'Garchomp',
 		"value": "garchomp",
-		"image": "img/garchomp.png",
-		"exclude": ['swsh']
+		"image": "img/garchomp.png"
 	},
 	{
 		"name": 'Munchlax',
@@ -6179,14 +6192,12 @@ var pkmnData = [
 	{
 		"name": 'Electivire',
 		"value": "electivire",
-		"image": "img/electivire.png",
-		"exclude": ['swsh']
+		"image": "img/electivire.png"
 	},
 	{
 		"name": 'Magmortar',
 		"value": "magmortar",
-		"image": "img/magmortar.png",
-		"exclude": ['swsh']
+		"image": "img/magmortar.png"
 	},
 	{
 		"name": 'Togekiss',
@@ -6254,56 +6265,47 @@ var pkmnData = [
 	{
 		"name": 'Uxie',
 		"value": "uxie",
-		"image": "img/uxie.png",
-		"exclude": ['swsh']
+		"image": "img/uxie.png"
 	},
 	{
 		"name": 'Mesprit',
 		"value": "mesprit",
-		"image": "img/mesprit.png",
-		"exclude": ['swsh']
+		"image": "img/mesprit.png"
 	},
 	{
 		"name": 'Azelf',
 		"value": "azelf",
-		"image": "img/azelf.png",
-		"exclude": ['swsh']
+		"image": "img/azelf.png"
 	},
 	{
 		"name": 'Dialga',
 		"value": "dialga",
-		"image": "img/dialga.png",
-		"exclude": ['swsh']
+		"image": "img/dialga.png"
 	},
 	{
 		"name": 'Palkia',
 		"value": "palkia",
-		"image": "img/palkia.png",
-		"exclude": ['swsh']
+		"image": "img/palkia.png"
 	},
 	{
 		"name": 'Heatran',
 		"value": "heatran",
-		"image": "img/heatran.png",
-		"exclude": ['swsh']
+		"image": "img/heatran.png"
 	},
 	{
 		"name": 'Regigigas',
 		"value": "regigigas",
-		"image": "img/regigigas.png",
-		"exclude": ['swsh']
+		"image": "img/regigigas.png"
 	},
 	{
 		"name": 'Giratina',
 		"value": "giratina",
-		"image": "img/giratina.png",
-		"exclude": ['swsh']
+		"image": "img/giratina.png"
 	},
 	{
 		"name": 'Cresselia',
 		"value": "cresselia",
-		"image": "img/cresselia.png",
-		"exclude": ['swsh']
+		"image": "img/cresselia.png"
 	},
 	{
 		"name": 'Phione',
@@ -6338,8 +6340,7 @@ var pkmnData = [
 	{
 		"name": 'Victini',
 		"value": "victini",
-		"image": "img/victini.png",
-		"exclude": ['swsh']
+		"image": "img/victini.png"
 	},
 	{
 		"name": 'Snivy',
@@ -6543,8 +6544,7 @@ var pkmnData = [
 	{
 		"name": 'Audino',
 		"value": "audino",
-		"image": "img/audino.png",
-		"exclude": ['swsh']
+		"image": "img/audino.png"
 	},
 	{
 		"name": 'Timburr',
@@ -6712,26 +6712,22 @@ var pkmnData = [
 	{
 		"name": 'Tirtouga',
 		"value": "tirtouga",
-		"image": "img/tirtouga.png",
-		"exclude": ['swsh']
+		"image": "img/tirtouga.png"
 	},
 	{
 		"name": 'Carracosta',
 		"value": "carracosta",
-		"image": "img/carracosta.png",
-		"exclude": ['swsh']
+		"image": "img/carracosta.png"
 	},
 	{
 		"name": 'Archen',
 		"value": "archen",
-		"image": "img/archen.png",
-		"exclude": ['swsh']
+		"image": "img/archen.png"
 	},
 	{
 		"name": 'Archeops',
 		"value": "archeops",
-		"image": "img/archeops.png",
-		"exclude": ['swsh']
+		"image": "img/archeops.png"
 	},
 	{
 		"name": 'Trubbish',
@@ -6979,8 +6975,7 @@ var pkmnData = [
 	{
 		"name": 'Cryogonal',
 		"value": "cryogonal",
-		"image": "img/cryogonal.png",
-		"exclude": ['swsh']
+		"image": "img/cryogonal.png"
 	},
 	{
 		"name": 'Shelmet',
@@ -7110,14 +7105,12 @@ var pkmnData = [
 	{
 		"name": 'Tornadus',
 		"value": "tornadus",
-		"image": "img/tornadus.png",
-		"exclude": ['swsh']
+		"image": "img/tornadus.png"
 	},
 	{
 		"name": 'Thundurus',
 		"value": "thundurus",
-		"image": "img/thundurus.png",
-		"exclude": ['swsh']
+		"image": "img/thundurus.png"
 	},
 	{
 		"name": 'Reshiram',
@@ -7132,8 +7125,7 @@ var pkmnData = [
 	{
 		"name": 'Landorus',
 		"value": "landorus",
-		"image": "img/landorus.png",
-		"exclude": ['swsh']
+		"image": "img/landorus.png"
 	},
 	{
 		"name": 'Kyurem',
@@ -7154,8 +7146,7 @@ var pkmnData = [
 	{
 		"name": 'Genesect',
 		"value": "genesect",
-		"image": "img/genesect.png",
-		"exclude": ['swsh']
+		"image": "img/genesect.png"
 	},
 	{
 		"name": 'Chespin',
@@ -7410,26 +7401,22 @@ var pkmnData = [
 	{
 		"name": 'Tyrunt',
 		"value": "tyrunt",
-		"image": "img/tyrunt.png",
-		"exclude": ['swsh']
+		"image": "img/tyrunt.png"
 	},
 	{
 		"name": 'Tyrantrum',
 		"value": "tyrantrum",
-		"image": "img/tyrantrum.png",
-		"exclude": ['swsh']
+		"image": "img/tyrantrum.png"
 	},
 	{
 		"name": 'Amaura',
 		"value": "amaura",
-		"image": "img/amaura.png",
-		"exclude": ['swsh']
+		"image": "img/amaura.png"
 	},
 	{
 		"name": 'Aurorus',
 		"value": "aurorus",
-		"image": "img/aurorus.png",
-		"exclude": ['swsh']
+		"image": "img/aurorus.png"
 	},
 	{
 		"name": 'Sylveon',
@@ -7449,8 +7436,7 @@ var pkmnData = [
 	{
 		"name": 'Carbink',
 		"value": "carbink",
-		"image": "img/carbink.png",
-		"exclude": ['swsh']
+		"image": "img/carbink.png"
 	},
 	{
 		"name": 'Goomy',
@@ -7515,26 +7501,22 @@ var pkmnData = [
 	{
 		"name": 'Xerneas',
 		"value": "xerneas",
-		"image": "img/xerneas.png",
-		"exclude": ['swsh']
+		"image": "img/xerneas.png"
 	},
 	{
 		"name": 'Yveltal',
 		"value": "yveltal",
-		"image": "img/yveltal.png",
-		"exclude": ['swsh']
+		"image": "img/yveltal.png"
 	},
 	{
 		"name": 'Zygarde',
 		"value": "zygarde",
-		"image": "img/zygarde.png",
-		"exclude": ['swsh']
+		"image": "img/zygarde.png"
 	},
 	{
 		"name": 'Diancie',
 		"value": "diancie",
-		"image": "img/diancie.png",
-		"exclude": ['swsh']
+		"image": "img/diancie.png"
 	},
 	{
 		"name": 'Hoopa',
@@ -7545,8 +7527,7 @@ var pkmnData = [
 	{
 		"name": 'Volcanion',
 		"value": "volcanion",
-		"image": "img/volcanion.png",
-		"exclude": ['swsh']
+		"image": "img/volcanion.png"
 	},
 	{
 		"name": 'Rowlet',
@@ -7877,26 +7858,22 @@ var pkmnData = [
 	{
 		"name": 'Tapu Koko',
 		"value": "tapu-koko",
-		"image": "img/tapu-koko.png",
-		"exclude": ['swsh']
+		"image": "img/tapu-koko.png"
 	},
 	{
 		"name": 'Tapu Lele',
 		"value": "tapu-lele",
-		"image": "img/tapu-lele.png",
-		"exclude": ['swsh']
+		"image": "img/tapu-lele.png"
 	},
 	{
 		"name": 'Tapu Bulu',
 		"value": "tapu-bulu",
-		"image": "img/tapu-bulu.png",
-		"exclude": ['swsh']
+		"image": "img/tapu-bulu.png"
 	},
 	{
 		"name": 'Tapu Fini',
 		"value": "tapu-fini",
-		"image": "img/tapu-fini.png",
-		"exclude": ['swsh']
+		"image": "img/tapu-fini.png"
 	},
 	{
 		"name": 'Cosmog',
@@ -7921,44 +7898,37 @@ var pkmnData = [
 	{
 		"name": 'Nihilego',
 		"value": "nihilego",
-		"image": "img/nihilego.png",
-		"exclude": ['swsh']
+		"image": "img/nihilego.png"
 	},
 	{
 		"name": 'Buzzwole',
 		"value": "buzzwole",
-		"image": "img/buzzwole.png",
-		"exclude": ['swsh']
+		"image": "img/buzzwole.png"
 	},
 	{
 		"name": 'Pheromosa',
 		"value": "pheromosa",
-		"image": "img/pheromosa.png",
-		"exclude": ['swsh']
+		"image": "img/pheromosa.png"
 	},
 	{
 		"name": 'Xurkitree',
 		"value": "xurkitree",
-		"image": "img/xurkitree.png",
-		"exclude": ['swsh']
+		"image": "img/xurkitree.png"
 	},
 	{
 		"name": 'Celesteela',
 		"value": "celesteela",
-		"image": "img/celesteela.png",
-		"exclude": ['swsh']
+		"image": "img/celesteela.png"
 	},
 	{
 		"name": 'Kartana',
 		"value": "kartana",
-		"image": "img/kartana.png",
-		"exclude": ['swsh']
+		"image": "img/kartana.png"
 	},
 	{
 		"name": 'Guzzlord',
 		"value": "guzzlord",
-		"image": "img/guzzlord.png",
-		"exclude": ['swsh']
+		"image": "img/guzzlord.png"
 	},
 	{
 		"name": 'Necrozma',
@@ -7978,26 +7948,22 @@ var pkmnData = [
 	{
 		"name": 'Poipole',
 		"value": "poipole",
-		"image": "img/poipole.png",
-		"exclude": ['swsh']
+		"image": "img/poipole.png"
 	},
 	{
 		"name": 'Naganadel',
 		"value": "naganadel",
-		"image": "img/naganadel.png",
-		"exclude": ['swsh']
+		"image": "img/naganadel.png"
 	},
 	{
 		"name": 'Stakataka',
 		"value": "stakataka",
-		"image": "img/stakataka.png",
-		"exclude": ['swsh']
+		"image": "img/stakataka.png"
 	},
 	{
 		"name": 'Blacephalon',
 		"value": "blacephalon",
-		"image": "img/blacephalon.png",
-		"exclude": ['swsh']
+		"image": "img/blacephalon.png"
 	},
 	{
 		"name": 'Zeraora',
@@ -8443,15 +8409,15 @@ if (!localStorage.getItem('selectedGame')) {
 var selectedGame = games[localStorage.getItem('selectedGame')] ? localStorage.getItem('selectedGame') : 'rby';
 
 function escapeHTML(str, jsContext) {
-    var string = new Option(str).innerHTML;
+	var string = new Option(str).innerHTML;
 
-    if (jsContext) {
-    	string.replace(/"/g, '\"').replace(/'/g, "\'").replace(/\n/g, '\\n').replace(/\/r/g, '\\r');
-    } else {
-    	string.replace(/"/g, '&quot;');
-    }
+	if (jsContext) {
+		string.replace(/"/g, '"').replace(/'/g, "'").replace(/\n/g, '\\n').replace(/\/r/g, '\\r');
+	} else {
+		string.replace(/"/g, '&quot;');
+	}
 
-    return string;
+	return string;
 }
 
 function renderMain() {
@@ -8468,6 +8434,7 @@ function renderMain() {
 				'</div>' +
 				'<div class="right horizontally fitted item">' +
 					'<button class="ui basic fluid button addLocation"><i class="plus icon"></i>Add location</button>' +
+					'<button class="ui basic button gameSettings" title="Game settings"><i class="settings icon"></i></button>' +
 				'</div>' +
 			'</div>' +
 			'<table class="ui table sortable selectable">' +
@@ -8530,11 +8497,11 @@ function renderLocations(game, darkTheme) {
 			'</td>' +
 			'<td data-sort-value="' + escapeHTML(localStorage.getItem(game.id + location.value + '-nickname')) + '">' +
 				'<div class="ui' + (darkTheme ? ' inverted' : '') + ' fluid input">' +
-					'<input autocomplete="off" maxlength="' + game.nameLimit + '" class="nickname-input" value="' + (localStorage.getItem(game.id + location.value + '-nickname') ? escapeHTML(localStorage.getItem(game.id + location.value + '-nickname')) : '') + '" id="' + game.id + locationValue + '-nickname" placeholder="Nickname" type="text">' +
+					'<input autocomplete="off" maxlength="' + game.nameLimit + '" class="nickname-input" value="' + (localStorage.getItem(game.id + location.value + '-nickname') ? escapeHTML(localStorage.getItem(game.id + location.value + '-nickname')) : '') + '" id="' + game.id + locationValue + '-nickname" name="nickname" placeholder="Nickname" type="text">' +
 				'</div>' +
 			'</td>' +
 			'<td data-sort-value="' + escapeHTML(localStorage.getItem(game.id + location.value + '-status')) + '">' +
-				'<div id="' + game.id + locationValue + '-status" class="ui' +  (darkTheme ? ' inverted' : '') + ' fluid selection long dropdown">' +
+				'<div id="' + game.id + locationValue + '-status" class="ui' + (darkTheme ? ' inverted' : '') + ' fluid selection long dropdown">' +
 					'<input value="' + (localStorage.getItem(game.id + location.value + '-status') ? escapeHTML(localStorage.getItem(game.id + location.value + '-status')) : '') + '" name="status" type="hidden">' +
 					'<i class="dropdown icon"></i>' +
 					'<div class="default text">Status</div>' +
@@ -8555,6 +8522,35 @@ function renderLocations(game, darkTheme) {
 	return string;
 }
 
+function resetGame(game, removeLocations) {
+	games[selectedGame].locations.forEach(function(location) {
+		clearLocation(selectedGame + location.value);
+	});
+
+	if (removeLocations) {
+		localStorage.removeItem(selectedGame + '-custom-locations');
+
+		games[selectedGame].locations = games[selectedGame].locations.filter(function(location) {
+			return location.value[0] !== 'c';
+		});
+	}
+}
+
+function filterByProperty(array, property) {
+	var values = {};
+
+	return array.filter(function(entry) {
+		var value = entry[property];
+
+		if (values[value] !== undefined) {
+			return false;
+		} else {
+			values[value] = true;
+			return true;
+		}
+	});
+}
+
 function uploadFile(input) {
 	if (input.files && input.files[0]) {
 		file = input.files[0];
@@ -8565,15 +8561,25 @@ function uploadFile(input) {
 				var data = JSON.parse(fr.result);
 
 				if (data && data.hasOwnProperty('locations')) {
+					var locations = filterByProperty(data.locations, 'id');
+
 					resetGame(data.id, true);
 
+					$('#disableDexLimit').prop('checked', data.settings && data.settings.disableDexLimit);
+					toggleDexLimit(data.id);
+
+					$('#allowCustomPokemon').prop('checked', data.settings && data.settings.allowCustomPokemon);
+					togglePokemonAddition(data.id);
+
 					if (data.customLocations.length) {
-						localStorage.setItem(data.id + '-custom-locations', JSON.stringify(data.customLocations));
+						var customLocations = filterByProperty(data.customLocations, 'value');
+
+						localStorage.setItem(data.id + '-custom-locations', JSON.stringify(customLocations));
 					} else {
 						localStorage.removeItem(data.id + '-custom-locations');
 					}
 
-					data.locations.forEach(function(location) {
+					locations.forEach(function(location) {
 						populateLocation(data.id, location);
 					});
 
@@ -8588,6 +8594,8 @@ function uploadFile(input) {
 					$('#messageContent').text('The uploaded file contains invalid data');
 				}
 			} catch (e) {
+				console.error(e);
+
 				$('#errorMessage').removeClass('hidden');
 				$('#messageHeader').text('Could not read file');
 				$('#messageContent').text('The uploaded file was not recognized as valid JSON');
@@ -8600,7 +8608,6 @@ function uploadFile(input) {
 
 function populateLocation(game, data) {
 	var id = game + data.id;
-
 	var encounterElm = $('#' + id + '-encounter');
 	var nicknameElm = $('#' + id + '-nickname');
 	var statusElm = $('#' + id + '-status');
@@ -8620,8 +8627,10 @@ function populateLocation(game, data) {
 
 	if (data.nickname !== null && data.nickname !== '') {
 		nicknameElm.val(data.nickname);
+		localStorage.setItem(id + '-nickname', data.nickname);
 	} else {
 		nicknameElm.val('').closest('td').data('sortValue', '');
+		localStorage.removeItem(id + '-nickname');
 	}
 
 	if (data.status !== null && data.status !== '') {
@@ -8658,6 +8667,7 @@ function sortLocations(game) {
 	});
 
 	var customLocations = JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]');
+
 	var initialLength = customLocations.length;
 
 	if (initialLength) {
@@ -8672,8 +8682,8 @@ function sortLocations(game) {
 		//which is why we're simply iterating over the array until it's empty.
 		//This is almost certainly unoptimal, but it works.
 		while (customLocations.length !== 0) {
-			initialLength = customLocations.length;
 			var locationRemoval = [];
+			initialLength = customLocations.length;
 
 			customLocations.forEach(function(customLocation, index) {
 				var insertIndex = locations.findIndex(function(e) { return e.value == customLocation.order; });
@@ -8688,11 +8698,11 @@ function sortLocations(game) {
 			});
 
 			//Once all locations have been iterated, delete all the ones that were able to be placed to prevent duplicates and satisfy the while-loop.
-			locationRemoval.forEach(function(value) {
-				customLocations.splice(customLocations.indexOf(customLocations.find(function(location) {location.value == value})), 1);
+			customLocations = customLocations.filter(function(location) {
+				return !locationRemoval.includes(location.value);
 			});
 
-			//If the initialLength is unchanged by the end of the interation, something's gone wrong and the loop will never end unless we break out
+			//If the initialLength is unchanged by the end of the iteration, something's gone wrong and the loop will never end unless we break out
 			if (initialLength === customLocations.length) {
 				break;
 			}
@@ -8702,6 +8712,35 @@ function sortLocations(game) {
 	games[game].locations = locations;
 }
 
+function toggleDexLimit(tab) {
+	var value = $('#disableDexLimit').prop('checked');
+
+	if (value) {
+		localStorage.setItem(tab + 'disable-dex-limit', true);
+	} else {
+		localStorage.removeItem(tab + 'disable-dex-limit');
+	}
+
+	$('#' + tab + '-locations .encounter-picker').dropdown('setting', 'apiSettings', {
+		'response': {
+			'success': true,
+			'results': value ? pkmnData : pkmnData.slice(0, games[tab].dexLimit).filter(function(pokemon) { return pokemon.exclude === undefined || !pokemon.exclude.includes(tab) })
+		}
+	});
+}
+
+function togglePokemonAddition(tab) {
+	var value = $('#allowCustomPokemon').prop('checked');
+
+	if (value) {
+		localStorage.setItem(tab + 'allow-custom-pokemon', true);
+	} else {
+		localStorage.removeItem(tab + 'allow-custom-pokemon');
+	}
+
+	$('#' + tab + '-locations .encounter-picker').dropdown('setting', 'allowAdditions', value);
+}
+
 function initTab(tab) {
 	$('#' + tab + '-locations .ui.dropdown').dropdown({
 		onChange: function(value, name) {
@@ -8709,7 +8748,8 @@ function initTab(tab) {
 
 			elm.closest('td').data('sortValue', value);
 			localStorage.setItem(elm.prop('id'), value);
-		}
+		},
+		'allowReselection': true
 	});
 
 	$('#' + tab + '-locations .encounter-picker').dropdown({
@@ -8739,7 +8779,9 @@ function initTab(tab) {
 			}
 		},
 		'forceSelection': false,
+		'allowReselection': true,
 		'filterRemoteData': true,
+		'ignoreCase': true,
 		'selectOnKeydown': false,
 		'className': {
 			'image': 'pkmn'
@@ -8747,7 +8789,7 @@ function initTab(tab) {
 		'apiSettings': {
 			'response': {
 				'success': true,
-				'results': pkmnData.slice(0, games[tab].dexLimit).filter(function(pokemon) { return pokemon.exclude === undefined || !pokemon.exclude.includes(tab) })
+				'results': localStorage.getItem(tab + 'disable-dex-limit') ? pkmnData : pkmnData.slice(0, games[tab].dexLimit).filter(function(pokemon) { return pokemon.exclude === undefined || !pokemon.exclude.includes(tab) })
 			}
 		}
 	});
@@ -8763,7 +8805,20 @@ function initTab(tab) {
 }
 
 function saveData(game) {
-	var blobData = {id: game, locations: [], customLocations: JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]')} ;
+	var blobData = {
+		id: game,
+		locations: [],
+		customLocations: JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]'),
+		settings: {}
+	};
+
+	if (localStorage.getItem(game + 'disable-dex-limit')) {
+		blobData.settings.disableDexLimit = true;
+	}
+
+	if (localStorage.getItem(game + 'allow-custom-pokemon')) {
+		blobData.settings.allowCustomPokemon = true;
+	}
 
 	games[game].locations.forEach(function(location) {
 		var encounter = localStorage.getItem(game + location.value + '-encounter');
@@ -8845,20 +8900,6 @@ function updateLocationDropdown() {
 	$('#locationOrder').dropdown('set selected', '0');
 }
 
-function resetGame(game, removeLocations) {
-	games[selectedGame].locations.forEach(function(location) {
-		clearLocation(selectedGame + location.value);
-	});
-
-	if (removeLocations) {
-		localStorage.removeItem(selectedGame + '-custom-locations');
-
-		games[selectedGame].locations = games[selectedGame].locations.filter(function(location) {
-			return location.value[0] !== 'c';
-		});
-	}
-}
-
 sortLocations(selectedGame);
 
 var darkTheme = localStorage.getItem('darkTheme') === 'true';
@@ -8874,6 +8915,14 @@ $('#dark-theme').prop('checked', darkTheme)
 		$('.ui:not(.footer)').removeClass('inverted');
 	}
 });
+
+$('#disableDexLimit').on('change', function() {
+	toggleDexLimit(selectedGame);
+});
+
+$('#allowCustomPokemon').on('change', function() {
+	togglePokemonAddition(selectedGame);
+})
 
 document.body.classList = darkTheme ? 'dark-theme' : '';
 
@@ -8905,7 +8954,7 @@ $(function() {
 	}).on('change', '.nickname-input', function() {
 		var elm = $(this);
 
-		if (elm.val() !== '' || elm.val() !== null) {
+		if (elm.val() !== '' && elm.val() !== null) {
 			elm.closest('td').data('sortValue', elm.val());
 			localStorage.setItem(elm.prop('id'), elm.val());
 		} else {
@@ -8980,6 +9029,8 @@ $(function() {
 			selectedGame = tabPath;
 			localStorage.setItem('selectedGame', tabPath);
 			updateLocationDropdown();
+			$('#disableDexLimit').prop('checked', localStorage.getItem(tabPath + 'disable-dex-limit'));
+			$('#allowCustomPokemon').prop('checked', localStorage.getItem(tabPath + 'allow-custom-pokemon'));
 		}
 	});
 
@@ -8992,6 +9043,8 @@ $(function() {
 	$('#resetModal').modal('attach events', '#resetData', 'show');
 
 	$('#locationModal').modal('attach events', '.addLocation', 'show');
+
+	$('#settingsModal').modal('attach events', '.gameSettings', 'show');
 
 	$('#fileLoader').on('change', function() {
 		$('#importModal').modal('show');
@@ -9014,5 +9067,7 @@ $(function() {
 	initTab(selectedGame);
 
 	updateLocationDropdown();
-});
 
+	$('#disableDexLimit').prop('checked', localStorage.getItem(selectedGame + 'disable-dex-limit'));
+	$('#allowCustomPokemon').prop('checked', localStorage.getItem(selectedGame + 'allow-custom-pokemon'));
+});

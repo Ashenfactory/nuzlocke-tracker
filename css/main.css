@@ -148,12 +148,20 @@ input[type="file"]:focus-widthin + label {
 	outline: thin dotted;
 }
 
+.ui.menu:not(.vertical) .item > .button.gameSettings {
+    margin-left: .5rem;
+}
+
 .ui.header .toggle {
     float: right;
 }
 
 .toggle .icon {
     margin-top: -2px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label[for] {
     cursor: pointer;
 }
 
