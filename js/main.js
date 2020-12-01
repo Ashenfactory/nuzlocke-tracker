@@ -8399,6 +8399,31 @@ var pkmnData = [
 		"name": 'Zarude',
 		"value": "zarude",
 		"image": "img/zarude.png"
+	},
+	{
+		"name": 'Regieleki',
+		"value": "regieleki",
+		"image": "img/regieleki.png"
+	},
+	{
+		"name": 'Regidrago',
+		"value": "regidrago",
+		"image": "img/regidrago.png"
+	},
+	{
+		"name": 'Glastrier',
+		"value": "glastrier",
+		"image": "img/glastrier.png"
+	},
+	{
+		"name": 'Spectrier',
+		"value": "spectrier",
+		"image": "img/spectrier.png"
+	},
+	{
+		"name": 'Calyrex',
+		"value": "calyrex",
+		"image": "img/calyrex.png"
 	}
 ];
 
