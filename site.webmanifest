@@ -1,0 +1,19 @@
+{
+    "name": "Nuzlocke Tracker",
+    "short_name": "Nuzlocke Tracker",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?d=2020-12-01",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png?d=2020-12-01",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1da1da",
+    "background_color": "#1da1da",
+    "display": "standalone"
+}
