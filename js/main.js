@@ -8488,17 +8488,11 @@ function renderMain() {
 				linksString +
 			'</div>' +
 		'</div>' +
-		'<div class="right menu">' +
-			'<div class="item">' +
-				'<button id="saveData" class="ui green fluid button"><i class="download icon"></i>Export</button>' +
-			'</div>' +
-			'<div class="item">' +
-				'<input id="fileLoader" accept=".json, application/json" type="file">' +
-				'<label id="loadData" class="ui blue fluid button fileInput" for="fileLoader"><i class="upload icon"></i>Import</label>' +
-			'</div>' +
-			'<div class="item">' +
-				'<button id="resetData" class="ui red fluid button"><i class="remove icon"></i>Reset</button>' +
-			'</div>' +
+		'<div class="right horizontally fitted item dataControls">' +
+			'<button id="saveData" class="ui green button"><i class="download icon"></i>Export</button>' +
+			'<input id="fileLoader" accept=".json, application/json" type="file">' +
+			'<label id="loadData" class="ui blue button fileInput" for="fileLoader"><i class="upload icon"></i>Import</label>' +
+			'<button id="resetData" class="ui red button"><i class="remove icon"></i>Reset</button>' +
 		'</div>' +
 	'</div>' +
 	segmentsString;
@@ -8511,7 +8505,7 @@ function renderLocations(game, darkTheme) {
 		var locationValue = escapeHTML(location.value);
 
 		string += '<tr' + (location.order !== undefined ? ' class="customLocation"' : '' ) + '>' +
-			'<td data-sort-value="' + index + '">' + escapeHTML(location.name) + '</td>' +
+			'<td data-sort-value="' + index + '">' + '<div title="Delete" class="ui' + (darkTheme ? ' inverted' : '') + ' basic show-sm float-right singleReset icon button" data-location-id="' + locationValue + '"><i class="remove icon"></i></div>' + escapeHTML(location.name) + '</td>' +
 			'<td data-sort-value="' + escapeHTML(localStorage.getItem(game.id + location.value + '-encounter')) + '">' +
 				'<div data-name="' + (localStorage.getItem(game.id + location.value + '-name') ? escapeHTML(localStorage.getItem(game.id + location.value + '-name')) : '') + '" id="' + game.id + locationValue + '-encounter" class="ui' + (darkTheme ? ' inverted' : '') + ' fluid search selection long dropdown encounter-picker">' +
 					'<input value="' + (localStorage.getItem(game.id + location.value + '-encounter') ? escapeHTML(localStorage.getItem(game.id + location.value + '-encounter'), true) : '') + '" name="pokemon" type="hidden">' +
@@ -8540,7 +8534,7 @@ function renderLocations(game, darkTheme) {
 					'</div>' +
 				'</div>' +
 			'</td>' +
-			'<td><div title="Delete" class="ui' + (darkTheme ? ' inverted' : '') + ' basic singleReset fluid icon button" data-location-id="' + locationValue + '"><i class="remove icon"></i></div></td>' +
+			'<td class="hide-sm"><div title="Delete" class="ui' + (darkTheme ? ' inverted' : '') + ' basic singleReset fluid icon button" data-location-id="' + locationValue + '"><i class="remove icon"></i></div></td>' +
 		'</tr>';
 	});
 

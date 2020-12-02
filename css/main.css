@@ -1,40 +1,56 @@
 body {
-    overflow: auto;
+	overflow: auto;
 }
 
 .no-js #mainContent, .js #noscript {
-    display: none;
+	display: none;
 }
 
 .no-js #noscript {
-    opacity: 0;
-    animation-fill-mode: forwards;
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-delay: 1s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-delay: 1s;
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from { opacity: 0; }
+	to   { opacity: 1; }
 }
 
 .container {
-    margin-top: 1em;
+	margin-top: 1em;
 }
 
 .dropdown .text, .ui.selection.dropdown .menu > .item {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 
 .pusher {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.ui.input > ::-moz-placeholder {
+	opacity: .87;
+}
+
+.ui.input:hover > input {
+	border-color: rgba(34, 36, 38, .35);
+}
+
+.ui.input.inverted:hover > input {
+	border-color: rgba(255, 255, 255, .25);
+}
+
+.ui.input.inverted > input:focus::placeholder {
+	color: rgba(255, 255, 255, .7);
 }
 
 .pusher > .container {
-    flex: 1;
+	flex: 1;
 }
 
 .ui.nag {
@@ -42,7 +58,7 @@ body {
 }
 
 .ui.nag > .title {
-    margin: 0 1em;
+	margin: 0 1em;
 }
 
 .ui.footer.segment {
@@ -50,7 +66,7 @@ body {
 }
 
 .segment {
-    min-height: 10em;
+	min-height: 10em;
 }
 
 .ui.basic.button {
@@ -58,28 +74,37 @@ body {
 }
 
 .ui.table:not(.unstackable) > thead > tr {
-    padding: 0;
+	padding: 0;
 }
 
 @media only screen and (max-width:767px) {
-    .ui.top.attached.menu > .item:first-child {
-        border-bottom: 1px solid rgb(212, 212, 213);
-        border-radius: .28571429rem .28571429rem 0 0;
-    }
+	.ui.top.attached.menu > .item:first-child {
+		border-bottom: 1px solid rgb(212, 212, 213);
+		border-radius: .28571429rem .28571429rem 0 0;
+	}
 
-    .dark-theme .ui.top.attached.menu > .item:first-child {
-        border-bottom: none;
-    }
+	.dark-theme .ui.top.attached.menu > .item:first-child {
+		border-bottom: none;
+	}
 
-    .ui.table:not(.unstackable) > thead > tr > th:not(.rowspanned).disabled {
-        display: none !important;
-    }
+	.ui.table:not(.unstackable) > tbody > tr > td:not(.rowspanned).hide-sm,
+	.ui.table:not(.unstackable) > thead > tr > th:not(.rowspanned).disabled {
+		display: none !important;
+	}
+
+	.dataControls .button {
+		display: block;
+		width: 100%;
+	}
 }
 
 @media only screen and (min-width:768px) {
-    .ui.top.attached.menu > .item:first-child {
-        border-radius: .28571429rem;
-    }
+	.show-sm {
+		display: none !important;
+	},
+	.ui.top.attached.menu > .item:first-child {
+		border-radius: .28571429rem;
+	}
 }
 
 .ui.search.selection.dropdown.encounter-picker > input:not([value=""]) ~ input.search {
@@ -98,7 +123,7 @@ body {
 .ui.dropdown .menu > .item > img.pkmn,
 .ui.dropdown > .text > img.pkmn {
 	width: 68px;
-    height: 56px;
+	height: 56px;
 	max-height: 56px;
 	display: block;
 	position: absolute;
@@ -123,7 +148,7 @@ body {
 
 .hidden,
 [hidden] {
-  display: none !important;
+	display: none !important;
 }
 
 input[type="file"] {
@@ -140,7 +165,7 @@ input[type="file"] {
 input[type="file"]:focus + label,
 input[type="file"]:focus-widthin + label,
 input[type="file"] + label:hover {
-    background-color: #f15d22;
+	background-color: #f15d22;
 }
 
 input[type="file"]:focus + label,
@@ -149,46 +174,65 @@ input[type="file"]:focus-widthin + label {
 }
 
 .ui.menu:not(.vertical) .item > .button.gameSettings {
-    margin-left: .5rem;
+	margin-left: .5rem;
 }
 
-.ui.header .toggle {
-    float: right;
+.float-right {
+	float: right;
+}
+
+.singleReset.show-sm {
+	margin-top: -1rem;
+	margin-right: 0;
 }
 
 .toggle .icon {
-    margin-top: -2px;
-    cursor: pointer;
+	margin-top: -2px;
+	cursor: pointer;
 }
 
 input[type="checkbox"] + label[for] {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .toggle:hover label::before {
-    background-color: rgba(0, 0, 0, .15) !important;
+	background-color: rgba(0, 0, 0, .15) !important;
 }
 
 .dark-theme {
-    background: #2a2a2e;
+	background: #2a2a2e;
 }
 
 .dark-theme .ui.header,
 .dark-theme .ui.toggle.checkbox input:checked ~ label {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 .ui.inverted.attached.segment {
-    border: none;
+	border: none;
 }
 
 .ui.inverted.modal {
-    border: 1px solid rgba(255, 255, 255, .15);
+	border: 1px solid rgba(255, 255, 255, .15);
+}
+
+.ui.secondary.menu,
+.ui.secondary.menu .item {
+	margin: 0;
+}
+
+.ui.menu .horizontally.fitted.item.dataControls {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.ui.menu .horizontally.fitted.item.dataControls .button:not(:first-child) {
+	margin-left: .5rem;
 }
 
 .ui.inverted.input > input,
 .ui.inverted.form input[type="text"] {
-    border: 1px solid rgba(255, 255, 255, .15);
-    background: #1b1c1d;
-    color: rgba(255, 255, 255, .8);
+	border: 1px solid rgba(255, 255, 255, .15);
+	background: #1b1c1d;
+	color: rgba(255, 255, 255, .8);
 }
