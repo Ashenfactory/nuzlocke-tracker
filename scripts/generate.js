@@ -18,13 +18,16 @@ for (let i = 1; i <= pkmnCount; i++) {
 		'}\n\n';
 
 	dataJS.push({
-		"name": pkmn.name.eng,
-		"value": pkmn.slug.eng,
-		"icon": pkmn.slug.eng
+		name: pkmn.name.eng,
+		value: pkmn.slug.eng,
+		icon: pkmn.slug.eng
 	});
 
 	images += "'" + spriteDir + 'regular/' + pkmn.slug.eng + ".png'\n";
 }
+
+additionalPkmnData = JSON.parse(fs.readFileSync('scripts/additional-pokemon.json', 'utf-8'));
+dataJS = dataJS.concat(additionalPkmnData);
 
 fs.writeFileSync('images.txt', images);
 execSync('convert @images.txt -append img/sprites.png');
@@ -33,4 +36,4 @@ fs.unlinkSync('images.txt');
 execSync('~/Efficient-Compression-Tool/build/ect img/sprites.png -9');
 
 fs.writeFileSync('src/css/sprites.css', spriteSheetCSS);
-fs.writeFileSync('src/js/pokemon.js', 'const pkmnData = ' + JSON.stringify(dataJS, null, '\t') + ';');
+fs.writeFileSync('src/js/pokemon.js', 'const pkmnData = ' + (JSON.stringify(dataJS, null, '\t')).replace(/"([^"]+)":/g, '$1:') + ';');

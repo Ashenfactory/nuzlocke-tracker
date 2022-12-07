@@ -1,0 +1,517 @@
+[
+	{
+		"name": "Sprigatito",
+		"value": "sprigatito",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Floragato",
+		"value": "floragato",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Meowscarada",
+		"value": "meowscarada",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Fuecoco",
+		"value": "fuecoco",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Crocalor",
+		"value": "crocalor",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Skeledirge",
+		"value": "skeledirge",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Quaxly",
+		"value": "quaxly",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Quaxwell",
+		"value": "quaxwell",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Quaquaval",
+		"value": "quaquaval",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Lechonk",
+		"value": "lechonk",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Oinkologne",
+		"value": "oinkologne",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Dudunsparce",
+		"value": "dudunsparce",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Tarountula",
+		"value": "tarountula",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Spidops",
+		"value": "spidops",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Nymble",
+		"value": "nymble",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Lokix",
+		"value": "lokix",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Rellor",
+		"value": "rellor",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Rabsca",
+		"value": "rabsca",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Greavard",
+		"value": "greavard",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Houndstone",
+		"value": "houndstone",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Flittle",
+		"value": "flittle",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Espathra",
+		"value": "espathra",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Farigiraf",
+		"value": "farigiraf",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Wiglett",
+		"value": "wiglett",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Wugtrio",
+		"value": "wugtrio",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Dondozo",
+		"value": "dondozo",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Veluza",
+		"value": "veluza",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Finizen",
+		"value": "finizen",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Palafin",
+		"value": "palafin",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Smoliv",
+		"value": "smoliv",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Dolliv",
+		"value": "dolliv",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Arboliva",
+		"value": "arboliva",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Capsakid",
+		"value": "capsakid",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Scovillain",
+		"value": "scovillain",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Tadbulb",
+		"value": "tadbulb",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Bellibolt",
+		"value": "bellibolt",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Varoom",
+		"value": "varoom",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Revavroom",
+		"value": "revavroom",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Orthworm",
+		"value": "orthworm",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Tandemaus",
+		"value": "tandemaus",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Maushold",
+		"value": "maushold",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Cetoddle",
+		"value": "cetoddle",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Cetitan",
+		"value": "cetitan",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Frigibax",
+		"value": "frigibax",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Arctibax",
+		"value": "arctibax",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Baxcalibur",
+		"value": "baxcalibur",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Tatsugiri",
+		"value": "tatsugiri",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Cyclizar",
+		"value": "cyclizar",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Pawmi",
+		"value": "pawmi",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Pawmo",
+		"value": "pawmo",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Pawmot",
+		"value": "pawmot",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Wattrel",
+		"value": "wattrel",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Kilowattrel",
+		"value": "kilowattrel",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Bombirdier",
+		"value": "bombirdier",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Squawkabilly",
+		"value": "squawkabilly",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Flamigo",
+		"value": "flamigo",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Klawf",
+		"value": "klawf",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Nacli",
+		"value": "nacli",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Naclstack",
+		"value": "naclstack",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Garganacl",
+		"value": "garganacl",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Glimmet",
+		"value": "glimmet",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Glimmora",
+		"value": "glimmora",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Shroodle",
+		"value": "shroodle",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Grafaiai",
+		"value": "grafaiai",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Fidough",
+		"value": "fidough",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Dachsbun",
+		"value": "dachsbun",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Maschiff",
+		"value": "maschiff",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Mabosstiff",
+		"value": "mabosstiff",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Bramblin",
+		"value": "bramblin",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Brambleghast",
+		"value": "brambleghast",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Gimmighoul",
+		"value": "gimmighoul",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Gholdengo",
+		"value": "gholdengo",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Great Tusk",
+		"value": "greattusk",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Brute Bonnet",
+		"value": "brutebonnet",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Sandy Shocks",
+		"value": "sandyshocks",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Scream Tail",
+		"value": "screamtail",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Flutter Mane",
+		"value": "fluttermane",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Slither Wing",
+		"value": "slitherwing",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Roaring Moon",
+		"value": "roaringmoon",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Iron Treads",
+		"value": "irontreads",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Iron Moth",
+		"value": "ironmoth",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Iron Hands",
+		"value": "ironhands",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Iron Jugulis",
+		"value": "ironjugulis",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Iron Thorns",
+		"value": "ironthorns",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Iron Bundle",
+		"value": "ironbundle",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Iron Valiant",
+		"value": "ironvaliant",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Ting-Lu",
+		"value": "ting-lu",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Chien-Pao",
+		"value": "chien-pao",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Wo-Chien",
+		"value": "wo-chien",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Chi-Yu",
+		"value": "chi-yu",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Koraidon",
+		"value": "koraidon",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Miraidon",
+		"value": "miraidon",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Tinkatink",
+		"value": "tinkatink",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Tinkatuff",
+		"value": "tinkatuff",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Tinkaton",
+		"value": "tinkaton",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Charcadet",
+		"value": "charcadet",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Armarouge",
+		"value": "armarouge",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Ceruledge",
+		"value": "ceruledge",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Toedscool",
+		"value": "toedscool",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Toedscruel",
+		"value": "toedscruel",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Kingambit",
+		"value": "kingambit",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Clodsire",
+		"value": "clodsire",
+		"icon": "placeholder"
+	},
+	{
+		"name": "Annihilape",
+		"value": "annihilape",
+		"icon": "placeholder"
+	}
+]

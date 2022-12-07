@@ -1,6 +1,6 @@
 {
     "name": "Nuzlocke Tracker",
-    "start_url": "/",
+    "start_url": "/nuzlocke-tracker/",
     "icons": [
         {
             "src": "google-touch-icon.png",

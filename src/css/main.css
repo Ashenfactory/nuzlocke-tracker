@@ -1,5 +1,6 @@
 body {
 	overflow: auto;
+	min-width: 300px;
 }
 
 .no-js #mainContent, .js #noscript {
@@ -110,6 +111,11 @@ body {
 	.dataControls .button {
 		display: block;
 		width: 100%;
+	}
+
+	.ui.menu:not(.vertical) .item.dataControls > .button {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.ui.table > tbody > tr {
@@ -265,6 +271,10 @@ input[type="file"]:focus-widthin + label {
 .toggle .icon {
 	margin-top: -2px;
 	cursor: pointer;
+}
+
+.dropdown.icon {
+	pointer-events: none;
 }
 
 input[type="checkbox"] + label[for] {

@@ -90,8 +90,8 @@ function renderLocations(game, darkTheme) {
 		string += '<tr' + (location.order !== undefined ? ' class="customLocation"' : '' ) + '>' +
 			'<td data-sort-value="' + index + '">' + escapeHTML(location.name) + '</td>' +
 			'<td data-sort-value="' + (locationEncounter ? escapeHTML(locationEncounter) : '') + '">' +
-				'<div data-name="' + (locationName ? escapeHTML(locationName) : '') + '" id="' + game.id + locationValue + '-encounter" class="ui' + (darkTheme ? ' inverted' : '') + ' fluid search selection long dropdown encounter-picker" aria-label="' + location.name + ' encounter">' +
-					'<input value="' + (locationEncounter ? escapeHTML(locationEncounter) : '') + '" name="pokemon" type="hidden">' +
+				'<div data-name="' + (locationName ? escapeHTML(locationName) : '') + '" data-value="' + (locationEncounter ? escapeHTML(locationEncounter) : '') + '" id="' + game.id + locationValue + '-encounter" class="ui' + (darkTheme ? ' inverted' : '') + ' fluid search selection long dropdown encounter-picker" aria-label="' + location.name + ' encounter">' +
+					'<input value="' + (locationEncounter ? escapeHTML(locationEncounter) : '') + '" aria-label="' + location.name + ' encounter" name="pokemon" type="hidden">' +
 					'<i class="dropdown icon"></i>' +
 					'<div class="default text">Encounter</div>' +
 					'<div class="menu"></div>' +
@@ -132,9 +132,7 @@ function resetGame(game, removeLocations) {
 	if (removeLocations) {
 		localStorage.removeItem(selectedGame + '-custom-locations');
 
-		games[selectedGame].locations = games[selectedGame].locations.filter(location => {
-			return location.value[0] !== 'c';
-		});
+		games[selectedGame].locations = games[selectedGame].locations.filter(location => location.value[0] !== 'c');
 	}
 }
 
@@ -264,9 +262,7 @@ function clearLocation(id) {
 }
 
 function sortLocations(game) {
-	const locations = games[game].locations.filter(location => {
-		return location.value[0] !== 'c';
-	});
+	const locations = games[game].locations.filter(location => location.value[0] !== 'c');
 
 	let customLocations = JSON.parse(localStorage.getItem(game + '-custom-locations') || '[]');
 	let initialLength = customLocations.length;
@@ -274,9 +270,7 @@ function sortLocations(game) {
 	if (initialLength) {
 		//Sort by order property, ensuring that all locations ordered directly after hardcoded locations get sorted first
 		//which potentially reduces the number of iterations to complete
-		customLocations.sort((a, b) => {
-			return a.order < b.order ? -1 : a.order > b.order ? 1 : 0;
-		});
+		customLocations.sort((a, b) => a.order < b.order ? -1 : a.order > b.order ? 1 : 0);
 
 		//The order property of locations essentially make up one-to-one "chains" that each originate from a hardcoded location.
 		//The actual order of the locations as is doesn't necessarily relate to the aformentioned property, since it's subject to change
@@ -287,7 +281,7 @@ function sortLocations(game) {
 			initialLength = customLocations.length;
 
 			customLocations.forEach((customLocation, index) => {
-				const insertIndex = locations.findIndex(e => { return e.value == customLocation.order; });
+				const insertIndex = locations.findIndex(e => e.value == customLocation.order);
 
 				if (insertIndex !== -1) {
 					//Insert location into the main location array
@@ -358,6 +352,10 @@ function initTab(tab) {
 
 			if (value) {
 				$(this).dropdown('set selected', value);
+
+				setTimeout(() => {
+					this.querySelector('[data-value="' + value + '"]').scrollIntoView({block: 'center'});
+				}, 10);
 			}
 
 			$(this).find('.search').focus();
@@ -374,18 +372,18 @@ function initTab(tab) {
 				elm.dropdown('restore placeholder text');
 			}
 		},
-		'className': {
-			'icon': 'pkmn'
+		className: {
+			icon: 'pkmn'
 		},
-		'forceSelection': false,
-		'ignoreCase': true,
-		'ignoreDiacritics': true,
-		'selectOnKeydown': false
+		forceSelection: false,
+		ignoreCase: true,
+		ignoreDiacritics: true,
+		selectOnKeydown: false
 	});
 
 	$('#' + tab + '-locations .encounter-picker[data-name!=""]').each(function() {
-		const value = escapeHTML($(this).parent().data('sort-value'));
-
+		const value = escapeHTML($(this).data('value'));
+		$(this).attr('aria-label', value + ' ');
 		$(this).dropdown('set value', value);
 		$(this).dropdown('set text', '<i class="pkmn ' + value + '"></i>' + $(this).data('name'));
 	});
@@ -417,7 +415,13 @@ function saveData(game) {
 		const status = localStorage.getItem(game + location.value + '-status');
 
 		if (encounter !== null || name !== null || nickname !== null || status !== null) {
-			blobData.locations.push({'id': location.value, 'encounter': encounter, 'name': name, 'nickname': nickname, 'status': status});
+			blobData.locations.push({
+				id: location.value,
+				encounter: encounter,
+				name: name,
+				nickname: nickname,
+				status: status
+			});
 		}
 	});
 
@@ -481,7 +485,10 @@ function updateLocationDropdown() {
 	const locations = [];
 
 	games[selectedGame].locations.forEach(location => {
-		locations.push({'name': 'After ' + escapeHTML(location.name), 'value': location.value});
+		locations.push({
+			name: 'After ' + escapeHTML(location.name),
+			value: location.value
+		});
 	});
 
 	$('#locationOrder').dropdown('change values', locations);
@@ -583,7 +590,7 @@ $(() => {
 				return false;
 			}
 
-			addLocation({'name': locationName, 'order': $('#locationOrder').dropdown('get value') || '0'}, selectedGame);
+			addLocation({name: locationName, order: $('#locationOrder').dropdown('get value') || '0'}, selectedGame);
 
 			$('#customLocationName').val('');
 			$('#locationOrder').dropdown('set selected', '0');
@@ -616,9 +623,9 @@ $(() => {
 	});
 
 	$('.cookie.nag').nag({
-		'storageMethod': 'localstorage',
-		'key': 'accepts-cookies',
-		'value': true
+		storageMethod: 'localstorage',
+		key: 'accepts-cookies',
+		value: true
 	});
 
 	$('#resetModal').modal('attach events', '#resetData', 'show');
