@@ -1,0 +1,53 @@
+{
+  "name": "nuzlocke-tracker",
+  "version": "1.1.0",
+  "description": "A tool for tracking Pokémon encounters and captures during Nuzlocke challenges",
+  "main": "index.html",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.1",
+    "eslint": "^8.29.0",
+    "eslint-plugin-compat": "^4.0.2",
+    "pokesprite-images": "^2.7.0",
+    "terser": "^5.16.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all",
+    "not dead"
+  ],
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "plugins": [
+      "compat"
+    ],
+    "rules": {
+      "compat/compat": "warn"
+    }
+  },
+  "scripts": {
+    "build": "node scripts/generate.js && npm run minify",
+    "minify": "npm run terser && npm run cleancss",
+    "terser": "terser src/js/locations.js src/js/pokemon.js src/js/plugins.js src/js/main.js -o dist/js/main.min.js && terser src/js/serviceworker.js -o serviceworker.js",
+    "cleancss": "cleancss -o dist/css/main.min.css -O2 all:on src/css/*.css",
+    "lint": "eslint .; exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashenfactory/nuzlocke-tracker.git"
+  },
+  "keywords": [
+    "nuzlocke",
+    "pokemon",
+    "tools",
+    "web-app"
+  ],
+  "author": "Ashenfactory",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ashenfactory/nuzlocke-tracker/issues"
+  },
+  "homepage": "https://github.com/Ashenfactory/nuzlocke-tracker#readme"
+}

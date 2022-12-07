@@ -1,0 +1,13 @@
+{
+    "name": "Nuzlocke Tracker",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "google-touch-icon.png",
+            "sizes": "512x512"
+        }
+    ],
+    "theme_color": "#1da1da",
+    "background_color": "#1da1da",
+    "display": "standalone"
+}
