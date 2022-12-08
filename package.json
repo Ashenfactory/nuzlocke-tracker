@@ -30,7 +30,7 @@
   "scripts": {
     "build": "node scripts/generate.js && npm run minify",
     "minify": "npm run terser && npm run cleancss",
-    "terser": "terser src/js/locations.js src/js/pokemon.js src/js/plugins.js src/js/main.js -o dist/js/main.min.js",
+    "terser": "terser src/js/locations.js src/js/pokemon.js src/js/plugins.js src/js/main.js -o dist/js/main.min.js && terser src/js/serviceworker.js -o serviceworker.js",
     "cleancss": "cleancss -o dist/css/main.min.css -O2 all:on src/css/*.css",
     "lint": "eslint .; exit 0"
   },

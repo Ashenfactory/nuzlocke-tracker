@@ -1,6 +1,6 @@
 if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
 	try {
-		navigator.serviceWorker.register('js/serviceworker.min.js');
+		navigator.serviceWorker.register('/nuzlocke-tracker/serviceworker.js', {scope: '/nuzlocke-tracker/'});
 	} catch (e) {
 		console.error(e);
 	}
@@ -56,7 +56,6 @@ function renderMain() {
 			'</table>' +
 		'</div>';
 	};
-
 
 	return '<div class="ui stackable top attached borderless menu">' +
 		'<div id="gameMenu" class="ui dropdown item">' +
@@ -212,7 +211,7 @@ function populateLocation(game, data) {
 	const nicknameElm = $('#' + id + '-nickname');
 	const statusElm = $('#' + id + '-status');
 
-	if (data.encounter !== null && data.encounter !== '') {
+	if (data.encounter) {
 		encounterElm.dropdown('set value', data.encounter);
 		encounterElm.dropdown('set text', '<i class="pkmn ' + data.encounter + '"></i>' + data.name);
 		encounterElm.data('name', data.name);
@@ -225,7 +224,7 @@ function populateLocation(game, data) {
 		localStorage.removeItem(id + '-name');
 	}
 
-	if (data.nickname !== null && data.nickname !== '') {
+	if (data.nickname) {
 		nicknameElm.val(data.nickname);
 		localStorage.setItem(id + '-nickname', data.nickname);
 	} else {
@@ -233,7 +232,7 @@ function populateLocation(game, data) {
 		localStorage.removeItem(id + '-nickname');
 	}
 
-	if (data.status !== null && data.status !== '') {
+	if (data.status) {
 		statusElm.dropdown('set selected', data.status);
 		localStorage.setItem(id + '-status', data.status);
 	} else {
@@ -340,11 +339,13 @@ function initTab(tab) {
 			const regex = new RegExp(/[^>]*$/, 'i');
 			const elm = $(this);
 
-			elm.closest('td').data('sortValue', value);
-			elm.data('name', name);
-			localStorage.setItem(elm.prop('id').slice(0, -9) + 'name', regex.exec(name));
-			localStorage.setItem(elm.prop('id'), value);
-			elm.find('.search').blur();
+			if (value && name) {
+				elm.closest('td').data('sortValue', value);
+				elm.data('name', name);
+				localStorage.setItem(elm.prop('id').slice(0, -9) + 'name', regex.exec(name));
+				localStorage.setItem(elm.prop('id'), value);
+				elm.find('.search').blur();
+			}
 		},
 		onShow: function() {
 			const value = $(this).dropdown('get value');
@@ -363,11 +364,15 @@ function initTab(tab) {
 		onHide: function() {
 			const elm = $(this);
 			const value = elm.dropdown('get value');
+			const name = elm.data('name');
 
 			elm.find('.search').val('');
 
-			if (value !== '') {
-				elm.dropdown('set selected', value);
+			elm.dropdown('change values', []);
+
+			if (value) {
+				elm.dropdown('set value', value);
+				elm.dropdown('set text', name);
 			} else {
 				elm.dropdown('restore placeholder text');
 			}
@@ -383,7 +388,6 @@ function initTab(tab) {
 
 	$('#' + tab + '-locations .encounter-picker[data-name!=""]').each(function() {
 		const value = escapeHTML($(this).data('value'));
-		$(this).attr('aria-label', value + ' ');
 		$(this).dropdown('set value', value);
 		$(this).dropdown('set text', '<i class="pkmn ' + value + '"></i>' + $(this).data('name'));
 	});
@@ -414,7 +418,7 @@ function saveData(game) {
 		const nickname = localStorage.getItem(game + location.value + '-nickname');
 		const status = localStorage.getItem(game + location.value + '-status');
 
-		if (encounter !== null || name !== null || nickname !== null || status !== null) {
+		if (encounter || name || nickname || status) {
 			blobData.locations.push({
 				id: location.value,
 				encounter: encounter,
@@ -541,7 +545,7 @@ $(() => {
 	}).on('change', '.nickname-input', function() {
 		const elm = $(this);
 
-		if (elm.val() !== '' && elm.val() !== null) {
+		if (elm.val()) {
 			elm.closest('td').data('sortValue', elm.val());
 			localStorage.setItem(elm.prop('id'), elm.val());
 		} else {
