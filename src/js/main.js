@@ -38,7 +38,7 @@ function renderMain() {
 				'</div>' +
 				'<div class="right horizontally fitted item">' +
 					'<button class="ui basic fluid button addLocation"><i class="plus icon"></i>Add location</button>' +
-					'<button class="ui basic button gameSettings" title="Game settings"><i class="settings icon"></i></button>' +
+					'<button class="ui basic icon button gameSettings" title="Game settings"><i class="settings icon"></i></button>' +
 				'</div>' +
 			'</div>' +
 			'<table class="ui table sortable selectable">' +
@@ -107,12 +107,12 @@ function renderLocations(game, darkTheme) {
 					'<i class="dropdown icon"></i>' +
 					'<div class="default text">Status</div>' +
 					'<div class="menu">' +
-						'<div class="item" data-value="captured"><i class="checkmark icon"></i>Captured</div>' +
+						'<div class="item" data-value="captured"><i class="check icon"></i>Captured</div>' +
 						'<div class="item" data-value="received"><i class="gift icon"></i>Received</div>' +
 						'<div class="item" data-value="traded"><i class="exchange icon"></i>Traded</div>' +
 						'<div class="item" data-value="missed"><i class="ban icon"></i>Missed</div>' +
-						'<div class="item" data-value="stored"><i class="hdd outline icon"></i>Stored</div>' +
-						'<div class="item" data-value="deceased"><i class="remove user icon"></i>Deceased</div>' +
+						'<div class="item" data-value="stored"><i class="hdd icon"></i>Stored</div>' +
+						'<div class="item" data-value="deceased"><i class="skull icon"></i>Deceased</div>' +
 					'</div>' +
 				'</div>' +
 			'</td>' +

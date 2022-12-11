@@ -4580,11 +4580,6 @@ const pkmnData = [
 		icon: "placeholder"
 	},
 	{
-		name: "Dudunsparce",
-		value: "dudunsparce",
-		icon: "placeholder"
-	},
-	{
 		name: "Tarountula",
 		value: "tarountula",
 		icon: "placeholder"
@@ -4605,68 +4600,38 @@ const pkmnData = [
 		icon: "placeholder"
 	},
 	{
-		name: "Rellor",
-		value: "rellor",
+		name: "Pawmi",
+		value: "pawmi",
 		icon: "placeholder"
 	},
 	{
-		name: "Rabsca",
-		value: "rabsca",
+		name: "Pawmo",
+		value: "pawmo",
 		icon: "placeholder"
 	},
 	{
-		name: "Greavard",
-		value: "greavard",
+		name: "Pawmot",
+		value: "pawmot",
 		icon: "placeholder"
 	},
 	{
-		name: "Houndstone",
-		value: "houndstone",
+		name: "Tandemaus",
+		value: "tandemaus",
 		icon: "placeholder"
 	},
 	{
-		name: "Flittle",
-		value: "flittle",
+		name: "Maushold",
+		value: "maushold",
 		icon: "placeholder"
 	},
 	{
-		name: "Espathra",
-		value: "espathra",
+		name: "Fidough",
+		value: "fidough",
 		icon: "placeholder"
 	},
 	{
-		name: "Farigiraf",
-		value: "farigiraf",
-		icon: "placeholder"
-	},
-	{
-		name: "Wiglett",
-		value: "wiglett",
-		icon: "placeholder"
-	},
-	{
-		name: "Wugtrio",
-		value: "wugtrio",
-		icon: "placeholder"
-	},
-	{
-		name: "Dondozo",
-		value: "dondozo",
-		icon: "placeholder"
-	},
-	{
-		name: "Veluza",
-		value: "veluza",
-		icon: "placeholder"
-	},
-	{
-		name: "Finizen",
-		value: "finizen",
-		icon: "placeholder"
-	},
-	{
-		name: "Palafin",
-		value: "palafin",
+		name: "Dachsbun",
+		value: "dachsbun",
 		icon: "placeholder"
 	},
 	{
@@ -4685,128 +4650,8 @@ const pkmnData = [
 		icon: "placeholder"
 	},
 	{
-		name: "Capsakid",
-		value: "capsakid",
-		icon: "placeholder"
-	},
-	{
-		name: "Scovillain",
-		value: "scovillain",
-		icon: "placeholder"
-	},
-	{
-		name: "Tadbulb",
-		value: "tadbulb",
-		icon: "placeholder"
-	},
-	{
-		name: "Bellibolt",
-		value: "bellibolt",
-		icon: "placeholder"
-	},
-	{
-		name: "Varoom",
-		value: "varoom",
-		icon: "placeholder"
-	},
-	{
-		name: "Revavroom",
-		value: "revavroom",
-		icon: "placeholder"
-	},
-	{
-		name: "Orthworm",
-		value: "orthworm",
-		icon: "placeholder"
-	},
-	{
-		name: "Tandemaus",
-		value: "tandemaus",
-		icon: "placeholder"
-	},
-	{
-		name: "Maushold",
-		value: "maushold",
-		icon: "placeholder"
-	},
-	{
-		name: "Cetoddle",
-		value: "cetoddle",
-		icon: "placeholder"
-	},
-	{
-		name: "Cetitan",
-		value: "cetitan",
-		icon: "placeholder"
-	},
-	{
-		name: "Frigibax",
-		value: "frigibax",
-		icon: "placeholder"
-	},
-	{
-		name: "Arctibax",
-		value: "arctibax",
-		icon: "placeholder"
-	},
-	{
-		name: "Baxcalibur",
-		value: "baxcalibur",
-		icon: "placeholder"
-	},
-	{
-		name: "Tatsugiri",
-		value: "tatsugiri",
-		icon: "placeholder"
-	},
-	{
-		name: "Cyclizar",
-		value: "cyclizar",
-		icon: "placeholder"
-	},
-	{
-		name: "Pawmi",
-		value: "pawmi",
-		icon: "placeholder"
-	},
-	{
-		name: "Pawmo",
-		value: "pawmo",
-		icon: "placeholder"
-	},
-	{
-		name: "Pawmot",
-		value: "pawmot",
-		icon: "placeholder"
-	},
-	{
-		name: "Wattrel",
-		value: "wattrel",
-		icon: "placeholder"
-	},
-	{
-		name: "Kilowattrel",
-		value: "kilowattrel",
-		icon: "placeholder"
-	},
-	{
-		name: "Bombirdier",
-		value: "bombirdier",
-		icon: "placeholder"
-	},
-	{
 		name: "Squawkabilly",
 		value: "squawkabilly",
-		icon: "placeholder"
-	},
-	{
-		name: "Flamigo",
-		value: "flamigo",
-		icon: "placeholder"
-	},
-	{
-		name: "Klawf",
-		value: "klawf",
 		icon: "placeholder"
 	},
 	{
@@ -4825,33 +4670,38 @@ const pkmnData = [
 		icon: "placeholder"
 	},
 	{
-		name: "Glimmet",
-		value: "glimmet",
+		name: "Charcadet",
+		value: "charcadet",
 		icon: "placeholder"
 	},
 	{
-		name: "Glimmora",
-		value: "glimmora",
+		name: "Armarouge",
+		value: "armarouge",
 		icon: "placeholder"
 	},
 	{
-		name: "Shroodle",
-		value: "shroodle",
+		name: "Ceruledge",
+		value: "ceruledge",
 		icon: "placeholder"
 	},
 	{
-		name: "Grafaiai",
-		value: "grafaiai",
+		name: "Tadbulb",
+		value: "tadbulb",
 		icon: "placeholder"
 	},
 	{
-		name: "Fidough",
-		value: "fidough",
+		name: "Bellibolt",
+		value: "bellibolt",
 		icon: "placeholder"
 	},
 	{
-		name: "Dachsbun",
-		value: "dachsbun",
+		name: "Wattrel",
+		value: "wattrel",
+		icon: "placeholder"
+	},
+	{
+		name: "Kilowattrel",
+		value: "kilowattrel",
 		icon: "placeholder"
 	},
 	{
@@ -4865,6 +4715,16 @@ const pkmnData = [
 		icon: "placeholder"
 	},
 	{
+		name: "Shroodle",
+		value: "shroodle",
+		icon: "placeholder"
+	},
+	{
+		name: "Grafaiai",
+		value: "grafaiai",
+		icon: "placeholder"
+	},
+	{
 		name: "Bramblin",
 		value: "bramblin",
 		icon: "placeholder"
@@ -4875,113 +4735,48 @@ const pkmnData = [
 		icon: "placeholder"
 	},
 	{
-		name: "Gimmighoul",
-		value: "gimmighoul",
+		name: "Toedscool",
+		value: "toedscool",
 		icon: "placeholder"
 	},
 	{
-		name: "Gholdengo",
-		value: "gholdengo",
+		name: "Toedscruel",
+		value: "toedscruel",
 		icon: "placeholder"
 	},
 	{
-		name: "Great Tusk",
-		value: "greattusk",
+		name: "Klawf",
+		value: "klawf",
 		icon: "placeholder"
 	},
 	{
-		name: "Brute Bonnet",
-		value: "brutebonnet",
+		name: "Capsakid",
+		value: "capsakid",
 		icon: "placeholder"
 	},
 	{
-		name: "Sandy Shocks",
-		value: "sandyshocks",
+		name: "Scovillain",
+		value: "scovillain",
 		icon: "placeholder"
 	},
 	{
-		name: "Scream Tail",
-		value: "screamtail",
+		name: "Rellor",
+		value: "rellor",
 		icon: "placeholder"
 	},
 	{
-		name: "Flutter Mane",
-		value: "fluttermane",
+		name: "Rabsca",
+		value: "rabsca",
 		icon: "placeholder"
 	},
 	{
-		name: "Slither Wing",
-		value: "slitherwing",
+		name: "Flittle",
+		value: "flittle",
 		icon: "placeholder"
 	},
 	{
-		name: "Roaring Moon",
-		value: "roaringmoon",
-		icon: "placeholder"
-	},
-	{
-		name: "Iron Treads",
-		value: "irontreads",
-		icon: "placeholder"
-	},
-	{
-		name: "Iron Moth",
-		value: "ironmoth",
-		icon: "placeholder"
-	},
-	{
-		name: "Iron Hands",
-		value: "ironhands",
-		icon: "placeholder"
-	},
-	{
-		name: "Iron Jugulis",
-		value: "ironjugulis",
-		icon: "placeholder"
-	},
-	{
-		name: "Iron Thorns",
-		value: "ironthorns",
-		icon: "placeholder"
-	},
-	{
-		name: "Iron Bundle",
-		value: "ironbundle",
-		icon: "placeholder"
-	},
-	{
-		name: "Iron Valiant",
-		value: "ironvaliant",
-		icon: "placeholder"
-	},
-	{
-		name: "Ting-Lu",
-		value: "ting-lu",
-		icon: "placeholder"
-	},
-	{
-		name: "Chien-Pao",
-		value: "chien-pao",
-		icon: "placeholder"
-	},
-	{
-		name: "Wo-Chien",
-		value: "wo-chien",
-		icon: "placeholder"
-	},
-	{
-		name: "Chi-Yu",
-		value: "chi-yu",
-		icon: "placeholder"
-	},
-	{
-		name: "Koraidon",
-		value: "koraidon",
-		icon: "placeholder"
-	},
-	{
-		name: "Miraidon",
-		value: "miraidon",
+		name: "Espathra",
+		value: "espathra",
 		icon: "placeholder"
 	},
 	{
@@ -5000,33 +4795,103 @@ const pkmnData = [
 		icon: "placeholder"
 	},
 	{
-		name: "Charcadet",
-		value: "charcadet",
+		name: "Wiglett",
+		value: "wiglett",
 		icon: "placeholder"
 	},
 	{
-		name: "Armarouge",
-		value: "armarouge",
+		name: "Wugtrio",
+		value: "wugtrio",
 		icon: "placeholder"
 	},
 	{
-		name: "Ceruledge",
-		value: "ceruledge",
+		name: "Bombirdier",
+		value: "bombirdier",
 		icon: "placeholder"
 	},
 	{
-		name: "Toedscool",
-		value: "toedscool",
+		name: "Finizen",
+		value: "finizen",
 		icon: "placeholder"
 	},
 	{
-		name: "Toedscruel",
-		value: "toedscruel",
+		name: "Palafin",
+		value: "palafin",
 		icon: "placeholder"
 	},
 	{
-		name: "Kingambit",
-		value: "kingambit",
+		name: "Varoom",
+		value: "varoom",
+		icon: "placeholder"
+	},
+	{
+		name: "Revavroom",
+		value: "revavroom",
+		icon: "placeholder"
+	},
+	{
+		name: "Cyclizar",
+		value: "cyclizar",
+		icon: "placeholder"
+	},
+	{
+		name: "Orthworm",
+		value: "orthworm",
+		icon: "placeholder"
+	},
+	{
+		name: "Glimmet",
+		value: "glimmet",
+		icon: "placeholder"
+	},
+	{
+		name: "Glimmora",
+		value: "glimmora",
+		icon: "placeholder"
+	},
+	{
+		name: "Greavard",
+		value: "greavard",
+		icon: "placeholder"
+	},
+	{
+		name: "Houndstone",
+		value: "houndstone",
+		icon: "placeholder"
+	},
+	{
+		name: "Flamigo",
+		value: "flamigo",
+		icon: "placeholder"
+	},
+	{
+		name: "Cetoddle",
+		value: "cetoddle",
+		icon: "placeholder"
+	},
+	{
+		name: "Cetitan",
+		value: "cetitan",
+		icon: "placeholder"
+	},
+	{
+		name: "Veluza",
+		value: "veluza",
+		icon: "placeholder"
+	},
+	{
+		name: "Dondozo",
+		value: "dondozo",
+		icon: "placeholder"
+	},
+	{
+		name: "Tatsugiri",
+		value: "tatsugiri",
+		icon: "placeholder"
+	},
+	{
+		name: "Annihilape",
+		value: "annihilape",
 		icon: "placeholder"
 	},
 	{
@@ -5035,8 +4900,143 @@ const pkmnData = [
 		icon: "placeholder"
 	},
 	{
-		name: "Annihilape",
-		value: "annihilape",
+		name: "Farigiraf",
+		value: "farigiraf",
+		icon: "placeholder"
+	},
+	{
+		name: "Dudunsparce",
+		value: "dudunsparce",
+		icon: "placeholder"
+	},
+	{
+		name: "Kingambit",
+		value: "kingambit",
+		icon: "placeholder"
+	},
+	{
+		name: "Great Tusk",
+		value: "greattusk",
+		icon: "placeholder"
+	},
+	{
+		name: "Scream Tail",
+		value: "screamtail",
+		icon: "placeholder"
+	},
+	{
+		name: "Brute Bonnet",
+		value: "brutebonnet",
+		icon: "placeholder"
+	},
+	{
+		name: "Flutter Mane",
+		value: "fluttermane",
+		icon: "placeholder"
+	},
+	{
+		name: "Slither Wing",
+		value: "slitherwing",
+		icon: "placeholder"
+	},
+	{
+		name: "Sandy Shocks",
+		value: "sandyshocks",
+		icon: "placeholder"
+	},
+	{
+		name: "Iron Treads",
+		value: "irontreads",
+		icon: "placeholder"
+	},
+	{
+		name: "Iron Bundle",
+		value: "ironbundle",
+		icon: "placeholder"
+	},
+	{
+		name: "Iron Hands",
+		value: "ironhands",
+		icon: "placeholder"
+	},
+	{
+		name: "Iron Jugulis",
+		value: "ironjugulis",
+		icon: "placeholder"
+	},
+	{
+		name: "Iron Moth",
+		value: "ironmoth",
+		icon: "placeholder"
+	},
+	{
+		name: "Iron Thorns",
+		value: "ironthorns",
+		icon: "placeholder"
+	},
+	{
+		name: "Frigibax",
+		value: "frigibax",
+		icon: "placeholder"
+	},
+	{
+		name: "Arctibax",
+		value: "arctibax",
+		icon: "placeholder"
+	},
+	{
+		name: "Baxcalibur",
+		value: "baxcalibur",
+		icon: "placeholder"
+	},
+	{
+		name: "Gimmighoul",
+		value: "gimmighoul",
+		icon: "placeholder"
+	},
+	{
+		name: "Gholdengo",
+		value: "gholdengo",
+		icon: "placeholder"
+	},
+	{
+		name: "Wo-Chien",
+		value: "wo-chien",
+		icon: "placeholder"
+	},
+	{
+		name: "Chien-Pao",
+		value: "chien-pao",
+		icon: "placeholder"
+	},
+	{
+		name: "Ting-Lu",
+		value: "ting-lu",
+		icon: "placeholder"
+	},
+	{
+		name: "Chi-Yu",
+		value: "chi-yu",
+		icon: "placeholder"
+	},
+	{
+		name: "Roaring Moon",
+		value: "roaringmoon",
+		icon: "placeholder"
+	},
+	{
+		name: "Iron Valiant",
+		value: "ironvaliant",
+		icon: "placeholder"
+	},
+	{
+		name: "Koraidon",
+		value: "koraidon",
+		icon: "placeholder"
+	},
+	{
+		name: "Miraidon",
+		value: "miraidon",
 		icon: "placeholder"
 	}
 ];
