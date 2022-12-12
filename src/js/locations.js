@@ -3688,7 +3688,7 @@ var games = {
 		id: "custom",
 		title: "Custom Game",
 		nameLimit: 12,
-		dexLimit: 905,
+		dexLimit: 1008,
 		loaded: false,
 		locations: [
 			{

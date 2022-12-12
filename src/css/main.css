@@ -495,6 +495,9 @@ i.icon.skull::before {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M416 399c59-41 96-104 96-175C512 100 397 0 256 0S0 100 0 224c0 71 38 134 96 175v65c0 27 22 48 48 48h48v-48c0-9 7-16 16-16s16 7 16 16v48h64v-48c0-9 7-16 16-16s16 7 16 16v48h48c27 0 48-21 48-48v-65zM224 256a64 64 0 1 1-128 0 64 64 0 0 1 128 0zm128 64a64 64 0 1 1 0-128 64 64 0 0 1 0 128z'/%3E%3C/svg%3E");
 }
 
-i.icon.check::before {
+i.icon.check::before,
+.ui.checkbox:not(.toggle) input:checked ~ .box::after,
+.ui.checkbox:not(.toggle) input:checked ~ label::after {
+	content: '';
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M471 105c12 13 12 33 0 46L215 407a32 32 0 0 1-46 0L41 279a32 32 0 0 1 46-46l105 106 233-234c13-12 33-12 46 0z'/%3E%3C/svg%3E");
 }
