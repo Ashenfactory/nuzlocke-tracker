@@ -1,5 +1,5 @@
 const APP_PREFIX = 'nuzlocke-tracker';
-const VERSION = 2;
+const VERSION = 3;
 const CACHE_NAME = APP_PREFIX + '-' + VERSION;
 const URLS = [
 	'/nuzlocke-tracker/',

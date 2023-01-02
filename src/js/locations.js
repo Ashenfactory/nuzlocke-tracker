@@ -3684,6 +3684,139 @@ var games = {
 			}
 		]
 	},
+	sv: {
+		id: "sv",
+		title: "Scarlet and Violet",
+		nameLimit: 12,
+		dexLimit: 1008,
+		loaded: false,
+		locations: [
+			{
+				name: "Starter",
+				value: 0
+			},
+			{
+				name: "Poco Path",
+				value: 1
+			},
+			{
+				name: "Inlet Grotto",
+				value: 2
+			},
+			{
+				name: "South Province: Area One",
+				value: 3
+			},
+			{
+				name: "Pokémon League",
+				value: 4
+			},
+			{
+				name: "South Province: Area Two",
+				value: 5
+			},
+			{
+				name: "South Province: Area Three",
+				value: 6
+			},
+			{
+				name: "East Province: Area One",
+				value: 7
+			},
+			{
+				name: "East Province: Area Two",
+				value: 8
+			},
+			{
+				name: "South Province: Area Four",
+				value: 9
+			},
+			{
+				name: "South Province: Area Five",
+				value: 10
+			},
+			{
+				name: "West Province: Area One",
+				value: 11
+			},
+			{
+				name: "Asado Desert",
+				value: 12
+			},
+			{
+				name: "West Paldean Sea",
+				value: 13
+			},
+			{
+				name: "West Province: Area Two",
+				value: 14
+			},
+			{
+				name: "West Province: Area Three",
+				value: 15
+			},
+			{
+				name: "East Province: Area Three",
+				value: 16
+			},
+			{
+				name: "East Paldean Sea",
+				value: 17
+			},
+			{
+				name: "Tagtree Thicket",
+				value: 18
+			},
+			{
+				name: "South Province: Area Six",
+				value: 19
+			},
+			{
+				name: "Alfornada Cavern",
+				value: 20
+			},
+			{
+				name: "South Paldean Sea",
+				value: 21
+			},
+			{
+				name: "Dalizapa Passage",
+				value: 22
+			},
+			{
+				name: "Glaseado Mountain",
+				value: 23
+			},
+			{
+				name: "North Province: Area Three",
+				value: 24
+			},
+			{
+				name: "North Paldean Sea",
+				value: 25
+			},
+			{
+				name: "North Province: Area One",
+				value: 26
+			},
+			{
+				name: "North Province: Area Two",
+				value: 27
+			},
+			{
+				name: "Socarrat Trail",
+				value: 28
+			},
+			{
+				name: "Casseroya Lake",
+				value: 29
+			},
+			{
+				name: "Area Zero",
+				value: 30
+			},
+		]
+	},
 	custom: {
 		id: "custom",
 		title: "Custom Game",

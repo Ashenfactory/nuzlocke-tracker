@@ -29,6 +29,19 @@ for (let i = 1; i <= pkmnCount; i++) {
 additionalPkmnData = JSON.parse(fs.readFileSync('scripts/additional-pokemon.json', 'utf-8'));
 dataJS = dataJS.concat(additionalPkmnData);
 
+excludedPkmn = JSON.parse(fs.readFileSync('scripts/excluded-pokemon.json', 'utf-8'));
+for (const [game, ids] of Object.entries(excludedPkmn)) {
+	ids.forEach(id => {
+		const index = id - 1;
+
+		if (dataJS[index].exclude) {
+			dataJS[index].exclude.push(game);
+		} else {
+			dataJS[index].exclude = [game];
+		}
+	});
+}
+
 fs.writeFileSync('images.txt', images);
 execSync('convert @images.txt -append img/sprites.png');
 fs.unlinkSync('images.txt');

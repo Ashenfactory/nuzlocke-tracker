@@ -429,9 +429,12 @@ function saveData(game) {
 		}
 	});
 
+	const link = document.createElement('a');
 	const blob = new Blob([JSON.stringify(blobData)], {type: 'application/json;charset=utf-8'});
 
-	saveAs(blob, game + '.' + new Date().toISOString().slice(0, 10) + '.json');
+	link.setAttribute('href', URL.createObjectURL(blob));
+	link.setAttribute('download', game + '.' + new Date().toISOString().slice(0, 10) + '.json');
+	link.click();
 }
 
 function addLocation(location, game) {
@@ -626,12 +629,6 @@ $(() => {
 		}
 	});
 
-	$('.cookie.nag').nag({
-		storageMethod: 'localstorage',
-		key: 'accepts-cookies',
-		value: true
-	});
-
 	$('#resetModal').modal('attach events', '#resetData', 'show');
 
 	$('#locationModal').modal('attach events', '.addLocation', 'show');
@@ -641,8 +638,6 @@ $(() => {
 	$('#fileLoader').on('change', () => {
 		$('#importModal').modal('show');
 	});
-
-	$('.copyright-year').text((new Date()).getUTCFullYear());
 
 	$('#gameMenu').dropdown();
 

@@ -2,17 +2,26 @@ const pkmnData = [
 	{
 		name: "Bulbasaur",
 		value: "bulbasaur",
-		icon: "bulbasaur"
+		icon: "bulbasaur",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ivysaur",
 		value: "ivysaur",
-		icon: "ivysaur"
+		icon: "ivysaur",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Venusaur",
 		value: "venusaur",
-		icon: "venusaur"
+		icon: "venusaur",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Charmander",
@@ -32,92 +41,158 @@ const pkmnData = [
 	{
 		name: "Squirtle",
 		value: "squirtle",
-		icon: "squirtle"
+		icon: "squirtle",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Wartortle",
 		value: "wartortle",
-		icon: "wartortle"
+		icon: "wartortle",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Blastoise",
 		value: "blastoise",
-		icon: "blastoise"
+		icon: "blastoise",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Caterpie",
 		value: "caterpie",
-		icon: "caterpie"
+		icon: "caterpie",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Metapod",
 		value: "metapod",
-		icon: "metapod"
+		icon: "metapod",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Butterfree",
 		value: "butterfree",
-		icon: "butterfree"
+		icon: "butterfree",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Weedle",
 		value: "weedle",
-		icon: "weedle"
+		icon: "weedle",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Kakuna",
 		value: "kakuna",
-		icon: "kakuna"
+		icon: "kakuna",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Beedrill",
 		value: "beedrill",
-		icon: "beedrill"
+		icon: "beedrill",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Pidgey",
 		value: "pidgey",
-		icon: "pidgey"
+		icon: "pidgey",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Pidgeotto",
 		value: "pidgeotto",
-		icon: "pidgeotto"
+		icon: "pidgeotto",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Pidgeot",
 		value: "pidgeot",
-		icon: "pidgeot"
+		icon: "pidgeot",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Rattata",
 		value: "rattata",
-		icon: "rattata"
+		icon: "rattata",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Raticate",
 		value: "raticate",
-		icon: "raticate"
+		icon: "raticate",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Spearow",
 		value: "spearow",
-		icon: "spearow"
+		icon: "spearow",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Fearow",
 		value: "fearow",
-		icon: "fearow"
+		icon: "fearow",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Ekans",
 		value: "ekans",
-		icon: "ekans"
+		icon: "ekans",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Arbok",
 		value: "arbok",
-		icon: "arbok"
+		icon: "arbok",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Pikachu",
@@ -132,62 +207,98 @@ const pkmnData = [
 	{
 		name: "Sandshrew",
 		value: "sandshrew",
-		icon: "sandshrew"
+		icon: "sandshrew",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sandslash",
 		value: "sandslash",
-		icon: "sandslash"
+		icon: "sandslash",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Nidoran♀",
 		value: "nidoran-f",
-		icon: "nidoran-f"
+		icon: "nidoran-f",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Nidorina",
 		value: "nidorina",
-		icon: "nidorina"
+		icon: "nidorina",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Nidoqueen",
 		value: "nidoqueen",
-		icon: "nidoqueen"
+		icon: "nidoqueen",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Nidoran♂",
 		value: "nidoran-m",
-		icon: "nidoran-m"
+		icon: "nidoran-m",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Nidorino",
 		value: "nidorino",
-		icon: "nidorino"
+		icon: "nidorino",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Nidoking",
 		value: "nidoking",
-		icon: "nidoking"
+		icon: "nidoking",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Clefairy",
 		value: "clefairy",
-		icon: "clefairy"
+		icon: "clefairy",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Clefable",
 		value: "clefable",
-		icon: "clefable"
+		icon: "clefable",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Vulpix",
 		value: "vulpix",
-		icon: "vulpix"
+		icon: "vulpix",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ninetales",
 		value: "ninetales",
-		icon: "ninetales"
+		icon: "ninetales",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Jigglypuff",
@@ -202,47 +313,76 @@ const pkmnData = [
 	{
 		name: "Zubat",
 		value: "zubat",
-		icon: "zubat"
+		icon: "zubat",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Golbat",
 		value: "golbat",
-		icon: "golbat"
+		icon: "golbat",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Oddish",
 		value: "oddish",
-		icon: "oddish"
+		icon: "oddish",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Gloom",
 		value: "gloom",
-		icon: "gloom"
+		icon: "gloom",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Vileplume",
 		value: "vileplume",
-		icon: "vileplume"
+		icon: "vileplume",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Paras",
 		value: "paras",
-		icon: "paras"
+		icon: "paras",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Parasect",
 		value: "parasect",
-		icon: "parasect"
+		icon: "parasect",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Venonat",
 		value: "venonat",
-		icon: "venonat"
+		icon: "venonat",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Venomoth",
 		value: "venomoth",
-		icon: "venomoth"
+		icon: "venomoth",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Diglett",
@@ -277,12 +417,18 @@ const pkmnData = [
 	{
 		name: "Mankey",
 		value: "mankey",
-		icon: "mankey"
+		icon: "mankey",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Primeape",
 		value: "primeape",
-		icon: "primeape"
+		icon: "primeape",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Growlithe",
@@ -297,97 +443,160 @@ const pkmnData = [
 	{
 		name: "Poliwag",
 		value: "poliwag",
-		icon: "poliwag"
+		icon: "poliwag",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Poliwhirl",
 		value: "poliwhirl",
-		icon: "poliwhirl"
+		icon: "poliwhirl",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Poliwrath",
 		value: "poliwrath",
-		icon: "poliwrath"
+		icon: "poliwrath",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Abra",
 		value: "abra",
-		icon: "abra"
+		icon: "abra",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Kadabra",
 		value: "kadabra",
-		icon: "kadabra"
+		icon: "kadabra",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Alakazam",
 		value: "alakazam",
-		icon: "alakazam"
+		icon: "alakazam",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Machop",
 		value: "machop",
-		icon: "machop"
+		icon: "machop",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Machoke",
 		value: "machoke",
-		icon: "machoke"
+		icon: "machoke",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Machamp",
 		value: "machamp",
-		icon: "machamp"
+		icon: "machamp",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Bellsprout",
 		value: "bellsprout",
-		icon: "bellsprout"
+		icon: "bellsprout",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Weepinbell",
 		value: "weepinbell",
-		icon: "weepinbell"
+		icon: "weepinbell",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Victreebel",
 		value: "victreebel",
-		icon: "victreebel"
+		icon: "victreebel",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Tentacool",
 		value: "tentacool",
-		icon: "tentacool"
+		icon: "tentacool",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tentacruel",
 		value: "tentacruel",
-		icon: "tentacruel"
+		icon: "tentacruel",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Geodude",
 		value: "geodude",
-		icon: "geodude"
+		icon: "geodude",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Graveler",
 		value: "graveler",
-		icon: "graveler"
+		icon: "graveler",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Golem",
 		value: "golem",
-		icon: "golem"
+		icon: "golem",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Ponyta",
 		value: "ponyta",
-		icon: "ponyta"
+		icon: "ponyta",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Rapidash",
 		value: "rapidash",
-		icon: "rapidash"
+		icon: "rapidash",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Slowpoke",
@@ -412,37 +621,62 @@ const pkmnData = [
 	{
 		name: "Farfetch'd",
 		value: "farfetchd",
-		icon: "farfetchd"
+		icon: "farfetchd",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Doduo",
 		value: "doduo",
-		icon: "doduo"
+		icon: "doduo",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Dodrio",
 		value: "dodrio",
-		icon: "dodrio"
+		icon: "dodrio",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Seel",
 		value: "seel",
-		icon: "seel"
+		icon: "seel",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Dewgong",
 		value: "dewgong",
-		icon: "dewgong"
+		icon: "dewgong",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Grimer",
 		value: "grimer",
-		icon: "grimer"
+		icon: "grimer",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Muk",
 		value: "muk",
-		icon: "muk"
+		icon: "muk",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Shellder",
@@ -472,92 +706,146 @@ const pkmnData = [
 	{
 		name: "Onix",
 		value: "onix",
-		icon: "onix"
+		icon: "onix",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Drowzee",
 		value: "drowzee",
-		icon: "drowzee"
+		icon: "drowzee",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Hypno",
 		value: "hypno",
-		icon: "hypno"
+		icon: "hypno",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Krabby",
 		value: "krabby",
-		icon: "krabby"
+		icon: "krabby",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Kingler",
 		value: "kingler",
-		icon: "kingler"
+		icon: "kingler",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Voltorb",
 		value: "voltorb",
-		icon: "voltorb"
+		icon: "voltorb",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Electrode",
 		value: "electrode",
-		icon: "electrode"
+		icon: "electrode",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Exeggcute",
 		value: "exeggcute",
-		icon: "exeggcute"
+		icon: "exeggcute",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Exeggutor",
 		value: "exeggutor",
-		icon: "exeggutor"
+		icon: "exeggutor",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cubone",
 		value: "cubone",
-		icon: "cubone"
+		icon: "cubone",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Marowak",
 		value: "marowak",
-		icon: "marowak"
+		icon: "marowak",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Hitmonlee",
 		value: "hitmonlee",
-		icon: "hitmonlee"
+		icon: "hitmonlee",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Hitmonchan",
 		value: "hitmonchan",
-		icon: "hitmonchan"
+		icon: "hitmonchan",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Lickitung",
 		value: "lickitung",
-		icon: "lickitung"
+		icon: "lickitung",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Koffing",
 		value: "koffing",
-		icon: "koffing"
+		icon: "koffing",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Weezing",
 		value: "weezing",
-		icon: "weezing"
+		icon: "weezing",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Rhyhorn",
 		value: "rhyhorn",
-		icon: "rhyhorn"
+		icon: "rhyhorn",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Rhydon",
 		value: "rhydon",
-		icon: "rhydon"
+		icon: "rhydon",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Chansey",
@@ -567,47 +855,74 @@ const pkmnData = [
 	{
 		name: "Tangela",
 		value: "tangela",
-		icon: "tangela"
+		icon: "tangela",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Kangaskhan",
 		value: "kangaskhan",
-		icon: "kangaskhan"
+		icon: "kangaskhan",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Horsea",
 		value: "horsea",
-		icon: "horsea"
+		icon: "horsea",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Seadra",
 		value: "seadra",
-		icon: "seadra"
+		icon: "seadra",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Goldeen",
 		value: "goldeen",
-		icon: "goldeen"
+		icon: "goldeen",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Seaking",
 		value: "seaking",
-		icon: "seaking"
+		icon: "seaking",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Staryu",
 		value: "staryu",
-		icon: "staryu"
+		icon: "staryu",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Starmie",
 		value: "starmie",
-		icon: "starmie"
+		icon: "starmie",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mr. Mime",
 		value: "mr-mime",
-		icon: "mr-mime"
+		icon: "mr-mime",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Scyther",
@@ -617,22 +932,34 @@ const pkmnData = [
 	{
 		name: "Jynx",
 		value: "jynx",
-		icon: "jynx"
+		icon: "jynx",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Electabuzz",
 		value: "electabuzz",
-		icon: "electabuzz"
+		icon: "electabuzz",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Magmar",
 		value: "magmar",
-		icon: "magmar"
+		icon: "magmar",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Pinsir",
 		value: "pinsir",
-		icon: "pinsir"
+		icon: "pinsir",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tauros",
@@ -652,7 +979,10 @@ const pkmnData = [
 	{
 		name: "Lapras",
 		value: "lapras",
-		icon: "lapras"
+		icon: "lapras",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ditto",
@@ -682,37 +1012,58 @@ const pkmnData = [
 	{
 		name: "Porygon",
 		value: "porygon",
-		icon: "porygon"
+		icon: "porygon",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Omanyte",
 		value: "omanyte",
-		icon: "omanyte"
+		icon: "omanyte",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Omastar",
 		value: "omastar",
-		icon: "omastar"
+		icon: "omastar",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Kabuto",
 		value: "kabuto",
-		icon: "kabuto"
+		icon: "kabuto",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Kabutops",
 		value: "kabutops",
-		icon: "kabutops"
+		icon: "kabutops",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Aerodactyl",
 		value: "aerodactyl",
-		icon: "aerodactyl"
+		icon: "aerodactyl",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Snorlax",
 		value: "snorlax",
-		icon: "snorlax"
+		icon: "snorlax",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Articuno",
@@ -757,102 +1108,174 @@ const pkmnData = [
 	{
 		name: "Chikorita",
 		value: "chikorita",
-		icon: "chikorita"
+		icon: "chikorita",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Bayleef",
 		value: "bayleef",
-		icon: "bayleef"
+		icon: "bayleef",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Meganium",
 		value: "meganium",
-		icon: "meganium"
+		icon: "meganium",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Cyndaquil",
 		value: "cyndaquil",
-		icon: "cyndaquil"
+		icon: "cyndaquil",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Quilava",
 		value: "quilava",
-		icon: "quilava"
+		icon: "quilava",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Typhlosion",
 		value: "typhlosion",
-		icon: "typhlosion"
+		icon: "typhlosion",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Totodile",
 		value: "totodile",
-		icon: "totodile"
+		icon: "totodile",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Croconaw",
 		value: "croconaw",
-		icon: "croconaw"
+		icon: "croconaw",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Feraligatr",
 		value: "feraligatr",
-		icon: "feraligatr"
+		icon: "feraligatr",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Sentret",
 		value: "sentret",
-		icon: "sentret"
+		icon: "sentret",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Furret",
 		value: "furret",
-		icon: "furret"
+		icon: "furret",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Hoothoot",
 		value: "hoothoot",
-		icon: "hoothoot"
+		icon: "hoothoot",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Noctowl",
 		value: "noctowl",
-		icon: "noctowl"
+		icon: "noctowl",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ledyba",
 		value: "ledyba",
-		icon: "ledyba"
+		icon: "ledyba",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Ledian",
 		value: "ledian",
-		icon: "ledian"
+		icon: "ledian",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Spinarak",
 		value: "spinarak",
-		icon: "spinarak"
+		icon: "spinarak",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Ariados",
 		value: "ariados",
-		icon: "ariados"
+		icon: "ariados",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Crobat",
 		value: "crobat",
-		icon: "crobat"
+		icon: "crobat",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Chinchou",
 		value: "chinchou",
-		icon: "chinchou"
+		icon: "chinchou",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Lanturn",
 		value: "lanturn",
-		icon: "lanturn"
+		icon: "lanturn",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Pichu",
@@ -862,7 +1285,10 @@ const pkmnData = [
 	{
 		name: "Cleffa",
 		value: "cleffa",
-		icon: "cleffa"
+		icon: "cleffa",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Igglybuff",
@@ -872,42 +1298,66 @@ const pkmnData = [
 	{
 		name: "Togepi",
 		value: "togepi",
-		icon: "togepi"
+		icon: "togepi",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Togetic",
 		value: "togetic",
-		icon: "togetic"
+		icon: "togetic",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Natu",
 		value: "natu",
-		icon: "natu"
+		icon: "natu",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Xatu",
 		value: "xatu",
-		icon: "xatu"
+		icon: "xatu",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mareep",
 		value: "mareep",
-		icon: "mareep"
+		icon: "mareep",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Flaaffy",
 		value: "flaaffy",
-		icon: "flaaffy"
+		icon: "flaaffy",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Ampharos",
 		value: "ampharos",
-		icon: "ampharos"
+		icon: "ampharos",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Bellossom",
 		value: "bellossom",
-		icon: "bellossom"
+		icon: "bellossom",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Marill",
@@ -927,42 +1377,68 @@ const pkmnData = [
 	{
 		name: "Politoed",
 		value: "politoed",
-		icon: "politoed"
+		icon: "politoed",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Hoppip",
 		value: "hoppip",
-		icon: "hoppip"
+		icon: "hoppip",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Skiploom",
 		value: "skiploom",
-		icon: "skiploom"
+		icon: "skiploom",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Jumpluff",
 		value: "jumpluff",
-		icon: "jumpluff"
+		icon: "jumpluff",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Aipom",
 		value: "aipom",
-		icon: "aipom"
+		icon: "aipom",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Sunkern",
 		value: "sunkern",
-		icon: "sunkern"
+		icon: "sunkern",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Sunflora",
 		value: "sunflora",
-		icon: "sunflora"
+		icon: "sunflora",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Yanma",
 		value: "yanma",
-		icon: "yanma"
+		icon: "yanma",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Wooper",
@@ -987,7 +1463,10 @@ const pkmnData = [
 	{
 		name: "Murkrow",
 		value: "murkrow",
-		icon: "murkrow"
+		icon: "murkrow",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Slowking",
@@ -997,32 +1476,51 @@ const pkmnData = [
 	{
 		name: "Misdreavus",
 		value: "misdreavus",
-		icon: "misdreavus"
+		icon: "misdreavus",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Unown",
 		value: "unown",
-		icon: "unown"
+		icon: "unown",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Wobbuffet",
 		value: "wobbuffet",
-		icon: "wobbuffet"
+		icon: "wobbuffet",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Girafarig",
 		value: "girafarig",
-		icon: "girafarig"
+		icon: "girafarig",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Pineco",
 		value: "pineco",
-		icon: "pineco"
+		icon: "pineco",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Forretress",
 		value: "forretress",
-		icon: "forretress"
+		icon: "forretress",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Dunsparce",
@@ -1032,22 +1530,37 @@ const pkmnData = [
 	{
 		name: "Gligar",
 		value: "gligar",
-		icon: "gligar"
+		icon: "gligar",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Steelix",
 		value: "steelix",
-		icon: "steelix"
+		icon: "steelix",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Snubbull",
 		value: "snubbull",
-		icon: "snubbull"
+		icon: "snubbull",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Granbull",
 		value: "granbull",
-		icon: "granbull"
+		icon: "granbull",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Qwilfish",
@@ -1062,7 +1575,10 @@ const pkmnData = [
 	{
 		name: "Shuckle",
 		value: "shuckle",
-		icon: "shuckle"
+		icon: "shuckle",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Heracross",
@@ -1077,47 +1593,76 @@ const pkmnData = [
 	{
 		name: "Teddiursa",
 		value: "teddiursa",
-		icon: "teddiursa"
+		icon: "teddiursa",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Ursaring",
 		value: "ursaring",
-		icon: "ursaring"
+		icon: "ursaring",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Slugma",
 		value: "slugma",
-		icon: "slugma"
+		icon: "slugma",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Magcargo",
 		value: "magcargo",
-		icon: "magcargo"
+		icon: "magcargo",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Swinub",
 		value: "swinub",
-		icon: "swinub"
+		icon: "swinub",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Piloswine",
 		value: "piloswine",
-		icon: "piloswine"
+		icon: "piloswine",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Corsola",
 		value: "corsola",
-		icon: "corsola"
+		icon: "corsola",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Remoraid",
 		value: "remoraid",
-		icon: "remoraid"
+		icon: "remoraid",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Octillery",
 		value: "octillery",
-		icon: "octillery"
+		icon: "octillery",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Delibird",
@@ -1127,82 +1672,131 @@ const pkmnData = [
 	{
 		name: "Mantine",
 		value: "mantine",
-		icon: "mantine"
+		icon: "mantine",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Skarmory",
 		value: "skarmory",
-		icon: "skarmory"
+		icon: "skarmory",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Houndour",
 		value: "houndour",
-		icon: "houndour"
+		icon: "houndour",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Houndoom",
 		value: "houndoom",
-		icon: "houndoom"
+		icon: "houndoom",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Kingdra",
 		value: "kingdra",
-		icon: "kingdra"
+		icon: "kingdra",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Phanpy",
 		value: "phanpy",
-		icon: "phanpy"
+		icon: "phanpy",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Donphan",
 		value: "donphan",
-		icon: "donphan"
+		icon: "donphan",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Porygon2",
 		value: "porygon2",
-		icon: "porygon2"
+		icon: "porygon2",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Stantler",
 		value: "stantler",
-		icon: "stantler"
+		icon: "stantler",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Smeargle",
 		value: "smeargle",
-		icon: "smeargle"
+		icon: "smeargle",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Tyrogue",
 		value: "tyrogue",
-		icon: "tyrogue"
+		icon: "tyrogue",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Hitmontop",
 		value: "hitmontop",
-		icon: "hitmontop"
+		icon: "hitmontop",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Smoochum",
 		value: "smoochum",
-		icon: "smoochum"
+		icon: "smoochum",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Elekid",
 		value: "elekid",
-		icon: "elekid"
+		icon: "elekid",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Magby",
 		value: "magby",
-		icon: "magby"
+		icon: "magby",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Miltank",
 		value: "miltank",
-		icon: "miltank"
+		icon: "miltank",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Blissey",
@@ -1212,17 +1806,26 @@ const pkmnData = [
 	{
 		name: "Raikou",
 		value: "raikou",
-		icon: "raikou"
+		icon: "raikou",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Entei",
 		value: "entei",
-		icon: "entei"
+		icon: "entei",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Suicune",
 		value: "suicune",
-		icon: "suicune"
+		icon: "suicune",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Larvitar",
@@ -1242,147 +1845,243 @@ const pkmnData = [
 	{
 		name: "Lugia",
 		value: "lugia",
-		icon: "lugia"
+		icon: "lugia",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ho-Oh",
 		value: "ho-oh",
-		icon: "ho-oh"
+		icon: "ho-oh",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Celebi",
 		value: "celebi",
-		icon: "celebi"
+		icon: "celebi",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Treecko",
 		value: "treecko",
-		icon: "treecko"
+		icon: "treecko",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Grovyle",
 		value: "grovyle",
-		icon: "grovyle"
+		icon: "grovyle",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sceptile",
 		value: "sceptile",
-		icon: "sceptile"
+		icon: "sceptile",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Torchic",
 		value: "torchic",
-		icon: "torchic"
+		icon: "torchic",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Combusken",
 		value: "combusken",
-		icon: "combusken"
+		icon: "combusken",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Blaziken",
 		value: "blaziken",
-		icon: "blaziken"
+		icon: "blaziken",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mudkip",
 		value: "mudkip",
-		icon: "mudkip"
+		icon: "mudkip",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Marshtomp",
 		value: "marshtomp",
-		icon: "marshtomp"
+		icon: "marshtomp",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Swampert",
 		value: "swampert",
-		icon: "swampert"
+		icon: "swampert",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Poochyena",
 		value: "poochyena",
-		icon: "poochyena"
+		icon: "poochyena",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Mightyena",
 		value: "mightyena",
-		icon: "mightyena"
+		icon: "mightyena",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Zigzagoon",
 		value: "zigzagoon",
-		icon: "zigzagoon"
+		icon: "zigzagoon",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Linoone",
 		value: "linoone",
-		icon: "linoone"
+		icon: "linoone",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Wurmple",
 		value: "wurmple",
-		icon: "wurmple"
+		icon: "wurmple",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Silcoon",
 		value: "silcoon",
-		icon: "silcoon"
+		icon: "silcoon",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Beautifly",
 		value: "beautifly",
-		icon: "beautifly"
+		icon: "beautifly",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Cascoon",
 		value: "cascoon",
-		icon: "cascoon"
+		icon: "cascoon",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Dustox",
 		value: "dustox",
-		icon: "dustox"
+		icon: "dustox",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Lotad",
 		value: "lotad",
-		icon: "lotad"
+		icon: "lotad",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Lombre",
 		value: "lombre",
-		icon: "lombre"
+		icon: "lombre",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ludicolo",
 		value: "ludicolo",
-		icon: "ludicolo"
+		icon: "ludicolo",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Seedot",
 		value: "seedot",
-		icon: "seedot"
+		icon: "seedot",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Nuzleaf",
 		value: "nuzleaf",
-		icon: "nuzleaf"
+		icon: "nuzleaf",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Shiftry",
 		value: "shiftry",
-		icon: "shiftry"
+		icon: "shiftry",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Taillow",
 		value: "taillow",
-		icon: "taillow"
+		icon: "taillow",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Swellow",
 		value: "swellow",
-		icon: "swellow"
+		icon: "swellow",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Wingull",
@@ -1412,77 +2111,122 @@ const pkmnData = [
 	{
 		name: "Surskit",
 		value: "surskit",
-		icon: "surskit"
+		icon: "surskit",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Masquerain",
 		value: "masquerain",
-		icon: "masquerain"
+		icon: "masquerain",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Shroomish",
 		value: "shroomish",
-		icon: "shroomish"
+		icon: "shroomish",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Breloom",
 		value: "breloom",
-		icon: "breloom"
+		icon: "breloom",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Slakoth",
 		value: "slakoth",
-		icon: "slakoth"
+		icon: "slakoth",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Vigoroth",
 		value: "vigoroth",
-		icon: "vigoroth"
+		icon: "vigoroth",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Slaking",
 		value: "slaking",
-		icon: "slaking"
+		icon: "slaking",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Nincada",
 		value: "nincada",
-		icon: "nincada"
+		icon: "nincada",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ninjask",
 		value: "ninjask",
-		icon: "ninjask"
+		icon: "ninjask",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Shedinja",
 		value: "shedinja",
-		icon: "shedinja"
+		icon: "shedinja",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Whismur",
 		value: "whismur",
-		icon: "whismur"
+		icon: "whismur",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Loudred",
 		value: "loudred",
-		icon: "loudred"
+		icon: "loudred",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Exploud",
 		value: "exploud",
-		icon: "exploud"
+		icon: "exploud",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Makuhita",
 		value: "makuhita",
-		icon: "makuhita"
+		icon: "makuhita",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Hariyama",
 		value: "hariyama",
-		icon: "hariyama"
+		icon: "hariyama",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Azurill",
@@ -1492,17 +2236,29 @@ const pkmnData = [
 	{
 		name: "Nosepass",
 		value: "nosepass",
-		icon: "nosepass"
+		icon: "nosepass",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Skitty",
 		value: "skitty",
-		icon: "skitty"
+		icon: "skitty",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Delcatty",
 		value: "delcatty",
-		icon: "delcatty"
+		icon: "delcatty",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Sableye",
@@ -1512,107 +2268,174 @@ const pkmnData = [
 	{
 		name: "Mawile",
 		value: "mawile",
-		icon: "mawile"
+		icon: "mawile",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Aron",
 		value: "aron",
-		icon: "aron"
+		icon: "aron",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Lairon",
 		value: "lairon",
-		icon: "lairon"
+		icon: "lairon",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Aggron",
 		value: "aggron",
-		icon: "aggron"
+		icon: "aggron",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Meditite",
 		value: "meditite",
-		icon: "meditite"
+		icon: "meditite",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Medicham",
 		value: "medicham",
-		icon: "medicham"
+		icon: "medicham",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Electrike",
 		value: "electrike",
-		icon: "electrike"
+		icon: "electrike",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Manectric",
 		value: "manectric",
-		icon: "manectric"
+		icon: "manectric",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Plusle",
 		value: "plusle",
-		icon: "plusle"
+		icon: "plusle",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Minun",
 		value: "minun",
-		icon: "minun"
+		icon: "minun",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Volbeat",
 		value: "volbeat",
-		icon: "volbeat"
+		icon: "volbeat",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Illumise",
 		value: "illumise",
-		icon: "illumise"
+		icon: "illumise",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Roselia",
 		value: "roselia",
-		icon: "roselia"
+		icon: "roselia",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Gulpin",
 		value: "gulpin",
-		icon: "gulpin"
+		icon: "gulpin",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Swalot",
 		value: "swalot",
-		icon: "swalot"
+		icon: "swalot",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Carvanha",
 		value: "carvanha",
-		icon: "carvanha"
+		icon: "carvanha",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sharpedo",
 		value: "sharpedo",
-		icon: "sharpedo"
+		icon: "sharpedo",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Wailmer",
 		value: "wailmer",
-		icon: "wailmer"
+		icon: "wailmer",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Wailord",
 		value: "wailord",
-		icon: "wailord"
+		icon: "wailord",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Numel",
 		value: "numel",
-		icon: "numel"
+		icon: "numel",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Camerupt",
 		value: "camerupt",
-		icon: "camerupt"
+		icon: "camerupt",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Torkoal",
@@ -1622,42 +2445,67 @@ const pkmnData = [
 	{
 		name: "Spoink",
 		value: "spoink",
-		icon: "spoink"
+		icon: "spoink",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Grumpig",
 		value: "grumpig",
-		icon: "grumpig"
+		icon: "grumpig",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Spinda",
 		value: "spinda",
-		icon: "spinda"
+		icon: "spinda",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Trapinch",
 		value: "trapinch",
-		icon: "trapinch"
+		icon: "trapinch",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Vibrava",
 		value: "vibrava",
-		icon: "vibrava"
+		icon: "vibrava",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Flygon",
 		value: "flygon",
-		icon: "flygon"
+		icon: "flygon",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cacnea",
 		value: "cacnea",
-		icon: "cacnea"
+		icon: "cacnea",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Cacturne",
 		value: "cacturne",
-		icon: "cacturne"
+		icon: "cacturne",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Swablu",
@@ -1672,22 +2520,34 @@ const pkmnData = [
 	{
 		name: "Zangoose",
 		value: "zangoose",
-		icon: "zangoose"
+		icon: "zangoose",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Seviper",
 		value: "seviper",
-		icon: "seviper"
+		icon: "seviper",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Lunatone",
 		value: "lunatone",
-		icon: "lunatone"
+		icon: "lunatone",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Solrock",
 		value: "solrock",
-		icon: "solrock"
+		icon: "solrock",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Barboach",
@@ -1702,102 +2562,165 @@ const pkmnData = [
 	{
 		name: "Corphish",
 		value: "corphish",
-		icon: "corphish"
+		icon: "corphish",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Crawdaunt",
 		value: "crawdaunt",
-		icon: "crawdaunt"
+		icon: "crawdaunt",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Baltoy",
 		value: "baltoy",
-		icon: "baltoy"
+		icon: "baltoy",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Claydol",
 		value: "claydol",
-		icon: "claydol"
+		icon: "claydol",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Lileep",
 		value: "lileep",
-		icon: "lileep"
+		icon: "lileep",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cradily",
 		value: "cradily",
-		icon: "cradily"
+		icon: "cradily",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Anorith",
 		value: "anorith",
-		icon: "anorith"
+		icon: "anorith",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Armaldo",
 		value: "armaldo",
-		icon: "armaldo"
+		icon: "armaldo",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Feebas",
 		value: "feebas",
-		icon: "feebas"
+		icon: "feebas",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Milotic",
 		value: "milotic",
-		icon: "milotic"
+		icon: "milotic",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Castform",
 		value: "castform",
-		icon: "castform"
+		icon: "castform",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Kecleon",
 		value: "kecleon",
-		icon: "kecleon"
+		icon: "kecleon",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Shuppet",
 		value: "shuppet",
-		icon: "shuppet"
+		icon: "shuppet",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Banette",
 		value: "banette",
-		icon: "banette"
+		icon: "banette",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Duskull",
 		value: "duskull",
-		icon: "duskull"
+		icon: "duskull",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Dusclops",
 		value: "dusclops",
-		icon: "dusclops"
+		icon: "dusclops",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tropius",
 		value: "tropius",
-		icon: "tropius"
+		icon: "tropius",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Chimecho",
 		value: "chimecho",
-		icon: "chimecho"
+		icon: "chimecho",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Absol",
 		value: "absol",
-		icon: "absol"
+		icon: "absol",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Wynaut",
 		value: "wynaut",
-		icon: "wynaut"
+		icon: "wynaut",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Snorunt",
@@ -1812,42 +2735,69 @@ const pkmnData = [
 	{
 		name: "Spheal",
 		value: "spheal",
-		icon: "spheal"
+		icon: "spheal",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sealeo",
 		value: "sealeo",
-		icon: "sealeo"
+		icon: "sealeo",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Walrein",
 		value: "walrein",
-		icon: "walrein"
+		icon: "walrein",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Clamperl",
 		value: "clamperl",
-		icon: "clamperl"
+		icon: "clamperl",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Huntail",
 		value: "huntail",
-		icon: "huntail"
+		icon: "huntail",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Gorebyss",
 		value: "gorebyss",
-		icon: "gorebyss"
+		icon: "gorebyss",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Relicanth",
 		value: "relicanth",
-		icon: "relicanth"
+		icon: "relicanth",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Luvdisc",
 		value: "luvdisc",
-		icon: "luvdisc"
+		icon: "luvdisc",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Bagon",
@@ -1867,42 +2817,66 @@ const pkmnData = [
 	{
 		name: "Beldum",
 		value: "beldum",
-		icon: "beldum"
+		icon: "beldum",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Metang",
 		value: "metang",
-		icon: "metang"
+		icon: "metang",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Metagross",
 		value: "metagross",
-		icon: "metagross"
+		icon: "metagross",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Regirock",
 		value: "regirock",
-		icon: "regirock"
+		icon: "regirock",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Regice",
 		value: "regice",
-		icon: "regice"
+		icon: "regice",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Registeel",
 		value: "registeel",
-		icon: "registeel"
+		icon: "registeel",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Latias",
 		value: "latias",
-		icon: "latias"
+		icon: "latias",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Latios",
 		value: "latios",
-		icon: "latios"
+		icon: "latios",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Kyogre",
@@ -1922,92 +2896,158 @@ const pkmnData = [
 	{
 		name: "Jirachi",
 		value: "jirachi",
-		icon: "jirachi"
+		icon: "jirachi",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Deoxys",
 		value: "deoxys",
-		icon: "deoxys"
+		icon: "deoxys",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Turtwig",
 		value: "turtwig",
-		icon: "turtwig"
+		icon: "turtwig",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Grotle",
 		value: "grotle",
-		icon: "grotle"
+		icon: "grotle",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Torterra",
 		value: "torterra",
-		icon: "torterra"
+		icon: "torterra",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Chimchar",
 		value: "chimchar",
-		icon: "chimchar"
+		icon: "chimchar",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Monferno",
 		value: "monferno",
-		icon: "monferno"
+		icon: "monferno",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Infernape",
 		value: "infernape",
-		icon: "infernape"
+		icon: "infernape",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Piplup",
 		value: "piplup",
-		icon: "piplup"
+		icon: "piplup",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Prinplup",
 		value: "prinplup",
-		icon: "prinplup"
+		icon: "prinplup",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Empoleon",
 		value: "empoleon",
-		icon: "empoleon"
+		icon: "empoleon",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Starly",
 		value: "starly",
-		icon: "starly"
+		icon: "starly",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Staravia",
 		value: "staravia",
-		icon: "staravia"
+		icon: "staravia",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Staraptor",
 		value: "staraptor",
-		icon: "staraptor"
+		icon: "staraptor",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Bidoof",
 		value: "bidoof",
-		icon: "bidoof"
+		icon: "bidoof",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Bibarel",
 		value: "bibarel",
-		icon: "bibarel"
+		icon: "bibarel",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Kricketot",
 		value: "kricketot",
-		icon: "kricketot"
+		icon: "kricketot",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Kricketune",
 		value: "kricketune",
-		icon: "kricketune"
+		icon: "kricketune",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Shinx",
@@ -2027,47 +3067,81 @@ const pkmnData = [
 	{
 		name: "Budew",
 		value: "budew",
-		icon: "budew"
+		icon: "budew",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Roserade",
 		value: "roserade",
-		icon: "roserade"
+		icon: "roserade",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cranidos",
 		value: "cranidos",
-		icon: "cranidos"
+		icon: "cranidos",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Rampardos",
 		value: "rampardos",
-		icon: "rampardos"
+		icon: "rampardos",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Shieldon",
 		value: "shieldon",
-		icon: "shieldon"
+		icon: "shieldon",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Bastiodon",
 		value: "bastiodon",
-		icon: "bastiodon"
+		icon: "bastiodon",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Burmy",
 		value: "burmy",
-		icon: "burmy"
+		icon: "burmy",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Wormadam",
 		value: "wormadam",
-		icon: "wormadam"
+		icon: "wormadam",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Mothim",
 		value: "mothim",
-		icon: "mothim"
+		icon: "mothim",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Combee",
@@ -2082,27 +3156,42 @@ const pkmnData = [
 	{
 		name: "Pachirisu",
 		value: "pachirisu",
-		icon: "pachirisu"
+		icon: "pachirisu",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Buizel",
 		value: "buizel",
-		icon: "buizel"
+		icon: "buizel",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Floatzel",
 		value: "floatzel",
-		icon: "floatzel"
+		icon: "floatzel",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Cherubi",
 		value: "cherubi",
-		icon: "cherubi"
+		icon: "cherubi",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cherrim",
 		value: "cherrim",
-		icon: "cherrim"
+		icon: "cherrim",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Shellos",
@@ -2117,7 +3206,11 @@ const pkmnData = [
 	{
 		name: "Ambipom",
 		value: "ambipom",
-		icon: "ambipom"
+		icon: "ambipom",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Drifloon",
@@ -2132,37 +3225,61 @@ const pkmnData = [
 	{
 		name: "Buneary",
 		value: "buneary",
-		icon: "buneary"
+		icon: "buneary",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Lopunny",
 		value: "lopunny",
-		icon: "lopunny"
+		icon: "lopunny",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mismagius",
 		value: "mismagius",
-		icon: "mismagius"
+		icon: "mismagius",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Honchkrow",
 		value: "honchkrow",
-		icon: "honchkrow"
+		icon: "honchkrow",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Glameow",
 		value: "glameow",
-		icon: "glameow"
+		icon: "glameow",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Purugly",
 		value: "purugly",
-		icon: "purugly"
+		icon: "purugly",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Chingling",
 		value: "chingling",
-		icon: "chingling"
+		icon: "chingling",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Stunky",
@@ -2192,7 +3309,10 @@ const pkmnData = [
 	{
 		name: "Mime Jr.",
 		value: "mime-jr",
-		icon: "mime-jr"
+		icon: "mime-jr",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Happiny",
@@ -2202,7 +3322,11 @@ const pkmnData = [
 	{
 		name: "Chatot",
 		value: "chatot",
-		icon: "chatot"
+		icon: "chatot",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Spiritomb",
@@ -2227,7 +3351,10 @@ const pkmnData = [
 	{
 		name: "Munchlax",
 		value: "munchlax",
-		icon: "munchlax"
+		icon: "munchlax",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Riolu",
@@ -2252,12 +3379,18 @@ const pkmnData = [
 	{
 		name: "Skorupi",
 		value: "skorupi",
-		icon: "skorupi"
+		icon: "skorupi",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Drapion",
 		value: "drapion",
-		icon: "drapion"
+		icon: "drapion",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Croagunk",
@@ -2272,22 +3405,35 @@ const pkmnData = [
 	{
 		name: "Carnivine",
 		value: "carnivine",
-		icon: "carnivine"
+		icon: "carnivine",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Finneon",
 		value: "finneon",
-		icon: "finneon"
+		icon: "finneon",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Lumineon",
 		value: "lumineon",
-		icon: "lumineon"
+		icon: "lumineon",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Mantyke",
 		value: "mantyke",
-		icon: "mantyke"
+		icon: "mantyke",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Snover",
@@ -2312,37 +3458,59 @@ const pkmnData = [
 	{
 		name: "Lickilicky",
 		value: "lickilicky",
-		icon: "lickilicky"
+		icon: "lickilicky",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Rhyperior",
 		value: "rhyperior",
-		icon: "rhyperior"
+		icon: "rhyperior",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tangrowth",
 		value: "tangrowth",
-		icon: "tangrowth"
+		icon: "tangrowth",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Electivire",
 		value: "electivire",
-		icon: "electivire"
+		icon: "electivire",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Magmortar",
 		value: "magmortar",
-		icon: "magmortar"
+		icon: "magmortar",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Togekiss",
 		value: "togekiss",
-		icon: "togekiss"
+		icon: "togekiss",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Yanmega",
 		value: "yanmega",
-		icon: "yanmega"
+		icon: "yanmega",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Leafeon",
@@ -2357,17 +3525,27 @@ const pkmnData = [
 	{
 		name: "Gliscor",
 		value: "gliscor",
-		icon: "gliscor"
+		icon: "gliscor",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Mamoswine",
 		value: "mamoswine",
-		icon: "mamoswine"
+		icon: "mamoswine",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Porygon-Z",
 		value: "porygon-z",
-		icon: "porygon-z"
+		icon: "porygon-z",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Gallade",
@@ -2377,12 +3555,19 @@ const pkmnData = [
 	{
 		name: "Probopass",
 		value: "probopass",
-		icon: "probopass"
+		icon: "probopass",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Dusknoir",
 		value: "dusknoir",
-		icon: "dusknoir"
+		icon: "dusknoir",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Froslass",
@@ -2427,7 +3612,10 @@ const pkmnData = [
 	{
 		name: "Regigigas",
 		value: "regigigas",
-		icon: "regigigas"
+		icon: "regigigas",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Giratina",
@@ -2442,297 +3630,497 @@ const pkmnData = [
 	{
 		name: "Phione",
 		value: "phione",
-		icon: "phione"
+		icon: "phione",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Manaphy",
 		value: "manaphy",
-		icon: "manaphy"
+		icon: "manaphy",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Darkrai",
 		value: "darkrai",
-		icon: "darkrai"
+		icon: "darkrai",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Shaymin",
 		value: "shaymin",
-		icon: "shaymin"
+		icon: "shaymin",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Arceus",
 		value: "arceus",
-		icon: "arceus"
+		icon: "arceus",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Victini",
 		value: "victini",
-		icon: "victini"
+		icon: "victini",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Snivy",
 		value: "snivy",
-		icon: "snivy"
+		icon: "snivy",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Servine",
 		value: "servine",
-		icon: "servine"
+		icon: "servine",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Serperior",
 		value: "serperior",
-		icon: "serperior"
+		icon: "serperior",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Tepig",
 		value: "tepig",
-		icon: "tepig"
+		icon: "tepig",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Pignite",
 		value: "pignite",
-		icon: "pignite"
+		icon: "pignite",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Emboar",
 		value: "emboar",
-		icon: "emboar"
+		icon: "emboar",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Oshawott",
 		value: "oshawott",
-		icon: "oshawott"
+		icon: "oshawott",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Dewott",
 		value: "dewott",
-		icon: "dewott"
+		icon: "dewott",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Samurott",
 		value: "samurott",
-		icon: "samurott"
+		icon: "samurott",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Patrat",
 		value: "patrat",
-		icon: "patrat"
+		icon: "patrat",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Watchog",
 		value: "watchog",
-		icon: "watchog"
+		icon: "watchog",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Lillipup",
 		value: "lillipup",
-		icon: "lillipup"
+		icon: "lillipup",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Herdier",
 		value: "herdier",
-		icon: "herdier"
+		icon: "herdier",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Stoutland",
 		value: "stoutland",
-		icon: "stoutland"
+		icon: "stoutland",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Purrloin",
 		value: "purrloin",
-		icon: "purrloin"
+		icon: "purrloin",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Liepard",
 		value: "liepard",
-		icon: "liepard"
+		icon: "liepard",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Pansage",
 		value: "pansage",
-		icon: "pansage"
+		icon: "pansage",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Simisage",
 		value: "simisage",
-		icon: "simisage"
+		icon: "simisage",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Pansear",
 		value: "pansear",
-		icon: "pansear"
+		icon: "pansear",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Simisear",
 		value: "simisear",
-		icon: "simisear"
+		icon: "simisear",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Panpour",
 		value: "panpour",
-		icon: "panpour"
+		icon: "panpour",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Simipour",
 		value: "simipour",
-		icon: "simipour"
+		icon: "simipour",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Munna",
 		value: "munna",
-		icon: "munna"
+		icon: "munna",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Musharna",
 		value: "musharna",
-		icon: "musharna"
+		icon: "musharna",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Pidove",
 		value: "pidove",
-		icon: "pidove"
+		icon: "pidove",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tranquill",
 		value: "tranquill",
-		icon: "tranquill"
+		icon: "tranquill",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Unfezant",
 		value: "unfezant",
-		icon: "unfezant"
+		icon: "unfezant",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Blitzle",
 		value: "blitzle",
-		icon: "blitzle"
+		icon: "blitzle",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Zebstrika",
 		value: "zebstrika",
-		icon: "zebstrika"
+		icon: "zebstrika",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Roggenrola",
 		value: "roggenrola",
-		icon: "roggenrola"
+		icon: "roggenrola",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Boldore",
 		value: "boldore",
-		icon: "boldore"
+		icon: "boldore",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Gigalith",
 		value: "gigalith",
-		icon: "gigalith"
+		icon: "gigalith",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Woobat",
 		value: "woobat",
-		icon: "woobat"
+		icon: "woobat",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Swoobat",
 		value: "swoobat",
-		icon: "swoobat"
+		icon: "swoobat",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Drilbur",
 		value: "drilbur",
-		icon: "drilbur"
+		icon: "drilbur",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Excadrill",
 		value: "excadrill",
-		icon: "excadrill"
+		icon: "excadrill",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Audino",
 		value: "audino",
-		icon: "audino"
+		icon: "audino",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Timburr",
 		value: "timburr",
-		icon: "timburr"
+		icon: "timburr",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Gurdurr",
 		value: "gurdurr",
-		icon: "gurdurr"
+		icon: "gurdurr",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Conkeldurr",
 		value: "conkeldurr",
-		icon: "conkeldurr"
+		icon: "conkeldurr",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tympole",
 		value: "tympole",
-		icon: "tympole"
+		icon: "tympole",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Palpitoad",
 		value: "palpitoad",
-		icon: "palpitoad"
+		icon: "palpitoad",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Seismitoad",
 		value: "seismitoad",
-		icon: "seismitoad"
+		icon: "seismitoad",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Throh",
 		value: "throh",
-		icon: "throh"
+		icon: "throh",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sawk",
 		value: "sawk",
-		icon: "sawk"
+		icon: "sawk",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sewaddle",
 		value: "sewaddle",
-		icon: "sewaddle"
+		icon: "sewaddle",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Swadloon",
 		value: "swadloon",
-		icon: "swadloon"
+		icon: "swadloon",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Leavanny",
 		value: "leavanny",
-		icon: "leavanny"
+		icon: "leavanny",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Venipede",
 		value: "venipede",
-		icon: "venipede"
+		icon: "venipede",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Whirlipede",
 		value: "whirlipede",
-		icon: "whirlipede"
+		icon: "whirlipede",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Scolipede",
 		value: "scolipede",
-		icon: "scolipede"
+		icon: "scolipede",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cottonee",
 		value: "cottonee",
-		icon: "cottonee"
+		icon: "cottonee",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Whimsicott",
 		value: "whimsicott",
-		icon: "whimsicott"
+		icon: "whimsicott",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Petilil",
@@ -2767,82 +4155,130 @@ const pkmnData = [
 	{
 		name: "Darumaka",
 		value: "darumaka",
-		icon: "darumaka"
+		icon: "darumaka",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Darmanitan",
 		value: "darmanitan",
-		icon: "darmanitan"
+		icon: "darmanitan",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Maractus",
 		value: "maractus",
-		icon: "maractus"
+		icon: "maractus",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Dwebble",
 		value: "dwebble",
-		icon: "dwebble"
+		icon: "dwebble",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Crustle",
 		value: "crustle",
-		icon: "crustle"
+		icon: "crustle",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Scraggy",
 		value: "scraggy",
-		icon: "scraggy"
+		icon: "scraggy",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Scrafty",
 		value: "scrafty",
-		icon: "scrafty"
+		icon: "scrafty",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sigilyph",
 		value: "sigilyph",
-		icon: "sigilyph"
+		icon: "sigilyph",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Yamask",
 		value: "yamask",
-		icon: "yamask"
+		icon: "yamask",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cofagrigus",
 		value: "cofagrigus",
-		icon: "cofagrigus"
+		icon: "cofagrigus",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tirtouga",
 		value: "tirtouga",
-		icon: "tirtouga"
+		icon: "tirtouga",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Carracosta",
 		value: "carracosta",
-		icon: "carracosta"
+		icon: "carracosta",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Archen",
 		value: "archen",
-		icon: "archen"
+		icon: "archen",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Archeops",
 		value: "archeops",
-		icon: "archeops"
+		icon: "archeops",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Trubbish",
 		value: "trubbish",
-		icon: "trubbish"
+		icon: "trubbish",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Garbodor",
 		value: "garbodor",
-		icon: "garbodor"
+		icon: "garbodor",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Zorua",
@@ -2857,12 +4293,18 @@ const pkmnData = [
 	{
 		name: "Minccino",
 		value: "minccino",
-		icon: "minccino"
+		icon: "minccino",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cinccino",
 		value: "cinccino",
-		icon: "cinccino"
+		icon: "cinccino",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Gothita",
@@ -2882,67 +4324,108 @@ const pkmnData = [
 	{
 		name: "Solosis",
 		value: "solosis",
-		icon: "solosis"
+		icon: "solosis",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Duosion",
 		value: "duosion",
-		icon: "duosion"
+		icon: "duosion",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Reuniclus",
 		value: "reuniclus",
-		icon: "reuniclus"
+		icon: "reuniclus",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ducklett",
 		value: "ducklett",
-		icon: "ducklett"
+		icon: "ducklett",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Swanna",
 		value: "swanna",
-		icon: "swanna"
+		icon: "swanna",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Vanillite",
 		value: "vanillite",
-		icon: "vanillite"
+		icon: "vanillite",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Vanillish",
 		value: "vanillish",
-		icon: "vanillish"
+		icon: "vanillish",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Vanilluxe",
 		value: "vanilluxe",
-		icon: "vanilluxe"
+		icon: "vanilluxe",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Deerling",
 		value: "deerling",
-		icon: "deerling"
+		icon: "deerling",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Sawsbuck",
 		value: "sawsbuck",
-		icon: "sawsbuck"
+		icon: "sawsbuck",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Emolga",
 		value: "emolga",
-		icon: "emolga"
+		icon: "emolga",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Karrablast",
 		value: "karrablast",
-		icon: "karrablast"
+		icon: "karrablast",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Escavalier",
 		value: "escavalier",
-		icon: "escavalier"
+		icon: "escavalier",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Foongus",
@@ -2957,92 +4440,146 @@ const pkmnData = [
 	{
 		name: "Frillish",
 		value: "frillish",
-		icon: "frillish"
+		icon: "frillish",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Jellicent",
 		value: "jellicent",
-		icon: "jellicent"
+		icon: "jellicent",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Alomomola",
 		value: "alomomola",
-		icon: "alomomola"
+		icon: "alomomola",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Joltik",
 		value: "joltik",
-		icon: "joltik"
+		icon: "joltik",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Galvantula",
 		value: "galvantula",
-		icon: "galvantula"
+		icon: "galvantula",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ferroseed",
 		value: "ferroseed",
-		icon: "ferroseed"
+		icon: "ferroseed",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ferrothorn",
 		value: "ferrothorn",
-		icon: "ferrothorn"
+		icon: "ferrothorn",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Klink",
 		value: "klink",
-		icon: "klink"
+		icon: "klink",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Klang",
 		value: "klang",
-		icon: "klang"
+		icon: "klang",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Klinklang",
 		value: "klinklang",
-		icon: "klinklang"
+		icon: "klinklang",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tynamo",
 		value: "tynamo",
-		icon: "tynamo"
+		icon: "tynamo",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Eelektrik",
 		value: "eelektrik",
-		icon: "eelektrik"
+		icon: "eelektrik",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Eelektross",
 		value: "eelektross",
-		icon: "eelektross"
+		icon: "eelektross",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Elgyem",
 		value: "elgyem",
-		icon: "elgyem"
+		icon: "elgyem",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Beheeyem",
 		value: "beheeyem",
-		icon: "beheeyem"
+		icon: "beheeyem",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Litwick",
 		value: "litwick",
-		icon: "litwick"
+		icon: "litwick",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Lampent",
 		value: "lampent",
-		icon: "lampent"
+		icon: "lampent",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Chandelure",
 		value: "chandelure",
-		icon: "chandelure"
+		icon: "chandelure",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Axew",
@@ -3077,42 +4614,66 @@ const pkmnData = [
 	{
 		name: "Shelmet",
 		value: "shelmet",
-		icon: "shelmet"
+		icon: "shelmet",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Accelgor",
 		value: "accelgor",
-		icon: "accelgor"
+		icon: "accelgor",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Stunfisk",
 		value: "stunfisk",
-		icon: "stunfisk"
+		icon: "stunfisk",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mienfoo",
 		value: "mienfoo",
-		icon: "mienfoo"
+		icon: "mienfoo",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mienshao",
 		value: "mienshao",
-		icon: "mienshao"
+		icon: "mienshao",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Druddigon",
 		value: "druddigon",
-		icon: "druddigon"
+		icon: "druddigon",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Golett",
 		value: "golett",
-		icon: "golett"
+		icon: "golett",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Golurk",
 		value: "golurk",
-		icon: "golurk"
+		icon: "golurk",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Pawniard",
@@ -3127,7 +4688,10 @@ const pkmnData = [
 	{
 		name: "Bouffalant",
 		value: "bouffalant",
-		icon: "bouffalant"
+		icon: "bouffalant",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Rufflet",
@@ -3142,22 +4706,34 @@ const pkmnData = [
 	{
 		name: "Vullaby",
 		value: "vullaby",
-		icon: "vullaby"
+		icon: "vullaby",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mandibuzz",
 		value: "mandibuzz",
-		icon: "mandibuzz"
+		icon: "mandibuzz",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Heatmor",
 		value: "heatmor",
-		icon: "heatmor"
+		icon: "heatmor",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Durant",
 		value: "durant",
-		icon: "durant"
+		icon: "durant",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Deino",
@@ -3187,17 +4763,26 @@ const pkmnData = [
 	{
 		name: "Cobalion",
 		value: "cobalion",
-		icon: "cobalion"
+		icon: "cobalion",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Terrakion",
 		value: "terrakion",
-		icon: "terrakion"
+		icon: "terrakion",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Virizion",
 		value: "virizion",
-		icon: "virizion"
+		icon: "virizion",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tornadus",
@@ -3212,12 +4797,18 @@ const pkmnData = [
 	{
 		name: "Reshiram",
 		value: "reshiram",
-		icon: "reshiram"
+		icon: "reshiram",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Zekrom",
 		value: "zekrom",
-		icon: "zekrom"
+		icon: "zekrom",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Landorus",
@@ -3227,77 +4818,122 @@ const pkmnData = [
 	{
 		name: "Kyurem",
 		value: "kyurem",
-		icon: "kyurem"
+		icon: "kyurem",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Keldeo",
 		value: "keldeo",
-		icon: "keldeo"
+		icon: "keldeo",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Meloetta",
 		value: "meloetta",
-		icon: "meloetta"
+		icon: "meloetta",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Genesect",
 		value: "genesect",
-		icon: "genesect"
+		icon: "genesect",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Chespin",
 		value: "chespin",
-		icon: "chespin"
+		icon: "chespin",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Quilladin",
 		value: "quilladin",
-		icon: "quilladin"
+		icon: "quilladin",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Chesnaught",
 		value: "chesnaught",
-		icon: "chesnaught"
+		icon: "chesnaught",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Fennekin",
 		value: "fennekin",
-		icon: "fennekin"
+		icon: "fennekin",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Braixen",
 		value: "braixen",
-		icon: "braixen"
+		icon: "braixen",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Delphox",
 		value: "delphox",
-		icon: "delphox"
+		icon: "delphox",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Froakie",
 		value: "froakie",
-		icon: "froakie"
+		icon: "froakie",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Frogadier",
 		value: "frogadier",
-		icon: "frogadier"
+		icon: "frogadier",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Greninja",
 		value: "greninja",
-		icon: "greninja"
+		icon: "greninja",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Bunnelby",
 		value: "bunnelby",
-		icon: "bunnelby"
+		icon: "bunnelby",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Diggersby",
 		value: "diggersby",
-		icon: "diggersby"
+		icon: "diggersby",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Fletchling",
@@ -3317,132 +4953,211 @@ const pkmnData = [
 	{
 		name: "Scatterbug",
 		value: "scatterbug",
-		icon: "scatterbug"
+		icon: "scatterbug",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Spewpa",
 		value: "spewpa",
-		icon: "spewpa"
+		icon: "spewpa",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Vivillon",
 		value: "vivillon",
-		icon: "vivillon"
+		icon: "vivillon",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Litleo",
 		value: "litleo",
-		icon: "litleo"
+		icon: "litleo",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Pyroar",
 		value: "pyroar",
-		icon: "pyroar"
+		icon: "pyroar",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Flabébé",
 		value: "flabebe",
-		icon: "flabebe"
+		icon: "flabebe",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Floette",
 		value: "floette",
-		icon: "floette"
+		icon: "floette",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Florges",
 		value: "florges",
-		icon: "florges"
+		icon: "florges",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Skiddo",
 		value: "skiddo",
-		icon: "skiddo"
+		icon: "skiddo",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Gogoat",
 		value: "gogoat",
-		icon: "gogoat"
+		icon: "gogoat",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Pancham",
 		value: "pancham",
-		icon: "pancham"
+		icon: "pancham",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Pangoro",
 		value: "pangoro",
-		icon: "pangoro"
+		icon: "pangoro",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Furfrou",
 		value: "furfrou",
-		icon: "furfrou"
+		icon: "furfrou",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Espurr",
 		value: "espurr",
-		icon: "espurr"
+		icon: "espurr",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Meowstic",
 		value: "meowstic",
-		icon: "meowstic"
+		icon: "meowstic",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Honedge",
 		value: "honedge",
-		icon: "honedge"
+		icon: "honedge",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Doublade",
 		value: "doublade",
-		icon: "doublade"
+		icon: "doublade",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Aegislash",
 		value: "aegislash",
-		icon: "aegislash"
+		icon: "aegislash",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Spritzee",
 		value: "spritzee",
-		icon: "spritzee"
+		icon: "spritzee",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Aromatisse",
 		value: "aromatisse",
-		icon: "aromatisse"
+		icon: "aromatisse",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Swirlix",
 		value: "swirlix",
-		icon: "swirlix"
+		icon: "swirlix",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Slurpuff",
 		value: "slurpuff",
-		icon: "slurpuff"
+		icon: "slurpuff",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Inkay",
 		value: "inkay",
-		icon: "inkay"
+		icon: "inkay",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Malamar",
 		value: "malamar",
-		icon: "malamar"
+		icon: "malamar",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Binacle",
 		value: "binacle",
-		icon: "binacle"
+		icon: "binacle",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Barbaracle",
 		value: "barbaracle",
-		icon: "barbaracle"
+		icon: "barbaracle",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Skrelp",
@@ -3467,32 +5182,50 @@ const pkmnData = [
 	{
 		name: "Helioptile",
 		value: "helioptile",
-		icon: "helioptile"
+		icon: "helioptile",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Heliolisk",
 		value: "heliolisk",
-		icon: "heliolisk"
+		icon: "heliolisk",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tyrunt",
 		value: "tyrunt",
-		icon: "tyrunt"
+		icon: "tyrunt",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tyrantrum",
 		value: "tyrantrum",
-		icon: "tyrantrum"
+		icon: "tyrantrum",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Amaura",
 		value: "amaura",
-		icon: "amaura"
+		icon: "amaura",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Aurorus",
 		value: "aurorus",
-		icon: "aurorus"
+		icon: "aurorus",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sylveon",
@@ -3537,22 +5270,34 @@ const pkmnData = [
 	{
 		name: "Phantump",
 		value: "phantump",
-		icon: "phantump"
+		icon: "phantump",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Trevenant",
 		value: "trevenant",
-		icon: "trevenant"
+		icon: "trevenant",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Pumpkaboo",
 		value: "pumpkaboo",
-		icon: "pumpkaboo"
+		icon: "pumpkaboo",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Gourgeist",
 		value: "gourgeist",
-		icon: "gourgeist"
+		icon: "gourgeist",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Bergmite",
@@ -3577,17 +5322,26 @@ const pkmnData = [
 	{
 		name: "Xerneas",
 		value: "xerneas",
-		icon: "xerneas"
+		icon: "xerneas",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Yveltal",
 		value: "yveltal",
-		icon: "yveltal"
+		icon: "yveltal",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Zygarde",
 		value: "zygarde",
-		icon: "zygarde"
+		icon: "zygarde",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Diancie",
@@ -3597,7 +5351,10 @@ const pkmnData = [
 	{
 		name: "Hoopa",
 		value: "hoopa",
-		icon: "hoopa"
+		icon: "hoopa",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Volcanion",
@@ -3622,97 +5379,157 @@ const pkmnData = [
 	{
 		name: "Litten",
 		value: "litten",
-		icon: "litten"
+		icon: "litten",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Torracat",
 		value: "torracat",
-		icon: "torracat"
+		icon: "torracat",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Incineroar",
 		value: "incineroar",
-		icon: "incineroar"
+		icon: "incineroar",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Popplio",
 		value: "popplio",
-		icon: "popplio"
+		icon: "popplio",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Brionne",
 		value: "brionne",
-		icon: "brionne"
+		icon: "brionne",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Primarina",
 		value: "primarina",
-		icon: "primarina"
+		icon: "primarina",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Pikipek",
 		value: "pikipek",
-		icon: "pikipek"
+		icon: "pikipek",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Trumbeak",
 		value: "trumbeak",
-		icon: "trumbeak"
+		icon: "trumbeak",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Toucannon",
 		value: "toucannon",
-		icon: "toucannon"
+		icon: "toucannon",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Yungoos",
 		value: "yungoos",
-		icon: "yungoos"
+		icon: "yungoos",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Gumshoos",
 		value: "gumshoos",
-		icon: "gumshoos"
+		icon: "gumshoos",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Grubbin",
 		value: "grubbin",
-		icon: "grubbin"
+		icon: "grubbin",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Charjabug",
 		value: "charjabug",
-		icon: "charjabug"
+		icon: "charjabug",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Vikavolt",
 		value: "vikavolt",
-		icon: "vikavolt"
+		icon: "vikavolt",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Crabrawler",
 		value: "crabrawler",
-		icon: "crabrawler"
+		icon: "crabrawler",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Crabominable",
 		value: "crabominable",
-		icon: "crabominable"
+		icon: "crabominable",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Oricorio",
 		value: "oricorio",
-		icon: "oricorio"
+		icon: "oricorio",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Cutiefly",
 		value: "cutiefly",
-		icon: "cutiefly"
+		icon: "cutiefly",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Ribombee",
 		value: "ribombee",
-		icon: "ribombee"
+		icon: "ribombee",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Rockruff",
@@ -3727,7 +5544,10 @@ const pkmnData = [
 	{
 		name: "Wishiwashi",
 		value: "wishiwashi",
-		icon: "wishiwashi"
+		icon: "wishiwashi",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mareanie",
@@ -3752,12 +5572,18 @@ const pkmnData = [
 	{
 		name: "Dewpider",
 		value: "dewpider",
-		icon: "dewpider"
+		icon: "dewpider",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Araquanid",
 		value: "araquanid",
-		icon: "araquanid"
+		icon: "araquanid",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Fomantis",
@@ -3772,12 +5598,18 @@ const pkmnData = [
 	{
 		name: "Morelull",
 		value: "morelull",
-		icon: "morelull"
+		icon: "morelull",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Shiinotic",
 		value: "shiinotic",
-		icon: "shiinotic"
+		icon: "shiinotic",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Salandit",
@@ -3792,12 +5624,18 @@ const pkmnData = [
 	{
 		name: "Stufful",
 		value: "stufful",
-		icon: "stufful"
+		icon: "stufful",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Bewear",
 		value: "bewear",
-		icon: "bewear"
+		icon: "bewear",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Bounsweet",
@@ -3817,7 +5655,10 @@ const pkmnData = [
 	{
 		name: "Comfey",
 		value: "comfey",
-		icon: "comfey"
+		icon: "comfey",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Oranguru",
@@ -3832,12 +5673,18 @@ const pkmnData = [
 	{
 		name: "Wimpod",
 		value: "wimpod",
-		icon: "wimpod"
+		icon: "wimpod",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Golisopod",
 		value: "golisopod",
-		icon: "golisopod"
+		icon: "golisopod",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sandygast",
@@ -3852,37 +5699,59 @@ const pkmnData = [
 	{
 		name: "Pyukumuku",
 		value: "pyukumuku",
-		icon: "pyukumuku"
+		icon: "pyukumuku",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Type: Null",
 		value: "type-null",
-		icon: "type-null"
+		icon: "type-null",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Silvally",
 		value: "silvally",
-		icon: "silvally"
+		icon: "silvally",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Minior",
 		value: "minior",
-		icon: "minior"
+		icon: "minior",
+		exclude: [
+			"swsh",
+			"sv"
+		]
 	},
 	{
 		name: "Komala",
 		value: "komala",
-		icon: "komala"
+		icon: "komala",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Turtonator",
 		value: "turtonator",
-		icon: "turtonator"
+		icon: "turtonator",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Togedemaru",
 		value: "togedemaru",
-		icon: "togedemaru"
+		icon: "togedemaru",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mimikyu",
@@ -3892,112 +5761,178 @@ const pkmnData = [
 	{
 		name: "Bruxish",
 		value: "bruxish",
-		icon: "bruxish"
+		icon: "bruxish",
+		exclude: [
+			"swsh"
+		]
 	},
 	{
 		name: "Drampa",
 		value: "drampa",
-		icon: "drampa"
+		icon: "drampa",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Dhelmise",
 		value: "dhelmise",
-		icon: "dhelmise"
+		icon: "dhelmise",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Jangmo-o",
 		value: "jangmo-o",
-		icon: "jangmo-o"
+		icon: "jangmo-o",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Hakamo-o",
 		value: "hakamo-o",
-		icon: "hakamo-o"
+		icon: "hakamo-o",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Kommo-o",
 		value: "kommo-o",
-		icon: "kommo-o"
+		icon: "kommo-o",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tapu Koko",
 		value: "tapu-koko",
-		icon: "tapu-koko"
+		icon: "tapu-koko",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tapu Lele",
 		value: "tapu-lele",
-		icon: "tapu-lele"
+		icon: "tapu-lele",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tapu Bulu",
 		value: "tapu-bulu",
-		icon: "tapu-bulu"
+		icon: "tapu-bulu",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Tapu Fini",
 		value: "tapu-fini",
-		icon: "tapu-fini"
+		icon: "tapu-fini",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cosmog",
 		value: "cosmog",
-		icon: "cosmog"
+		icon: "cosmog",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cosmoem",
 		value: "cosmoem",
-		icon: "cosmoem"
+		icon: "cosmoem",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Solgaleo",
 		value: "solgaleo",
-		icon: "solgaleo"
+		icon: "solgaleo",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Lunala",
 		value: "lunala",
-		icon: "lunala"
+		icon: "lunala",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Nihilego",
 		value: "nihilego",
-		icon: "nihilego"
+		icon: "nihilego",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Buzzwole",
 		value: "buzzwole",
-		icon: "buzzwole"
+		icon: "buzzwole",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Pheromosa",
 		value: "pheromosa",
-		icon: "pheromosa"
+		icon: "pheromosa",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Xurkitree",
 		value: "xurkitree",
-		icon: "xurkitree"
+		icon: "xurkitree",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Celesteela",
 		value: "celesteela",
-		icon: "celesteela"
+		icon: "celesteela",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Kartana",
 		value: "kartana",
-		icon: "kartana"
+		icon: "kartana",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Guzzlord",
 		value: "guzzlord",
-		icon: "guzzlord"
+		icon: "guzzlord",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Necrozma",
 		value: "necrozma",
-		icon: "necrozma"
+		icon: "necrozma",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Magearna",
@@ -4007,42 +5942,66 @@ const pkmnData = [
 	{
 		name: "Marshadow",
 		value: "marshadow",
-		icon: "marshadow"
+		icon: "marshadow",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Poipole",
 		value: "poipole",
-		icon: "poipole"
+		icon: "poipole",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Naganadel",
 		value: "naganadel",
-		icon: "naganadel"
+		icon: "naganadel",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Stakataka",
 		value: "stakataka",
-		icon: "stakataka"
+		icon: "stakataka",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Blacephalon",
 		value: "blacephalon",
-		icon: "blacephalon"
+		icon: "blacephalon",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Zeraora",
 		value: "zeraora",
-		icon: "zeraora"
+		icon: "zeraora",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Meltan",
 		value: "meltan",
-		icon: "meltan"
+		icon: "meltan",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Melmetal",
 		value: "melmetal",
-		icon: "melmetal"
+		icon: "melmetal",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Grookey",
@@ -4117,47 +6076,74 @@ const pkmnData = [
 	{
 		name: "Blipbug",
 		value: "blipbug",
-		icon: "blipbug"
+		icon: "blipbug",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Dottler",
 		value: "dottler",
-		icon: "dottler"
+		icon: "dottler",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Orbeetle",
 		value: "orbeetle",
-		icon: "orbeetle"
+		icon: "orbeetle",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Nickit",
 		value: "nickit",
-		icon: "nickit"
+		icon: "nickit",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Thievul",
 		value: "thievul",
-		icon: "thievul"
+		icon: "thievul",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Gossifleur",
 		value: "gossifleur",
-		icon: "gossifleur"
+		icon: "gossifleur",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Eldegoss",
 		value: "eldegoss",
-		icon: "eldegoss"
+		icon: "eldegoss",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Wooloo",
 		value: "wooloo",
-		icon: "wooloo"
+		icon: "wooloo",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Dubwool",
 		value: "dubwool",
-		icon: "dubwool"
+		icon: "dubwool",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Chewtle",
@@ -4172,12 +6158,18 @@ const pkmnData = [
 	{
 		name: "Yamper",
 		value: "yamper",
-		icon: "yamper"
+		icon: "yamper",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Boltund",
 		value: "boltund",
-		icon: "boltund"
+		icon: "boltund",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Rolycoly",
@@ -4222,7 +6214,10 @@ const pkmnData = [
 	{
 		name: "Cramorant",
 		value: "cramorant",
-		icon: "cramorant"
+		icon: "cramorant",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Arrokuda",
@@ -4247,22 +6242,34 @@ const pkmnData = [
 	{
 		name: "Sizzlipede",
 		value: "sizzlipede",
-		icon: "sizzlipede"
+		icon: "sizzlipede",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Centiskorch",
 		value: "centiskorch",
-		icon: "centiskorch"
+		icon: "centiskorch",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Clobbopus",
 		value: "clobbopus",
-		icon: "clobbopus"
+		icon: "clobbopus",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Grapploct",
 		value: "grapploct",
-		icon: "grapploct"
+		icon: "grapploct",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sinistea",
@@ -4307,7 +6314,10 @@ const pkmnData = [
 	{
 		name: "Obstagoon",
 		value: "obstagoon",
-		icon: "obstagoon"
+		icon: "obstagoon",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Perrserker",
@@ -4317,32 +6327,50 @@ const pkmnData = [
 	{
 		name: "Cursola",
 		value: "cursola",
-		icon: "cursola"
+		icon: "cursola",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Sirfetch'd",
 		value: "sirfetchd",
-		icon: "sirfetchd"
+		icon: "sirfetchd",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Mr. Rime",
 		value: "mr-rime",
-		icon: "mr-rime"
+		icon: "mr-rime",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Runerigus",
 		value: "runerigus",
-		icon: "runerigus"
+		icon: "runerigus",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Milcery",
 		value: "milcery",
-		icon: "milcery"
+		icon: "milcery",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Alcremie",
 		value: "alcremie",
-		icon: "alcremie"
+		icon: "alcremie",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Falinks",
@@ -4382,7 +6410,10 @@ const pkmnData = [
 	{
 		name: "Morpeko",
 		value: "morpeko",
-		icon: "morpeko"
+		icon: "morpeko",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Cufant",
@@ -4397,27 +6428,42 @@ const pkmnData = [
 	{
 		name: "Dracozolt",
 		value: "dracozolt",
-		icon: "dracozolt"
+		icon: "dracozolt",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Arctozolt",
 		value: "arctozolt",
-		icon: "arctozolt"
+		icon: "arctozolt",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Dracovish",
 		value: "dracovish",
-		icon: "dracovish"
+		icon: "dracovish",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Arctovish",
 		value: "arctovish",
-		icon: "arctovish"
+		icon: "arctovish",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Duraludon",
 		value: "duraludon",
-		icon: "duraludon"
+		icon: "duraludon",
+		exclude: [
+			"sv"
+		]
 	},
 	{
 		name: "Dreepy",

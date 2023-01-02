@@ -202,7 +202,15 @@ body {
 }
 
 .ui.selectable.table > tbody > tr {
-	cursor: default;
+	cursor: auto;
+}
+
+.ui.sortable.table:not(.basic) > thead > tr > th.disabled:hover {
+	background: #f9fafb;
+}
+
+.ui.inverted.sortable.table:not(.basic) > thead > tr > th.disabled:hover {
+	background: rgba(0, 0, 0, .15);
 }
 
 .customLocation td:first-child {

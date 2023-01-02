@@ -1,16 +1,15 @@
 {
   "name": "nuzlocke-tracker",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A tool for tracking Pokémon encounters and captures during Nuzlocke challenges",
   "main": "index.html",
   "dependencies": {
-    "file-saver": "^2.0.5",
     "fomantic-ui": "^2.9.0",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.3"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.1",
-    "eslint": "^8.29.0",
+    "eslint": "^8.31.0",
     "eslint-plugin-compat": "^4.0.2",
     "pokesprite-images": "^2.7.0",
     "terser": "^5.16.1"
@@ -35,7 +34,7 @@
   "scripts": {
     "build": "node scripts/generate.js && npm run minify",
     "minify": "npm run terser && npm run cleancss",
-    "terser": "terser src/js/jquery.js src/js/fomantic.js src/js/FileSaver.js src/js/locations.js src/js/pokemon.js src/js/plugins.js src/js/main.js -o dist/js/main.min.js && terser src/js/serviceworker.js -o serviceworker.js",
+    "terser": "terser src/js/jquery.js src/js/fomantic.js src/js/locations.js src/js/pokemon.js src/js/plugins.js src/js/main.js -o dist/js/main.min.js && terser src/js/serviceworker.js -o serviceworker.js",
     "cleancss": "cleancss -o dist/css/main.min.css -O2 all:on src/css/fomantic.css src/css/main.css src/css/sprites.css",
     "lint": "eslint .; exit 0"
   },
