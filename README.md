@@ -1,4 +1,5 @@
-[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) ![Updated for](https://img.shields.io/badge/Updated%20for-Pok%C3%A9mon%20Sword%2FShield%20(Crown%20Tundra%20DLC)-blue)
+[![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT) 
+![Updated for - Scarlet/Violet](https://img.shields.io/static/v1?label=Updated+for&message=Scarlet%2FViolet&color=1384c4)
 
 # nuzlocke-tracker
 
