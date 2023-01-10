@@ -1,5 +1,5 @@
 const APP_PREFIX = 'nuzlocke-tracker';
-const VERSION = 3;
+const VERSION = 4;
 const CACHE_NAME = APP_PREFIX + '-' + VERSION;
 const URLS = [
 	'/nuzlocke-tracker/',
@@ -7,7 +7,7 @@ const URLS = [
 	'/nuzlocke-tracker/dist/js/main.min.js',
 	'/nuzlocke-tracker/dist/js/plugins.min.js',
 	'/nuzlocke-tracker/dist/css/main.min.css',
-	'/nuzlocke-tracker/img/sprites.png'
+	'/nuzlocke-tracker/img/sprites.webp'
 ];
 
 self.addEventListener('fetch', e => {

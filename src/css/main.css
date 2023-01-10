@@ -243,7 +243,7 @@ i.pkmn:not(.icon) {
 .pkmn:not(.icon):before {
 	display: block;
 	content: '';
-	background: url("../../img/sprites.png") no-repeat 0 0;
+	background: url("../../img/sprites.webp") no-repeat 0 0;
 	width: 68px;
 	height: 56px;
 	position: absolute;
