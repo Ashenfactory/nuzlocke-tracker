@@ -4,7 +4,7 @@
   "description": "A tool for tracking Pokémon encounters and captures during Nuzlocke challenges",
   "main": "index.html",
   "dependencies": {
-    "fomantic-ui": "^2.9.0",
+    "fomantic-ui": "^2.9.3",
     "jquery": "^3.6.3"
   },
   "devDependencies": {
